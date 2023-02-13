@@ -70,7 +70,7 @@ flashrom -p internal
 
 connect laptop to Ethernet, get its IP
 
-copy previously compiled coreboot:
+copy previously compiled Dasharo firmware:
 ```
 scp build/coreboot.rom root@<here IP of NVC laptop>/tmp
 ```
