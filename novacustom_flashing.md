@@ -58,38 +58,39 @@ further, there is need for only `make` command.
 ---
 
 # Flash Process
-Mainly, process is described in instruction.
+* Mainly, process is described in instruction.
+* Flashing is performed on target device, itself.
+* To enter flashing mode, device should be booted properly:
+ - make sure laptop is powered off
+ - turn on the device
+ - wait for splash with one-time boot menu
+ - press key for one-time boot menu
+ - choose option `iPXE Network Boot` 
+ - choose option 9 (Shell)
 
-TODO: Describe process
-F12-> choose option 9 (Shell)
-
-check flashrom is available on the laptop
+---
+# Flash Process - cont.
+* check flashrom is available on the laptop
 ```
 flashrom -p internal
 ```
+* connect laptop to Ethernet, get its IP
 
-connect laptop to Ethernet, get its IP
-
-copy previously compiled Dasharo firmware:
+* copy previously compiled Dasharo firmware:
 ```
 scp build/coreboot.rom root@<here IP of NVC laptop>/tmp
 ```
-
-
-connect with scp
+* connect with scp
 ```
 ssh root@<here IP of NVC laptop
 cd /tmp
 flashrom -p internal -i RW_SECTION_A --fmap -w /tmp/coreboot.rom
 ```
-After finishing(still, under ssh):
-
+* After finishing(still, under ssh):
 ```
 reboot
 ```
-
-Test whether flashing correctly
-
+* Test whether flashing correctly
 ---
 # Troubleshooting
 * During SSHing process the following message can occur:
@@ -118,6 +119,10 @@ ssh-keygen -f "/home/coreboot/.ssh/known_hosts" -R "192.168.4.236"
 ---
 # Recovery
 
+After bricking the device there is need to perform the same action, as with
+brand new device. 
+
+???
 TBD:
 In case there is problem, computer is bricked there is need to 
 reflash using external programmer
@@ -137,9 +142,51 @@ Proper values can be found issuing command:
 make menuconfig
 ```
 Section `Payload->TianoCore boot menu key` and 
-`Payload->TianoCore setup menu key`, press button Help
+`Payload->TianoCore setup menu key`, press button Help.
+---
+# Exercise 2.
+
+* Change boot option key
+* Find in configuration key: `EDK2_BOOT_MENU_KEY`/"TianoCore boot menu key"
+* Change value (button Help will show possible options)
+* Check changes (build, reflash laptop)
+
+--
+* Result in next slide:
+
+???
+Comment                                                                       
 
 ---
+# Exercise 2 - solve
+
+"img/Boot_Setup_key_modified.jpg"
+---
+# Excercise 3.
+* Change SMBIOS variable, SKU Number
+* String is set up in mainboard's code
+* Find in directory, in `src/mainboard` proper file, function, change phrase
+* Compile, burn to the flash
+* Check value using `dmidecode` (run on target device)
+
+--
+
+
+Result on next slide...
+---
+# Exercise 3 - solve
+--
+* Source:
+--
+```
+coreboot/src/mainboard/clevo/adl-p/ramstage.c
+```
+function:
+```
+const char *smbios_system_sku(void);
+```
+--
+<img src='img/SKU_String_modified.jpg'>
 
 class: center, middle, outro
 
