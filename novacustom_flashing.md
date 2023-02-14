@@ -144,7 +144,7 @@ make menuconfig
 Section `Payload->TianoCore boot menu key` and 
 `Payload->TianoCore setup menu key`, press button Help.
 ---
-# Exercise 2.
+# Exercise 1.
 
 * Change boot option key
 * Find in configuration key: `EDK2_BOOT_MENU_KEY`/"TianoCore boot menu key"
@@ -158,9 +158,22 @@ Section `Payload->TianoCore boot menu key` and
 Comment                                                                       
 
 ---
-# Exercise 2 - solve
+# Exercise 1 - solve
 
-"img/Boot_Setup_key_modified.jpg"
+'img/Boot_Setup_key_modified.jpg'
+---
+# Exercise 2.
+* Change option for booting option `iPXE Network Boot` to add own string
+* Recompile, flash
+* Test changes
+* Solve results in next slide
+---
+# Exercise 2.-solve
+* Find string in `.config` file: `CONFIG_EDK2_IPXE_OPTION_NAME`
+* Change value (here: change to `iPXE Network Boot-moj tekst')
+* TODO: insert IMG: 
+'img/Boot_option-custom.jpg'
+
 ---
 # Excercise 3.
 * Change SMBIOS variable, SKU Number
