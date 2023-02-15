@@ -161,16 +161,18 @@ Comment
 # Exercise 1 - solve
 
 'img/Boot_Setup_key_modified.jpg'
+
 ---
 # Exercise 2.
 * Change option for booting option `iPXE Network Boot` to add own string
 * Recompile, flash
 * Test changes
 * Solve results in next slide
+
 ---
 # Exercise 2.-solve
 * Find string in `.config` file: `CONFIG_EDK2_IPXE_OPTION_NAME`
-* Change value (here: change to `iPXE Network Boot-moj tekst')
+* Change value (here: change to `iPXE Network Boot-moj tekst`)
 * TODO: insert IMG: 
 'img/Boot_option-custom.jpg'
 
@@ -188,16 +190,20 @@ Comment
 Result on next slide...
 ---
 # Exercise 3 - solve
+
 --
 * Source:
 --
+
 ```
 coreboot/src/mainboard/clevo/adl-p/ramstage.c
 ```
+
 function:
 ```
 const char *smbios_system_sku(void);
 ```
+
 --
 <img src='img/SKU_String_modified.jpg'>
 
