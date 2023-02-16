@@ -144,7 +144,7 @@ make menuconfig
 Section `Payload->TianoCore boot menu key` and 
 `Payload->TianoCore setup menu key`, press button Help.
 ---
-# Exercise 1.
+# Exercise 1
 
 * Change boot option key
 * Find in configuration key: `EDK2_BOOT_MENU_KEY`/"TianoCore boot menu key"
@@ -158,42 +158,39 @@ Section `Payload->TianoCore boot menu key` and
 Comment                                                                       
 
 ---
-# Exercise 1 - solve
+# Exercise 1-solve
 
-'img/Boot_Setup_key_modified.jpg'
+.center[.image-65[![](img/Boot_Setup_key_modified.jpg)]]
 
 ---
-# Exercise 2.
+# Exercise 2
 * Change option for booting option `iPXE Network Boot` to add own string
 * Recompile, flash
 * Test changes
 * Solve results in next slide
 
 ---
-# Exercise 2.-solve
+# Exercise 2-solve
 * Find string in `.config` file: `CONFIG_EDK2_IPXE_OPTION_NAME`
 * Change value (here: change to `iPXE Network Boot-moj tekst`)
-* TODO: insert IMG: 
-'img/Boot_option-custom.jpg'
+.center[.image-45[![](img/Boot_option-custom.jpg)]]
 
 ---
-# Excercise 3.
+# Excercise 3
 * Change SMBIOS variable, SKU Number
 * String is set up in mainboard's code
 * Find in directory, in `src/mainboard` proper file, function, change phrase
 * Compile, burn to the flash
 * Check value using `dmidecode` (run on target device)
-
 --
+.column-1[
+.middle-1[Result on next slide...]
+]
 
-
-Result on next slide...
 ---
-# Exercise 3 - solve
+# Exercise 3-solve
 
---
 * Source:
---
 
 ```
 coreboot/src/mainboard/clevo/adl-p/ramstage.c
@@ -205,11 +202,10 @@ const char *smbios_system_sku(void);
 ```
 
 --
-<img src='img/SKU_String_modified.jpg'>
+.center[.image-45[![](img/SKU_String_modified.jpg)]]
 
+---
 class: center, middle, outro
 
-# Str 6.
-<img src='remark-templates/3mdeb-trainings-template/images/intro-logo.svg' class='intrologo'>
 
 ## Thank you for trusting us
