@@ -1,32 +1,34 @@
 class: center, middle, intro
 
-<img src='remark-templates/3mdeb-trainings-template/images/intro-logo.svg' class='intrologo'>
+# Dasharo onboarding
 
-## Novacustom flashing
+### v0.1.0
+
+.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+
 
 ---
 # Prerequisities
 
-## Hardware
-* Novacustom Laptop 
-* Power supply
-* Ethernet cable
-* Flashing tool (optional; in case of bricking the device)
+* Hardware
+  * Novacustom Laptop
+  * Power supply
+  * Ethernet cable
+  * Flashing tool (optional; in case of bricking the device)
 
-## Software
-* Docker installed on host machine
-* Source of the coreboot
-* edk2 sources
-These sources are distributed as submodules for coreboot tree.
+* Software
+  * Docker installed on host machine
+  * Source of the coreboot
+  * edk2 sources
 
 ???
-Flashing tool is not absolutely needed, unless laptop is not bricked.  
+Flashing tool is not absolutely needed, unless laptop is not bricked.
 
 ---
 # Types and sources
 
 * There is need to properly identify model and version of the supported
-hardware. 
+hardware.
   - NS5* series - model with bigger screen, additional numeric keypad
 various minor properties
   - NV4* series - 14" laptop without numeric keypad, monochromatic keyboard
@@ -36,10 +38,10 @@ backlight
   - TGL - Tiger Lake processor used(Intel 11.gen)
 ---
 
-# Documentation 
+# Documentation
 * Official webpage for documentation:
 https://docs.dasharo.com/
-* Path to more specific information: 
+* Path to more specific information:
   - Supported hardware -> Novacustom Laptops -> Building manual
 
 ---
@@ -48,7 +50,7 @@ https://docs.dasharo.com/
 https://docs.dasharo.com/unified/novacustom/building-manual/
 * Make sure testing model and platform
 * Chooose proper sources, depending on processor type and Novacustom laptop
-model (compilation for Novacustom NV41PZ checkout `clevo/develop`) 
+model (compilation for Novacustom NV41PZ checkout `clevo/develop`)
 * First time build:
 ```
 make olddefconfig && make
@@ -65,7 +67,7 @@ further, there is need for only `make` command.
  - turn on the device
  - wait for splash with one-time boot menu
  - press key for one-time boot menu
- - choose option `iPXE Network Boot` 
+ - choose option `iPXE Network Boot`
  - choose option 9 (Shell)
 
 ---
@@ -120,11 +122,11 @@ ssh-keygen -f "/home/coreboot/.ssh/known_hosts" -R "192.168.4.236"
 # Recovery
 
 After bricking the device there is need to perform the same action, as with
-brand new device. 
+brand new device.
 
 ???
 TBD:
-In case there is problem, computer is bricked there is need to 
+In case there is problem, computer is bricked there is need to
 reflash using external programmer
 
 ---
@@ -141,7 +143,7 @@ Proper values can be found issuing command:
 ```
 make menuconfig
 ```
-Section `Payload->TianoCore boot menu key` and 
+Section `Payload->TianoCore boot menu key` and
 `Payload->TianoCore setup menu key`, press button Help.
 ---
 # Exercise 1
@@ -155,7 +157,7 @@ Section `Payload->TianoCore boot menu key` and
 * Result in next slide:
 
 ???
-Comment                                                                       
+Comment
 
 ---
 # Exercise 1-solve
@@ -207,5 +209,4 @@ const char *smbios_system_sku(void);
 ---
 class: center, middle, outro
 
-
-## Thank you for trusting us
+.center[##Q&A]
