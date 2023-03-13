@@ -40,7 +40,9 @@ class: center, middle, intro
 
 ---
 
-# Dasharo Vision
+# Today
+
+.center.image-80[![](img/dasharo_vision_before.png)]
 
 ???
 
@@ -74,6 +76,12 @@ class: center, middle, intro
    but in transparent way prose to customers various abvailable options. Thanks
    to that users have ability to buy trystworthy computing device directly from
    the favourite supplier.
+
+---
+
+# Vision of tomorrow
+
+.center.image-99[![](img/dasharo_vision_after.png)]
 
 ---
 
@@ -117,6 +125,19 @@ class: center, middle, intro
     - `Fobnail`, 
     - `fwupd for BSD`
     - `core-ec`
+
+---
+
+# Support Dasharo Today!
+
+* Buy Dasharo Supporter Entrance subscription for your platform.
+* Help us improve firmware and tools by contributing on Github.
+* Spread the word about Dasharo and our mission on social media and other platforms.
+* Donate ($ or crypto) to our cause and help us continue to develop and improve
+  our software and tools.
+
+.center[https://docs.dasharo.com/ways-you-can-help-us/]
+
 
 ---
 class: center, middle, outro
