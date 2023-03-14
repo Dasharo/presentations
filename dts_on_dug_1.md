@@ -41,7 +41,6 @@ Enabling Dasharo zero-touch initial deployment
 * Dell OptiPlex T1650 - Community Release v0.1.0
 * MSI PRO Z790-A - Community Release v1.0.0
 * ASUS Pro WS X570-ACE - Community Release v1.0.0
-* Supermicro X11 - Community Release v0.1.0
 
 Providing safe Dasharo firmware update
 
