@@ -10,6 +10,8 @@ class: center, middle, intro
 
 # What is it about?
 
+.center.image-30[![](img/coreboot.png) ![](img/pcengines.png)]
+
 * In September 2022 PC Engines decided to discontinue sponsorship for
   open-source firmware on their devices.
 * We announced that recently after v4.19.0.1 release (Feb 2023).
@@ -60,6 +62,12 @@ class: center, middle, intro
   - more business customers interested in supporting open-source firmware
     updates
   - crictial mass of users who want to see subscription model
+
+---
+
+# Roadmap
+
+.center.image-99[![](img/dcs_pce_roadmap_v0.1.png)]
 
 ---
 
