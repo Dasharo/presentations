@@ -45,7 +45,7 @@ which we slowly gather in Dasharo Certification Program.
 
 * DCP means executing and delivering test results according to specs defined in
   earlier stages.
-* This process show how flow look like for new platforms, already supported
+* This process shows how flow look like for new platforms, already supported
   platforms typically get through Validation/Release cycle.
 
 ---
