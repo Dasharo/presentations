@@ -39,7 +39,9 @@ which we slowly gather in Dasharo Certification Program.
 
 # Dasharo Community Support Process
 
-.center.image-99[![](img/dcs-process-v0.2.png)]
+.center[
+<img src="img/dcs-process-v0.2.png" width="900px" style="margin-left:-75px">
+]
 
 ???
 
@@ -52,37 +54,49 @@ which we slowly gather in Dasharo Certification Program.
 
 # Dasharo Emulation Roadmap
 
-.center.image-99[![](img/dcs_emu_roadmap_v0.1.png)]
+.center[
+<img src="img/dcs_emu_roadmap_v0.1.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+]
 
 ---
 
 # Dasharo Desktop Roadmap
 
-.center.image-90[![](img/dcs_desktop_dell_roadmap_v0.1.png)]
+.center[
+<img src="img/dcs_desktop_dell_roadmap_v0.1.png" width="750px" style="margin-top:-40px">
+]
 
 ---
 
 # Dasharo Desktop Roadmap
 
-.center.image-99[![](img/dcs_desktop_msi_roadmap_v0.1.png)]
+.center[
+<img src="img/dcs_desktop_msi_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
+]
 
 ---
 
 # Dasharo Desktop Roadmap
 
-.center.image-99[![](img/dcs_desktop_asus_roadmap_v0.1.png)]
+.center[
+<img src="img/dcs_desktop_asus_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
+]
 
 ---
 
 # Dasharo Workstation Roadmap
 
-.center.image-99[![](img/dcs_workstation_roadmap_v0.1.png)]
+.center[
+<img src="img/dcs_workstation_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
+]
 
 ---
 
 # Dasharo Server Roadmap
 
-.center.image-99[![](img/dcs_server_roadmap_v0.1.png)]
+.center[
+<img src="img/dcs_server_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
+]
 
 ---
 class: center, middle, outro
