@@ -30,6 +30,7 @@ class: center, middle, intro
 * We received 100+ answers, 
 * Over 50% of respondents are interested in paid model
   - yearly subscription is most popular among other requests
+  - reposndents represented over 66% of all device units reported in survey
 
 ???
 
@@ -38,6 +39,28 @@ class: center, middle, intro
   on, should get updates
 - what we intended to ask was how for how many hardware devices/units, given
   respondent would like to get updates
+
+---
+
+# Summary
+
+.center.image-70[![](img/pce_sub.svg)]
+
+* Over 50% of respondents are interested in paid model
+  - yearly subscription is most popular among other requests
+  - reposndents represented over 66% of all device units reported in survey
+
+---
+
+# Summary
+
+.center.image-100[![](img/pce_how_many_fw_releases.png)]
+
+---
+
+# Summary
+
+.center.image-100[![](img/pce_hw_usage.png)]
 
 ---
 
@@ -79,6 +102,6 @@ class: center, middle, intro
   - https://docs.dasharo.com/ways-you-can-help-us/#donate-money
 
 ---
-class: center, middle, outro
+class: center, middle, intro
 
-.center[##Q&A]
+# Q&A
