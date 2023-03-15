@@ -100,6 +100,12 @@ class: center, middle, intro
 
 ---
 
+# Feature requests
+
+.center.image-99[![](img/pce_features.svg)]
+
+---
+
 # Roadmap
 
 .center.image-99[![](img/dcs_pce_roadmap_v0.1.png)]
