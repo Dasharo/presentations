@@ -27,8 +27,8 @@ class: center, middle, intro
 * We would like to thank all of the respondents for taking the time and
   providing valuable feedback.
 * Some questions in survey could be explained better, maybe with example.
-* We received 100+ answers, respondents report over 600 PC engines hardware
-  units for update.
+* We received 100+ answers.
+* Respondents report over 600 PC Engines hardware units for update.
 * Most valuable features:
   - ECC,
   - OpenBSD, FreeBSD, OPNsense and pfSense support,
