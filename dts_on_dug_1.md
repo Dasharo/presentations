@@ -79,8 +79,8 @@ class: center, middle, intro
 
 # Why?
 
-TBD Storytell about Bob who saw Dasharo, wanted to test it, check documentation,
-made one, small mistake, and... brick his hardware. DTS is here for him.
+.left-column50[.center[<img src="img/tom-flash-dasharo.png" width="340px">]]
+.right-column50[.center[<img src="img/tom-in-pain.png" width="340px">]]
 
 ???
 
