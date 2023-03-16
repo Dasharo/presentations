@@ -119,7 +119,7 @@ as with donation or subscription yearly payment.
 * What may change our decision in future?
   - More business customers interested in supporting open-source firmware
     updates.
-  - Crictial mass of users who want to see subscription model.
+  - Critical mass of users who want to see subscription model.
 
 ---
 
@@ -146,7 +146,7 @@ as with donation or subscription yearly payment.
   - https://docs.dasharo.com/ways-you-can-help-us/#donate-money
   - If you make crypto donation please send us transaction link, since crypto
     wallets are owned by NLNet.
-  - For other form of donations please leava a note, which describe the
+  - For other form of donations please leave a note, which describes the
     purpose, while making donation.
 
 ---
