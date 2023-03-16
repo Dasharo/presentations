@@ -127,19 +127,6 @@ class: center, middle, intro
     - `core-ec`
 
 ---
+class: center, middle, intro
 
-# Support Dasharo Today!
-
-* Buy Dasharo Supporter Entrance subscription for your platform.
-* Help us improve firmware and tools by contributing on Github.
-* Spread the word about Dasharo and our mission on social media and other platforms.
-* Donate ($ or crypto) to our cause and help us continue to develop and improve
-  our software and tools.
-
-.center[https://docs.dasharo.com/ways-you-can-help-us/]
-
-
----
-class: center, middle, outro
-
-.center[##Q&A]
+# Q&A
