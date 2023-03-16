@@ -30,12 +30,12 @@ class: center, middle, intro
 * We received 100+ answers, respondents report over 600 PC engines hardware
   units for update.
 * Most valuable features:
-  - ECC
-  - OpenBSD, FreeBSD, OPNsense and pfSense support
-  - Core Preformance Boost
-  - TPM support
-  - Stability and security
-  - Debian and NetBSD support
+  - ECC,
+  - OpenBSD, FreeBSD, OPNsense and pfSense support,
+  - Core Preformance Boost,
+  - TPM support,
+  - Stability and security,
+  - Debian and NetBSD support.
 
 
 ???
@@ -64,10 +64,10 @@ class: center, middle, intro
 
 .center.image-70[![](img/pce_sub.svg)]
 
-* Over 50% of respondents are interested in paid model
-  - yearly subscription is most popular among other requests
-  - subscription-interested respondents represent 66% of all devices reported
-    in survey
+* Over 50% of respondents are interested in paid model.
+  - Yearly subscription is most popular among other requests.
+  - Subscription-interested respondents represent 66% of all devices reported
+    in survey.
 
 ---
 
@@ -75,12 +75,12 @@ class: center, middle, intro
 
 * Use donation driven development instead of subscription.
 * On-demand custom firmware builds.
-  - We will add that to 3mdeb offer
-* Charging for each release
+  - We will add that to 3mdeb offer.
+* Charging for each release.
   - We don't think it is economically feasible.
-* One-off upgrades
+* One-off upgrades.
   - We don't see how it would be different from dontation model.
-* Paid Technical Assistant Center (TAC) support
+* Paid Technical Assistant Center (TAC) support.
   - We already deliver such services through Dasharo Support Package using JIRA
     Service Desk and we would be glad to extend it to support PC Engines
     customers.
@@ -92,11 +92,11 @@ class: center, middle, intro
 # Decision
 
 * Because of feedback we received we opt for donation-only model for now.
-  - subscription model with expressed interest is not economically feasible
+  - Subscription model with expressed interest is not economically feasible.
 * What may change our decision in future?
-  - more business customers interested in supporting open-source firmware
-    updates
-  - crictial mass of users who want to see subscription model
+  - More business customers interested in supporting open-source firmware
+    updates.
+  - Crictial mass of users who want to see subscription model.
 
 ---
 
@@ -116,7 +116,7 @@ class: center, middle, intro
 
 * LiberaPay: https://liberapay.com/dasharo
 * OpenCollective: https://opencollective.com/3mdeb_com
-  - we plan to enable cryptocurrencies donations before DUG#2
+  - We plan to enable cryptocurrencies donations before DUG#2.
 * Other methods including cryptocurrencies:
   - https://docs.dasharo.com/ways-you-can-help-us/#donate-money
 
