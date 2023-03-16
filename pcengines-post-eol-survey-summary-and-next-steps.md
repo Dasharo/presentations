@@ -92,7 +92,7 @@ class: center, middle, intro
   - We already deliver such services through Dasharo Support Package using JIRA
     Service Desk and we would be glad to extend it to support PC Engines
     customers.
-* Provide roadmap you planning to implement.
+* Provide roadmap you are planning to implement.
   - We will do that quarterly during DUGs.
 
 ---
