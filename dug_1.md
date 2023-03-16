@@ -104,7 +104,7 @@ class: center, middle, intro
 * Top contributors on github
 * 20k+ messages so far (~50msg/day)
   - 104 users in Dasharo Matrix Space (108 in Dasharo General)
-  - Most active channels: General, 
+  - Most active channels: General,
 
 ---
 
@@ -119,12 +119,12 @@ class: center, middle, intro
   - `TrenchBoot`
 * Interesting facts:
   - we have bridge to IRC (libera.chat) - `#dasharo`
-  - there are partner and side projects channels like: 
-    - `Fiedka the Firmware Editor`, 
-    - `TwPM`, 
-    - `Fobnail`, 
-    - `fwupd for BSD`
-    - `core-ec`
+  - there are partner and side projects channels like:
+      - `Fiedka the Firmware Editor`,
+      - `TwPM`,
+      - `Fobnail`,
+      - `fwupd for BSD`
+      - `core-ec`
 
 ---
 class: center, middle, intro
