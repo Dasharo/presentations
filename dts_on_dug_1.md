@@ -8,6 +8,11 @@ class: center, middle, intro
 
 ???
 
+Hi, my name is Tomasz Zyjewski and I am responsible for the development of a
+system that some of you may have already met and which is called Dasharo Tools
+Suite. This presentation is to introduce what this system is and tell you a
+little about the plans for the future.
+
 ---
 
 # Agenda
@@ -17,29 +22,10 @@ class: center, middle, intro
 * Why?
 * List of features
 * Demo on MSI PRO Z690-A DDR4
-* Upcoming release
+* Upcoming releases
 * Roadmap
 
 ???
-
-* What DTS is; set of tools and scripts, swiss army knife for Dasharo users
-* How DTS is created with Yocto, how you can run it on your platform
-* Why DTS was created, how it can help you check what is on your platform,
-  deploy Dasharo, update Dasharo; people bricking their platforms
-* Features like HCL report, initial deployment, SBoM
-* Demo of deploy, rollback on MSI PRO Z690-A DDR4 with dumping HCL report
-* Upcoming release
-  - milestone on GH for v1.1.2
-  - releases also connected with Dasharo firmware releases (init deploy for more
-    and more platforms)
-  - DTS Logo
-  - DTS UX update
-  - Dasharo update from menu
-  - Develop builds
-* Roadmap
-  - device authentication to improve Dasharo firmware update: Q3
-  - DTS security features provisioning: Q4
-  - DTS zero touch initial deployment for firmware `as is`: Q4
 
 ---
 
@@ -59,6 +45,8 @@ class: center, middle, intro
     NS5x/7x
   - [test cases](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/326-dasharo-tools-suite/)
 
+???
+
 ---
 
 # How?
@@ -75,6 +63,8 @@ class: center, middle, intro
   - iso and compressed images on releases subpage
   - kernel and cpio to boot from iPXE
 
+???
+
 ---
 
 # Why?
@@ -84,10 +74,17 @@ class: center, middle, intro
 
 ???
 
-* not only story about bricking, this is only one of DTS functionality
-* also HCL report, get to know your hardware
-* also latest versions of available tools like flashrom or coreboot utils, helps
-  to investigate hardware and flash firmware
+I may be wrong as this was a lot time ago, but basically the idea for creating
+DTS came from situation described on this short comic. Let's imagine Tom, BTW
+accidental name resemblance, who just found out about Dasharo. He goes do
+docs.dasharo.com, go through perfectly prepared documentation (perfectly by our
+mean) and bang, brick his platform. Of course we want to avoid such problems
+because there is no worse thing than provide and open-source or just any
+solution which just does not work, or worse, break something. And as accidents
+may still happens, using DTS should limit that risk.
+
+Of course this was only the beginning. Ultimate goal is to provide a tool that
+can be used by open-source community to use open-source firmware easier.
 
 ---
 
@@ -99,7 +96,7 @@ class: center, middle, intro
   - supported on ASUS KGPE-D16, Dell OptiPlex 7010/9010, MSI PRO Z690-A DDR4 and
     DDR5, NovaCustom NV4x and NS5x/7x
   - [more information](https://docs.dasharo.com/dasharo-tools-suite/documentation/#dasharo-zero-touch-initial-deployment)
-* HCL Report
+* Dasharo Hardware Compatibility List Report (HCL Report)
   - powerful option, allows to get information about your hardware
   - dumped as compressed tarball in rootfs of DTS, also can be send to Dasharo
     Team
@@ -110,6 +107,8 @@ class: center, middle, intro
   - allows to compile, test and upstream
   - in future, we want to provide whole SBoM
 
+???
+
 ---
 class: center, top, outro
 
@@ -118,15 +117,16 @@ class: center, top, outro
 
 ???
 
-Demo link: https://cloud.3mdeb.com/index.php/f/562798
-
-Descibe what happens while demo is playing.
-
 ---
 
-# Upcoming release
+# Upcoming releases
 
-* DTS v1.1.2
+* **DTS v1.2.0**
+  - ETA: March 2023
+* Key features
+  - enable Dasharo firmware update already available on develop build
+  - bug fixing
+* **DTS v2.0.0**
   - ETA: April/May 2023
   - [GitHub Milestone](https://github.com/Dasharo/dasharo-issues/milestone/5)
 * Key features
@@ -135,7 +135,6 @@ Descibe what happens while demo is playing.
   - enable Dasharo zero-touch initial deployment on Dell Precision T1650
   - work on DTS logo
   - introduce nightly/develop builds
-  - enable Dasharo firmware update already available on develop build
 
 ---
 
