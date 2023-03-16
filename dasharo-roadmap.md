@@ -99,6 +99,20 @@ which we slowly gather in Dasharo Certification Program.
 ]
 
 ---
+
+# Support Dasharo Today!
+
+* Buy Dasharo Supporter Entrance subscription for your platform.
+  - Available in 3mdeb shop: https://3mdeb.com/shop
+* Help us improve firmware and tools by contributing on Github.
+* Spread the word about Dasharo and our mission on social media and other platforms.
+* Donate ($ or crypto) to our cause and help us continue to develop and improve
+  our software and tools.
+* Interested in other ways? Feel free to contact us contact@dasharo.com
+
+.center[https://docs.dasharo.com/ways-you-can-help-us/]
+
+---
 class: center, middle, intro
 
 # Q&A
