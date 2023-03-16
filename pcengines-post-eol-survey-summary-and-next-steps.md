@@ -70,7 +70,7 @@ class: center, middle, intro
 
 # Summary
 
-.center.image-70[![](img/pce_sub.svg)]
+.center.image-65[![](img/pce_sub.svg)]
 
 * Over 50% of respondents are interested in paid model.
   - Many respondents requested yearly subscription instead of monthly.
