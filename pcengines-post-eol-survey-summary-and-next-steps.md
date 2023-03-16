@@ -81,7 +81,7 @@ class: center, middle, intro
 
 # Community suggestions
 
-* Use donation driven development instead of subscription.
+* Use donation-driven development instead of subscription.
 * On-demand custom firmware builds.
   - We will add that to 3mdeb offer.
 * Charging for each release.
