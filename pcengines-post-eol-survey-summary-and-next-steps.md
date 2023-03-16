@@ -85,15 +85,30 @@ class: center, middle, intro
 * On-demand custom firmware builds.
   - We will add that to 3mdeb offer.
 * Charging for each release.
-  - We don't think it is economically feasible.
+  - We don't think it is economically feasible,
+    - Payment would be **maybe** after release (investment from our side),
+    - Not enough market demand right now to take this risk.
 * One-off upgrades.
-  - We don't see how it would be different from dontation model.
+  - Similar as above.
 * Paid Technical Assistant Center (TAC) support.
   - We already deliver such services through Dasharo Support Package using JIRA
     Service Desk and we would be glad to extend it to support PC Engines
     customers.
 * Provide roadmap you are planning to implement.
   - We will do that quarterly during DUGs.
+
+???
+
+We are doing release and if release contains interesting things people can buy,
+and if not they will skip. From our perspective it is way more work since we
+have to evaluate market.
+We did that little bit in survey, but still we have to trust that respondents
+would really buy features they claim they will buy. We are not prepared for
+taking risk of building firmware and hoping there will be enough customers to
+buy it. Of course I would prefer such situation, but we are far from that.
+With such high risk it is better to no do any release unless we have huge,
+clear market demand, but with that we would probably take payment upfront
+as with donation or subscription yearly payment.
 
 ---
 
