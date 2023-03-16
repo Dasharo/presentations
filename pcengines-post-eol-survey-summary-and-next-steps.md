@@ -52,6 +52,14 @@ class: center, middle, intro
 
 .center.image-100[![](img/pce_num_of_updates.svg)]
 
+???
+
+* 3 updates - 5.5%
+* 6 updates - 7.8%
+* 7 updates - 0.8%
+* 8 updates - 0.8%
+* 12 updates - 3.1%
+
 ---
 
 # Summary
