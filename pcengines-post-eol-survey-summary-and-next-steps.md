@@ -73,7 +73,7 @@ class: center, middle, intro
 .center.image-70[![](img/pce_sub.svg)]
 
 * Over 50% of respondents are interested in paid model.
-  - Yearly subscription is most popular among other requests.
+  - Many respondents requested yearly subscription instead of monthly.
   - Subscription-interested respondents represent 66% of all devices reported
     in survey.
 
