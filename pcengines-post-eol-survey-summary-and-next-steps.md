@@ -123,10 +123,16 @@ class: center, middle, intro
 # How to donate
 
 * LiberaPay: https://liberapay.com/dasharo
+  - There is only one goal and it is donation for PC Engines firmware release.
 * OpenCollective: https://opencollective.com/3mdeb_com
+  - Thre are two goals here, one dedicated to PC engines.
   - We plan to enable cryptocurrencies donations before DUG#2.
 * Other methods including cryptocurrencies:
   - https://docs.dasharo.com/ways-you-can-help-us/#donate-money
+  - If you make crypto donation please send us transaction link, since crypto
+    wallets are owned by NLNet.
+  - For other form of donations please leava a note, which describe the
+    purpose, while making donation.
 
 ---
 class: center, middle, intro
