@@ -132,6 +132,7 @@ Descibe what happens while demo is playing.
 * Key features
   - add QEMU image with sets of basic tests of the system
   - update UI; make it shiny, beautiful and what more important - user friendly
+  - enable Dasharo zero-touch initial deployment on Dell Precision T1650
   - work on DTS logo
   - introduce nightly/develop builds
   - enable Dasharo firmware update already available on develop build
