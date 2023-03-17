@@ -8,11 +8,6 @@ class: center, middle, intro
 
 ???
 
-Hi, my name is Tomasz Zyjewski and I am responsible for the development of a
-system that some of you may have already met and which is called Dasharo Tools
-Suite. This presentation is to introduce what this system is and tell you a
-little about the plans for the future.
-
 ---
 
 # Agenda
@@ -73,18 +68,6 @@ little about the plans for the future.
 .right-column50[.center[<img src="img/tom-in-pain.png" width="340px">]]
 
 ???
-
-I may be wrong as this was a lot time ago, but basically the idea for creating
-DTS came from situation described on this short comic. Let's imagine Tom, BTW
-accidental name resemblance, who just found out about Dasharo. He goes do
-docs.dasharo.com, go through perfectly prepared documentation (perfectly by our
-mean) and bang, brick his platform. Of course we want to avoid such problems
-because there is no worse thing than provide and open-source or just any
-solution which just does not work, or worse, break something. And as accidents
-may still happens, using DTS should limit that risk.
-
-Of course this was only the beginning. Ultimate goal is to provide a tool that
-can be used by open-source community to use open-source firmware easier.
 
 ---
 
