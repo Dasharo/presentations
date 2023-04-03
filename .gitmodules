@@ -1,0 +1,3 @@
+[submodule "remark-templates"]
+	path = remark-templates
+	url = git@github.com:3mdeb/remark-templates.git
