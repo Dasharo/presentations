@@ -25,9 +25,8 @@ class: center, middle, intro
 
 * #### &#x1F44B; 17:00 UTC Greetings, Agenda
 * #### &#x1F9ED; 17:10 UTC Nitrokey introduction
-* #### &#x1F4BB; 17:20 UTC Dasharo sustainable development plan
-* #### &#x1F9F0; 17:30 UTC Dasharo Announcements
-* #### &#x1F9F0; 17:50 UTC Dasharo Roadmap update
+* #### &#x1F4BB; 17:20 UTC Dasharo Announcements
+* #### &#x1F9F0; 17:50 UTC Dasharo Roadmap
 * #### &#x1F9F0; 18:10 UTC Dasharo Tool Suite Roadmap
 * #### &#x1F9F0; 18:20 UTC TBD
 * #### &#x1F9F0; 18:40 UTC TBD
@@ -37,75 +36,32 @@ class: center, middle, intro
 
 ---
 
-# Today
-
-.center.image-80[![](img/dasharo_vision_before.png)]
-
-???
-
-TBD: can we have similar history at DUG#2?
-
-1. Thoughtful computer user heard about problem in firmware (aka BIOS) and have
-   concerns about various aspects of the firmware on use computing device.
-   Like:
-   - when will my favouring computer supplier/vendor will stop deliver firmare
-     updates?
-   - wouldn't my total cost of ownership largely increase when vendor decide to
-     sell me new hardawre and abandon my device?
-   - what would be the time needed to respond to recent threats in firmware?
-   - is my computing system trustworthy?
-   - can I attest what my computer system running?
-   - does my computing device is privacy respecting?
-   - finally user realize that that one possible solution could be open-source
-     firmware
-2. User calls favourite compting device supplier and ask for open-source
-   firmware support in their devices
-   - with some expceptions most suppliers with say, they have no idea
-3. (Optional) Hipothethically, user gathers community to convinve supplier it
-   makes sense
-4. Supplier convinced that open-source firmware brings value for users calls
-   Silicon Vendor before planning new design
-5. Silicon Vendor support send Supplier to fixed list of Independent BIOS
-   Vendors
-   - shady, secret oligopoly
-6. Supplier contact IBV, but gets answer BIOS cannot be open-source and
-   transparent because it is against IBV business model built for tens of years
-7. Dasharo apeared on the market and slowlych changed things in way that
-   Silicon Vendor no longer recommend fixed set of Independent BIOS Vendors,
-   but in transparent way prose to customers various abvailable options. Thanks
-   to that users have ability to buy trystworthy computing device directly from
-   the favourite supplier.
-
----
-
-# Vision of tomorrow
-
-.center.image-99[![](img/dasharo_vision_after.png)]
-
----
-
 # Community Hearbeat &#x1F493;
 
-.image-100[![](img/community_heartbeat_dug_1.png)]
+.image-100[![](img/community_heartbeat_dug_2.png)]
 
 ???
 
 TBD: look at community status of other projects, news?
+  - consider news presentation with Dasharo status about that
+	- OpenSIL
 
-* Dasharo Github repository was created on 27th Nov 2020
-* Dasharo Matrix space was created on 5th Dec 2020
-* 360 issues reported, 125 closed
+* 455 issues reported, 166 closed
   - gh issue list -s all -L 5000
-  - gh issue list -s open -L 5000
   - gh issue list -s closed -L 5000
-* We received over 1600 comments from 51 users
-  - PAGER="less -R" gh issue list -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l
 * PRs: Dasharo/coreboot 318 PRs merged, Dasharo/edk2 46
   - gh pr list --state all
-* Top contributors on github
-* 20k+ messages so far (~50msg/day)
+* We received over 1600 comments from 51 users (including 3mdeb employees)
+  - PAGER="less -R" gh issue list -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l - users
+  - comments - this doesn't look like relibable method
+    - contrib_list=$(PAGER="less -R" gh issue list -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|xargs)
+    - ./community-analysis.sh "$contrib_list" > issues_contrib.csv
+* 22k+ messages so far (~52msg/day)
   - 104 users in Dasharo Matrix Space (108 in Dasharo General)
   - Most active channels: General,
+	- grep -E '^[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2} [AP]M - .*:' log.txt|wc
+* matrix comments per user:
+	- grep -E "\-.+: " matrix\ -\ Dasharo\ -\ General\ -\ Chat\ Export\ -\ 2023-07-02T22-37-07.435Z.txt |cut -d"-" -f2|cut -d":" -f1|grep -E "^ "|sort|uniq -c|grep -v "banned"|sort -h|grep -v import|grep -v "'"|grep -v "removed"|grep -v coreboot
 
 ---
 
@@ -118,7 +74,8 @@ TBD: look at community status of other projects, news?
   - `Dasharo - Support`
   - `Dashro Developers vPub`
   - `TrenchBoot`
-* Interesting facts:
+* Dedicated channels
+  - `Dasharo - Laptops`
   - we have bridge to IRC (libera.chat) - `#dasharo`
   - there are partner and side projects channels like:
       - `Fiedka the Firmware Editor`,
@@ -126,6 +83,55 @@ TBD: look at community status of other projects, news?
       - `Fobnail`,
       - `fwupd for BSD`
       - `core-ec`
+
+???
+
+TBD: which information are really important?
+
+Go to Dasharo Space and copy&paste content from there:
+
+* Dasharo - Support
+  - 75 members
+  - created: 12/5/2021
+  - activity since last measurement:
+* Dasharo - Random
+  - 68 members
+* Dasharo - General
+  - 162 members
+* Dasharo Developers vPub
+  - 124 members
+* Dasharo - Announcements
+  - 78 members
+* core-ec
+  - 25 members
+* Fiedka the Firmware Editor
+  - 55 members
+* Dasharo - Fobnail
+  - 32 members
+* Dasharo - OSF Bootstrappable Toolchain
+  - 20 members
+* Trenchboot
+  - 45 members
+* fwupd for BSD
+  - 15 members
+* qubes-summit
+  - 42 members
+* Dasharo Tools Suite
+  - 37 members
+* #qubes
+  - 135 members
+* Dasharo Premier Support
+  - 17 members
+* OST2
+  - 18 members
+* TwPM
+  - 18 members
+* #dasharo
+  - 8 members
+* Dasharo - Supermicro X11 LGA1151 Series
+  - 19 members
+* Dasharo - Laptops
+  - 16 members
 
 ---
 class: center, middle, intro
