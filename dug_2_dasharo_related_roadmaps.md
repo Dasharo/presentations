@@ -10,7 +10,13 @@ class: center, middle, intro
 
 # Agenda
 
-* TBD
+* Introduction to Dasharo Tools Suite (DTS)
+* Overview of DTS v1.2.0
+* Future Plans: DTS v2.0.0 and Beyond
+* Unveiling the Dasharo Openness Score
+* Exploring Dasharo Openness Score v0.1
+* Upcoming Features: Dasharo Openness Score v0.2 and Beyond
+* Q&A
 
 ???
 
@@ -136,17 +142,19 @@ power of firmware management into the hands of users and businesses alike.
   - ETA: Q4 2023
   - [GitHub issue #366](https://github.com/Dasharo/dasharo-issues/issues/366)
 * DTS zero touch initial deployment for firmware `as is`
-  - facilitate entry into the world of open-source firmware
+  - multistage approach to improve open-source firmware adoptability
   - ETA: Q1 2024
   - [GitHub issue #384](https://github.com/Dasharo/dasharo-issues/issues/384)
-* DTS security features provisioning
+* DTS security features provisioning and attestation
   - improve the trustworthiness of computing device
   - ETA: Q2 2024
   - [GitHub issue #385](https://github.com/Dasharo/dasharo-issues/issues/385)
 
 ???
 
-* TODO: elaborate about reasoning behind those features
+* all dealines shifted by 1Q
+* Other ideas
+	- automatic bug reporting from DTS
 
 ---
 
@@ -219,11 +227,6 @@ like cbfstool or UEFIExtract to decompose and parse firmware images.
   * **Versioning & Wide Application**: Implementing versioning and supporting
     multiple platforms.
   * **Advanced Parsing**: Utilizing ifdtool for improved image parsing.
- 
-
----
-
-# TrenchBoot
 
 ---
 class: center, middle, intro
