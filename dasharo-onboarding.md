@@ -207,6 +207,73 @@ const char *smbios_system_sku(void);
 .center[.image-45[![](img/SKU_String_modified.jpg)]]
 
 ---
+# Remote Protectli VP2410 platform
+
+## Prerequisities:
+- python
+- telnet
+- ready to use SnipeIT account ([instructions](https://gitlab.com/3mdeb/rte/docs/-/blob/master/docs/snipeIT_theory_of_operation.md))
+
+## Setup
+
+Clone [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
+```
+git clone https://github.com/Dasharo/osfv-scripts.git
+```
+Checkout to branch **osfv-cli**:
+```
+git checkout osfv-cli
+```
+Move to the directory with **osfv_cli** script:
+```
+cd snipeit
+```
+Install required python packages:
+```
+pip install -r requirements.txt
+```
+Test if script works (you should get the list of possible subcommands):
+```
+./osfv_cli.py snipeit -h
+```
+
+## Connecting
+First of all make sure that the platform is available for checking out:
+```
+snipeit list_unused | grep VP2410 -A 8
+```
+If platform is available you should get this entry in output:
+```
+Asset Tag: Protectli VP2410_1, Asset ID: 317, Name: , Serial:
+Lab location:
+RTE IP: 192.168.10.233
+RTE cpuid:
+RTE Rev:
+RTE MAC address: 02:42:66:1f:90:13
+Sonoff IP:
+PiKVM IP:
+PiKVM HW Base:
+```
+Checkout the platform:
+```
+./osfv_cli.py snipeit check_out --rte_ip 192.168.10.233
+```
+Now if you run `./osfv_cli.py snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
+
+You can get list of possible operations by running
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 -h
+```
+For example you can check the state of the GPIO pin 0:
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
+```
+
+## Exercises
+
+
+
+---
 class: center, middle, outro
 
 .center[##Q&A]
