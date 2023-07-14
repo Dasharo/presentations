@@ -6,6 +6,14 @@ class: center, middle, intro
 
 .center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
+---
+
+# Contents
+
+These tasks can be done on two different platforms:
+Novacustom Laptop or Remote Testing Environment with Protectli VP2410
+
+Next section is dedicated to Novacustom laptop
 
 ---
 # Prerequisities
@@ -209,13 +217,15 @@ const char *smbios_system_sku(void);
 ---
 # Remote Protectli VP2410 platform
 
-## Prerequisities:
+---
+# Prerequisities:
 - python
 - telnet
 - ready to use SnipeIT account ([instructions](https://gitlab.com/3mdeb/rte/docs/-/blob/master/docs/snipeIT_theory_of_operation.md))
 
-## Setup
+---
 
+## Setup
 Clone [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
 ```
 git clone https://github.com/Dasharo/osfv-scripts.git
@@ -237,7 +247,9 @@ Test if script works (you should get the list of possible subcommands):
 ./osfv_cli.py snipeit -h
 ```
 
-## Connecting
+---
+
+### Connecting and basic operations
 First of all make sure that the platform is available for checking out:
 ```
 snipeit list_unused | grep VP2410 -A 8
@@ -258,6 +270,9 @@ Checkout the platform:
 ```
 ./osfv_cli.py snipeit check_out --rte_ip 192.168.10.233
 ```
+
+---
+
 Now if you run `./osfv_cli.py snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
 
 You can get list of possible operations by running
@@ -269,7 +284,41 @@ For example you can check the state of the GPIO pin 0:
 ./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
 ```
 
-## Exercises
+Fetch current ROM image:
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 flash read --rom vp2410-read.rom
+```
+Writing new ROM image:
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 flash write --rom ~/coreboot/protectli_vault_glk_v1.0.15.rom
+```
+
+Switching power on relay:
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 rel tgl
+```
+
+---
+
+# Building firmware
+
+This can be done as shown in [building manual](https://docs.dasharo.com/variants/protectli_vp2410/building-manual/).
+
+Tips:
+- In protectli blobs repository make sure you are on the branch with the same name as in coreboot repository
+- Instead of creating symbolic link you can simply copy Geminilake (inside root coreboot directory):
+    ```
+    cp -r 3rdparty/blobs/mainboard/protectli/vault_glk/GeminilakeFspBinPkg 3rdparty/fsp/GeminilakeFspBinPkg
+    ```
+
+---
+
+# Exercises
+
+1. Change boot menu key
+    - Find in configuration "TianoCore boot menu key"
+    - help will show possible options
+
 
 
 
