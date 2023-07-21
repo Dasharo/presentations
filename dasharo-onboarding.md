@@ -301,6 +301,12 @@ For example you can check the state of the GPIO pin 0:
 ./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
 ```
 
+Acces the platform by serial interface:
+
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 serial
+```
+
 Fetch current ROM image:
 
 ```
@@ -334,13 +340,40 @@ Tips:
 
 ---
 
-# Exercises
+### Exercises
 
 1. Change boot menu key
-    - Find in configuration "TianoCore boot menu key"
-    - help will show possible options
+    - Find how to change boot menu key
+    - You can use values between `0x0001` (UP) and `0x0017` (ESC)
 
 ---
+
+### Excercise 1 - solve
+
+Modify file `coreboot/configs/config.protectli_vp2410`, line `CONFIG_TIANOCORE_BOOT_MENU_KEY`
 class: center, middle, outro
+
+--
+.center[.image-45[![](img/boot_key_modified.png)]]
+
+---
+
+### Exercise 2
+
+Change bios information - "Vendor", it can be checked using `dmidecode`:
+
+--
+.center[.image-45[![](img/dmidecode_original.png)]]
+
+---
+
+### Exercise 2 - solve
+
+Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`
+
+--
+.center[.image-45[![](img/dmidecode_changed.png)]]
+
+---
 
 .center[##Q&A]
