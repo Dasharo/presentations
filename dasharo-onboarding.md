@@ -287,6 +287,8 @@ Checkout the platform:
 
 ---
 
+### Connecting and basic operations - cont.
+
 Now if you run `./osfv_cli.py snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
 
 You can get list of possible operations by running
@@ -312,6 +314,10 @@ Fetch current ROM image:
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 flash read --rom vp2410-read.rom
 ```
+
+---
+
+### Connecting and basic operations - cont.
 
 Writing new ROM image:
 
@@ -351,9 +357,7 @@ Tips:
 ### Excercise 1 - solve
 
 Modify file `coreboot/configs/config.protectli_vp2410`, line `CONFIG_TIANOCORE_BOOT_MENU_KEY`
-class: center, middle, outro
 
---
 .center[.image-45[![](img/boot_key_modified.png)]]
 
 ---
@@ -362,7 +366,6 @@ class: center, middle, outro
 
 Change bios information - "Vendor", it can be checked using `dmidecode`:
 
---
 .center[.image-45[![](img/dmidecode_original.png)]]
 
 ---
@@ -371,9 +374,9 @@ Change bios information - "Vendor", it can be checked using `dmidecode`:
 
 Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`
 
---
 .center[.image-45[![](img/dmidecode_changed.png)]]
 
 ---
 
+class: center, middle, outro
 .center[##Q&A]
