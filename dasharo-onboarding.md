@@ -227,22 +227,30 @@ const char *smbios_system_sku(void);
 
 ## Setup
 Clone [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
+
 ```
 git clone https://github.com/Dasharo/osfv-scripts.git
 ```
+
 Checkout to branch **osfv-cli**:
 ```
 git checkout osfv-cli
 ```
+
 Move to the directory with **osfv_cli** script:
+
 ```
 cd snipeit
 ```
+
 Install required python packages:
+
 ```
 pip install -r requirements.txt
 ```
+
 Test if script works (you should get the list of possible subcommands):
+
 ```
 ./osfv_cli.py snipeit -h
 ```
@@ -251,11 +259,15 @@ Test if script works (you should get the list of possible subcommands):
 
 ### Connecting and basic operations
 First of all make sure that the platform is available for checking out:
+
 ```
 snipeit list_unused | grep VP2410 -A 8
 ```
+
 If platform is available you should get this entry in output:
+
 ```
+
 Asset Tag: Protectli VP2410_1, Asset ID: 317, Name: , Serial:
 Lab location:
 RTE IP: 192.168.10.233
@@ -266,7 +278,9 @@ Sonoff IP:
 PiKVM IP:
 PiKVM HW Base:
 ```
+
 Checkout the platform:
+
 ```
 ./osfv_cli.py snipeit check_out --rte_ip 192.168.10.233
 ```
@@ -276,19 +290,25 @@ Checkout the platform:
 Now if you run `./osfv_cli.py snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
 
 You can get list of possible operations by running
+
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 -h
 ```
+
 For example you can check the state of the GPIO pin 0:
+
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
 ```
 
 Fetch current ROM image:
+
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 flash read --rom vp2410-read.rom
 ```
+
 Writing new ROM image:
+
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 flash write --rom ~/coreboot/protectli_vault_glk_v1.0.15.rom
 ```
@@ -307,6 +327,7 @@ This can be done as shown in [building manual](https://docs.dasharo.com/variants
 Tips:
 - In protectli blobs repository make sure you are on the branch with the same name as in coreboot repository
 - Instead of creating symbolic link you can simply copy Geminilake (inside root coreboot directory):
+
     ```
     cp -r 3rdparty/blobs/mainboard/protectli/vault_glk/GeminilakeFspBinPkg 3rdparty/fsp/GeminilakeFspBinPkg
     ```
@@ -318,9 +339,6 @@ Tips:
 1. Change boot menu key
     - Find in configuration "TianoCore boot menu key"
     - help will show possible options
-
-
-
 
 ---
 class: center, middle, outro
