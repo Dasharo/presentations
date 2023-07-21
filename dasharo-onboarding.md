@@ -303,7 +303,7 @@ For example you can check the state of the GPIO pin 0:
 ./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
 ```
 
-Acces the platform by serial interface:
+Access the platform by serial interface:
 
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 serial
@@ -349,14 +349,14 @@ Tips:
 ### Exercises
 
 1. Change boot menu key
-    - Find how to change boot menu key
+    - Find how to change boot menu key, find `CONFIG_TIANOCORE_BOOT_MENU_KEY`
     - You can use values between `0x0001` (UP) and `0x0017` (ESC)
 
 ---
 
 ### Excercise 1 - solve
 
-Modify file `coreboot/configs/config.protectli_vp2410`, line `CONFIG_TIANOCORE_BOOT_MENU_KEY`
+Modify file `coreboot/configs/config.protectli_vp2410`
 
 .center[.image-45[![](img/boot_key_modified.png)]]
 
