@@ -6,6 +6,14 @@ class: center, middle, intro
 
 .center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
+---
+
+# Contents
+
+These tasks can be done on two different platforms:
+Novacustom Laptop or Remote Testing Environment with Protectli VP2410
+
+Next section is dedicated to Novacustom laptop
 
 ---
 # Prerequisities
@@ -209,41 +217,57 @@ const char *smbios_system_sku(void);
 ---
 # Remote Protectli VP2410 platform
 
-## Prerequisities:
+---
+# Prerequisities:
 - python
 - telnet
 - ready to use SnipeIT account ([instructions](https://gitlab.com/3mdeb/rte/docs/-/blob/master/docs/snipeIT_theory_of_operation.md))
 
-## Setup
+---
 
+## Setup
 Clone [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
+
 ```
 git clone https://github.com/Dasharo/osfv-scripts.git
 ```
+
 Checkout to branch **osfv-cli**:
 ```
 git checkout osfv-cli
 ```
+
 Move to the directory with **osfv_cli** script:
+
 ```
 cd snipeit
 ```
+
 Install required python packages:
+
 ```
 pip install -r requirements.txt
 ```
+
 Test if script works (you should get the list of possible subcommands):
+
 ```
 ./osfv_cli.py snipeit -h
 ```
 
-## Connecting
+---
+
+### Connecting and basic operations
 First of all make sure that the platform is available for checking out:
+
 ```
 snipeit list_unused | grep VP2410 -A 8
 ```
+
 If platform is available you should get this entry in output:
+
 ```
+
 Asset Tag: Protectli VP2410_1, Asset ID: 317, Name: , Serial:
 Lab location:
 RTE IP: 192.168.10.233
@@ -254,26 +278,105 @@ Sonoff IP:
 PiKVM IP:
 PiKVM HW Base:
 ```
+
 Checkout the platform:
+
 ```
 ./osfv_cli.py snipeit check_out --rte_ip 192.168.10.233
 ```
+
+---
+
+### Connecting and basic operations - cont.
+
 Now if you run `./osfv_cli.py snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
 
 You can get list of possible operations by running
+
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 -h
 ```
+
 For example you can check the state of the GPIO pin 0:
+
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
 ```
 
-## Exercises
+Access the platform by serial interface:
 
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 serial
+```
 
+Fetch current ROM image:
+
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 flash read --rom vp2410-read.rom
+```
 
 ---
-class: center, middle, outro
 
+### Connecting and basic operations - cont.
+
+Writing new ROM image:
+
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 flash write --rom ~/coreboot/protectli_vault_glk_v1.0.15.rom
+```
+
+Switching power on relay:
+```
+./osfv_cli.py rte --rte_ip 192.168.10.233 rel tgl
+```
+
+---
+
+# Building firmware
+
+This can be done as shown in [building manual](https://docs.dasharo.com/variants/protectli_vp2410/building-manual/).
+
+Tips:
+- In protectli blobs repository make sure you are on the branch with the same name as in coreboot repository
+- Instead of creating symbolic link you can simply copy Geminilake (inside root coreboot directory):
+
+    ```
+    cp -r 3rdparty/blobs/mainboard/protectli/vault_glk/GeminilakeFspBinPkg 3rdparty/fsp/GeminilakeFspBinPkg
+    ```
+
+---
+
+### Exercises
+
+1. Change boot menu key
+    - Find how to change boot menu key, find `CONFIG_TIANOCORE_BOOT_MENU_KEY`
+    - You can use values between `0x0001` (UP) and `0x0017` (ESC)
+
+---
+
+### Excercise 1 - solve
+
+Modify file `coreboot/configs/config.protectli_vp2410`
+
+.center[.image-45[![](img/boot_key_modified.png)]]
+
+---
+
+### Exercise 2
+
+Change bios information - "Vendor", it can be checked using `dmidecode`:
+
+.center[.image-45[![](img/dmidecode_original.png)]]
+
+---
+
+### Exercise 2 - solve
+
+Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`
+
+.center[.image-45[![](img/dmidecode_changed.png)]]
+
+---
+
+class: center, middle, outro
 .center[##Q&A]
