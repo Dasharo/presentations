@@ -168,7 +168,7 @@ Section `Payload->TianoCore boot menu key` and
 Comment
 
 ---
-# Exercise 1-solve
+# Exercise 1-solution
 
 .center[.image-65[![](img/Boot_Setup_key_modified.jpg)]]
 
@@ -180,7 +180,7 @@ Comment
 * Solve results in next slide
 
 ---
-# Exercise 2-solve
+# Exercise 2-solution
 * Find string in `.config` file: `CONFIG_EDK2_IPXE_OPTION_NAME`
 * Change value (here: change to `iPXE Network Boot-moj tekst`)
 .center[.image-45[![](img/Boot_option-custom.jpg)]]
@@ -198,7 +198,7 @@ Comment
 ]
 
 ---
-# Exercise 3-solve
+# Exercise 3-solution
 
 * Source:
 
@@ -345,8 +345,7 @@ Tips:
     ```
 
 ---
-
-### Exercises
+## Exercises
 
 1. Change boot menu key
     - Find how to change boot menu key, find `CONFIG_TIANOCORE_BOOT_MENU_KEY`
@@ -354,7 +353,7 @@ Tips:
 
 ---
 
-### Excercise 1 - solve
+### Excercise 1 - solution
 
 Modify file `coreboot/configs/config.protectli_vp2410`
 
@@ -370,7 +369,7 @@ Change bios information - "Vendor", it can be checked using `dmidecode`:
 
 ---
 
-### Exercise 2 - solve
+### Exercise 2 - solution
 
 Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`
 
@@ -378,14 +377,9 @@ Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, varia
 
 ---
 
-class: center, middle, outro
-.center[##Q&A]
-
----
 # Remote Protectli VP4630 platform
 
----
-# Prerequisities:
+### Prerequisities:
 - python
 - telnet
 - ready to use SnipeIT account ([instructions](https://gitlab.com/3mdeb/rte/docs/-/blob/master/docs/snipeIT_theory_of_operation.md))
@@ -488,7 +482,7 @@ Toggle power on relay:
 
 [//]: # (IMHO it makes no sense to instruct the reader on writing a new ROM image here, before we actually compile it. )
 
-# Building firmware
+## Building firmware
 
 This can be done as shown in this [building manual](https://docs.dasharo.com/variants/protectli_vp46xx/building-manual/).
 
@@ -496,7 +490,7 @@ This can be done as shown in this [building manual](https://docs.dasharo.com/var
 
 ---
 
-# Flashing the firmware ROM onto the VP4630
+## Flashing the firmware ROM onto the VP4630
 
 To do so, we will use the exact same commands as for the VP2410, substituting our device's RTE IP address. First, I recommend you read the currently flashed .rom from the platform as a backup file. Please go back to the `osfv_cli` branch in your `osfv-scripts/snipeit` directory and fetch the current ROM image:
 
@@ -509,3 +503,43 @@ Now, we can attempt to flash our own firmware onto the device, same as for the V
 ```
 ./osfv_cli.py rte --rte_ip 192.168.10.244 flash write --rom ~/coreboot/protectli_vault_cml_v1.0.19_vp4630_vp4650.rom
 ```
+---
+
+### Exercise 1
+
+1. Change the boot menu key
+    - Try to figure out how to change the boot menu key, similarly as for the VP2410. **HINT**: find `CONFIG_EDK2_BOOT_MENU_KEY` - _slightly different than the TianoCore option for VP2410!_
+    - You can use values between `0x0001` (UP) and `0x0017` (ESC)
+
+---
+
+### Excercise 1 - solution
+
+Similarly to the VP2410 solution, we need to modify our coresponding coreboot config file. For our device, it's called `coreboot/configs/config.protectli_cml_vp4630_vp4650`.
+
+I'll modify it so that the boot menu key is Esc:
+
+![](img/vp4630_boot_key_config.png)
+
+...and it works!
+
+![](img/vp4630_boot_key_changed.png)
+
+---
+
+### Exercise 2
+
+Change the BIOS information - "Vendor", it can be checked using `dmidecode`:
+
+![](img/dmidecode_original.png)
+
+---
+
+### Exercise 2 - solution
+
+Same as for the VP2410, edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`:
+
+![](img/dmidecode_changed.png)
+
+
+---
