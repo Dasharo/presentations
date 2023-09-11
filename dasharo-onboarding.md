@@ -529,9 +529,7 @@ I'll modify it so that the boot menu key is Esc:
 
 ### Exercise 2
 
-Change the BIOS information - "Vendor", it can be checked using `dmidecode`:
-
-![](img/dmidecode_original.png)
+Change the BIOS information - "Vendor", it can be checked using `dmidecode`.
 
 ---
 
@@ -539,7 +537,12 @@ Change the BIOS information - "Vendor", it can be checked using `dmidecode`:
 
 Same as for the VP2410, edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`:
 
-![](img/dmidecode_changed.png)
+![](img/vp4630_bios_vendor_config.png)
+
+...and it works!:
+
+![](img/vp4630_bios_vendor_changed.png)
+
 
 
 ---
