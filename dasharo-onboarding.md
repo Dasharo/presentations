@@ -168,7 +168,7 @@ Section `Payload->TianoCore boot menu key` and
 Comment
 
 ---
-# Exercise 1-solve
+# Exercise 1-solution
 
 .center[.image-65[![](img/Boot_Setup_key_modified.jpg)]]
 
@@ -180,7 +180,7 @@ Comment
 * Solve results in next slide
 
 ---
-# Exercise 2-solve
+# Exercise 2-solution
 * Find string in `.config` file: `CONFIG_EDK2_IPXE_OPTION_NAME`
 * Change value (here: change to `iPXE Network Boot-moj tekst`)
 .center[.image-45[![](img/Boot_option-custom.jpg)]]
@@ -198,7 +198,7 @@ Comment
 ]
 
 ---
-# Exercise 3-solve
+# Exercise 3-solution
 
 * Source:
 
@@ -261,7 +261,7 @@ Test if script works (you should get the list of possible subcommands):
 First of all make sure that the platform is available for checking out:
 
 ```
-snipeit list_unused | grep VP2410 -A 8
+./osfv_cli.py snipeit list_unused | grep VP2410 -A 8
 ```
 
 If platform is available you should get this entry in output:
@@ -345,8 +345,7 @@ Tips:
     ```
 
 ---
-
-### Exercises
+## Exercises
 
 1. Change boot menu key
     - Find how to change boot menu key, find `CONFIG_TIANOCORE_BOOT_MENU_KEY`
@@ -354,7 +353,7 @@ Tips:
 
 ---
 
-### Excercise 1 - solve
+### Excercise 1 - solution
 
 Modify file `coreboot/configs/config.protectli_vp2410`
 
@@ -370,7 +369,7 @@ Change bios information - "Vendor", it can be checked using `dmidecode`:
 
 ---
 
-### Exercise 2 - solve
+### Exercise 2 - solution
 
 Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`
 
@@ -378,5 +377,201 @@ Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, varia
 
 ---
 
-class: center, middle, outro
-.center[##Q&A]
+# Remote Protectli VP4630 platform
+
+## Prerequisities
+
+* python
+* telnet
+* ready to use SnipeIT account ([instructions](https://gitlab.com/3mdeb/rte/docs/-/blob/master/docs/snipeIT_theory_of_operation.md))
+
+---
+The following steps will be nearly identical to the VP2410 process described
+above. The key difference will be substituting the asset ID and RTE IP in
+snipeit to those corresponding to our device. Also, we will use the
+ [`protectli_root/build_coreboot`](https://github.com/protectli-root/build_coreboot)
+  github repository branch dedicated to our device -
+  namely `protectli_vp4630_v1.0.17`.
+
+---
+
+## Setup
+
+Identically as demonstrated for VP2410 above, clone
+ [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
+
+```bash
+git clone https://github.com/Dasharo/osfv-scripts.git
+```
+
+Checkout to branch **osfv-cli**:
+
+```bash
+git checkout osfv-cli
+```
+
+Move to the directory with **osfv_cli** script:
+
+```bash
+cd snipeit
+```
+
+Install required python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Test if script works (you should get the list of possible subcommands):
+
+```bash
+./osfv_cli.py snipeit -h
+```
+
+---
+
+### Connecting and basic operations
+
+First, let's try to find our desired platform on the unused device list. Same
+process as for VP2410, we'll just substitute our model name and receive a
+different RTE IP and Asset ID.
+
+```bash
+./osfv_cli.py snipeit list_unused | grep VP4630 -A 8
+```
+
+If you see the following result, it means the platform is free and available
+for use. Make note of the RTE IP address, we will need it to work with our
+device.
+
+```bash
+
+Asset Tag: Protectli VP4630, Asset ID: 291, Name: , Serial:
+Lab location:
+RTE IP: 192.168.10.244
+RTE cpuid:
+RTE Rev: v1.1.0
+RTE MAC address: 02:42:48:d5:bf:fc
+Sonoff IP:
+PiKVM IP:
+PiKVM HW Base:
+
+```
+
+Checkout the platform to mark it as used:
+
+```bash
+./osfv_cli.py snipeit check_out --rte_ip 192.168.10.244
+```
+
+---
+
+### Connecting and basic operations - continued
+
+Now, if you run `./osfv_cli.py snipeit list_used | grep VP4630 -A 8`
+you should get the same entry of Protectli VP4630 as above. This means we've
+successfully marked our platform as in-use.
+
+We can access the VP4630 via RTE in the exact same manner as the VP2410.
+You can get a list of possible operations by running:
+
+```bash
+./osfv_cli.py rte --rte_ip 192.168.10.244 -h
+```
+
+For example you can check the state of the GPIO pin 0:
+
+```bash
+./osfv_cli.py rte --rte_ip 192.168.10.244 gpio get 0
+```
+
+Access the platform by serial interface:
+
+```bash
+./osfv_cli.py rte --rte_ip 192.168.10.244 serial
+```
+
+Toggle power on relay:
+
+```bash
+./osfv_cli.py rte --rte_ip 192.168.10.233 rel tgl
+```
+
+---
+
+## Building firmware
+
+This can be done as shown in this
+[building manual](https://docs.dasharo.com/variants/protectli_vp46xx/building-manual/).
+
+**NOTE:** When instructed to obtain the proprietary Intel blobs, please use
+[our repository](https://github.com/Dasharo/protectli-blobs).
+
+---
+
+## Flashing the firmware ROM onto the VP4630
+
+To do so, we will use the exact same commands as for the VP2410, substituting
+our device's RTE IP address. First, I recommend you read the currently flashed
+.rom from the platform as a backup file. Please go back to the `osfv_cli`
+branch in your `osfv-scripts/snipeit` directory and fetch the current ROM image:
+
+```bash
+./osfv_cli.py rte --rte_ip 192.168.10.244 flash read --rom vp4630-read.rom
+```
+
+Now, we can attempt to flash our own firmware onto the device, same as for the
+VP2410. Adjust the path to your newly built ROM if necessary. This command
+should be accurate, provided you followed the building manual above:
+
+```bash
+
+./osfv_cli.py rte --rte_ip 192.168.10.244 flash write --rom ~/coreboot/protectli_vault_cml_v1.0.19_vp4630_vp4650.rom
+```
+
+---
+
+### Exercise 1
+
+1. Change the boot menu key
+    - Try to figure out how to change the boot menu key, similarly as for the VP2410.
+    **HINT**: find `CONFIG_EDK2_BOOT_MENU_KEY` - _slightly different than the
+    TianoCore option for VP2410!_
+    - You can use values between `0x0001` (UP) and `0x0017` (ESC)
+
+---
+
+### Excercise 1 - solution
+
+Similarly to the VP2410 solution, we need to modify our coresponding coreboot
+config file. For our device, it's called
+`coreboot/configs/config.protectli_cml_vp4630_vp4650`.
+
+I'll modify it so that the boot menu key is Esc:
+
+![](img/vp4630_boot_key_config.png)
+
+...and it works!
+
+![](img/vp4630_boot_key_changed.png)
+
+---
+
+### Exercise 2
+
+Change the BIOS information - "Vendor", it can be checked using `dmidecode`.
+
+---
+
+### Exercise 2 - solution
+
+Same as for the VP2410, edit file `coreboot/src/arch/x86/smbios.c`, function
+`smbios_write_type0`, variable `t->vendor`:
+
+![](img/vp4630_bios_vendor_config.png)
+
+...and it works!:
+
+![](img/vp4630_bios_vendor_changed.png)
+
+---
