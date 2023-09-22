@@ -4,13 +4,13 @@ class: center, middle, intro
 
 ## Greetings
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
 # Why we are here?
 
-.center.image-85[![](img/dug_1_vpub_6.png)]
+.center.image-85[![](/img/dug_1_vpub_6.png)]
 
 ???
 
@@ -42,7 +42,7 @@ class: center, middle, intro
 
 # Today
 
-.center.image-80[![](img/dasharo_vision_before.png)]
+.center.image-80[![](/img/dasharo_vision_before.png)]
 
 ???
 
@@ -81,13 +81,13 @@ class: center, middle, intro
 
 # Vision of tomorrow
 
-.center.image-99[![](img/dasharo_vision_after.png)]
+.center.image-99[![](/img/dasharo_vision_after.png)]
 
 ---
 
 # Community Hearbeat &#x1F493;
 
-.image-100[![](img/community_heartbeat_dug_1.png)]
+.image-100[![](/img/community_heartbeat_dug_1.png)]
 
 ???
 

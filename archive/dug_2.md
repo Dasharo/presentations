@@ -4,13 +4,13 @@ class: center, middle, intro
 
 ## Greetings
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark"-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
 # Why we are here?
 
-.center.image-85[![](img/dug_2_vpub_7.png)]
+.center.image-85[![](/img/dug_2_vpub_7.png)]
 
 ???
 
@@ -38,7 +38,7 @@ class: center, middle, intro
 
 # Community Hearbeat &#x1F493;
 
-.image-100[![](img/community_heartbeat_dug_2.png)]
+.image-100[![](/img/community_heartbeat_dug_2.png)]
 
 ???
 
