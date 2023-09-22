@@ -2,13 +2,13 @@ class: center, middle, intro
 
 # &#x1F44B; DUG#1 Closing Remarks #1 &#x1F44B;
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark"-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
 # Qubes OS Certified Hardware! &#x1F389;
 
-.center.image-50[![](img/dasharo_fg_z690_certified.png)]
+.center.image-50[![](/img/dasharo_fg_z690_certified.png)]
 
 ---
 

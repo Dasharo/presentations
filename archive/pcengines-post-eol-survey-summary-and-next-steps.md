@@ -4,13 +4,13 @@ class: center, middle, intro
 
 ## Survey summary and next steps
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark"-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
 # What is it about?
 
-.center.image-30[![](img/coreboot.png) ![](img/pcengines.png)]
+.center.image-30[![](/img/coreboot.png) ![](/img/pcengines.png)]
 
 * In September 2022 PC Engines decided to discontinue sponsorship for
   open-source firmware on their devices.
@@ -50,7 +50,7 @@ class: center, middle, intro
 
 # Summary
 
-.center.image-100[![](img/pce_num_of_updates.svg)]
+.center.image-100[![](/img/pce_num_of_updates.svg)]
 
 ???
 
@@ -64,13 +64,13 @@ class: center, middle, intro
 
 # Summary
 
-.center.image-100[![](img/pce_hw_usage.svg)]
+.center.image-100[![](/img/pce_hw_usage.svg)]
 
 ---
 
 # Summary
 
-.center.image-65[![](img/pce_sub.svg)]
+.center.image-65[![](/img/pce_sub.svg)]
 
 * Over 50% of respondents are interested in paid model.
   - Many respondents requested yearly subscription instead of monthly.
@@ -125,13 +125,13 @@ as with donation or subscription yearly payment.
 
 # Feature requests
 
-.center.image-99[![](img/pce_features.svg)]
+.center.image-99[![](/img/pce_features.svg)]
 
 ---
 
 # Roadmap
 
-.center.image-99[![](img/dcs_pce_roadmap_v0.1.png)]
+.center.image-99[![](/img/dcs_pce_roadmap_v0.1.png)]
 
 ---
 

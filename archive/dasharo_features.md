@@ -60,7 +60,7 @@ Features ideas for next release:
 * OpenBMC port? There are [Supermicro open-source packages](https://www.supermicro.com/wdl/GPL/SMT/)
   which resemble a BMC project (to be analyzed)
 
-.center.image-50[![](img/x11ssh-tf.png)]
+.center.image-50[![](/img/x11ssh-tf.png)]
 
 ---
 
@@ -87,7 +87,7 @@ Current status: **Validation**
 * [GitHub Project](https://github.com/Dasharo/dasharo-issues/projects/7)
 ]
 .left-column30[
-.center.image-100[![](img/optiplex.png)]
+.center.image-100[![](/img/optiplex.png)]
 ]
 
 ---
@@ -103,7 +103,7 @@ Feature ideas for next release:
 * Most likely inclusion of features developed for other platforms
 ]
 .left-column30[
-.center.image-100[![](img/optiplex.png)]
+.center.image-100[![](/img/optiplex.png)]
 ]
 
 ---
@@ -124,7 +124,7 @@ Current status: **Porting**
 * [GitHub Project](https://github.com/Dasharo/dasharo-issues/projects/8)
 ]
 .left-column30[
-.center.image-100[![](img/Dell-Precision-T1650.png)]
+.center.image-100[![](/img/Dell-Precision-T1650.png)]
 ]
 
 ---
@@ -141,7 +141,7 @@ Feature ideas for next release:
 * Most likely inclusion of features developed for other platforms
 ]
 .left-column30[
-.center.image-100[![](img/Dell-Precision-T1650.png)]
+.center.image-100[![](/img/Dell-Precision-T1650.png)]
 ]
 
 ???
@@ -199,7 +199,7 @@ Windows, but worked in Linux...
 * All features from v1.1.2 for everyone
 * What else? We will see &#128512;
 
-.center[.image-60[![](img/msi_z690_a.png)]]
+.center[.image-60[![](/img/msi_z690_a.png)]]
 
 ???
 
@@ -214,7 +214,7 @@ What else? It depends on community bug reports etc.
   frequent hacker`: Trammel Hudson
 * https://trmm.net/Spispy/
 
-.center[.image-70[![](img/spispy.png)]]
+.center[.image-70[![](/img/spispy.png)]]
 
 ---
 
@@ -245,7 +245,7 @@ Current status: **Discovery (Waiting for funds to start Evaluation)**
 * Around 23'Q4 or 24'Q1!? I know.. I know... So frickin' late... &#128546;
 * The more supporters we have the quicker we may satisfy the community needs!
 
-.center[.image-50[![](img/msi_z790_p.png)]]
+.center[.image-50[![](/img/msi_z790_p.png)]]
 
 ---
 

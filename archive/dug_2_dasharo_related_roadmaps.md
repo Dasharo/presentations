@@ -2,7 +2,7 @@ class: center, middle, intro
 
 # &#x1F386; Other Dasharo-related Projects Roadmaps &#x1F386;
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ???
 
@@ -24,7 +24,7 @@ class: center, middle, intro
 
 # Dasharo Tools Suite a.k.a. DTS
 
-.center.image-99[![](img/dts-logo.jpg)]
+.center.image-99[![](/img/dts-logo.jpg)]
 
 * Set of tools and scripts running in minimal Linux environment
   - https://docs.dasharo.com/dasharo-tools-suite/overview
@@ -197,7 +197,7 @@ like cbfstool or UEFIExtract to decompose and parse firmware images.
 
 # Dasharo Openess Score v0.1
 
-.center.image-45[![](img/msi_ms7d25_v1.1.1_ddr4.rom_openness_chart.png) ![](img/E7D25IMS.120_openness_chart.png)]
+.center.image-45[![](/img/msi_ms7d25_v1.1.1_ddr4.rom_openness_chart.png) ![](/img/E7D25IMS.120_openness_chart.png)]
 
 * Dasharo compatible with MSI PRO Z690-A vs vendor firmware.
 
@@ -205,7 +205,7 @@ like cbfstool or UEFIExtract to decompose and parse firmware images.
 
 # Dasharo Openess Score v0.1
 
-.center.image-45[![](img/heads-x230-maximized-v0.2.0-1554-g21b87ff.rom_openness_chart.png) ![](img/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_openness_chart.png)]
+.center.image-45[![](/img/heads-x230-maximized-v0.2.0-1554-g21b87ff.rom_openness_chart.png) ![](/img/asus_kgpe-d16_v0.4.0_16M_vboot_notpm.rom_openness_chart.png)]
 
 * Heads compatible with x230 maximized vs Dasharo compatilbe with ASUS KGPE-D16 16M vboot no-TPM
 

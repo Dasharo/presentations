@@ -2,7 +2,7 @@ class: center, middle, intro
 
 # &#x1F389; Dasharo Announcements &#x1F389;
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
@@ -20,7 +20,7 @@ class: center, middle, intro
 
 # Dasharo Entry Subscription
 
-.center.image-99[![](img/des_value_prop.png)]
+.center.image-99[![](/img/des_value_prop.png)]
 
 ???
 
@@ -45,21 +45,21 @@ class: center, middle, intro
 
 # DES case study
 
-.center[.image-100[![](img/dasharo-msi-z690a-press-releases.png)]]
+.center[.image-100[![](/img/dasharo-msi-z690a-press-releases.png)]]
 
 ---
 
 # DES case study
 
-.center.image-50[ ![](img/shop_des_msi.png)]
+.center.image-50[ ![](/img/shop_des_msi.png)]
 
-.center.image-40[![](img/shop_des_1y.png) ![](img/shop_des_msi2.png)]
+.center.image-40[![](/img/shop_des_1y.png) ![](/img/shop_des_msi2.png)]
 
 ---
 
 # Dasharo Revenue Sharing
 
-.center.image-99[![](img/drs_buy_renew.svg)]
+.center.image-99[![](/img/drs_buy_renew.svg)]
 
 ???
 
@@ -83,7 +83,7 @@ class: center, middle, intro
 
 # Dasharo Supporting Partner
 
-.center.image-99[![](img/dsp_issue_flow.svg)]
+.center.image-99[![](/img/dsp_issue_flow.svg)]
 
 ---
 
@@ -101,13 +101,13 @@ class: center, middle, intro
 
 # 3mdeb benefits
 
-.center.image-99[![](img/dsr_value_prop.png)]
+.center.image-99[![](/img/dsr_value_prop.png)]
 
 ---
 
 # 3mdeb benefits
 
-.center.image-99[![](img/dsp_value_prop.png)]
+.center.image-99[![](/img/dsp_value_prop.png)]
 
 ---
 

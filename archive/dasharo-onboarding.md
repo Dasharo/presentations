@@ -4,7 +4,7 @@ class: center, middle, intro
 
 ### v0.1.0
 
-.center[<img src="remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+.center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
@@ -170,7 +170,7 @@ Comment
 ---
 # Exercise 1-solution
 
-.center[.image-65[![](img/Boot_Setup_key_modified.jpg)]]
+.center[.image-65[![](/img/Boot_Setup_key_modified.jpg)]]
 
 ---
 # Exercise 2
@@ -183,7 +183,7 @@ Comment
 # Exercise 2-solution
 * Find string in `.config` file: `CONFIG_EDK2_IPXE_OPTION_NAME`
 * Change value (here: change to `iPXE Network Boot-moj tekst`)
-.center[.image-45[![](img/Boot_option-custom.jpg)]]
+.center[.image-45[![](/img/Boot_option-custom.jpg)]]
 
 ---
 # Excercise 3
@@ -212,7 +212,7 @@ const char *smbios_system_sku(void);
 ```
 
 --
-.center[.image-45[![](img/SKU_String_modified.jpg)]]
+.center[.image-45[![](/img/SKU_String_modified.jpg)]]
 
 ---
 # Remote Protectli VP2410 platform
@@ -357,7 +357,7 @@ Tips:
 
 Modify file `coreboot/configs/config.protectli_vp2410`
 
-.center[.image-45[![](img/boot_key_modified.png)]]
+.center[.image-45[![](/img/boot_key_modified.png)]]
 
 ---
 
@@ -365,7 +365,7 @@ Modify file `coreboot/configs/config.protectli_vp2410`
 
 Change bios information - "Vendor", it can be checked using `dmidecode`:
 
-.center[.image-45[![](img/dmidecode_original.png)]]
+.center[.image-45[![](/img/dmidecode_original.png)]]
 
 ---
 
@@ -373,7 +373,7 @@ Change bios information - "Vendor", it can be checked using `dmidecode`:
 
 Edit file `coreboot/src/arch/x86/smbios.c`, function `smbios_write_type0`, variable `t->vendor`
 
-.center[.image-45[![](img/dmidecode_changed.png)]]
+.center[.image-45[![](/img/dmidecode_changed.png)]]
 
 ---
 
@@ -549,11 +549,11 @@ config file. For our device, it's called
 
 I'll modify it so that the boot menu key is Esc:
 
-![](img/vp4630_boot_key_config.png)
+![](/img/vp4630_boot_key_config.png)
 
 ...and it works!
 
-![](img/vp4630_boot_key_changed.png)
+![](/img/vp4630_boot_key_changed.png)
 
 ---
 
@@ -568,10 +568,10 @@ Change the BIOS information - "Vendor", it can be checked using `dmidecode`.
 Same as for the VP2410, edit file `coreboot/src/arch/x86/smbios.c`, function
 `smbios_write_type0`, variable `t->vendor`:
 
-![](img/vp4630_bios_vendor_config.png)
+![](/img/vp4630_bios_vendor_config.png)
 
 ...and it works!:
 
-![](img/vp4630_bios_vendor_changed.png)
+![](/img/vp4630_bios_vendor_changed.png)
 
 ---
