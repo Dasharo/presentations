@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dasharo Issues Resolution Progress",
+  "data": {
+    "values": [
+      {"meeting": "16 Mar to 6 Jul 2023 (DUG#1 - DUG#2)", "metric": "Reported", "value": 95},
+      {"meeting": "16 Mar to 6 Jul 2023 (DUG#1 - DUG#2)", "metric": "Closed", "value": 41},
+      {"meeting": "6 Jul to 28 Sep 2023 (DUG#2 - DUG#3)", "metric": "Reported", "value": 29},
+      {"meeting": "6 Jul to 28 Sep 2023 (DUG#2 - DUG#3)", "metric": "Closed", "value": 28}
+    ]
+  },
+  "facet": {
+    "field": "meeting",
+    "type": "ordinal",
+    "columns": 1,
+    "header": {
+      "labelFontSize": 16,
+      "title": "Dasharo Issues Resolution Progress",
+      "titleFontSize": 18,
+      "labelOrient": "top"
+    }
+  },
+  "spec": {
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "size": 50
+        },
+        "encoding": {
+          "x": {
+            "field": "metric",
+            "type": "nominal",
+            "axis": {
+              "title": "Issues",
+              "labelFontSize": 14,
+              "titleFontSize": 16
+            },
+            "scale": {"padding": 3.5}
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative",
+            "axis": {"title": "Number of Issues", "titleFontSize": 16},
+            "scale": {"domain": [0, 101]}
+          },
+          "color": {
+            "field": "metric",
+            "type": "nominal",
+            "legend": {
+              "title": "Label",
+              "titleFontSize": 16,
+              "labelFontSize": 16
+            },
+            "scale": {"range": ["#38d430", "#272727"]}
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "bottom",
+          "dy": -10,
+          "color": "black",
+          "fontSize": 14
+        },
+        "encoding": {
+          "x": {
+            "field": "metric",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "value",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
+
