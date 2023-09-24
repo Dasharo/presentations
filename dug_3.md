@@ -25,8 +25,8 @@ class: center, middle, intro
 
 * #### &#x1F44B; 16:00 UTC Greetings, Agenda and Dasharo Community Status
 * #### &#x1F9ED; 16:10 UTC NovaCustom Roadmap
-* #### &#x1F9F0; 16:20 UTC Dasharo Openess Score Status
-* #### &#x1F9F0; 16:35 UTC Dasharo Tools Suite Status
+* #### &#x1F9F0; 16:25 UTC Dasharo Tools Suite Status
+* #### &#x1F9F0; 16:35 UTC Dasharo Openess Score Status
 * #### &#x1F9F0; 16:50 UTC Nitrokey new products overview
 * #### &#x1F4BB; 17:00 UTC Dasharo Community Release Roadmap
 * #### &#x1F9F0; 17:40 UTC Dasharo Open Source Firmware Validation Announcement
@@ -40,29 +40,35 @@ TODO: try to say what specific will be presented as part of every presentation.
 
 # Community Hearbeat &#x1F493;
 
-.image-100[![](/img/community_heartbeat_dug_2.png)]
+.image-100[![](/img/community_heartbeat_dug_3.png)]
 
 ???
 
-* TBD: look at community status of other projects, news?
-- consider news presentation with Dasharo status about the OpenSIL
+Date of data snapshot: 24/09/2023
 
-* 455 issues reported, 166 closed
-  - gh issue list -s all -L 5000
-  - gh issue list -s closed -L 5000
-* PRs: Dasharo/coreboot 318 PRs merged, Dasharo/edk2 46
-  - gh pr list --state all
-* We received over 1600 comments from 51 users (including 3mdeb employees)
-  - PAGER="less -R" gh issue list -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l - users
-  - comments - this doesn't look like relibable method
-    - contrib_list=$(PAGER="less -R" gh issue list -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|xargs)
-    - ./community-analysis.sh "$contrib_list" > issues_contrib.csv
-* 22k+ messages so far (~52msg/day)
-  - 104 users in Dasharo Matrix Space (108 in Dasharo General)
-  - Most active channels: General,
-	- grep -E '^[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}, [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2} [AP]M - .*:' log.txt|wc
-* matrix comments per user:
+* Commands cheat sheet
+  - issues
+    - gh issue list -s all -L 1000
+    - gh issue list -s closed -L 1000
+  - prs
+    - gh pr list --state all
+    - gh pr list --state merged
+  - number of unique users active in Dasharo community
+    - PAGER="less -R" gh issue list -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l
+  - count all comments
+    - PAGER="less -R" gh issue list -s all -L 5000 --json comments --jq '.[].[].[].createdAt'
+  - count how many comments each user posted
+    - PAGER="less -R" gh issue list -s all -L 5000 --json comments --jq '.[].[].[].author.login'|sort|uniq -c|sort -h
+  - matrix activity
+    - fetching all communication may be not the most effective way to get data,
+      there seem to be need for differential download
+    - number of messages for DUG#3 snapshot: 25561
+    - matrix comments per user:
 	- grep -E "\-.+: " matrix\ -\ Dasharo\ -\ General\ -\ Chat\ Export\ -\ 2023-07-02T22-37-07.435Z.txt |cut -d"-" -f2|cut -d":" -f1|grep -E "^ "|sort|uniq -c|grep -v "banned"|sort -h|grep -v import|grep -v "'"|grep -v "removed"|grep -v coreboot
+
+* TBD: look at community status of other projects, news?
+  - consider news presentation with Dasharo status about the OpenSIL
+* Documentation releases?
 
 ---
 
@@ -70,75 +76,49 @@ TODO: try to say what specific will be presented as part of every presentation.
 
 .center.image-99[![](img/dug3_dasharo_report_issues.svg)]
 
+* Experiments with presenting other data. Feedback welcome.
+* In Q2'23 we definitely had more active testers then Q3'23 so far.
+* Dasharo Team and community focused more on features then bug fixes.
+
+???
+
+- gh issue list -s all -L 1000
+- gh issue list -s closed -L 1000
+
+---
+
+# Dasharo PRs
+
+.center.image-99[![](img/dug3_dasharo_report_prs.svg)]
+
+* In comparison to previous statistics we can see more code related activity
+  (mostly MSI stuff).
+* Marging and development tempo is higher if we consider time frame.
+
+???
+
+* created are obtained by counting all opened PRs minus all opened PRs reported
+  at last DUG
+  - gh pr list --state all
+* merged are counted manually from 
+  - gh pr list --state merged
+
 ---
 
 # Dasharo Space on Matrix
 
-* 20 channels
-* Most acitve:
-  - `Dasharo - General`
-  - `#qubes`
-  - `Dasharo - Support`
-  - `Dashro Developers vPub`
-  - `TrenchBoot`
-* Dedicated channels
-  - `Dasharo - Laptops`
-  - we have bridge to IRC (libera.chat) - `#dasharo`
-  - there are partner and side projects channels like:
-      - `Fiedka the Firmware Editor`,
-      - `TwPM`,
-      - `Fobnail`,
-      - `fwupd for BSD`
-      - `core-ec`
-
-???
-
-TBD: which information are really important?
-
-Go to Dasharo Space and copy&paste content from there:
-
-* Dasharo - Support
-  - 75 members
-  - created: 12/5/2021
-  - activity since last measurement:
-* Dasharo - Random
-  - 68 members
-* Dasharo - General
-  - 162 members
-* Dasharo Developers vPub
-  - 124 members
-* Dasharo - Announcements
-  - 78 members
-* core-ec
-  - 25 members
-* Fiedka the Firmware Editor
-  - 55 members
-* Dasharo - Fobnail
-  - 32 members
-* Dasharo - OSF Bootstrappable Toolchain
-  - 20 members
-* Trenchboot
-  - 45 members
-* fwupd for BSD
-  - 15 members
-* qubes-summit
-  - 42 members
-* Dasharo Tools Suite
-  - 37 members
-* #qubes
-  - 135 members
-* Dasharo Premier Support
-  - 17 members
-* OST2
-  - 18 members
-* TwPM
-  - 18 members
-* #dasharo
-  - 8 members
-* Dasharo - Supermicro X11 LGA1151 Series
-  - 19 members
-* Dasharo - Laptops
-  - 16 members
+* 22 channels (most active: General, Support, Random)
+* 2 new channels
+  - **qubes-summit** - dedicated to Qubes OS Summit coorganized by ITL and 3mdeb
+    (https://qubes.3mdeb.com)
+  - **Dasharo OSFV** - channel dedicated to Open Source Firmware Validation
+    with focus on Dasharo Team maintained Robot Framework infrstructure and
+    Dasharo Certification Lab. More about that in other presentation.
+* Libera bridge is suspended, so we are disconnect from IRC.
+* Dasharo Disord is misconfigured - currently we have no resources to bring
+  that channel back, we can reconsider that if there would be any interest.
+* Dasharo Space on Matrix is official communication channel and since more and
+  more communities migrate to Matrix we will most likely stick with it.
 
 ---
 class: center, middle, intro
