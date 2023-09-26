@@ -1,6 +1,6 @@
 class: center, middle, intro
 
-# &#x1F386; Dasharo Tools Suite Roadmap &#x1F386;
+# &#x1F386; Dasharo Tools Suite Status &#x1F386;
 
 .center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
