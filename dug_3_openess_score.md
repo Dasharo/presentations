@@ -134,9 +134,8 @@ stop
 # Dasharo Openess Score v0.1 integration
 
 * ETA: Q3 2023 (v0.1 integration)
-  * No code changes
-  * ~~**CI/CD Integration**: Including Openness Score script in CI/CD
-    processes.~~
+  * No code changes.
+  * Integration in Dasharo Release infrastructure.
   * ~~**Increased Visibility**: Openness Score updates in newsletters and
     Dasharo User's Guide.~~
   * ~~**Documentation Upgrade**: Improving methodology explanation in
@@ -147,6 +146,8 @@ stop
 # Dasharo Openess Score v0.2
 * ETA: Q4 2023
 * Planned features
+  * **CI/CD Integration**: Including Openness Score script in CI/CD
+    processes.
   * **Improved Visualization**: Enhancing visual representation for
     user-friendliness.
   * **Binary Comparison**: Comparing Dasharo binary with reference binaries.
