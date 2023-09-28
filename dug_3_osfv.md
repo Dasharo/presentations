@@ -62,7 +62,7 @@ class: center, middle, intro
 
 .center.image-90[![](/img/osfv_warn.png)]
 
-* v0.2 was silent release (no announcements)
+* v0.2 was a silent release (no announcements)
 * It started very active migration from our private repositories to the public.
 * Goal is to start adoption among Dasharo and other projects open-source
   firmware developers.
