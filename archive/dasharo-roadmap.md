@@ -40,7 +40,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Community Support Process
 
 .center[
-<img src="img/dcs-process-v0.2.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs-process-v0.2.png" width="900px" style="margin-left:-75px">
 ]
 
 ???
@@ -55,7 +55,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Emulation Roadmap
 
 .center[
-<img src="img/dcs_emu_roadmap_v0.1.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_emu_roadmap_v0.1.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 ---
@@ -63,7 +63,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Desktop Roadmap
 
 .center[
-<img src="img/dcs_desktop_dell_roadmap_v0.1.png" width="680px" style="margin-top:-40px">
+<img src="/img/dcs_desktop_dell_roadmap_v0.1.png" width="680px" style="margin-top:-40px">
 ]
 
 ---
@@ -71,7 +71,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Desktop Roadmap
 
 .center[
-<img src="img/dcs_desktop_msi_roadmap_v0.1.png" width="870px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_roadmap_v0.1.png" width="870px" style="margin-left:-60px">
 ]
 
 ---
@@ -79,7 +79,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Desktop Roadmap
 
 .center[
-<img src="img/dcs_desktop_asus_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_desktop_asus_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
 ]
 
 ---
@@ -87,7 +87,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Workstation Roadmap
 
 .center[
-<img src="img/dcs_workstation_roadmap_v0.1.png" width="840px" style="margin-left:-40px">
+<img src="/img/dcs_workstation_roadmap_v0.1.png" width="840px" style="margin-left:-40px">
 ]
 
 ---
@@ -95,7 +95,7 @@ which we slowly gather in Dasharo Certification Program.
 # Dasharo Server Roadmap
 
 .center[
-<img src="img/dcs_server_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_server_roadmap_v0.1.png" width="900px" style="margin-left:-75px">
 ]
 
 ---
