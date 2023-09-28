@@ -10,7 +10,7 @@ class: center, middle, intro
 
 # Agenda
 
-* Introduction to Dasharo Open Sourve Firmware Validation (OSFV)
+* Introduction to Dasharo Open Source Firmware Validation (OSFV)
 * Exploring OSFV v0.2
 * Upcoming Features: OSFV v0.3 and Beyond
 * Q&A
