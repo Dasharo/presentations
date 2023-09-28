@@ -36,7 +36,7 @@ class: center, middle, intro
 .center[https://github.com/Dasharo/open-source-firmware-validation]
 
 * Dasharo Open Sourve Firmware Validation consist of MIT-licensed scripts
-  written in Robot Frameworks with purpose of validation of open-source
+  written in Robot Frameworks with the purpose of validation of open-source
   firmware (mainly Dasharo).
 * Robot Framework is a generic open source automation framework. It can be used
   for test automation and robotic process automation (RPA).
