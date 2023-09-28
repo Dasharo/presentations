@@ -25,7 +25,7 @@ class: center, middle, intro
 
 * Set of tools and scripts running in minimal Linux environment
   - https://docs.dasharo.com/dasharo-tools-suite/overview
-* DRY: https://www.youtube.com/watch?v=ZyctrnJNTPc&t=5162s
+* DRY: https://bit.ly/dasharo-tools-suite
 * Since last DUG we had quite a lot of silent releases and one public:
   - by silent we mean not announced in Dasharo Universe documentation,
   - v1.2.6 - beta/preview release, not recommended for wider use,
