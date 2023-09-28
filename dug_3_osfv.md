@@ -26,7 +26,7 @@ class: center, middle, intro
 * We use OSFV at least since 2018, when we started validate PC Engines releases
 * Using those scripts we over **50k** tests publicly relasing **150+** binaries
   based on open-source firmware.
-* Initially it was closed source because of assumption that validation provide
+* Initially it was closed source because of assumption that validation provides
   majority of the value in open-source firmware development.
 
 ---
