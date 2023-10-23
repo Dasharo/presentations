@@ -68,6 +68,20 @@ contact the Dasharo Team directly._
     - release date changed to Q4'23 (+1)
 - DUG#3: QEMU Q35 v0.1.0 planned for Q4'23
 
+Notes for expanding this part of the roadmap:
+- new potential vendors/products: Intel Simics, AMD SimNow
+- new potential release types to be supported for QEMU Q35 target
+  - Dasharo (coreboo+UEFI)
+  - Xen target (XCP-ng) although I'm not sure how how much firmware would be
+    different, there is definitely stuff Xen-specific in OvmfPkg
+
+Vision:
+- firmware role in Confidential Computing playes more and more significant role
+- references:
+  - [MSFT talk about CVM](https://youtu.be/2GxaBAS2_no)
+  - MSFT: DCasv5 and ECasv5
+  - Edgeless Systems: https://www.edgeless.systems/blog/how-confidential-computing-and-ai-fit-together/
+
 ---
 
 # (NEW) Dasharo Network Appliance Roadmap
