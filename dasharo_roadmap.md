@@ -8,7 +8,7 @@ class: center, middle, intro
 
 # Dasharo Roadmap Disclaimer
 
-.center.image-35[![](img/dug_3_disclaimer.png)]
+.center.image-35[![](/img/dug_3_disclaimer.png)]
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -23,14 +23,14 @@ contact the Dasharo Team directly._
 
 # From OST2 to Dasharo Support Package
 
-.center.image-85[![](img/ost2_to_dasharo_packages.svg)]
+.center.image-85[![](/img/ost2_to_dasharo_packages.svg)]
 
 ---
 
 # Dasharo Community Support Process
 
 .center[
-<img src="img/dcs-process-v0.3.svg" width="900px" style="margin-left:-75px">
+<img src="/img/dcs-process-v0.3.svg" width="900px" style="margin-left:-75px">
 ]
 
 * We released first Subscribers Releases in Q3'23 and it was Dasharo compatible
@@ -53,7 +53,7 @@ contact the Dasharo Team directly._
 # Dasharo Emulation Roadmap
 
 .center[
-<img src="img/dcs_emu_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_emu_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * Dasharo OSFV release provided infrastructure for validation.
@@ -73,7 +73,7 @@ contact the Dasharo Team directly._
 # (NEW) Dasharo Network Appliance Roadmap
 
 .center[
-<img src="img/dcs_network_appliance_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_network_appliance_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * Both solutions will be available in 3mdeb shop.
@@ -89,7 +89,7 @@ contact the Dasharo Team directly._
 # (NEW) Dasharo Laptops Roadmap
 
 .center[
-<img src="img/dcs_laptop_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_laptop_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * Part of Dasharo Revenue Sharing with NovaCustom.
@@ -104,7 +104,7 @@ contact the Dasharo Team directly._
 # (NEW) Dasharo Desktop Lenovo Roadmap
 
 .center[
-<img src="img/dcs_desktop_lenovo_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_desktop_lenovo_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * We will start pre-sale in Q1'24.
@@ -121,7 +121,7 @@ contact the Dasharo Team directly._
 # Dasharo Desktop Dell Roadmap
 
 .center[
-<img src="img/dcs_desktop_dell_roadmap_v0.3.png" width="650px" style="margin-left:45px;margin-top:-40px">
+<img src="/img/dcs_desktop_dell_roadmap_v0.3.png" width="650px" style="margin-left:45px;margin-top:-40px">
 ]
 
 ???
@@ -145,7 +145,7 @@ contact the Dasharo Team directly._
 # Dasharo Desktop MSI Roadmap
 
 .center[
-<img src="img/dcs_desktop_msi_z690_roadmap_v0.2.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z690_roadmap_v0.2.png" width="850px" style="margin-left:-60px">
 ]
 
 * No changes, all releases on this roadmap are according to plan.
@@ -170,7 +170,7 @@ contact the Dasharo Team directly._
 # Dasharo Desktop Roadmap
 
 .center[
-<img src="img/dcs_desktop_msi_z790_roadmap_v0.3.png" width="650px" style="margin-left:45px;margin-top:-40px">
+<img src="/img/dcs_desktop_msi_z790_roadmap_v0.3.png" width="650px" style="margin-left:45px;margin-top:-40px">
 ]
 
 * We considering Dasharo (coreboot+Heads) as next step.
@@ -194,7 +194,7 @@ contact the Dasharo Team directly._
 # (NEW) Dasharo Desktop Roadmap
 
 .center[
-<img src="img/dcs_desktop_asrock_roadmap_v0.3.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_desktop_asrock_roadmap_v0.3.png" width="900px" style="margin-left:-75px">
 ]
 
 * Replacing previous ASUS Pro WS X570-ACE v0.9.0.
@@ -204,7 +204,7 @@ contact the Dasharo Team directly._
 # Dasharo Workstation Roadmap
 
 .center[
-<img src="img/dcs_workstation_roadmap_v0.3.png" width="840px" style="margin-left:-40px">
+<img src="/img/dcs_workstation_roadmap_v0.3.png" width="840px" style="margin-left:-40px">
 ]
 
 ???
@@ -227,7 +227,7 @@ contact the Dasharo Team directly._
 # Dasharo Server Roadmap
 
 .center[
-<img src="img/dcs_server_roadmap_v0.3.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_server_roadmap_v0.3.png" width="900px" style="margin-left:-75px">
 ]
 
 * Unfortunately X11SSH priority was was dropped because of issues during
