@@ -18,9 +18,9 @@ MD003:
   style: "atx"
 
 # MD004/ul-style - Unordered list style
-MD004:
-  # List style
-  style: "sublist"
+# MD004:
+#   # List style
+#   style: "sublist"
 
 # MD005/list-indent - Inconsistent indentation for list items at the same level
 MD005: true
