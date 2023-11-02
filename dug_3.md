@@ -29,7 +29,7 @@ class: center, middle, intro
 
 * #### &#x1F9F0; 16:25 UTC Dasharo Tools Suite Status
 
-* #### &#x1F9F0; 16:35 UTC Dasharo Openess Score Status
+* #### &#x1F9F0; 16:35 UTC Dasharo Openness Score Status
 
 * #### &#x1F9F0; 16:50 UTC Nitrokey new products overview
 
@@ -45,7 +45,7 @@ TODO: try to say what specific will be presented as part of every presentation.
 
 ---
 
-# Community Hearbeat &#x1F493;
+# Community Heartbeat &#x1F493;
 
 .image-100[![](/img/community_heartbeat_dug_3.png)]
 
@@ -100,7 +100,7 @@ Date of data snapshot: 24/09/2023
 
 * In comparison to previous statistics we can see more code related activity
   (mostly MSI stuff).
-* Marging and development tempo is higher if we consider time frame.
+* Merging and development tempo is higher if we consider time frame.
 
 ???
 

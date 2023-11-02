@@ -1,6 +1,6 @@
 class: center, middle, intro
 
-# &#x1F386; Dasharo Openess Score Status &#x1F386;
+# &#x1F386; Dasharo Openness Score Status &#x1F386;
 
 .center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
@@ -19,7 +19,7 @@ class: center, middle, intro
 
 ---
 
-# Dasharo Openess Score
+# Dasharo Openness Score
 
 * Dasharo Openness Score is a tool designed to quantify the openness of
 firmware images, providing insights into the ratio of open-source to
@@ -92,7 +92,7 @@ stop
 
 # Integration for NovaCustom
 
-* Back in the days we provided Dasharo Openess Score (pre-v0.1) for NV4x 11th Gen v0.5.0
+* Back in the days we provided Dasharo Openness Score (pre-v0.1) for NV4x 11th Gen v0.5.0
   (2021/11/19).
 
 .center.image-30[![](/img/nvc_dos_nv4x_v0.5.0.png) ![](/img/nvc_dos_nv4x_v0.5.0_2.png) ![](/img/nvc_dos_nv4x_v0.5.0_3.png)]
@@ -100,7 +100,7 @@ stop
 * Starting from upcoming:
     - NV4x, NS5x/7x ADL v1.7.0
     - NV4x, NS5x/7x TGL v1.5.0
-* All Novacustom releases will contain Dasharo Openess Score v0.1
+* All Novacustom releases will contain Dasharo Openness Score v0.1
 
 ---
 
@@ -131,7 +131,7 @@ stop
 
 ---
 
-# Dasharo Openess Score v0.1 integration
+# Dasharo Openness Score v0.1 integration
 
 * ETA: Q3 2023 (v0.1 integration)
     * No code changes.
@@ -143,7 +143,7 @@ stop
 
 ---
 
-# Dasharo Openess Score v0.2
+# Dasharo Openness Score v0.2
 
 * ETA: Q4 2023
 * Planned features

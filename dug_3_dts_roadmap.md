@@ -80,7 +80,7 @@ class: center, middle, intro
     Intel Raptor Lake, which is not supported by that release and DTS should
     detect and prevent sych lockout.
 * As of 26/09/2023 there are 31 bugs, enhancements and other reports open in
-  dasharo-issues repository, and 17 clossed.
+  dasharo-issues repository, and 17 closed.
 * If you feel you found some problem please report it:
     - https://github.com/Dasharo/dasharo-issues/issues
 
@@ -109,7 +109,7 @@ class: center, middle, intro
     - ETA: Q4 2023
     - [GitHub issue #55](https://github.com/Dasharo/dasharo-issues/issues/55)
 * Expanding DTS root file system via NFS or other solution
-    - adds posibility to load custom kernel modules
+    - adds possibility to load custom kernel modules
     - protects against endless growth of root file system size
     - ETA: Q4 2023
     - [GitHub issue #366](https://github.com/Dasharo/dasharo-issues/issues/366)

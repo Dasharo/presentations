@@ -290,7 +290,7 @@ ThreeMdeb -> ThreeMdeb : Collect founds\nafter each milestone
 * Available through our Revenue Sharing Partners:
     - Nitrokey: https://shop.nitrokey.com/shop
         - NovaCustom: https://configurelaptop.eu
-* Help us find resellers intersted in open-source firmware for their computers.
+* Help us find resellers interested in open-source firmware for their computers.
     - We looking for partners from Canada, US and Brazil (or other South America
     countries).
 * Spread the word about Dasharo and our mission on social media and other platforms.

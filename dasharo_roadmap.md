@@ -21,7 +21,7 @@ contact the Dasharo Team directly._
 
 ---
 
-# From OST2 to Dasharo Support Pacakage
+# From OST2 to Dasharo Support Package
 
 .center.image-85[![](img/ost2_to_dasharo_packages.svg)]
 
@@ -76,7 +76,7 @@ contact the Dasharo Team directly._
 <img src="img/dcs_network_appliance_roadmap_v0.3.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
-* Both solutions will be availabel in 3mdeb shop.
+* Both solutions will be available in 3mdeb shop.
 * We will start pre-sale in Q4'23.
 
 ???
@@ -253,7 +253,7 @@ contact the Dasharo Team directly._
 * Available through our Revenue Sharing Partners:
     - Nitrokey: https://shop.nitrokey.com/shop
     - NovaCustom: https://configurelaptop.eu
-* Help us find resellers intersted in open-source firmware for their computers.
+* Help us find resellers interested in open-source firmware for their computers.
     - We looking for partners from Canada, US and Brazil (or other South America
     countries).
 * Spread the word about Dasharo and our mission on social media and other platforms.
