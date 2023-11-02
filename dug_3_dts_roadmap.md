@@ -24,12 +24,12 @@ class: center, middle, intro
 .center.image-99[![](/img/dts-logo.jpg)]
 
 * Set of tools and scripts running in minimal Linux environment
-  - https://docs.dasharo.com/dasharo-tools-suite/overview
+    - https://docs.dasharo.com/dasharo-tools-suite/overview
 * DRY: https://bit.ly/dasharo-tools-suite
 * Since last DUG we had quite a lot of silent releases and one public:
-  - by silent we mean not announced in Dasharo Universe documentation,
-  - v1.2.6 - beta/preview release, not recommended for wider use,
-  - v1.2.8 - fully featured, validated release into which we will dive on
+    - by silent we mean not announced in Dasharo Universe documentation,
+    - v1.2.6 - beta/preview release, not recommended for wider use,
+    - v1.2.8 - fully featured, validated release into which we will dive on
     next slides,
 
 ---
@@ -37,20 +37,20 @@ class: center, middle, intro
 # DTS silent releases
 
 * **v1.2.1 - 2023-06-16**
-  - Updated coreboot-utils to support Jasper Lake.
+    - Updated coreboot-utils to support Jasper Lake.
 * **v1.2.2 - 2023-06-16**
-  - Updated coreboot-utils to support Alder Lake.
+    - Updated coreboot-utils to support Alder Lake.
 * **v1.2.3 - 2023-06-16** (no mistake three releases in one day)
-  - Enabled devmem applet for buxybox, which helps in gathering important data
+    - Enabled devmem applet for buxybox, which helps in gathering important data
     for porting and debugging.
 * **v1.2.4 - 2023-07-12**
-  - me_cleaner was added
+    - me_cleaner was added
 * **v1.2.5 - 2023-08-07**
-  - we realize we have bug in Dell BIOS Update downloading which is important
+    - we realize we have bug in Dell BIOS Update downloading which is important
     for deployment of Dasharo for Dell OptiPlex 7010/9010, that problem was
     fixed,
 * **v1.2.6 - 2023-08-31**
-  - we added 9elements/txt-suite which is useful in validating and diagnosing
+    - we added 9elements/txt-suite which is useful in validating and diagnosing
     issues we face while integrating TrenchBoot as AEM for Qubes OS
 
 ---
@@ -58,31 +58,31 @@ class: center, middle, intro
 # DTS v1.2.7 and v1.2.8
 
 * **v1.2.7 - 2023-09-05**
-  - Added Dasharo zero-touch initial deployment on MSI PRO Z790-A for DES
+    - Added Dasharo zero-touch initial deployment on MSI PRO Z790-A for DES
     users.
-  - Added Dasharo firmware update to version v1.1.2 on MSI PRO Z690-A for DES
+    - Added Dasharo firmware update to version v1.1.2 on MSI PRO Z690-A for DES
     users.
-  - Updated coreboot-utils to support Raptor Lake.
-  - Added couple UX improvements for DTS scripts, specially in the context of
+    - Updated coreboot-utils to support Raptor Lake.
+    - Added couple UX improvements for DTS scripts, specially in the context of
     DES users.
-  - One more time fix downloading Dell BIOS Update packages.
+    - One more time fix downloading Dell BIOS Update packages.
 * **v1.2.8 - 2023-09-06**
-  - Check for SMM protection before trying to flash.
+    - Check for SMM protection before trying to flash.
 
 ---
 
 # 🐛 Bugs everywhere 🐛
 
 * We are aware of feature requests and bugs related to DTS.
-  - It works for most use cases, but still need improvements.
+    - It works for most use cases, but still need improvements.
 * We have to improve hardware checks before flashing.
-  - There are reports of people flashing MSI Z690-A v1.1.1 on platforms with
+    - There are reports of people flashing MSI Z690-A v1.1.1 on platforms with
     Intel Raptor Lake, which is not supported by that release and DTS should
     detect and prevent sych lockout.
 * As of 26/09/2023 there are 31 bugs, enhancements and other reports open in
   dasharo-issues repository, and 17 clossed.
 * If you feel you found some problem please report it:
-  - https://github.com/Dasharo/dasharo-issues/issues
+    - https://github.com/Dasharo/dasharo-issues/issues
 
 ---
 
@@ -105,28 +105,28 @@ class: center, middle, intro
 # DTS Roadmap (no changes)
 
 * Device authentication to improve Dasharo firmware update
-  - client authentication mechanism working with updates
-  - ETA: Q4 2023
-  - [GitHub issue #55](https://github.com/Dasharo/dasharo-issues/issues/55)
+    - client authentication mechanism working with updates
+    - ETA: Q4 2023
+    - [GitHub issue #55](https://github.com/Dasharo/dasharo-issues/issues/55)
 * Expanding DTS root file system via NFS or other solution
-  - adds posibility to load custom kernel modules
-  - protects against endless growth of root file system size
-  - ETA: Q4 2023
-  - [GitHub issue #366](https://github.com/Dasharo/dasharo-issues/issues/366)
+    - adds posibility to load custom kernel modules
+    - protects against endless growth of root file system size
+    - ETA: Q4 2023
+    - [GitHub issue #366](https://github.com/Dasharo/dasharo-issues/issues/366)
 * DTS zero touch initial deployment for firmware `as is`
-  - multistage approach to improve open-source firmware adoptability
-  - ETA: Q1 2024
-  - [GitHub issue #384](https://github.com/Dasharo/dasharo-issues/issues/384)
+    - multistage approach to improve open-source firmware adoptability
+    - ETA: Q1 2024
+    - [GitHub issue #384](https://github.com/Dasharo/dasharo-issues/issues/384)
 * DTS security features provisioning and attestation
-  - improve the trustworthiness of computing device
-  - ETA: Q2 2024
-  - [GitHub issue #385](https://github.com/Dasharo/dasharo-issues/issues/385)
+    - improve the trustworthiness of computing device
+    - ETA: Q2 2024
+    - [GitHub issue #385](https://github.com/Dasharo/dasharo-issues/issues/385)
 
 ???
 
 * all dealines shifted by 1Q
 * Other ideas
-	- automatic bug reporting from DTS
+    - automatic bug reporting from DTS
 
 ---
 class: center, middle, intro

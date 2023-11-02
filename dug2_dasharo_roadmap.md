@@ -22,10 +22,10 @@ contact the Dasharo Team directly._
 # Dasharo support levels
 
 * Dasharo can support hardware under following programs:
-  * Dasharo Enterprise Package (DEP) - custom SLA agreement.
-	* Dasharo Support Package (DSP) - annual support package with releases driven
+    * Dasharo Enterprise Package (DEP) - custom SLA agreement.
+        * Dasharo Support Package (DSP) - annual support package with releases driven
     by customer.
-  * Dasharo Community Support (DCP)
+    * Dasharo Community Support (DCP)
 
 ???
 
@@ -283,15 +283,15 @@ ThreeMdeb -> ThreeMdeb : Collect founds\nafter each milestone
 
 ---
 
-# Support Dasharo Today!
+# Support Dasharo Today
 
 * Buy Dasharo Supporter Entrance subscription for your platform.
 * Available in 3mdeb shop: https://3mdeb.com/shop
 * Available through our Revenue Sharing Partners:
-  - Nitrokey: https://shop.nitrokey.com/shop
-	- NovaCustom: https://configurelaptop.eu
+    - Nitrokey: https://shop.nitrokey.com/shop
+        - NovaCustom: https://configurelaptop.eu
 * Help us find resellers intersted in open-source firmware for their computers.
-	- We looking for partners from Canada, US and Brazil (or other South America
+    - We looking for partners from Canada, US and Brazil (or other South America
     countries).
 * Spread the word about Dasharo and our mission on social media and other platforms.
 * Interested in other ways? Feel free to contact us contact@dasharo.com

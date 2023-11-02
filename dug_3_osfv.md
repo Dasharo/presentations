@@ -40,20 +40,20 @@ class: center, middle, intro
   firmware (mainly Dasharo).
 * Robot Framework is a generic open source automation framework. It can be used
   for test automation and robotic process automation (RPA).
-  - Used by OpenBMC among other organizations.
+    - Used by OpenBMC among other organizations.
 * Key Features of OSFV:
-  - **Hardware Compatibility Testing**: audio, cpu, fan, network, docking
+    - **Hardware Compatibility Testing**: audio, cpu, fan, network, docking
     stations, displays, network, thunderbolt, USB and more.
-  - **Performance and Stability Testing**: boot time, cpu frequencey and
+    - **Performance and Stability Testing**: boot time, cpu frequencey and
     temperature, power cycle testing.
-  - **Dashro Security Features Testing**: UEFI Secure Boot, measured boot, TPM,
+    - **Dashro Security Features Testing**: UEFI Secure Boot, measured boot, TPM,
     verified boot, TCG OPAL, ME, DMA protection and more.
 * To maximize use of Dasharo OSFV you need dedicated infrastructure.
 
 ---
 
 # OSFV Lab
- 
+
 .center.image-70[![](/img/osfv_arch.png)]
 
 ---
