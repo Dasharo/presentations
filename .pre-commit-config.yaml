@@ -3,6 +3,8 @@ default_stages: [pre-commit]
 
 default_install_hook_types: [pre-commit, commit-msg]
 
+exclude: '^(archive|img)/.*$'
+
 ci:
   autoupdate_commit_msg: 'pre-commit: autoupdate hooks'
   autofix_prs: false
