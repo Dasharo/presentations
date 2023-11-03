@@ -40,8 +40,8 @@ class: center, middle, intro
 
 * Since then, these scripts came through many iterations, supporting more
   different products
-* At some pint we have decided to open-source what we have and start
-  maintaining and iproving it as an open-source product
+* At some point we have decided to open-source what we have and start
+  maintaining and improving it as an open-source product
 * Dasharo Open Source Firmware Validation purpose is the validation of
   open-source firmware (mainly Dasharo)
 * Scripts written in:
