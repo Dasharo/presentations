@@ -129,6 +129,7 @@ Vision:
 ???
 
 - DUG#3: (NEW) Lenovo M920Q planned for Q2'24
+- progress regarding Lenovo ThinkCenter M700: https://github.com/Dasharo/coreboot/pull/121
 
 ---
 
