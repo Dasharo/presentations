@@ -37,9 +37,9 @@ TODO: try to say what specific will be presented as part of every presentation.
 
 ---
 
-# [TBD] Community Hearbeat &#x1F493;
+# Community Hearbeat &#x1F493;
 
-.image-100[![](/img/community_heartbeat_dug_3.png)]
+.image-100[![](/img/community_heartbeat_dug_4.png)]
 
 ???
 
@@ -81,55 +81,40 @@ Date of data snapshot: 03/12/2023
 
 ---
 
-# [TBD] Dasharo Issues
+# Dasharo/coreboot PRs
 
-.center.image-99[![](img/dug3_dasharo_report_issues.svg)]
+.center.image-80[![](img/dasharo_coreboot_2023q4.png)]
 
-* Experiments with presenting other data. Feedback welcome.
-* In Q2'23 we definitely had more active testers then Q3'23 so far.
-* Dasharo Team and community focused more on features then bug fixes.
-
-???
-
-- gh issue list -s all -L 1000
-- gh issue list -s closed -L 1000
+* Experiment v2 with data presentation.
+* Since DUG#3 we merged 25 PRs, what is avarage results for Dasharo/coreboot.
 
 ---
 
-# [TBD] Dasharo PRs
+# Dasharo/edk2 PRs
 
-.center.image-99[![](img/dug3_dasharo_report_prs.svg)]
+.center.image-80[![](img/dasharo_edk2_2023q4.png)]
 
-* In comparison to previous statistics we can see more code related activity
-  (mostly MSI stuff).
-* Marging and development tempo is higher if we consider time frame.
-
-???
-
-* created are obtained by counting all opened PRs minus all opened PRs reported
-  at last DUG
-  - gh pr list --state all
-* merged are counted manually from 
-  - gh pr list --state merged
+* EDK II fork activity is similar to coreboot fork.
+* We merged 20 PRs.
 
 ---
 
-# Dasharo Space on Matrix
+# Dasharo Issues
 
-* 22 channels (most active: General, Support, Random) - no change
-* Dasharo Space on Matrix is official communication channel and since more and
-  more communities migrate to Matrix we will most likely stick with it.
+.center.image-80[![](img/dasharo_issues_2023q4.png)]
+
+* We resolved healthy amount of issues (34) since last DUG.
+* We also faced biggest activity in this year regarding issue reporting, what
+  was partially caused by Novacustom releases.
 
 ---
 
-# PC Engines custom builds
+# Dasharo Matrix
 
-TODO: add picture and couple words about PC Engines custom builds
+.center.image-80[![](img/dasharo_matrix_2023q4.png)]
 
-
-???
-
-Is this news section?
+* We more then double the size of our community over last 9 months.
+* We would like to thank you for your contribution to growth of Dasharo.
 
 ---
 class: center, middle, intro
