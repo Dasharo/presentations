@@ -125,7 +125,7 @@ bars_closed = plt.bar(dates, data["Closed"], bottom=data["Merged"], color='#2727
 bars_open = plt.bar(dates, data["Open"], bottom=[m+c for m, c in zip(data["Merged"], data["Closed"])], color='#1E90FF', label='Open PRs')
 
 # Add titles and labels
-plt.title('PR Statistics for Dasharo/coreboot fork', fontsize=18, fontweight='bold', color='#272727')
+plt.title('PR Statistics for Dasharo/edk2 fork', fontsize=18, fontweight='bold', color='#272727')
 plt.xlabel('Date', fontsize=16, fontweight='bold', color='#272727')
 plt.ylabel('Number of PRs', fontsize=16, fontweight='bold', color='#272727')
 
