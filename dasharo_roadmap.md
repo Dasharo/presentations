@@ -8,7 +8,7 @@ class: center, middle, intro
 
 # Dasharo Roadmap Disclaimer
 
-.center.image-35[![](/img/dug_3_disclaimer.png)]
+.center.image-50[![](img/tenor.gif)]
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -21,13 +21,13 @@ contact the Dasharo Team directly._
 
 ---
 
-# From OST2 to Dasharo Support Package
+# [TBD] From OST2 to Dasharo Support Pacakage
 
 .center.image-85[![](/img/ost2_to_dasharo_packages.svg)]
 
 ---
 
-# Dasharo Community Support Process
+# [TBD] Dasharo Community Support Process
 
 .center[
 <img src="/img/dcs-process-v0.3.svg" width="900px" style="margin-left:-75px">
@@ -45,8 +45,28 @@ contact the Dasharo Team directly._
 * This process shows how flow look like for new platforms, already supported
   platforms typically get through Validation/Release cycle.
 * TODO:
-    - define publicly visible deliverables of each phase
-    - document frameworks and tools on which given release will be based on
+  - define publicly visible deliverables of each phase
+  - document frameworks and tools on which given release will be based on
+
+---
+
+# Approaching Dasharo unification for supported hardware
+
+---
+
+# Changelog
+
+* Graphics were not very visilbe in previous presentation, so maybe change
+  those to something clearer
+* We decided to play with roadmapper library in Python
+* We need more focused slides, saying precisely what we plan for given release,
+  what features what will be validated etc.
+
+
+???
+
+* Customer stories?
+* Dasharo Team release performance metrics
 
 ---
 
@@ -67,6 +87,7 @@ contact the Dasharo Team directly._
 - DUG#2: (CHANGED) QEMU Q35 v0.1.0 planned for Q3'23
     - release date changed to Q4'23 (+1)
 - DUG#3: QEMU Q35 v0.1.0 planned for Q4'23
+- DUG#4: QEMU Q35 v0.1.0 release
 
 Notes for expanding this part of the roadmap:
 - new potential vendors/products: Intel Simics, AMD SimNow
@@ -74,6 +95,7 @@ Notes for expanding this part of the roadmap:
   - Dasharo (coreboo+UEFI)
   - Xen target (XCP-ng) although I'm not sure how how much firmware would be
     different, there is definitely stuff Xen-specific in OvmfPkg
+- show milestone on github
 
 Vision:
 - firmware role in Confidential Computing playes more and more significant role
@@ -81,6 +103,10 @@ Vision:
   - [MSFT talk about CVM](https://youtu.be/2GxaBAS2_no)
   - MSFT: DCasv5 and ECasv5
   - Edgeless Systems: https://www.edgeless.systems/blog/how-confidential-computing-and-ai-fit-together/
+
+---
+
+# Dasharo vision QEMU Q35
 
 ---
 
@@ -214,6 +240,10 @@ Vision:
 
 * Replacing previous ASUS Pro WS X570-ACE v0.9.0.
 
+???
+
+* Shop, DRS etc.
+
 ---
 
 # Dasharo Workstation Roadmap
@@ -237,6 +267,12 @@ Vision:
         - release date changed to Q2'24 (+1)
     - (RELEASED) RCS Talos II v0.7.0 planned for Q3'23
 
+DUG#4:
+- no response from Immunefi
+- we have to cancel KGPE-D16 from roadmap at some point
+
+- plans for Talos II new release, blockers by Thierry
+
 ---
 
 # Dasharo Server Roadmap
@@ -258,6 +294,8 @@ Vision:
 - DUG#3
     - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q1'24
         - release date changed to Q2'24 (+1)
+
+
 
 ---
 
