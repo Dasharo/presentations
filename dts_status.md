@@ -30,11 +30,12 @@ class: center, middle, intro
   - by silent we mean not announced in Dasharo Universe documentation,
   - v1.2.8 - last stable release recommended for community, published on
     docs.dasharo.com,
-  - v1.2.9-v1.2.12 sliten releases made as part of Dasharo Support Package
+  - v1.2.9-v1.2.12 silent releases made as part of Dasharo Support Package
 
 ???
 
-Frequency of releases chart, sice of releases?
+- Frequency of releases chart, sice of releases?
+* make sure this presentation will be linked in DTS documentation
 
 ---
 

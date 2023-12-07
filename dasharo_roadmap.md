@@ -325,7 +325,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 
 * We have to figure out better naming scheme.
 * We plan to deliver this solution one quarter earlier.
-* We had call with ThePlexus who did initial development and plan to based on his work.
+* Status from call with ThePlexus.
 
 ???
 
