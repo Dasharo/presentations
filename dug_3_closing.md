@@ -33,7 +33,6 @@ class: center, middle, intro
 
 # Your Actions Matter 🌟 **Thank You** 🙏
 
-
 - **Spread the Word**: Help more people discover, test, and choose Dasharo.
   🗣️
 - **Contribute**: Your code, documentation, and ideas are the building blocks

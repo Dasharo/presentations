@@ -24,7 +24,7 @@ class: center, middle, intro
 .center.image-99[![](/img/osfv.png)]
 
 * We use OSFV at least since 2018, when we started validate PC Engines releases
-* Using those scripts we over **50k** tests publicly relasing **150+** binaries
+* Using those scripts we over **50k** tests publicly releasing **150+** binaries
   based on open-source firmware.
 * Initially it was closed source because of assumption that validation provides
   majority of the value in open-source firmware development.
@@ -40,20 +40,20 @@ class: center, middle, intro
   firmware (mainly Dasharo).
 * Robot Framework is a generic open source automation framework. It can be used
   for test automation and robotic process automation (RPA).
-  - Used by OpenBMC among other organizations.
+    - Used by OpenBMC among other organizations.
 * Key Features of OSFV:
-  - **Hardware Compatibility Testing**: audio, cpu, fan, network, docking
+    - **Hardware Compatibility Testing**: audio, cpu, fan, network, docking
     stations, displays, network, thunderbolt, USB and more.
-  - **Performance and Stability Testing**: boot time, cpu frequencey and
+    - **Performance and Stability Testing**: boot time, cpu frequency and
     temperature, power cycle testing.
-  - **Dashro Security Features Testing**: UEFI Secure Boot, measured boot, TPM,
+    - **Dashro Security Features Testing**: UEFI Secure Boot, measured boot, TPM,
     verified boot, TCG OPAL, ME, DMA protection and more.
 * To maximize use of Dasharo OSFV you need dedicated infrastructure.
 
 ---
 
 # OSFV Lab
- 
+
 .center.image-70[![](/img/osfv_arch.png)]
 
 ---
@@ -76,7 +76,7 @@ class: center, middle, intro
 
 * **variables** - use Python/YAML, not robot syntax, currently used variables
   system for keeping configuration is not robust to be used at scale (too error
-  prone), we have to switch to something managable
+  prone), we have to switch to something manageable
 * **platform-configs** - get rid of duplication, and unused data, simplify way of
   adding new platforms,
 * **improve tests organization** - separate test for different OS into different
