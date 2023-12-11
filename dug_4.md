@@ -33,7 +33,7 @@ class: center, middle, intro
 
 * #### &#x1F9F0; 18:00 UTC Dasharo Community Release Roadmap
 
-* #### &#x1F4BB; 18:45 UTC NovaCustom-Dasharo: Call for Beta Testers
+* #### &#x1F4BB; 18:45 UTC New community forum, Heads firmware status update, new models and a call for beta testers
 
 * #### &#x1F44F; 18:55 UTC Closing remarks &#x27A1;&#xFE0F; &#x1F37A;&#x1F37B; vPub 0x9
 
