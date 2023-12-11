@@ -1,2 +1,4 @@
 -   - "PCI bridge: Synopsys, Inc. DWC_usb3 (rev 01)"
 +   - "PCI bridge: Synopsys, Inc. DWC_usb3 / PCIe bridge (rev 01)"
+- **Chipsec and HSI Checks Integration**: Enhance DCU by incorporating Chipsec
+  for in-depth security analysis and Host Security ID (HSI) checks, along with

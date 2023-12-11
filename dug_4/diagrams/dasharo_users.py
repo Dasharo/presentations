@@ -36,4 +36,3 @@ plt.savefig('dasharo_users.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
-

@@ -32,7 +32,7 @@ def run_gh_command(command):
 def count_prs(repo, state, date):
     # Construct the GitHub CLI command
     command = f"gh pr list --repo {repo} --state {state} --search 'created:<={date}' -L 10000 --json number --jq '. | length'"
-    
+
     # Run the command and capture the output
     output = run_gh_command(command)
 

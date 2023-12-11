@@ -32,7 +32,7 @@ def run_gh_command(command):
 def count_issues(repo, state, date):
     # Construct the GitHub CLI command
     command = f"gh issue list --label DasharoToolsSuite --repo {repo} --state {state} --search 'created:<={date}' -L 10000 --json number --jq '. | length'"
-    
+
     # Run the command and capture the output
     output = run_gh_command(command)
 

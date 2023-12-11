@@ -10,8 +10,8 @@ class: center, middle, intro
 
 # Agenda
 
-* Short Introduction to Dasharo Confgiuration Utility (DUC)
-* Exploring Dasharo Confgiuration Utility v0.2.1
+* Short Introduction to Dasharo Configuration Utility (DUC)
+* Exploring Dasharo Configuration Utility v0.2.1
 * Q&A
 
 ???
@@ -27,7 +27,7 @@ class: center, middle, intro
   and setting unique UUIDs or Serial Numbers in SMBIOS tables.
 * DCU can be run in two modes - standalone, or as a container. The container
   setup contains all of the prerequisites, so it should be easier to use.
-* Python, Apache 2.0 licensed, https://github.com/Dasharo/dcu
+* Bash, Apache 2.0 licensed, https://github.com/Dasharo/dcu
 
 ???
 
@@ -39,6 +39,7 @@ class: center, middle, intro
 # DCU Vison
 
 ### Support for Mass Deployment Features
+
 - **Custom Configuration Profiles**: Enable the creation of custom
   configuration profiles that can be applied across multiple systems, ensuring
   consistency in deployment.
@@ -100,18 +101,18 @@ cd dcu && ./dcuc
 # Getting Started
 
 .medium-code[
-```
+```text
 Unable to find image 'ghcr.io/dasharo/dasharo-sdk:v1.2.0' locally
 v1.2.0: Pulling from dasharo/dasharo-sdk
-8285c3e1284d: Pull complete 
-0f8ccaf821af: Pull complete 
-6e515abfab04: Pull complete 
-f3904770b5ac: Pull complete 
-a442011cbbb3: Pull complete 
-ff420ae8a2ab: Pull complete 
-0f1475b56e0c: Pull complete 
-ec99378fd72f: Pull complete 
-d650a0f92b92: Pull complete 
+8285c3e1284d: Pull complete
+0f8ccaf821af: Pull complete
+6e515abfab04: Pull complete
+f3904770b5ac: Pull complete
+a442011cbbb3: Pull complete
+ff420ae8a2ab: Pull complete
+0f1475b56e0c: Pull complete
+ec99378fd72f: Pull complete
+d650a0f92b92: Pull complete
 Digest: sha256:12044628c33a77989822f416ef884609d60b7fc5c045183c53e4f97a7080019a
 Status: Downloaded newer image for ghcr.io/dasharo/dasharo-sdk:v1.2.0
 dcu - Dasharo Configuration Utility

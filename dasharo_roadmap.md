@@ -21,13 +21,13 @@ contact the Dasharo Team directly._
 
 ---
 
-# From OST2 to Dasharo Support Pacakage
+# From OST2 to Dasharo Support Package
 
 .center.image-85[![](/img/ost2_to_dasharo_packages.svg)]
 
 ???
 
-* How to improve that infromation?
+* How to improve that information?
 * Maybe focus more on OST2 and tracking deliverables for it.
 
 ---
@@ -39,7 +39,7 @@ contact the Dasharo Team directly._
 ]
 
 * How we qualify platforms for Dasharo Community Support?
-* Buisness goals alignment with 3mdeb.
+* Business goals alignment with 3mdeb.
 * Synergy with other projects e.g. TrenchBoot.
 * Above stages very roughly map to real work/tasks performed by team.
 
@@ -50,8 +50,8 @@ contact the Dasharo Team directly._
 * This process shows how flow look like for new platforms, already supported
   platforms typically get through Validation/Release cycle.
 * TODO:
-  - define publicly visible deliverables of each phase
-  - document frameworks and tools on which given release will be based on
+    - define publicly visible deliverables of each phase
+    - document frameworks and tools on which given release will be based on
 
 * We need more focused slides, saying precisely what we plan for given release,
   what features what will be validated etc.
@@ -59,8 +59,8 @@ contact the Dasharo Team directly._
 * Customer stories?
 * Dasharo Team release performance metrics
 * Other 3mdeb roadmaps
-  - EST
-  - UEFI Secure Boot focus - OSFV
+    - EST
+    - UEFI Secure Boot focus - OSFV
 * Features matrix concept
 * Inform about our priorities
 
@@ -88,8 +88,8 @@ contact the Dasharo Team directly._
 Notes for expanding this part of the roadmap:
 - new potential vendors/products: Intel Simics, AMD SimNow
 - new potential release types to be supported for QEMU Q35 target
-  - Dasharo (coreboot+UEFI)
-  - Xen target (XCP-ng) although I'm not sure how how much firmware would be
+    - Dasharo (coreboot+UEFI)
+    - Xen target (XCP-ng) although I'm not sure how how much firmware would be
     different, there is definitely stuff Xen-specific in OvmfPkg
 - show milestone on github
 
@@ -100,14 +100,14 @@ Notes for expanding this part of the roadmap:
 - shift left firmware development
 - new potential vendors/products: Intel Simics, AMD SimNow
 - new potential release types to be supported for QEMU Q35 target
-  - Dasharo (coreboot+UEFI)
-  - Xen target (XCP-ng) although I'm not sure how how much firmware would be
+    - Dasharo (coreboot+UEFI)
+    - Xen target (XCP-ng) although I'm not sure how how much firmware would be
     different, there is definitely stuff Xen-specific in OvmfPkg
 - firmware will play role in Confidential VMs
 - references:
-  - [MSFT talk about CVM](https://youtu.be/2GxaBAS2_no)
-  - MSFT: DCasv5 and ECasv5
-  - [Edgeless Systems](https://www.edgeless.systems/blog/how-confidential-computing-and-ai-fit-together/)
+    - [MSFT talk about CVM](https://youtu.be/2GxaBAS2_no)
+    - MSFT: DCasv5 and ECasv5
+    - [Edgeless Systems](https://www.edgeless.systems/blog/how-confidential-computing-and-ai-fit-together/)
 
 ---
 
@@ -164,11 +164,11 @@ but have no actual backend hooked up:
 ???
 
 - DUG#3:
-  - (NEW) PC Engines apu3 planned for Q4'23
-- DUG#4: 
-  - (CHANGED) PC Engines apu3 planned for Q4'23
-    - release date changed to Q1'23 (+1)
-    - add support for apu2 and apu6
+    - (NEW) PC Engines apu3 planned for Q4'23
+- DUG#4:
+    - (CHANGED) PC Engines apu3 planned for Q4'23
+        - release date changed to Q1'23 (+1)
+        - add support for apu2 and apu6
 - DUG#3: (NEW) Protectli VP4670 planned for Q2'24
 
 ---
@@ -186,9 +186,9 @@ but have no actual backend hooked up:
 * Legacy boot is deprecated by Intel since 11th Gen
 * To make it work with Dasharo(coreboot+UEFI) we have to complete TB AEM P5
 
-- DUG#3: 
-  - (CHANGED) Protectli VP4670 planned for Q2'24
-    - release date changed to Q3'23 (+1)
+- DUG#3:
+    - (CHANGED) Protectli VP4670 planned for Q2'24
+        - release date changed to Q3'23 (+1)
 
 ---
 
@@ -205,11 +205,11 @@ but have no actual backend hooked up:
 
 ???
 
-- DUG#3: 
-  - (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
-- DUG#4: 
-  - (CHANGED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
-    - release date changed to Q1'24 (+1)
+- DUG#3:
+    - (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
+- DUG#4:
+    - (CHANGED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
+        - release date changed to Q1'24 (+1)
 
 ---
 
@@ -225,10 +225,10 @@ Manufacturing Mode - Dasharo Porting Ready.
 ???
 
 - DUG#3:
-  -  (NEW) Lenovo M920Q planned for Q2'24
+    - (NEW) Lenovo M920Q planned for Q2'24
 - DUG#4:
-  - (CHANGED) Lenovo M920Q planned for Q2'24
-    - release date changed to Q3'24 (+1)
+    - (CHANGED) Lenovo M920Q planned for Q2'24
+        - release date changed to Q3'24 (+1)
 
 - progress regarding Lenovo ThinkCenter M700: https://github.com/Dasharo/coreboot/pull/121
 
@@ -251,15 +251,15 @@ Manufacturing Mode - Dasharo Porting Ready.
 - (CHANGED) Dell T1650 v0.1.0 planned for Q3'23
 - release date changed to Q1'24 (+2)
 - DUG#3
- - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
-   - release type changed to DES
- - (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
-   - release type changed to DES
+- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+    - release type changed to DES
+- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
+    - release type changed to DES
 - DUG#4
- - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
-   - release date changed to Q1'24 (+1)
- - (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
-   - release date changed to Q3'24 (+2)
+- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+    - release date changed to Q1'24 (+1)
+- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
+    - release date changed to Q3'24 (+2)
 
 ---
 
@@ -282,12 +282,12 @@ Community Release date changed because of PC Engines and NovaCustom.
     - (CHANGED) MSI Z690-A v1.2.0 planned for Q4'23
         - release date changed to Q1'24 (+1)
 - DUG#3
-  - (RELEASED) MSI Z690-A v1.1.2 planned for Q3'23
-  - MSI Z690-A v1.1.3 release planned for Q4'23
-  - MSI Z690-A v1.2.0 planned for Q1'24
+    - (RELEASED) MSI Z690-A v1.1.2 planned for Q3'23
+    - MSI Z690-A v1.1.3 release planned for Q4'23
+    - MSI Z690-A v1.2.0 planned for Q1'24
 - DUG#4
-  - (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
-    - release date changed to Q2'24 (+1)
+    - (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
+        - release date changed to Q2'24 (+1)
 
 ---
 
@@ -308,12 +308,12 @@ Community Release date changed because of PC Engines and NovaCustom.
     - (NEW) MSI Z790-A v0.9.1 planned for Q4'23
     - MSI Z790-A v1.0.0 planned for Q1'24
 - DUG#3
-  - (RELEASED) MSI Z790-A v0.9.0 planned for Q3'23
-  - MSI Z790-A v0.9.1 planned for Q4'23
-  - MSI Z790-A v1.0.0 planned for Q1'24
+    - (RELEASED) MSI Z790-A v0.9.0 planned for Q3'23
+    - MSI Z790-A v0.9.1 planned for Q4'23
+    - MSI Z790-A v1.0.0 planned for Q1'24
 - DUG#4
-  - (CHANGED) MSI Z790-A v1.0.0 planned for Q1'24
-    - release date changed to Q2'24 (+1)
+    - (CHANGED) MSI Z790-A v1.0.0 planned for Q1'24
+        - release date changed to Q2'24 (+1)
 
 ---
 
@@ -330,11 +330,11 @@ Community Release date changed because of PC Engines and NovaCustom.
 ???
 
 - DUG#3
-  - (NEW) MSI Z790-A Dasharo (coreboot+Heads) v1.0.1 planned for Q2'24
+    - (NEW) MSI Z790-A Dasharo (coreboot+Heads) v1.0.1 planned for Q2'24
 - DUG#4
-  - (CHANGED) MSI Z790-A Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
-    - release date changed to Q1'24 (-1)
-    - version changed to v0.9.0
+    - (CHANGED) MSI Z790-A Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
+        - release date changed to Q1'24 (-1)
+        - version changed to v0.9.0
 
 ---
 
@@ -376,17 +376,17 @@ Community Release date changed because of PC Engines and NovaCustom.
         - release date changed to Q1'24 (+2)
     - RCS Talos II v0.7.0 planned for Q3'23
 - DUG#3
-  - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q1'24
-    - release type changed to DES
-    - release date changed to Q2'24 (+1)
-  - (RELEASED) RCS Talos II v0.7.0 planned for Q3'23
+    - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q1'24
+        - release type changed to DES
+        - release date changed to Q2'24 (+1)
+    - (RELEASED) RCS Talos II v0.7.0 planned for Q3'23
 - DUG#4:
-  - no response from Immunefi
-  - we have to cancel KGPE-D16 from roadmap at some point
-  - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
-    - release date changed to Q3'24 (+1)
-  - (NEW) RCS Talos II v0.8.0 planned for Q1'24
-    - depends on agreeing on Heads commit on which we should inteagrate things,
+    - no response from Immunefi
+    - we have to cancel KGPE-D16 from roadmap at some point
+    - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
+        - release date changed to Q3'24 (+1)
+    - (NEW) RCS Talos II v0.8.0 planned for Q1'24
+        - depends on agreeing on Heads commit on which we should inteagrate things,
       we already one month blocked because lack of decision
 
 ---
@@ -407,11 +407,11 @@ Community Release date changed because of PC Engines and NovaCustom.
     - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
         - release date changed to Q1'24 (+1)
 - DUG#3
-  - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q1'24
-    - release date changed to Q2'24 (+1)
+    - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q1'24
+        - release date changed to Q2'24 (+1)
 - DUG#4
-  - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
-    - release type changed to DES
+    - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
+        - release type changed to DES
 
 ---
 class: center, middle, intro

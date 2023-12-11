@@ -24,13 +24,13 @@ class: center, middle, intro
 .center.image-99[![](/img/dts-logo.jpg)]
 
 * Set of tools and scripts running in minimal Linux environment
-  - https://docs.dasharo.com/dasharo-tools-suite/overview
+    - https://docs.dasharo.com/dasharo-tools-suite/overview
 * DRY: https://bit.ly/dasharo-tools-suite
-* We continue slient releases:
-  - by silent we mean not announced in Dasharo Universe documentation,
-  - v1.2.8 - last stable release recommended for community, published on
+* We continue silent releases:
+    - by silent we mean not announced in Dasharo Universe documentation,
+    - v1.2.8 - last stable release recommended for community, published on
     docs.dasharo.com,
-  - v1.2.9-v1.2.12 silent releases made as part of Dasharo Support Package
+    - v1.2.9-v1.2.12 silent releases made as part of Dasharo Support Package
 
 ???
 
@@ -42,29 +42,29 @@ class: center, middle, intro
 # DTS silent releases
 
 * **v1.2.9 - 2023-09-29**
-  * Added [Firmware Update
+    * Added [Firmware Update
     Mode](https://docs.dasharo.com/guides/firmware-update/#firmware-update-mode)
     integration, which speed up the process of Dasharo firmware update.
-  * Added efivars support and efivar utility to support FUM.
-  * Improved logging of DTS menu options to not throw redundant and confusing
+    * Added efivars support and efivar utility to support FUM.
+    * Improved logging of DTS menu options to not throw redundant and confusing
     logs e.g. from flashrom.
-  * Fixed problem with EC firmware using incorrect link.
+    * Fixed problem with EC firmware using incorrect link.
 * **v1.2.10 - 2023-10-17**
-  * Added [Dasharo Configuration Utility](https://github.com/Dasharo/dcu) which
+    * Added [Dasharo Configuration Utility](https://github.com/Dasharo/dcu) which
     allow to change logo displayed on boot and many more. More about that in
     dedicated presentation.
-  * Added SMMSTORE migration for NovaCustom laptops, so the Dasharo Setup settings
+    * Added SMMSTORE migration for NovaCustom laptops, so the Dasharo Setup settings
     are preserved after firmware update.
-  * Added CI/CD pipeline to generate signatures.
+    * Added CI/CD pipeline to generate signatures.
 
 ---
 
 # DTS silent releases
 
 * **v1.2.11 - 2023-10-31**
-  * Bumped supported firmware versions of NovaCustom to 1.5.1/1.7.1
+    * Bumped supported firmware versions of NovaCustom to 1.5.1/1.7.1
 * **v1.2.12 - 2023-11-03**
-  * Fix updating boards without Vboot slot B
+    * Fix updating boards without Vboot slot B
 * So far in 2023 we released seven DTS versions from v1.1.1 to v1.2.12.
 * We plan to continue improving DTS in 2024.
 
@@ -74,9 +74,9 @@ class: center, middle, intro
 
 .center.image-80[![](/img/dts_issues_2023q4.png)]
 
-* We have to improve issues tracking and resoltion.
+* We have to improve issues tracking and resolution.
 * If you feel you found some problem please report it:
-  - https://github.com/Dasharo/dasharo-issues/issues
+    - https://github.com/Dasharo/dasharo-issues/issues
 
 ---
 
@@ -106,7 +106,7 @@ class: center, middle, intro
 ???
 
 * Other ideas
-	- automatic bug reporting from DTS
+    - automatic bug reporting from DTS
 
 ---
 
