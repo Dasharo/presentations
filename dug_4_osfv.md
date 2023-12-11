@@ -179,7 +179,7 @@ Boolean-Options :: This suite verifies the correct operation of ke... | PASS |
 
 * Reworked keywords for parsing and moving around in the Dasharo menus (see:
   `lib/bios/menus`)
-    - better code readability reduced duplicate keywords
+    - better code readability, reduced duplicated keywords
     - improved reliability (entering to the desired menus, even if something
     changes in menus, such as new options gets added)
 * Added CI checks
@@ -211,10 +211,10 @@ Boolean-Options :: This suite verifies the correct operation of ke... | PASS |
 
 * **reduce the number of unnecessary power events** - too many power cycles drain
   energy and make tests slow,
-* improve overall code quality by enabling back more robocop checks we cannot
+* **improve overall code quality** by enabling back more robocop checks we cannot
   pass right now,
-* Enforce documntation sections for all keywords and tests
-* Automatically generate and publish docuemntation for keywords and tests
+* **enforce documentation sections** for all keywords and tests
+* **automatically generate and publish documentation** for keywords and tests
     - kyewords - useful for developers
     - tests - useful for following the test scenario and reproducing it manually
     - the goal is to document tests via automated tests, not via dedicated test manuals
@@ -242,7 +242,7 @@ Boolean-Options :: This suite verifies the correct operation of ke... | PASS |
         - `BuiildIn`, `Collections`, `Strings`, `Telnet`
         - add them to your bookmarks, you will need them often
     - check out [SSHLibrary](http://robotframework.org/SSHLibrary/SSHLibrary.html)
-* Some basic Python knowlednge
+* Some basic Python knowledge
     - there are plenty of learning materials, pick your favourite one
 
 ???
@@ -306,12 +306,13 @@ Report:  /home/macpijan/projects/github/dasharo/open-source-firmware-validation/
 * Refer to the existing tests
   - `self-tests` are good examples
   - other commonly used tests
-    - `dasharo-security/bios-lock.robot`
-    - `dasharo-security/me-neuter.robot`
-    - `dasharo-security/smm-bios-write-protection.robot`
-    - `dasharo-compatibility/network-boot.robot`
-    - `dasharo-compatibility/network-boot-utilities.robot`
+      - `dasharo-security/bios-lock.robot`
+      - `dasharo-security/me-neuter.robot`
+      - `dasharo-security/smm-bios-write-protection.robot`
+      - `dasharo-compatibility/network-boot.robot`
+      - `dasharo-compatibility/network-boot-utilities.robot`
   - some tests may currently not work or be of a lower quality
+  - just ask in Matrix if you want to experiment
 
 ???
 
@@ -352,7 +353,7 @@ https://gitlab.com/3mdeb/rte/open-firmware-rte/-/blob/master/docs/enabling-platf
     - access to all supported platforms
     - experience
 * Standard GH issues and PR flow for contributors
-* Join Dasharo Matrix Space https://matrix.to/#/#dasharo:matrix.org
+* Join Dasharo Matrix Space: https://matrix.to/#/#dasharo:matrix.org
 * Join Dasharo OSFV Matrix room: https://matrix.to/#/#osfv:matrix.3mdeb.com
 
 ---
