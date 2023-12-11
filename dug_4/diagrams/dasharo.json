@@ -1,0 +1,56 @@
+{
+    "theme": "DASHARO",
+    "settings": {
+        "background": {
+            "background_fill_colour": "#272727"
+        },
+        "title": {
+            "title_font": "Oswald",
+            "title_font_size": 36,
+            "title_font_colour": "#f5f5f5",
+            "subtitle_font": "Oswald",
+            "subtitle_font_size": 20,
+            "subtitle_font_colour": "#f5f5f5"
+        },
+        "timeline": {
+            "timeline_year_font": "Oswald",
+            "timeline_year_font_size": 34,
+            "timeline_year_font_colour": "#f5f5f5",
+            "timeline_year_fill_colour": "#3b3b3b",
+            "timeline_item_font": "Oswald",
+            "timeline_item_font_size": 34,
+            "timeline_item_font_colour": "#f5f5f5",
+            "timeline_item_fill_colour": "#3b3b3b"
+        },
+        "marker": {
+            "marker_font": "Oswald",
+            "marker_font_size": 16,
+            "marker_font_colour": "#000000",
+            "marker_line_colour": "#000000"
+        },
+        "group": {
+            "group_font": "Oswald",
+            "group_font_size": 32,
+            "group_font_colour": "#f5f5f5",
+            "group_fill_colour": "#3b3b3b"
+        },
+        "task": {
+            "task_font": "Oswald",
+            "task_font_size": 22,
+            "task_font_colour": "#000000",
+            "task_fill_colour": "#8FBC94",
+            "task_style": "rounded"
+        },
+        "milestone": {
+            "milestone_font": "Oswald",
+            "milestone_font_size": 12,
+            "milestone_font_colour": "#000000",
+            "milestone_fill_colour": "#3D6642"
+        },
+        "footer": {
+            "footer_font": "Oswald",
+            "footer_font_size": 22,
+            "footer_font_colour": "#f5f5f5"
+        }
+    }
+}
