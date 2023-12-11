@@ -89,7 +89,7 @@ Date of data snapshot: 03/12/2023
 
 # Dasharo/coreboot PRs
 
-.center.image-80[![](img/dasharo_coreboot_2023q4.png)]
+.center.image-80[![](/img/dasharo_coreboot_2023q4.png)]
 
 * Experiment v2 with data presentation.
 * Since DUG#3 we merged 25 PRs, what is average results for Dasharo/coreboot.
@@ -98,7 +98,7 @@ Date of data snapshot: 03/12/2023
 
 # Dasharo/edk2 PRs
 
-.center.image-80[![](img/dasharo_edk2_2023q4.png)]
+.center.image-80[![](/img/dasharo_edk2_2023q4.png)]
 
 * EDK II fork activity is similar to coreboot fork.
 * We merged 20 PRs.
@@ -107,7 +107,7 @@ Date of data snapshot: 03/12/2023
 
 # Dasharo Issues
 
-.center.image-80[![](img/dasharo_issues_2023q4.png)]
+.center.image-80[![](/img/dasharo_issues_2023q4.png)]
 
 * We resolved healthy amount of issues (34) since last DUG.
 * We also faced biggest activity in this year regarding issue reporting, what
@@ -117,7 +117,7 @@ Date of data snapshot: 03/12/2023
 
 # Dasharo Matrix
 
-.center.image-80[![](img/dasharo_matrix_2023q4.png)]
+.center.image-80[![](/img/dasharo_matrix_2023q4.png)]
 
 * We more then double the size of our community over last 9 months.
 * We would like to thank you for your contribution to growth of Dasharo.

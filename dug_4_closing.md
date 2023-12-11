@@ -10,10 +10,10 @@ class: center, middle, intro
 
 .center.image-80[![](/img/fosdem_2024.png)]
 
-* We already have more talks than 
+* We already have more talks than
 * We plan some classical talks like AMD open-source firmware status, Arm
   Verified/Secure Boot
-* We looking to meet you there, ther will be definitely some pPub (physical
+* We looking to meet you there, there will be definitely some pPub (physical
   Pub) meetup in Brussels.
 
 ---
@@ -21,10 +21,15 @@ class: center, middle, intro
 # DUG Roadmap for 2024
 
 .center[
+
 ### **DUG #5** - 14.03.2024
+
 ### **DUG #6** - 06.06.2024
+
 ### **DUG #7** - 12.09.2024
-### **DUG #8** - 12.12.2024 
+
+### **DUG #8** - 12.12.2024
+
 ]
 
 Very rought roadmap, we are not sure how our availability would look like and
@@ -46,7 +51,6 @@ there is also question about other events if nothing will collide.
 ---
 
 # Your Actions Matter 🌟 **Thank You** 🙏
-
 
 - **Spread the Word**: Help more people discover, test, and choose Dasharo.
   🗣️
