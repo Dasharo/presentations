@@ -8,7 +8,7 @@ class: center, middle, intro
 
 # Dasharo Roadmap Disclaimer
 
-.center.image-50[![](img/tenor.gif)]
+.center.image-50[![](/img/tenor.gif)]
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -35,7 +35,7 @@ contact the Dasharo Team directly._
 # Dasharo Community Support Process
 
 .center[
-<img src="img/dcs-process-v0.3.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs-process-v0.3.png" width="900px" style="margin-left:-75px">
 ]
 
 * How we qualify platforms for Dasharo Community Support?
@@ -69,7 +69,7 @@ contact the Dasharo Team directly._
 # Dasharo Emulation Roadmap
 
 .center[
-<img src="img/dcs_emu_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_emu_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * Dasharo OSFV release provided infrastructure for validation.
@@ -152,7 +152,7 @@ but have no actual backend hooked up:
 # Dasharo Network Appliance Roadmap
 
 .center[
-<img src="img/dcs_network_appliance_roadmap_v0.4_pt1.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_network_appliance_roadmap_v0.4_pt1.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * We will prioretize Dasharo(coreboot+UEFI) for PC Engines in Q1'24
@@ -176,7 +176,7 @@ but have no actual backend hooked up:
 # Dasharo Network Appliance Roadmap
 
 .center[
-<img src="img/dcs_network_appliance_roadmap_v0.4_pt2.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_network_appliance_roadmap_v0.4_pt2.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * Does Dasharo(coreboot+SeaBIOS) with TrenchBoot/D-RTM make sense on 10th Gen?
@@ -195,7 +195,7 @@ but have no actual backend hooked up:
 # Dasharo Laptops Roadmap
 
 .center[
-<img src="img/dcs_laptop_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_laptop_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 * Dasharo(coreboot+Heads) v0.9.0
@@ -216,7 +216,7 @@ but have no actual backend hooked up:
 # Dasharo Desktop Lenovo Roadmap
 
 .center[
-<img src="img/dcs_desktop_lenovo_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_desktop_lenovo_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
 ]
 
 System is Intel Boot Guard Ready, verified boot disabled, ME not in
@@ -237,7 +237,7 @@ Manufacturing Mode - Dasharo Porting Ready.
 # Dasharo Desktop Dell Roadmap
 
 .center[
-<img src="img/dcs_desktop_dell_roadmap_v0.4.png" width="900px" style="margin-left:-75px;margin-top:-40px">
+<img src="/img/dcs_desktop_dell_roadmap_v0.4.png" width="900px" style="margin-left:-75px;margin-top:-40px">
 ]
 
 ???
@@ -266,7 +266,7 @@ Manufacturing Mode - Dasharo Porting Ready.
 # Dasharo Desktop MSI Roadmap
 
 .center[
-<img src="img/dcs_desktop_msi_z690_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z690_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
 ]
 
 Community Release date changed because of PC Engines and NovaCustom.
@@ -294,7 +294,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 # Dasharo Desktop MSI Roadmap
 
 .center[
-<img src="img/dcs_desktop_msi_z790_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z790_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
 ]
 
 Community Release date changed because of PC Engines and NovaCustom.
@@ -320,7 +320,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 # Dasharo Desktop MSI Roadmap
 
 .center[
-<img src="img/dcs_desktop_msi_z790_heads_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z790_heads_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
 ]
 
 * We have to figure out better naming scheme.
@@ -341,7 +341,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 # Dasharo Desktop ASRock Roadmap
 
 .center[
-<img src="img/dcs_desktop_asrock_roadmap_v0.4.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_desktop_asrock_roadmap_v0.4.png" width="900px" style="margin-left:-75px">
 ]
 
 * Dasharo Supporting Partner discussion.
@@ -360,7 +360,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 # Dasharo Workstation Roadmap
 
 .center[
-<img src="img/dcs_workstation_roadmap_v0.4.png" width="840px" style="margin-left:-40px">
+<img src="/img/dcs_workstation_roadmap_v0.4.png" width="840px" style="margin-left:-40px">
 ]
 
 * There is almost no hope for KGPE-D16
@@ -394,7 +394,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 # Dasharo Server Roadmap
 
 .center[
-<img src="img/dcs_server_roadmap_v0.4.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_server_roadmap_v0.4.png" width="900px" style="margin-left:-75px">
 ]
 
 * Low priority, but there is some market interest.
