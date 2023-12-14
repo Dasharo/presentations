@@ -263,7 +263,7 @@ Manufacturing Mode - Dasharo Porting Ready.
 
 ---
 
-# Dasharo Desktop MSI Roadmap
+# Dasharo Desktop MSI Z690-A Roadmap
 
 .center[
 <img src="/img/dcs_desktop_msi_z690_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
@@ -291,7 +291,7 @@ Community Release date changed because of PC Engines and NovaCustom.
 
 ---
 
-# Dasharo Desktop MSI Roadmap
+# Dasharo Desktop MSI Z790-P Roadmap
 
 .center[
 <img src="/img/dcs_desktop_msi_z790_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
