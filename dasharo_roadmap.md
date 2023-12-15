@@ -302,17 +302,17 @@ Community Release date changed because of PC Engines and NovaCustom.
 ???
 
 - DUG#1
-    - MSI Z790-A v1.0.0 planned for Q1'24
+    - MSI Z790-P v1.0.0 planned for Q1'24
 - DUG#2
-    - (NEW) MSI Z790-A v0.9.0 planned for Q3'23
-    - (NEW) MSI Z790-A v0.9.1 planned for Q4'23
-    - MSI Z790-A v1.0.0 planned for Q1'24
+    - (NEW) MSI Z790-P v0.9.0 planned for Q3'23
+    - (NEW) MSI Z790-P v0.9.1 planned for Q4'23
+    - MSI Z790-P v1.0.0 planned for Q1'24
 - DUG#3
-    - (RELEASED) MSI Z790-A v0.9.0 planned for Q3'23
-    - MSI Z790-A v0.9.1 planned for Q4'23
-    - MSI Z790-A v1.0.0 planned for Q1'24
+    - (RELEASED) MSI Z790-P v0.9.0 planned for Q3'23
+    - MSI Z790-P v0.9.1 planned for Q4'23
+    - MSI Z790-P v1.0.0 planned for Q1'24
 - DUG#4
-    - (CHANGED) MSI Z790-A v1.0.0 planned for Q1'24
+    - (CHANGED) MSI Z790-P v1.0.0 planned for Q1'24
         - release date changed to Q2'24 (+1)
 
 ---
