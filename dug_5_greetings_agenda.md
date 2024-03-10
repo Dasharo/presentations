@@ -73,7 +73,35 @@ class: center, middle, intro
   https://github.com/Dasharo/presentations
   .center.image-99[![](/img/)]
 
-- Presentations preparation is tracked in GitHub Milestones
+---
+
+# Openness and transparency paranoia
+
+### .center[Presentations preparation is tracked in GitHub Milestones]
+
+.center.image-70[![](/img/dug_milestones.png)]
+
+---
+
+# Event page updates
+
+.center.image-99[![](/img/dug_5_event_website_changes.png)]
+
+---
+
+# Event page updates
+
+.center.image-70[![](/img/dug_5_event_website_changes2.png)]
+
+# Event page plans
+
+- Roadmap
+  - migration to `events.dasharo.com`
+    - `vpub.dasharo.com` seem to be to much focused on virtual events
+  - grand unification under MkDocs
+    - `docs.dasharo.com + dasharo.com + events.dasharo.com ?`
+  - Git Cliff support
+  - Reuse support
 
 ---
 
