@@ -75,9 +75,9 @@ class: center, middle, intro
 
 # Openness and transparency paranoia
 
-- All DUG presentations made by 3mdeb are available as code on Github:
-  https://github.com/Dasharo/presentations
-  .center.image-99[![](/img/)]
+### .center[Presentations as a Code:<br>https://github.com/Dasharo/presentations]
+
+.center.image-80[![](/img/dasharo_presentations_repo.png)]
 
 ---
 
@@ -89,7 +89,38 @@ class: center, middle, intro
 
 ---
 
+# Openness and transparency paranoia
+
+### .center[We are now FSFE REUSE complaint]
+
+```bash
+% reuse lint
+
+# SUMMARY
+* Bad licenses: 0
+
+* Deprecated licenses: 0
+* Licenses without file extension: 0
+* Missing licenses: 0
+* Unused licenses: 0
+* Used licenses: CC0-1.0, CC-BY-SA-4.0, Apache-2.0
+* Read errors: 0
+* files with copyright information: 227 / 227
+* files with license information: 227 / 227
+```
+
+---
+
+# Open Collective donations enabled
+
+.center.image-30[![](/img/oc_contrib2.png)]
+.center.image-40[![](/img/oc_contrib.png)]
+
+---
+
 # Event page updates
+
+### .center[Please let us know how much you don't like it]
 
 .center.image-99[![](/img/dug_5_event_website_changes.png)]
 
@@ -97,21 +128,27 @@ class: center, middle, intro
 
 # Event page updates
 
-.center.image-70[![](/img/dug_5_event_website_changes2.png)]
+### .center[Pretalx widget (`cfp.3mdeb.com`) added to Attendize (`vpub.dasharo.com`)]
+
+.center.image-90[![](/img/dug_5_event_website_changes2.png)]
+
+---
 
 # Event page plans
 
-- Roadmap
-    - migration to `events.dasharo.com`
-        - `vpub.dasharo.com` seem to be to much focused on virtual events
-    - grand unification under MkDocs
-        - `docs.dasharo.com + dasharo.com + events.dasharo.com ?`
-    - Git Cliff support
-    - Reuse support
+- migration to `events.dasharo.com`
+  - `vpub.dasharo.com` seem to be to much focused on virtual events
+- grand unification under MkDocs
+  - `docs.dasharo.com + dasharo.com + events.dasharo.com ?`
+- Git Cliff support
+- Ideas and bug reports welcome:
+  - https://github.com/dasharo/presentations/issues
 
 ---
 
 # Dasharo Events Roadmap 2024
+
+---
 
 class: center, middle, intro
 
