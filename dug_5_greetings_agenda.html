@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Greetings/Agenda</title>
+    <meta charset="utf-8" />
+    <script>
+      classTitle = "Dasharo User Group #5";
+      courseAuthor = "Piotr Król";
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/remark-templates/dasharo-presentation-template/css/slides.css"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <script src="/remark-templates/dasharo-presentation-template/js/remark.js"></script>
+    <script src="/remark-templates/dasharo-presentation-template/js/jquery.js"></script>
+    <script>
+      var slideshow = remark.create({
+        sourceUrl: "dug_5_greetings_agenda.md",
+        countIncrementalSlides: false,
+      });
+
+      slideshow.on("afterShowSlide", function (slide) {
+        if ($(".bottomBar")[0]) {
+          $(".bottomBar").remove();
+        } else {
+          // Do something if class does not exist
+        }
+
+        $(".remark-slide-content").append(
+          "<div class='bottomBar'>" +
+            classTitle +
+            " <br> CC-SA-4.0 | " +
+            courseAuthor +
+            "</div>",
+        );
+      });
+    </script>
+  </body>
+</html>
