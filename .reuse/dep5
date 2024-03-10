@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Dasharo Presentations
+Upstream-Contact: Piotr Król <piotr.krol@3mdeb.com>
+Source: https://github.com/Dasharo/presentations
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...

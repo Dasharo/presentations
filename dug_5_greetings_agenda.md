@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+
 class: center, middle, intro
 
 # &#x1F44B; Dasharo User Group #5 &#x1F389;
@@ -96,12 +102,12 @@ class: center, middle, intro
 # Event page plans
 
 - Roadmap
-  - migration to `events.dasharo.com`
-    - `vpub.dasharo.com` seem to be to much focused on virtual events
-  - grand unification under MkDocs
-    - `docs.dasharo.com + dasharo.com + events.dasharo.com ?`
-  - Git Cliff support
-  - Reuse support
+    - migration to `events.dasharo.com`
+        - `vpub.dasharo.com` seem to be to much focused on virtual events
+    - grand unification under MkDocs
+        - `docs.dasharo.com + dasharo.com + events.dasharo.com ?`
+    - Git Cliff support
+    - Reuse support
 
 ---
 
