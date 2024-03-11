@@ -36,7 +36,7 @@
     },
     "task": {
       "task_font": "Oswald",
-      "task_font_size": 22,
+      "task_font_size": 28,
       "task_font_colour": "#000000",
       "task_fill_colour": "#8FBC94",
       "task_style": "rounded"

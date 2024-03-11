@@ -24,7 +24,7 @@ fosdem.add_milestone("Open-source firmware devroom", "2024-02-04", font_size=30,
 dasharo.add_task("DUG#5 & vPub 0xA", "2024-02-14", "2024-03-14", style="rounded", fill_colour="#38d430")
 fossasia = dasharo.add_task("FOSSASIA 2024", "2024-03-10", "2024-04-10", style="rounded", fill_colour="#38d430")
 fossasia.add_milestone("Dasharo, open-source firmware", "2024-04-10", font_size=30, text_alignment="right:35%")
-xds = dasharo.add_task("Xen Developers Summit", "2024-05-06", "2024-06-06", style="rounded", fill_colour="#38d430")
+xds = dasharo.add_task("Xen Dev Summit", "2024-05-06", "2024-06-06", style="rounded", fill_colour="#38d430")
 xds.add_milestone("Challenges and status of\nenabling TrenchBoot\nin Xen hypervisor", "2024-06-06", font_size=30, text_alignment="right:35%")
 dasharo.add_task("DUG#6 & vPub 0xB", "2024-05-13", "2024-06-13", style="rounded", fill_colour="#38d430")
 
