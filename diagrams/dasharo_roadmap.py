@@ -6,15 +6,16 @@
 
 from roadmapper.roadmap import Roadmap
 from roadmapper.timelinemode import TimelineMode
+import sys
 
 """"
 Dasharo Community Support Emulation Roadmap
 """
-roadmap = Roadmap(1600, 660, colour_theme="dasharo.json", show_marker=False)
+roadmap = Roadmap(1600, 660, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Emulation Roadmap")
 roadmap.set_subtitle("subject to change")
 roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-01-01", number_of_items=4)
-roadmap.add_logo("../../img/dasharo_logo_white.png", "top-right", 140, 140)
+roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 qemu_q35_v010 = roadmap.add_group("QEMU Q35 v0.1.0")
 
@@ -25,6 +26,8 @@ qemu_q35_v010.add_task("Community Release", "2023-11-16", "2023-12-31", style="r
 roadmap.set_footer("Dasharo Community Support Roadmap | December 2023 (v0.4) | CC-BY-SA-4.0")
 roadmap.draw()
 roadmap.save("dcs_emu_roadmap_v0.4.png")
+
+sys.exit()
 
 """"
 Dasharo Community Support Network Appliance Roadmap
