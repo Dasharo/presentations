@@ -146,7 +146,15 @@ class: center, middle, intro
 
 ---
 
-# Dasharo Events Roadmap 2024
+# Dasharo Events Roadmap Q1-Q2'24
+
+.center.image-100[![](img/dasharo_team_roadmap.png)]
+
+---
+
+# Dasharo Events Roadmap Q3-Q4'24
+
+.center.image-100[![](img/dasharo_team_roadmap2.png)]
 
 ---
 
