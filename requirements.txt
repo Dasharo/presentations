@@ -1,4 +1,6 @@
-reuse
 pre-commit
+pytz
+reuse
 git+https://github.com/Dasharo/roadmapper.git@dasharo#egg=roadmapper
-
+PyGithub
+matplotlib
