@@ -1,9 +1,3 @@
-<!--
-SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
-
-SPDX-License-Identifier: CC-BY-SA-4.0
--->
-
 class: center, middle, intro
 
 # &#x1F44B; Dasharo User Group #5 &#x1F389;
@@ -11,6 +5,14 @@ class: center, middle, intro
 ## Greetings, Agenda
 
 .center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+
+???
+
+<!--
+SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
 
 ---
 
