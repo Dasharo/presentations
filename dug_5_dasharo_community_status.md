@@ -14,14 +14,6 @@ SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
----
-
-# Community Heartbeat &#x1F493;
-
-.image-100[![](/img/community_heartbeat_dug_4.png)]
-
-???
-
 Date of previous data snapshot: 03/12/2023
 Date of data snapshot: 11/03/2024
 
@@ -58,38 +50,85 @@ Date of data snapshot: 11/03/2024
 
 ---
 
+# Dasharo Issues
+
+.center.image-50[![](/img/dug_5_issues.png)]
+.center.image-80[![](/img/dug_5_dasharo_issues.png)]
+
+---
+
 # Dasharo/coreboot PRs
 
-.center.image-80[![](/img/dug5_dasharo_coreboot.png)]
+.center.image-50[![](/img/dug_5_coreboot_prs.png)]
+.center.image-80[![](/img/dug_5_dasharo_coreboot.png)]
 
-- Experiment v2 with data presentation.
-- Since DUG#3 we merged 25 PRs, what is average results for Dasharo/coreboot.
+---
+
+# Dasharo/coreboot upstreaming
+
+.center.image-50[![](/img/dug_5_coreboot_upstreaming.png)]
+.center.image-80[![](/img/dug_5_dasharo_coreboot_upstraming.png)]
+
+---
+
+# Dasharo/coreboot upstreaming
+
+### .center[Delta `dasharo` branch vs upstream v4.21 tag]
+
+#### .center[`473 files changed, 22692 insertions(+), 2379 deletions(-)`]
+
+### .center[Top Upstreamers]
+
+- **Sergii Dmytruk (sergiid):** +1869/-42
+  - _util: add smmstoretool for editing SMMSTORE_
+- **Michał Kopeć (mkc):** +854
+  - _mb/lenovo: Add ThinkCentre M700/M900 Tiny board (Skylake/Kaby Lake)_
+- **Michał Żygowski (miczyg):** +183/-31
+  - _device/pciexp_device.c: Fix setting Max Payload Size_
+
+???
+
+```
+./contribution-stats list -r coreboot -s 12/03/2023 -o dug5.csv
+./contribution-stats list -r coreboot -s 09/28/2023 -e 12/03/2023 -o dug4.csv
+./contribution-stats list -r coreboot -s 07/06/2023 -e 09/28/2023 -o dug3.csv
+./contribution-stats list -r coreboot -s 03/16/2023 -e 07/06/2023 -o dug2.csv
+awk -F';' '{sum += $6} END {print sum}' dug4.csv #added lines
+awk -F';' '{sum += $7} END {print sum}' dug4.csv #removed lines
+```
 
 ---
 
 # Dasharo/edk2 PRs
 
+.center.image-50[![](/img/dug_5_edk2_prs.png)]
 .center.image-80[![](/img/dug_5_dasharo_edk2.png)]
-
-- EDK II fork activity is similar to coreboot fork.
-- We merged 20 PRs.
 
 ---
 
 # Dasharo Issues
 
-.center.image-80[![](/img/dug_5_dasharo_issues.png)]
+### .center[Comments]
 
-- `123 added / 90 resolved `
+.center.image-50[![](/img/dug_5_dasharo_issues_comments.png)]
+
+### .center[Top Contributors]
+
+.center.image-60[![](/img/dug_5_dasharo_issues_comments_users.png)]
 
 ---
 
 # Dasharo Matrix
 
-.center.image-80[![](/img/dasharo_matrix_2023q4.png)]
+.center.image-90[![](/img/dug_5_dasharo_users.png)]
 
-- We more then double the size of our community over last 9 months.
-- We would like to thank you for your contribution to growth of Dasharo.
+---
+
+# Dasharo Matrix
+
+## .center[Messages]
+
+## .center[Top contributors]
 
 ---
 

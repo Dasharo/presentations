@@ -8,15 +8,17 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 # Data
-quarters = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03"]
-users = [104, 162, 201, 234]
+quarters = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11"]
+# Where is this number coming from? Dasharo Matrix Space? Or Dasharo General?
+# Let's make it Dasharo Matrix Space
+users = [104, 162, 201, 234, 280]
 
 # Create the plot
 plt.figure(figsize=(10, 6))
 plt.plot(quarters, users, marker='o', linestyle='-', color='#38d430', linewidth=2, markersize=10)
 
 # Add titles and labels
-plt.title('Dasharo Matrix Community in 2023', fontsize=18, fontweight='bold', color='#272727')
+plt.title('Dasharo Matrix Community User Base', fontsize=18, fontweight='bold', color='#272727')
 plt.xlabel('Date', fontsize=16, fontweight='bold', color='#272727')
 plt.ylabel('Number of Users', fontsize=16, fontweight='bold', color='#272727')
 
@@ -36,7 +38,7 @@ for i, txt in enumerate(users):
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('dasharo_users.png')
+plt.savefig('img/dug_5_dasharo_users.png')
 
 # Optionally, close the plot to free up memory
 plt.close()

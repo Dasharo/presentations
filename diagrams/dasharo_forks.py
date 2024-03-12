@@ -46,8 +46,8 @@ def count_prs(repo, state, date):
     else:
         return 0
 
+dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11"]
 repo = "Dasharo/coreboot"
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03"]
 
 # Data storage
 data = {"Total": [], "Merged": [], "Closed": [], "Open": []}
@@ -98,13 +98,12 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('dasharo_coreboot.png')
+plt.savefig('img/dug_5_dasharo_coreboot.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
 
 repo = "Dasharo/edk2"
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03"]
 
 # Data storage
 data = {"Total": [], "Merged": [], "Closed": [], "Open": []}
@@ -145,7 +144,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('dasharo_edk2.png')
+plt.savefig('img/dug_5_dasharo_edk2.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
