@@ -204,6 +204,16 @@ awk -F';' '{sum += $7} END {print sum}' dug4.csv #removed lines
 
 ---
 
+# Dasharo star history
+
+.center.image-80[![](/img/dug_5_star-history.png)]
+
+???
+
+https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2024-03-12
+
+---
+
 # Dasharo Matrix
 
 ### .center[Messages and Users]
