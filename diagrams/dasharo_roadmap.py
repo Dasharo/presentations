@@ -23,8 +23,8 @@ roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 qemu_q35_v010 = roadmap.add_group("QEMU Q35 v0.1.0")
 qemu_q35_v020 = roadmap.add_group("QEMU Q35 v0.2.0")
 
-qemu_q35_v010.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853", font_size=20)
-qemu_q35_v010.add_task("Community Release", "2023-11-16", "2023-12-31", style="rounded", fill_colour="#ADD8E6", font_size=20)
+qemu_q35_v010.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853", font_size=23)
+qemu_q35_v010.add_task("Community Release", "2023-11-16", "2023-12-31", style="rounded", fill_colour="#ADD8E6", font_size=23)
 qemu_q35_v020.add_task("Community Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#ADD8E6")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
@@ -44,8 +44,8 @@ pcengines = roadmap.add_group("PC Engines apu2/3/4/6 coreboot+UEFI v0.9.0", font
 pcengines_24020101 = roadmap.add_group("coreboot+SeaBIOS v24.02.01.01", font_size=26)
 pcengines_4034 = roadmap.add_group("coreboot+SeaBIOS v4.0.34", font_size=26)
 
-pcengines.add_task("Validation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#34A853", font_size=20)
-pcengines.add_task("DES Release", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#FD7E14")
+pcengines.add_task("Validation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#34A853", font_size=23)
+pcengines.add_task("DES Release", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#FD7E14", font_size=23)
 pcengines_24020101.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 pcengines_4034.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 
@@ -61,9 +61,9 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-01-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 protectli = roadmap.add_group("Protectli VP4670 v0.9.0")
-protectli.add_task("Evaluation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#9B51E0")
+protectli.add_task("Evaluation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#9B51E0", font_size=23)
 protectli.add_task("Porting", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#EA4335")
-protectli.add_task("Validation", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#34A853")
+protectli.add_task("Validation", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#34A853", font_size=23)
 protectli.add_task("DES Release", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
@@ -78,7 +78,7 @@ roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 mb = roadmap.add_group("MinnowBoard Turbot\nDasharo (coreboot+UEFI) v0.9.0")
 mb.add_task("Porting", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#EA4335")
-mb.add_task("Validation", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#34A853")
+mb.add_task("Validation", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#34A853", font_size=23)
 mb.add_task("DES Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
@@ -149,7 +149,7 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-10-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 msi_z690 = roadmap.add_group("MSI PRO Z690-A v1.1.3")
-msi_z690.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853")
+msi_z690.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853", font_size=23)
 msi_z690.add_task("DES Release", "2023-11-16", "2023-12-31", style="rounded", fill_colour="#FD7E14")
 
 msi_z690_dcr = roadmap.add_group("MSI PRO Z690-A v1.2.0")
@@ -168,11 +168,11 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-10-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 msi_z790 = roadmap.add_group("MSI PRO Z790-P v0.9.1")
-msi_z790.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853")
+msi_z790.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853", font_size=23)
 msi_z790.add_task("DES Release", "2023-11-16", "2023-12-31", style="rounded", fill_colour="#FD7E14")
 
 msi_z790_dcr = roadmap.add_group("MSI PRO Z790-P v1.0.0")
-msi_z790_dcr.add_task("Validation", "2024-01-01", "2024-03-31", style="rounded", fill_colour="#34A853")
+msi_z790_dcr.add_task("Validation", "2024-01-01", "2024-03-31", style="rounded", fill_colour="#34A853", font_size=23)
 msi_z790_dcr.add_task("Community Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#ADD8E6")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
@@ -188,7 +188,7 @@ roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 msi_z790 = roadmap.add_group("MSI PRO Z790-P v0.9.0\n coreboot+Heads")
 msi_z790.add_task("Porting", "2023-11-16", "2023-12-31", style="rounded", fill_colour="#EA4335")
-msi_z790.add_task("Validation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#34A853")
+msi_z790.add_task("Validation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#34A853", font_size=23)
 msi_z790.add_task("DES Release", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
@@ -203,7 +203,7 @@ roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 asrock = roadmap.add_group("ASRock X370 Killer SLI/ac")
 asrock.add_task("Porting", "2023-10-01", "2024-02-14", style="rounded", fill_colour="#EA4335")
-asrock.add_task("Validation", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#34A853")
+asrock.add_task("Validation", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#34A853", font_size=23)
 asrock.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
@@ -217,7 +217,7 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-10-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 rcs = roadmap.add_group("Raptor CS Talos II v0.8.0")
-rcs.add_task("Validation", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#34A853")
+rcs.add_task("Validation", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#34A853", font_size=23)
 rcs.add_task("DES Release", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")

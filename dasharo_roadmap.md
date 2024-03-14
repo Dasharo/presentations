@@ -68,6 +68,12 @@ contact the Dasharo Team directly._
 
 ---
 
+# Dasharo Roadmap States
+
+.center.image-95[![](/img/dug_5_dasharo_roadmap_states.png)]
+
+---
+
 # Dasharo Emulation Roadmap
 
 .center[
@@ -81,12 +87,17 @@ contact the Dasharo Team directly._
 
 ???
 
-- DUG#1: QEMU Q35 v0.1.0 planned for Q3'23
-- DUG#2: (CHANGED) QEMU Q35 v0.1.0 planned for Q3'23
-  - release date changed to Q4'23 (+1)
-- DUG#3: QEMU Q35 v0.1.0 planned for Q4'23
-- DUG#4: (RELEASED) QEMU Q35 v0.1.0 release
-- DUG#5: (NEW) QEMU Q35 v0.2.0 planned for Q3'24
+- DUG#1:
+  - (NEW) QEMU Q35 v0.1.0 planned for Q3'23
+- DUG#2:
+  - (CHANGED) QEMU Q35 v0.1.0 planned for Q3'23
+    - release date changed to Q4'23 (+1)
+- DUG#3:
+  - (ON TRACK) QEMU Q35 v0.1.0 planned for Q4'23
+- DUG#4:
+  - (RELEASED) QEMU Q35 v0.1.0 release
+- DUG#5:
+  - (NEW) QEMU Q35 v0.2.0 planned for Q3'24
 
 ---
 
@@ -117,6 +128,12 @@ TODO: think how to improve presentation of all those combinations on roadmap
 ---
 
 # Dasharo for PC Engines
+
+.center.image-40[![](/img/desfna.png)]
+
+* Personal use (<= 5 devices): https://dasharo.com/pcengines/buy
+* Business inquiries, volume sales, OSS support:
+.center[https://www.dasharo.com/pages/contact]
 
 ---
 
@@ -176,6 +193,7 @@ TODO: think how to improve presentation of all those combinations on roadmap
   - (CHANGED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
     - release date changed to Q1'24 (+1)
 - DUG#5:
+  - (RELEASED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
   - (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.1 planned for Q3'24
   - (NEW) Novacustom NV4x Dasharo (coreboot+UEFI) v1.8.0 planned for Q3'24
 
@@ -200,6 +218,8 @@ TODO: think how to improve presentation of all those combinations on roadmap
 - DUG#5:
   - (CHANGED) Lenovo M920Q planned for Q2'24
     - scope change/correction: ThinkCentre M700/M900 Tiny
+- DUG#6:
+  - (TBD) Lenovo ThinkCentre M700/M900 Tiny planned for Q2'24
 - progress regarding Lenovo ThinkCenter M700: https://github.com/Dasharo/coreboot/pull/121
 
 ---
@@ -254,23 +274,25 @@ TODO: think how to improve presentation of all those combinations on roadmap
 ???
 
 - DUG#1
-  - MSI Z690-A v1.1.2 planned for Q3'23
-  - MSI Z690-A v1.2.0 planned for Q4'23
+  - (NEW) MSI Z690-A v1.1.2 planned for Q3'23
+  - (NEW) MSI Z690-A v1.2.0 planned for Q4'23
 - DUG#2
-  - MSI Z690-A v1.1.2 planned for Q3'23
+  - (ON TRACK) MSI Z690-A v1.1.2 planned for Q3'23
   - (NEW) MSI Z690-A v1.1.3 release planned for Q4'23
   - (CHANGED) MSI Z690-A v1.2.0 planned for Q4'23
     - release date changed to Q1'24 (+1)
 - DUG#3
   - (RELEASED) MSI Z690-A v1.1.2 planned for Q3'23
-  - MSI Z690-A v1.1.3 release planned for Q4'23
-  - MSI Z690-A v1.2.0 planned for Q1'24
+  - (ON TRACK) MSI Z690-A v1.1.3 planned for Q4'23
+  - (ON TRACK) MSI Z690-A v1.2.0 planned for Q1'24
 - DUG#4
+  - (CHANGED) MSI Z690-A v1.1.3 planned for Q4'23
+    - release date changed to Q1'24 (+1)
   - (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
     - release date changed to Q2'24 (+1)
 - DUG#5
   - (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
-    - release date changed to Q1'24 (+1)
+  - (ON TRACK) MSI Z690-A v1.2.0 planned for Q1'24
 
 ---
 
@@ -286,21 +308,22 @@ TODO: think how to improve presentation of all those combinations on roadmap
 ???
 
 - DUG#1
-  - MSI Z790-P v1.0.0 planned for Q1'24
+  - (NEW) MSI Z790-P v1.0.0 planned for Q1'24
 - DUG#2
   - (NEW) MSI Z790-P v0.9.0 planned for Q3'23
   - (NEW) MSI Z790-P v0.9.1 planned for Q4'23
-  - MSI Z790-P v1.0.0 planned for Q1'24
+  - (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
 - DUG#3
   - (RELEASED) MSI Z790-P v0.9.0 planned for Q3'23
-  - MSI Z790-P v0.9.1 planned for Q4'23
-  - MSI Z790-P v1.0.0 planned for Q1'24
+  - (ON TRACK) MSI Z790-P v0.9.1 planned for Q4'23
+  - (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
 - DUG#4
   - (CHANGED) MSI Z790-P v1.0.0 planned for Q1'24
     - release date changed to Q2'24 (+1)
+  - (ON TRACK) MSI Z790-P v0.9.1 planned for Q4'23
 - DUG#5
   - (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
-    - release date changed to Q1'24 (+1)
+  - (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
 
 ---
 
@@ -310,22 +333,18 @@ TODO: think how to improve presentation of all those combinations on roadmap
 <img src="/img/dcs_desktop_msi_z790_heads_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-TBD:
-
-- We have to figure out better naming scheme.
-- We plan to deliver this solution one quarter earlier.
-- Status from call with ThePlexus.
+- Release is planned at the end of March, so it is considered on track.
 
 ???
 
 - DUG#3
-  - (NEW) MSI Z790-A Dasharo (coreboot+Heads) v1.0.1 planned for Q2'24
+  - (NEW) MSI Z790-P Dasharo (coreboot+Heads) v1.0.1 planned for Q2'24
 - DUG#4
-  - (CHANGED) MSI Z790-A Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
+  - (CHANGED) MSI Z790-P Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
     - release date changed to Q1'24 (-1)
     - version changed to v0.9.0
 - DUG#5
-  - MSI Z790-A Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
+  - (ON TRACK) MSI Z790-P Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
 
 ---
 
@@ -338,6 +357,7 @@ TBD:
 - Decision was made to pursue OpenSIL path, but this target may be replaced by
   AMD Phoenix-based one.
 - Dasharo Supporting Partner discussion with multiple parties.
+- There is no clear roadmap for x370 or x570 in Dasharo.
 
 ???
 
@@ -358,22 +378,22 @@ TBD:
 ???
 
 - DUG#1
-  - ASUS KGPE-D16 v0.5.0 planned for Q3'23
-  - RCS Talos II v0.7.0 planned for Q3'23
+  - (NEW) ASUS KGPE-D16 v0.5.0 planned for Q3'23
+  - (NEW) RCS Talos II v0.7.0 planned for Q3'23
 - DUG#2
   - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q3'23
     - release date changed to Q1'24 (+2)
-  - RCS Talos II v0.7.0 planned for Q3'23
+  - (ON TRACK) RCS Talos II v0.7.0 planned for Q3'23
 - DUG#3
   - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q1'24
     - release type changed to DES
     - release date changed to Q2'24 (+1)
   - (RELEASED) RCS Talos II v0.7.0 planned for Q3'23
 - DUG#4:
-  - no response from Immunefi
-  - we have to cancel KGPE-D16 from roadmap at some point
   - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
     - release date changed to Q3'24 (+1)
+    - no response from Immunefi
+    - we have to cancel KGPE-D16 from roadmap at some point
   - (NEW) RCS Talos II v0.8.0 planned for Q1'24
     - depends on agreeing on Heads commit on which we should integrate things,
       we already one month blocked because lack of decision
@@ -396,7 +416,7 @@ TBD:
 ???
 
 - DUG#1
-  - Supermicro X11SSH-TF v0.1.0 planned for Q4'23
+  - (NEW) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
 - DUG#2
   - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
     - release date changed to Q1'24 (+1)
@@ -407,7 +427,7 @@ TBD:
   - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
     - release type changed to DES
 - DUG#5
-  - no change
+  - (ON TRACK) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
 - DUG#6
   - proposal:
   - (REMOVED) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
@@ -426,80 +446,39 @@ class: center, middle, intro
 
 ---
 
-# Changelog DUG#1
+# Changelog DUG#5
 
-- (NEW) QEMU Q35 v0.1.0 planned for Q3'23
-- (NEW) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
-- (NEW) Dell T1650 v0.1.0 planned for Q3'23
-- (NEW) MSI Z690-A v1.1.2 planned for Q3'23
-- (NEW) MSI Z690-A v1.2.0 planned for Q4'23
-- (NEW) MSI Z790-A v1.0.0 planned for Q1'24
-- (NEW) ASUS KGPE-D16 v0.5.0 planned for Q3'23
-- (NEW) RCS Talos II v0.7.0 planned for Q3'23
-- (NEW) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
-- Summary: 9 new
-
----
-
-# Changelog DUG#2
-
-- (CHANGED) QEMU Q35 v0.1.0 planned for Q3'23
-  - release date changed to Q4'23 (+1)
-- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
-  - release date changed to Q4'23 (+2)
-- (CHANGED) Dell T1650 v0.1.0 planned for Q3'23
-  - release date changed to Q1'24 (+2)
-- MSI Z690-A v1.1.2 planned for Q3'23
-- (NEW) MSI Z690-A v1.1.3 release planned for Q4'23
-- (CHANGED) MSI Z690-A v1.2.0 planned for Q4'23
-  - release date changed to Q1'24 (+1)
-- (NEW) MSI Z790-A v0.9.0 planned for Q3'23
-- (NEW) MSI Z790-A v0.9.1 planned for Q4'23
-- MSI Z790-A v1.0.0 planned for Q1'24
-- (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q3'23
-  - release date changed to Q1'24 (+2)
-
----
-
-# Changelog DUG#2
-
-- RCS Talos II v0.7.0 planned for Q3'23
-- (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
-  - release date changed to Q1'24 (+1)
-- Summary: 3 new, 6 changed, 3 on track (total: 12)
-
----
-
-# Changelog DUG#3
-
-- QEMU Q35 v0.1.0 planned for Q4'23
-- (NEW) PC Engines apu3 v0.9.0 planned for Q4'23
-- (NEW) Protectli VP4670 v0.9.0 planned for Q2'24
-- (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q2'24
-- (NEW) Lenovo M920Q v0.9.0 planned for Q2'24
+- (NEW) QEMU Q35 v0.2.0 planned for Q3'24
+- (CHANGED) PC Engines apu2/3/4/6 Dasharo (coreboot+UEFI) planned for Q1'24
+  - release scope changed: additional platform apu4
+- (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) mainline planned for Q2'24
+- (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) legacy planned for Q2'24
+- (CHANGED) Protectli VP4670 planned for Q2'24
+  - release date changed to Q2'24 (-1)
+- (NEW) MinnowBoard Turbot Dasharo(coreboot+UEFI) planned for Q2'24
+- (RELEASED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
+- (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.1 planned for Q3'24
+- (NEW) Novacustom NV4x Dasharo (coreboot+UEFI) v1.8.0 planned for Q3'24
+- (CHANGED) Lenovo M920Q planned for Q2'24
+  - scope change/correction: ThinkCentre M700/M900 Tiny
 - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
-  - release type changed to DES
-- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
-  - release type changed to DES
-- (RELEASED) MSI Z690-A v1.1.2 planned for Q3'23
-- MSI Z690-A v1.1.3 release planned for Q4'23
-- MSI Z690-A v1.2.0 planned for Q1'24
-- (RELEASED) MSI Z790-A v0.9.0 planned for Q3'23
+  - release date changed to Q2'24 (+1)
+- (REMOVED) Dell T1650 v0.1.0 planned for Q1'24
 
 ---
 
-# Changelog DUG#3
+# Changelog DUG#5
 
-- MSI Z790-A v0.9.1 planned for Q4'23
-- MSI Z790-A v1.0.0 planned for Q1'24
-- (NEW) MSI Z790-A Dasharo (coreboot+Heads) v1.0.1 planned for Q2'24
-- (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q1'24
-  - release type changed to DES
+- (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
+- (ON TRACK) MSI Z690-A v1.2.0 planned for Q1'24
+- (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
+- (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
+- (ON TRACK) MSI Z790-P Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
+- (REMOVED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
+- (CHANGED) RCS Talos II v0.8.0 planned for Q1'24
   - release date changed to Q2'24 (+1)
-- (RELEASED) RCS Talos II v0.7.0 planned for Q3'23
-- (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q1'24
-  - release date changed to Q2'24 (+1)
-- Summary: 5 new, 4 changed, 5 on track, 3 released (total: 17)
+- (ON TRACK) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
+- Summary: 6 new, 5 changed, 4 on track, 3 released, 2 removed (total: 20)
 
 ---
 
@@ -519,51 +498,101 @@ class: center, middle, intro
   - release date changed to Q1'24 (+1)
 - (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
   - release date changed to Q3'24 (+2)
-- (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
-  - release date changed to Q2'24 (+1)
+- (CHANGED) MSI Z690-A v1.1.3 planned for Q4'23
+  - release date changed to Q1'24 (+1)
 
 ---
 
 # Changelog DUG#4
 
+- (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
+  - release date changed to Q2'24 (+1)
 - (CHANGED) MSI Z790-P v1.0.0 planned for Q1'24
   - release date changed to Q2'24 (+1)
+- (ON TRACK) MSI Z790-P v0.9.1 planned for Q4'23
+- (CHANGED) MSI Z790-P Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
+  - release date changed to Q1'24 (-1)
+  - version changed to v0.9.0
 - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
   - release date changed to Q3'24 (+1)
 - (NEW) RCS Talos II v0.8.0 planned for Q1'24
   - depends on agreeing on Heads commit on which we should integrate things,
     we already one month blocked because lack of decision
-- Summary: 1 new, 9 changed, TBD on track, 1 released (total: TBD)
-
+- Summary: 1 new, 11 changed, 1 on track, 1 released, 0 removed (total: 15)
 ---
 
-# Changelog DUG#5
+# Changelog DUG#3
 
-- (NEW) QEMU Q35 v0.2.0 planned for Q3'24
-- (CHANGED) PC Engines apu2/3/4/6 Dasharo (coreboot+UEFI) planned for Q1'24
-  - release scope changed: additional platform apu4
-- (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) mainline planned for Q2'24
-- (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) legacy planned for Q2'24
-- (CHANGED) Protectli VP4670 planned for Q2'24
-  - release date changed to Q2'24 (-1)
-- (NEW) MinnowBoard Turbot Dasharo(coreboot+UEFI) planned for Q2'24
-- (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.1 planned for Q3'24
-- (NEW) Novacustom NV4x Dasharo (coreboot+UEFI) v1.8.0 planned for Q3'24
-- (CHANGED) Lenovo M920Q planned for Q2'24
-  - scope change/correction: ThinkCentre M700/M900 Tiny
+- (ON TRACK) QEMU Q35 v0.1.0 planned for Q4'23
+- (NEW) PC Engines apu3 v0.9.0 planned for Q4'23
+- (NEW) Protectli VP4670 v0.9.0 planned for Q2'24
+- (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q2'24
+- (NEW) Lenovo M920Q v0.9.0 planned for Q2'24
 - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
-  - release date changed to Q2'24 (+1)
-- (REMOVED) Dell T1650 v0.1.0 planned for Q1'24
+  - release type changed to DES
+- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
+  - release type changed to DES
+- (RELEASED) MSI Z690-A v1.1.2 planned for Q3'23
+- (ON TRACK) MSI Z690-A v1.1.3 release planned for Q4'23
+- (ON TRACK) MSI Z690-A v1.2.0 planned for Q1'24
+- (RELEASED) MSI Z790-P v0.9.0 planned for Q3'23
 
 ---
 
-# Changelog DUG#5
+# Changelog DUG#3
 
-- (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
-  - release date changed to Q1'24 (+1)
-- (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
-  - release date changed to Q1'24 (+1)
-- (REMOVED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
-- (CHANGED) RCS Talos II v0.8.0 planned for Q1'24
+- (ON TRACK) MSI Z790-P v0.9.1 planned for Q4'23
+- (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
+- (NEW) MSI Z790-P Dasharo (coreboot+Heads) v1.0.1 planned for Q2'24
+- (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q1'24
+  - release type changed to DES
   - release date changed to Q2'24 (+1)
-- Summary: 6 new, 4 changed, 2 removed, TBD on track, 2 released (total: TBD)
+- (RELEASED) RCS Talos II v0.7.0 planned for Q3'23
+- (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q1'24
+  - release date changed to Q2'24 (+1)
+- Summary: 5 new, 4 changed, 5 on track, 3 released, 0 removed (total: 17)
+
+---
+
+# Changelog DUG#2
+
+- (CHANGED) QEMU Q35 v0.1.0 planned for Q3'23
+  - release date changed to Q4'23 (+1)
+- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
+  - release date changed to Q4'23 (+2)
+- (CHANGED) Dell T1650 v0.1.0 planned for Q3'23
+  - release date changed to Q1'24 (+2)
+- (ON TRACK) MSI Z690-A v1.1.2 planned for Q3'23
+- (NEW) MSI Z690-A v1.1.3 release planned for Q4'23
+- (CHANGED) MSI Z690-A v1.2.0 planned for Q4'23
+  - release date changed to Q1'24 (+1)
+- (NEW) MSI Z790-P v0.9.0 planned for Q3'23
+- (NEW) MSI Z790-P v0.9.1 planned for Q4'23
+- (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
+- (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q3'23
+  - release date changed to Q1'24 (+2)
+
+---
+
+# Changelog DUG#2
+
+- (ON TRACK) RCS Talos II v0.7.0 planned for Q3'23
+- (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
+  - release date changed to Q1'24 (+1)
+- Summary: 3 new, 6 changed, 3 on track, 0 released, 0 removed (total: 12)
+
+---
+
+# Changelog DUG#1
+
+- (NEW) QEMU Q35 v0.1.0 planned for Q3'23
+- (NEW) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
+- (NEW) Dell T1650 v0.1.0 planned for Q3'23
+- (NEW) MSI Z690-A v1.1.2 planned for Q3'23
+- (NEW) MSI Z690-A v1.2.0 planned for Q4'23
+- (NEW) MSI Z790-P v1.0.0 planned for Q1'24
+- (NEW) ASUS KGPE-D16 v0.5.0 planned for Q3'23
+- (NEW) RCS Talos II v0.7.0 planned for Q3'23
+- (NEW) Supermicro X11SSH-TF v0.1.0 planned for Q4'23
+- Summary: 9 new, 0 changed, 0 on track, 0 released, 0 removed (total: 9)
+
