@@ -43,7 +43,19 @@ the program's development, but is not a guarantee of specific timelines or
 outcomes. For more information on release candidates or release dates, please
 contact the Dasharo Team directly._
 
-???
+---
+
+# Dasharo Roadmap History
+
+* For those watching this presentation first time we really encourage to look
+  at past videos to get better context and understanding of the format.
+  * [DUG#4](https://www.youtube.com/live/EN5rBAAOdOk?feature=shared&t=3973),
+    [DUG#3](https://www.youtube.com/live/xHdlDmZVVkI?feature=shared&t=8700),
+    [DUG#2](https://www.youtube.com/live/ZyctrnJNTPc?feature=shared&t=3395),
+    [DUG#1](https://www.youtube.com/live/fUfjWyljKNs?feature=shared&t=795)
+* We improve format of presentation every quarter.
+* This time we introduced statistics about our planning and execution effort.
+
 
 ---
 
@@ -268,10 +280,10 @@ TODO: think how to improve presentation of all those combinations on roadmap
 <img src="/img/dcs_desktop_msi_z690_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
+???
+
 - [v1.1.3](https://docs.dasharo.com/variants/msi_z690/releases/#v113-2024-01-22) was released according to plan. Hardware going in unbotanium mode.
 - Community release has low priority because of other activities.
-
-???
 
 - DUG#1
   - (NEW) MSI Z690-A v1.1.2 planned for Q3'23
@@ -292,6 +304,7 @@ TODO: think how to improve presentation of all those combinations on roadmap
     - release date changed to Q2'24 (+1)
 - DUG#5
   - (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
+  - (NEW) MSI Z690-A v1.1.4 planned for Q3'24
   - (ON TRACK) MSI Z690-A v1.2.0 planned for Q1'24
 
 ---
@@ -302,10 +315,11 @@ TODO: think how to improve presentation of all those combinations on roadmap
 <img src="/img/dcs_desktop_msi_z790_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-- [v0.9.1]() was released according to plan.
-- Community release has low priority because of other activities.
-
 ???
+
+- [v0.9.1](https://docs.dasharo.com/variants/msi_z790/releases/#v091-2024-01-22)
+  was released according to plan.
+- Community release has low priority because of other activities.
 
 - DUG#1
   - (NEW) MSI Z790-P v1.0.0 planned for Q1'24
@@ -323,6 +337,7 @@ TODO: think how to improve presentation of all those combinations on roadmap
   - (ON TRACK) MSI Z790-P v0.9.1 planned for Q4'23
 - DUG#5
   - (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
+  - (NEW) MSI Z790-P v0.9.2 planned for Q3'24
   - (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
 
 ---
@@ -470,15 +485,17 @@ class: center, middle, intro
 # Changelog DUG#5
 
 - (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
+- (NEW) MSI Z690-A v1.1.4 planned for Q3'24
 - (ON TRACK) MSI Z690-A v1.2.0 planned for Q1'24
 - (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
+- (NEW) MSI Z790-P v0.9.2 planned for Q3'24
 - (ON TRACK) MSI Z790-P v1.0.0 planned for Q1'24
 - (ON TRACK) MSI Z790-P Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
 - (REMOVED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
 - (CHANGED) RCS Talos II v0.8.0 planned for Q1'24
   - release date changed to Q2'24 (+1)
 - (ON TRACK) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
-- Summary: 6 new, 5 changed, 4 on track, 3 released, 2 removed (total: 20)
+- Summary: 8 new, 5 changed, 4 on track, 3 released, 2 removed (total: 22)
 
 ---
 
