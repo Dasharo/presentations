@@ -17,6 +17,18 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 ???
 
 - consider what feature set is provided in roadmaps
+  - clearly define how community members and customers can influence our roadmap, in form of diagram
+  - define publicly visible deliverables of each phase
+  - document frameworks and tools on which given release will be based on
+- We need more focused slides, saying precisely what we plan for given release,
+  what features what will be validated etc.
+- Dasharo development unification
+- Customer stories?
+- Other 3mdeb roadmaps
+  - Zarhus
+  - UEFI Secure Boot focus - OSFV
+- Features matrix concept
+- Inform about our priorities
 
 ---
 
@@ -56,51 +68,16 @@ contact the Dasharo Team directly._
 
 ---
 
-# Dasharo Community Support Process
-
-.center[
-<img src="/img/dcs-process-v0.3.png" width="900px" style="margin-left:-75px">
-]
-
-- How we qualify platforms for Dasharo Community Support?
-- Business goals alignment with 3mdeb.
-- Synergy with other projects e.g. TrenchBoot.
-- Above stages very roughly map to real work/tasks performed by team.
-
-???
-
-- DCP means executing and delivering test results according to specs defined in
-  earlier stages.
-- This process shows how flow look like for new platforms, already supported
-  platforms typically get through Validation/Release cycle.
-- TODO:
-
-  - define publicly visible deliverables of each phase
-  - document frameworks and tools on which given release will be based on
-
-- We need more focused slides, saying precisely what we plan for given release,
-  what features what will be validated etc.
-- Dasharo development unification
-- Customer stories?
-- Dasharo Team release performance metrics
-- Other 3mdeb roadmaps
-  - EST
-  - UEFI Secure Boot focus - OSFV
-- Features matrix concept
-- Inform about our priorities
-
----
-
 # Dasharo Emulation Roadmap
 
 .center[
-<img src="/img/dcs_emu_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_emu_roadmap_v0.5.png" width="900px" style="margin-left:-36px; margin-top:-40px">
 ]
 
-- Dasharo OSFV release provided infrastructure for validation.
-- QEMU tests were proven to work and it is just matter to run set of tests
-  defined by test matrix, prepare release notes and send newsletter.
-- We will do that in Q4'23.
+- Dasharo(UEFI) for QEMU Emulator Q35 Machine type was released according to
+  plan on 6th Dec 2023
+- We heavily use that release in Dasharo OSFV
+- [v0.2.0 milestone](https://github.com/Dasharo/dasharo-issues/milestone/26) was published on Dasharo Github
 
 ???
 
@@ -108,86 +85,22 @@ contact the Dasharo Team directly._
 - DUG#2: (CHANGED) QEMU Q35 v0.1.0 planned for Q3'23
   - release date changed to Q4'23 (+1)
 - DUG#3: QEMU Q35 v0.1.0 planned for Q4'23
-- DUG#4: QEMU Q35 v0.1.0 release
-
-Notes for expanding this part of the roadmap:
-
-- new potential vendors/products: Intel Simics, AMD SimNow
-- new potential release types to be supported for QEMU Q35 target
-  - Dasharo (coreboot+UEFI)
-  - Xen target (XCP-ng) although I'm not sure how how much firmware would be
-    different, there is definitely stuff Xen-specific in OvmfPkg
-- show milestone on github
-
----
-
-# Dasharo Emulation Roadmap: Vision
-
-- shift left firmware development
-- new potential vendors/products: Intel Simics, AMD SimNow
-- new potential release types to be supported for QEMU Q35 target
-  - Dasharo (coreboot+UEFI)
-  - Xen target (XCP-ng) although I'm not sure how how much firmware would be
-    different, there is definitely stuff Xen-specific in OvmfPkg
-- firmware will play role in Confidential VMs
-- references:
-  - [MSFT talk about CVM](https://youtu.be/2GxaBAS2_no)
-  - MSFT: DCasv5 and ECasv5
-  - [Edgeless Systems](https://www.edgeless.systems/blog/how-confidential-computing-and-ai-fit-together/)
-
----
-
-# Dasharo Emulation Roadmap: Features
-
-Following features can be fully used:
-
-- Configurable boot order
-- Configurable boot options
-- [Custom boot menu keys](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/303-custom-boot-menu-key/)
-- [UEFI shell](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/30P-uefi-shell/)
-- [UEFI Secure Boot](https://docs.dasharo.com/unified-test-documentation/dasharo-security/206-secure-boot/)
-- [TPM Support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/200-tpm-support/)
-- [Dasharo setup password](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20R-uefi-setup-password/)
-- [Serial Port Configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#serial-port-configuration)
-- [iPXE network boot](https://docs.dasharo.com/unified-test-documentation/dasharo-compatibility/315-network-boot/)
-- [ESP partition scanning in look for grubx64.efi or shimx64.efi or Windows bootmgr](https://github.com/Dasharo/dasharo-issues/issues/94)
-
----
-
-# Dasharo Emulation Roadmap: Features
-
-Following features are visible in setup menu and can be used for testing the menus,
-but have no actual backend hooked up:
-
-- [PS/2 Controller enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
-- [Watchdog configuration menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#chipset-configuration)
-- [Early boot DMA protection menu option](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20L-early-boot-dma-protection/)
-- [Intel ME disable support and menu options](https://docs.dasharo.com/unified-test-documentation/dasharo-security/20F-me-neuter/)
-- [SED/OPAL disk password support](https://docs.dasharo.com/unified-test-documentation/dasharo-security/208-opal-disk-password-support/)
-- [SATA disk password support](https://docs.dasharo.com/dasharo-menu-docs/device-manager/#hdd-security-configuration)
-- SMM BIOS Write Protection support and enable/disable option
-- [USB stack and mass storage enable/disable option](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#usb-configuration)
-- [Firmware Update Mode feature](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
-- [One of the two fan profiles can now be selected in Setup Menu](https://docs.dasharo.com/unified/novacustom/fan-profiles/)
-- [Setup menu option for switching between S0ix and S3 suspend mode](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#power-management-options)
-- [Wi-Fi / Bluetooth module disable option in setup menu](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#dasharo-security-options)
-- ...
+- DUG#4: (RELEASED) QEMU Q35 v0.1.0 release
+- DUG#5: (NEW) QEMU Q35 v0.2.0 planned for Q3'24
 
 ---
 
 # Dasharo Network Appliance Roadmap
 
 .center[
-<img src="/img/dcs_network_appliance_roadmap_v0.4_pt1.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_network_appliance_roadmap_v0.5_pt1.png" width="900px" style="margin-left:-36px; margin-top:-40px">
 ]
 
-- We will prioretize Dasharo(coreboot+UEFI) for PC Engines in Q1'24
-- There should be two options for buying DES
-- We would like to enable as many Dasharo features as possible, especially
-  important for us are security features (measured boot, TPM2.0 support,
-  verified boot, UEFI Secure Boot).
+- Dasharo(coreboot+UEFI) for PC Engines is in advanced development.
 
 ???
+
+TODO: think how to improve presentation of all those combinations on roadmap
 
 - DUG#3:
   - (NEW) PC Engines apu3 planned for Q4'23
@@ -195,39 +108,65 @@ but have no actual backend hooked up:
   - (CHANGED) PC Engines apu3 planned for Q4'23
     - release date changed to Q1'23 (+1)
     - add support for apu2 and apu6
-- DUG#3: (NEW) Protectli VP4670 planned for Q2'24
+- DUG#5
+  - (CHANGED) PC Engines apu2/3/4/6 Dasharo (coreboot+UEFI) planned for Q1'24
+    - release scope changed: additional platform apu4
+  - (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) mainline planned for Q2'24
+  - (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) legacy planned for Q2'24
+
+---
+
+# Dasharo for PC Engines
 
 ---
 
 # Dasharo Network Appliance Roadmap
 
 .center[
-<img src="/img/dcs_network_appliance_roadmap_v0.4_pt2.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_network_appliance_roadmap_v0.5_pt2.png" width="900px" style="margin-left:-36px; margin-top:-40px">
 ]
 
-- Does Dasharo(coreboot+SeaBIOS) with TrenchBoot/D-RTM make sense on 10th Gen?
+- We plan to demo TrenchBoot with Xen on this release at Xen Developers Summit in June
 
 ???
 
-- Legacy boot is deprecated by Intel since 11th Gen
-- To make it work with Dasharo(coreboot+UEFI) we have to complete TB AEM P5
-
-* DUG#3:
+- DUG#3:
+  - (NEW) Protectli VP4670 planned for Q2'24
+- DUG#4:
   - (CHANGED) Protectli VP4670 planned for Q2'24
     - release date changed to Q3'23 (+1)
+- DUG#5
+  - (CHANGED) Protectli VP4670 planned for Q2'24
+    - release date changed to Q2'24 (-1)
+
+---
+
+# Dasharo Network Appliance Roadmap
+
+.center[
+<img src="/img/dcs_network_appliance_roadmap_v0.5_pt3.png" width="900px" style="margin-left:-36px; margin-top:-40px">
+]
+
+- Very old embedded platform but still used in industrial and robotics market.
+- Support will be based on coreboot `4.11_branch`.
+- We plan to prove again our commitment to [long-term support](https://docs.dasharo.com/osf-trivia-list/dasharo/#what-value-dasharo-provides-in-comparison-to-coreboot).
+- Dasharo TrustRoot support.
+
+???
+
+- DUG#5
+  - (NEW) MinnowBoard Turbot Dasharo(coreboot+UEFI) planned for Q2'24
 
 ---
 
 # Dasharo Laptops Roadmap
 
 .center[
-<img src="/img/dcs_laptop_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_laptop_roadmap_v0.5.png" width="900px" style="margin-left:-36px; margin-top:-40px">
 ]
 
-- Dasharo(coreboot+Heads) v0.9.0
-- Shifted because of our engagement in NV4x/NS5x/7x 11th Gen v1.5.x and
-  NV4x/NS5x/7x 12th Gen v1.7.x release series
-- High priority release for Q1'24
+- v0.9.0 released according to plan, more information [here](https://docs.dasharo.com/variants/novacustom_nv4x_adl/heads/#v090-2024-02-29)
+- v0.9.1 and v1.8.0: Dasharo TrustRoot using Dasharo or Customer keys
 
 ???
 
@@ -236,27 +175,31 @@ but have no actual backend hooked up:
 - DUG#4:
   - (CHANGED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
     - release date changed to Q1'24 (+1)
+- DUG#5:
+  - (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.1 planned for Q3'24
+  - (NEW) Novacustom NV4x Dasharo (coreboot+UEFI) v1.8.0 planned for Q3'24
 
 ---
 
 # Dasharo Desktop Lenovo Roadmap
 
 .center[
-<img src="/img/dcs_desktop_lenovo_roadmap_v0.4.png" width="900px" style="margin-left:-75px; margin-top:-40px">
+<img src="/img/dcs_desktop_lenovo_roadmap_v0.5.png" width="900px" style="margin-left:-36px; margin-top:-40px">
 ]
 
-System is Intel Boot Guard Ready, verified boot disabled, ME not in
-Manufacturing Mode - Dasharo Porting Ready.
+- Hardware model correction it should be M900 not M920Q
+- Port was merged to coreboot. Congratulations to Michał (`@mkc`)
 
 ???
 
 - DUG#3:
   - (NEW) Lenovo M920Q planned for Q2'24
 - DUG#4:
-
   - (CHANGED) Lenovo M920Q planned for Q2'24
     - release date changed to Q3'24 (+1)
-
+- DUG#5:
+  - (CHANGED) Lenovo M920Q planned for Q2'24
+    - scope change/correction: ThinkCentre M700/M900 Tiny
 - progress regarding Lenovo ThinkCenter M700: https://github.com/Dasharo/coreboot/pull/121
 
 ---
@@ -264,39 +207,49 @@ Manufacturing Mode - Dasharo Porting Ready.
 # Dasharo Desktop Dell Roadmap
 
 .center[
-<img src="/img/dcs_desktop_dell_roadmap_v0.4.png" width="900px" style="margin-left:-75px;margin-top:-40px">
+<img src="/img/dcs_desktop_dell_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
+
+- Dasharo(coreboot+SeaBIOS) v0.1.0 is planned to be demoed with TrenchBoot on
+  Xen Developers Summit in June
+- We removed T1650 because we don't think we will have time for it in
+  foreseeable future.
 
 ???
 
 - DUG#1
-- Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
-- Dell T1650 v0.1.0 planned for Q3'23
+  - (NEW) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
+  - (NEW) Dell T1650 v0.1.0 planned for Q3'23
 - DUG#2
-- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
-  - release date changed to Q4'23 (+2)
-- (CHANGED) Dell T1650 v0.1.0 planned for Q3'23
-- release date changed to Q1'24 (+2)
+  - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q2'23
+    - release date changed to Q4'23 (+2)
+  - (CHANGED) Dell T1650 v0.1.0 planned for Q3'23
+    - release date changed to Q1'24 (+2)
 - DUG#3
-- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
-  - release type changed to DES
-- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
-  - release type changed to DES
+  - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+    - release type changed to DES
+  - (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
+    - release type changed to DES
 - DUG#4
-- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
-  - release date changed to Q1'24 (+1)
-- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
-  - release date changed to Q3'24 (+2)
+  - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+    - release date changed to Q1'24 (+1)
+  - (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
+    - release date changed to Q3'24 (+2)
+- DUG#5
+  - (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+    - release date changed to Q2'24 (+1)
+  - (REMOVED) Dell T1650 v0.1.0 planned for Q1'24
 
 ---
 
 # Dasharo Desktop MSI Z690-A Roadmap
 
 .center[
-<img src="/img/dcs_desktop_msi_z690_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z690_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-Community Release date changed because of PC Engines and NovaCustom.
+- [v1.1.3](https://docs.dasharo.com/variants/msi_z690/releases/#v113-2024-01-22) was released according to plan. Hardware going in unbotanium mode.
+- Community release has low priority because of other activities.
 
 ???
 
@@ -315,16 +268,20 @@ Community Release date changed because of PC Engines and NovaCustom.
 - DUG#4
   - (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
     - release date changed to Q2'24 (+1)
+- DUG#5
+  - (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
+    - release date changed to Q1'24 (+1)
 
 ---
 
 # Dasharo Desktop MSI Z790-P Roadmap
 
 .center[
-<img src="/img/dcs_desktop_msi_z790_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z790_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-Community Release date changed because of PC Engines and NovaCustom.
+- [v0.9.1]() was released according to plan.
+- Community release has low priority because of other activities.
 
 ???
 
@@ -341,14 +298,19 @@ Community Release date changed because of PC Engines and NovaCustom.
 - DUG#4
   - (CHANGED) MSI Z790-P v1.0.0 planned for Q1'24
     - release date changed to Q2'24 (+1)
+- DUG#5
+  - (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
+    - release date changed to Q1'24 (+1)
 
 ---
 
 # Dasharo Desktop MSI Roadmap
 
 .center[
-<img src="/img/dcs_desktop_msi_z790_heads_roadmap_v0.4.png" width="850px" style="margin-left:-60px">
+<img src="/img/dcs_desktop_msi_z790_heads_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
+
+TBD:
 
 - We have to figure out better naming scheme.
 - We plan to deliver this solution one quarter earlier.
@@ -362,36 +324,36 @@ Community Release date changed because of PC Engines and NovaCustom.
   - (CHANGED) MSI Z790-A Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
     - release date changed to Q1'24 (-1)
     - version changed to v0.9.0
+- DUG#5
+  - MSI Z790-A Dasharo (coreboot+Heads) v0.9.0 planned for Q1'24
 
 ---
 
 # Dasharo Desktop ASRock Roadmap
 
 .center[
-<img src="/img/dcs_desktop_asrock_roadmap_v0.4.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_desktop_asrock_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-- Dasharo Supporting Partner discussion.
-- Potential paths: AMD FSP or AGESA.
+- Decision was made to pursue OpenSIL path, but this target may be replaced by
+  AMD Phoenix-based one.
+- Dasharo Supporting Partner discussion with multiple parties.
 
 ???
-
-- Shop, DRS etc.
-- Discussion with hanetzer about possible avenues
-- Access to AMD FSP by 3mdeb - very inlikely
-- 3mdeb delivering AGESA for AM4/AM5 possible when support for hardware will be
-  available, but wrapping AGESA code is huge headach in light of OpenSIL
 
 ---
 
 # Dasharo Workstation Roadmap
 
 .center[
-<img src="/img/dcs_workstation_roadmap_v0.4.png" width="840px" style="margin-left:-40px">
+<img src="/img/dcs_workstation_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-- There is almost no hope for KGPE-D16
-- New milestone for Dasharo(coreboot+Heads) v0.8.0 for Talos II
+- KGPE-D16 removed from Dasharo roadmap.
+  - There are some parties interested in development.
+  - FSFE probably will sponsor Denis 'GNUtoo' Carikli.
+  - Also received communication from Adrien 'neox' Bourmault.
+- Dasharo (coreboot+Heads) v0.8.0 for Talos II moved to Q2'24.'
 
 ???
 
@@ -413,18 +375,23 @@ Community Release date changed because of PC Engines and NovaCustom.
   - (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
     - release date changed to Q3'24 (+1)
   - (NEW) RCS Talos II v0.8.0 planned for Q1'24
-    - depends on agreeing on Heads commit on which we should inteagrate things,
+    - depends on agreeing on Heads commit on which we should integrate things,
       we already one month blocked because lack of decision
+- DUG#5:
+  - (REMOVED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
+  - (CHANGED) RCS Talos II v0.8.0 planned for Q1'24
+    - release date changed to Q2'24 (+1)
 
 ---
 
 # Dasharo Server Roadmap
 
 .center[
-<img src="/img/dcs_server_roadmap_v0.4.png" width="900px" style="margin-left:-75px">
+<img src="/img/dcs_server_roadmap_v0.5.png" width="900px" style="margin-left:-36px;margin-top:-40px">
 ]
 
-- Low priority, but there is some market interest.
+- Most likely we should remove this target if nothing will happen.
+- We have other strategic approach in desktop/workstation market segment.
 
 ???
 
@@ -439,6 +406,11 @@ Community Release date changed because of PC Engines and NovaCustom.
 - DUG#4
   - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
     - release type changed to DES
+- DUG#5
+  - no change
+- DUG#6
+  - proposal:
+  - (REMOVED) Supermicro X11SSH-TF v0.1.0 planned for Q2'24
 
 ---
 
@@ -528,3 +500,70 @@ class: center, middle, intro
 - (CHANGED) Supermicro X11SSH-TF v0.1.0 planned for Q1'24
   - release date changed to Q2'24 (+1)
 - Summary: 5 new, 4 changed, 5 on track, 3 released (total: 17)
+
+---
+
+# Changelog DUG#4
+
+- (RELEASED) QEMU Q35 v0.1.0 release
+- (CHANGED) PC Engines apu3 planned for Q4'23
+  - release date changed to Q1'23 (+1)
+  - add support for apu2 and apu6
+- (CHANGED) Protectli VP4670 planned for Q2'24
+  - release date changed to Q3'23 (+1)
+- (CHANGED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.0 planned for Q4'23
+  - release date changed to Q1'24 (+1)
+- (CHANGED) Lenovo M920Q planned for Q2'24
+  - release date changed to Q3'24 (+1)
+- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+  - release date changed to Q1'24 (+1)
+- (CHANGED) Dell T1650 v0.1.0 planned for Q1'24
+  - release date changed to Q3'24 (+2)
+- (CHANGED) MSI Z690-A v1.2.0 planned for Q1'24
+  - release date changed to Q2'24 (+1)
+
+---
+
+# Changelog DUG#4
+
+- (CHANGED) MSI Z790-P v1.0.0 planned for Q1'24
+  - release date changed to Q2'24 (+1)
+- (CHANGED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
+  - release date changed to Q3'24 (+1)
+- (NEW) RCS Talos II v0.8.0 planned for Q1'24
+  - depends on agreeing on Heads commit on which we should integrate things,
+    we already one month blocked because lack of decision
+- Summary: 1 new, 9 changed, TBD on track, 1 released (total: TBD)
+
+---
+
+# Changelog DUG#5
+
+- (NEW) QEMU Q35 v0.2.0 planned for Q3'24
+- (CHANGED) PC Engines apu2/3/4/6 Dasharo (coreboot+UEFI) planned for Q1'24
+  - release scope changed: additional platform apu4
+- (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) mainline planned for Q2'24
+- (NEW) PC Engines apu2/3/4/6 Dasharo (creboot+SeaBIOS) legacy planned for Q2'24
+- (CHANGED) Protectli VP4670 planned for Q2'24
+  - release date changed to Q2'24 (-1)
+- (NEW) MinnowBoard Turbot Dasharo(coreboot+UEFI) planned for Q2'24
+- (NEW) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.1 planned for Q3'24
+- (NEW) Novacustom NV4x Dasharo (coreboot+UEFI) v1.8.0 planned for Q3'24
+- (CHANGED) Lenovo M920Q planned for Q2'24
+  - scope change/correction: ThinkCentre M700/M900 Tiny
+- (CHANGED) Dell OptiPlex 7010/9010 v0.1.0 planned for Q4'23
+  - release date changed to Q2'24 (+1)
+- (REMOVED) Dell T1650 v0.1.0 planned for Q1'24
+
+---
+
+# Changelog DUG#5
+
+- (RELEASED) MSI Z690-A v1.1.3 planned for Q4'23
+  - release date changed to Q1'24 (+1)
+- (RELEASED) MSI Z790-P v0.9.1 planned for Q4'23
+  - release date changed to Q1'24 (+1)
+- (REMOVED) ASUS KGPE-D16 v0.5.0 planned for Q2'24
+- (CHANGED) RCS Talos II v0.8.0 planned for Q1'24
+  - release date changed to Q2'24 (+1)
+- Summary: 6 new, 4 changed, 2 removed, TBD on track, 2 released (total: TBD)
