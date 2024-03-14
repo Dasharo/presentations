@@ -34,9 +34,9 @@ changed["2023-12-03"]  = 11
 ontrack["2023-12-03"]  = 1
 released["2023-12-03"]  = 1
 removed["2023-12-03"]  = 0
-new["2024-03-11"]  = 8
-changed["2024-03-11"]  = 5
-ontrack["2024-03-11"]  = 4
+new["2024-03-11"]  = 9
+changed["2024-03-11"]  = 7
+ontrack["2024-03-11"]  = 2
 released["2024-03-11"]  = 3
 removed["2024-03-11"]  = 2
 
@@ -74,6 +74,15 @@ add_labels(bars_changed)
 add_labels(bars_ontrack)
 add_labels(bars_released)
 add_labels(bars_removed)
+
+# Function to add sum on top of stacked bars
+def add_sum_labels(bars1, bars2, bars3, bars4, bars5, color='black'):
+    for bar1, bar2, bar3, bar4, bar5 in zip(bars1, bars2, bars3, bars4, bars5):
+        total_height = bar1.get_height() + bar2.get_height() + bar3.get_height() + bar4.get_height() + bar5.get_height()
+        plt.text(bar1.get_x() + bar1.get_width() / 2, total_height,
+                 f'{total_height}', ha='center', va='bottom', color=color, fontsize=14, fontweight='bold')
+
+add_sum_labels(bars_new, bars_changed, bars_ontrack, bars_released, bars_removed)
 
 plt.legend(fontsize=12)
 
