@@ -34,7 +34,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Dasharo Roadmap Disclaimer
 
-.center.image-50[![](/img/tenor.gif)]
+.center.image-55[![](/img/plan.jpg)]
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
