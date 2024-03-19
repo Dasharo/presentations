@@ -86,6 +86,20 @@ revenue period significantly.
 
 ---
 
+# vPub Agenda
+
+.center.image-99[![](/img/vpub_0xa_01.png)]
+.center.image-99[![](/img/vpub_0xa_02.png)]
+
+---
+
+# vPub Agenda
+
+.center.image-99[![](/img/vpub_0xa_03.png)]
+.center.image-99[![](/img/vpub_0xa_04.png)]
+
+---
+
 # Test, Choose, Know 🌟
 
 .center.image-40[![](/img/dasharo_slogan.png)]
