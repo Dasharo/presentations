@@ -1,14 +1,17 @@
+class: center, middle, intro
+
+# &#x1F44B; DUG#3 Closing Remarks #3 &#x1F44B;
+
+.center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
+
+???
+
 <!--
 SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-class: center, middle, intro
-
-# &#x1F44B; DUG#3 Closing Remarks #3 &#x1F44B;
-
-.center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ---
 
