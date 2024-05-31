@@ -109,7 +109,7 @@ run target applications leveraging the **Chain of Trust** of their choice._
   Qubes](https://3mdeb.com/events/#_qubes-os-and-3mdeb-minisummit-2019), we
   have very nice discussion with Marek (`@marmarek`) then.
 * Piotr (`@pietrushnic`) present at PSEC [Yocto built TrenchBoot demo on PC
-  Engines](https://3mdeb.com/events/#_platform-security-summit), sightly
+  Engines](https://3mdeb.com/events/#_platform-security-summit), slightly
   improved version is show the same year at ELCE.
 
 ### 2020
