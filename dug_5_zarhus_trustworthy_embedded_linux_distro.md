@@ -4,7 +4,6 @@ class: center, middle, intro
 
 ### &#x1F44B; Dasharo User Group #5 &#x1F389;
 
-
 .center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ???

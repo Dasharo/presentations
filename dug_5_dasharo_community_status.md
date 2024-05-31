@@ -186,7 +186,7 @@ Modify and run:
 
 ???
 
-```
+```bash
 ./contribution-stats list -r coreboot -s 12/03/2023 -o dug5.csv
 ./contribution-stats list -r coreboot -s 09/28/2023 -e 12/03/2023 -o dug4.csv
 ./contribution-stats list -r coreboot -s 07/06/2023 -e 09/28/2023 -o dug3.csv
