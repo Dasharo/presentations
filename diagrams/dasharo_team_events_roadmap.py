@@ -62,3 +62,22 @@ yocto = zarhus.add_task("Yocto Summit 2024.11", "2024-10-30", "2024-11-30", styl
 roadmap.set_footer("Dasharo Team Events Roadmap | March 2024 (v0.1) | CC-BY-SA-4.0")
 roadmap.draw()
 roadmap.save("img/dasharo_team_roadmap2.png")
+
+""""
+Dasharo Team Events Roadmap Q1-Q2'25
+"""
+roadmap = Roadmap(1600, 900, colour_theme="diagrams/dasharo.json", show_marker=False)
+roadmap.set_title("Dasharo Team Events Roadmap Q1-Q2'25")
+roadmap.set_subtitle("subject to change")
+roadmap.set_timeline(TimelineMode.MONTHLY, start="2024-08-01", number_of_items=5)
+roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
+
+dasharo = roadmap.add_group("Dasharo")
+# zarhus = roadmap.add_group("Zarhus")
+# pet = roadmap.add_group("Pace Enterprise Training")
+
+fosdem = dasharo.add_task("FOSSDEM 2025", "2025-01-04", "2025-02-04", style="rounded", fill_colour="#38d430")
+
+roadmap.set_footer("Dasharo Team Events Roadmap | June 2025 (v0.2) | CC-BY-SA-4.0")
+roadmap.draw()
+roadmap.save("img/dasharo_team_roadmap3.png")
