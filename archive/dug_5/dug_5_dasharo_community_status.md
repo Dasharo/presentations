@@ -105,13 +105,13 @@ Date of data snapshot: 11/03/2024
 
 # Dasharo Events Roadmap Q1-Q2'24
 
-.center.image-100[![](img/dasharo_team_roadmap.png)]
+.center.image-100[![](/img/dasharo_team_roadmap.png)]
 
 ---
 
 # Dasharo Events Roadmap Q3-Q4'24
 
-.center.image-100[![](img/dasharo_team_roadmap2.png)]
+.center.image-100[![](/img/dasharo_team_roadmap2.png)]
 
 ---
 

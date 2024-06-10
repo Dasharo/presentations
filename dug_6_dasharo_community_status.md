@@ -19,7 +19,7 @@ Date of data snapshot: 02/06/2024
 
 ---
 
-# Agenda
+# TBD: Agenda
 
 - DUG and vPub infrastructure transparency
 - Events page updates
@@ -40,13 +40,45 @@ Date of data snapshot: 02/06/2024
 
 ---
 
+# https://events.3mdeb.com
+
+.center.image-70[![](img/3mdeb_events.png)]
+
+- Link to all FOSSDEM 2024 3mdeb presentations and videos
+- Link to DUG#5 and vPub 0xA (also on https://vpub.dasharo.com and YouTube)
+- Link to FOSSASIA 2024 presentation and video
+- Coming: Xen Summit presentation and video
+
+---
+
 # Dasharo Events Roadmap Q3-Q4'24
 
 .center.image-100[![](img/dasharo_team_roadmap2.png)]
 
 ---
 
-# Dasharo Events Roadmap Q1-Q2'24
+# LPC System Boot and Security MC CfP Open
+
+.center.image-70[![](img/lpc2024_cfp.png)]
+
+- Go to https://lpc.events
+- Login
+- Go to Call for Proposals
+- Use Submit New Abstract
+
+---
+
+# Qubes OS Summit 2024 CfP
+
+.center.image-60[![](img/qubesos_summit_2024_cfp.png)]
+
+- Go to: https://cfp.3mdeb.com
+- Choose upcoming event CfP: `Qubes OS Summit 2024 (Sept. 20th – 22nd, 2024)`
+- Use Submit Proposal
+
+---
+
+# Dasharo Events Roadmap Q1-Q2'25
 
 .center.image-100[![](img/dasharo_team_roadmap3.png)]
 
@@ -54,8 +86,8 @@ Date of data snapshot: 02/06/2024
 
 # Dasharo Issues
 
-.center.image-50[![](/img/dug_5_issues.png)]
-.center.image-80[![](/img/dug_5_dasharo_issues.png)]
+.center.image-50[![](/img/dug_6_issues.png)]
+.center.image-80[![](/img/dug_6_dasharo_issues.png)]
 
 ???
 
@@ -68,11 +100,11 @@ Modify and run:
 
 ### .center[Comments]
 
-.center.image-50[![](/img/dug_5_dasharo_issues_comments.png)]
+.center.image-50[![](/img/dug_6_dasharo_issues_comments.png)]
 
 ### .center[Top Contributors]
 
-.center.image-60[![](/img/dug_5_dasharo_issues_comments_users.png)]
+.center.image-60[![](/img/dug_6_dasharo_issues_comments_users.png)]
 
 ???
 
@@ -89,8 +121,8 @@ Following should be run in dasharo-issues repo, gh command should be installed:
 
 # Dasharo/coreboot PRs
 
-.center.image-50[![](/img/dug_5_coreboot_prs.png)]
-.center.image-80[![](/img/dug_5_dasharo_coreboot.png)]
+.center.image-70[![](/img/dug_6_coreboot_prs.png)]
+.center.image-80[![](/img/dug_6_dasharo_coreboot.png)]
 
 ???
 
@@ -99,51 +131,97 @@ Modify and run:
 
 ---
 
-# Dasharo/coreboot upstreaming
+# Dasharo Patchqueue Initiative
 
-.center.image-50[![](/img/dug_5_coreboot_upstreaming.png)]
-.center.image-80[![](/img/dug_5_dasharo_coreboot_upstraming.png)]
+.center.image-80[![](/img/dasharo-pq.png)]
+
+- The `dasharo-pq` repository was initiated to PoC new way of managing the
+  downstream distribution of coreboot firmware, as highlighted in issue
+  [#310](https://github.com/Dasharo/dasharo-issues/issues/310).
+
+---
+
+# Dasharo Patchqueue Initiative
+
+### **Current Challenges:**
+
+1. **Branching Model Complexity**: Difficulty in managing multiple
+   platform-specific branches as the number of supported platforms increases.
+2. **Synchronization Issues**: Effort-intensive and error-prone synchronization
+   of features and fixes across branches.
+3. **Mono-branch Problem**: The consolidation into a single branch (`dasharo`
+   branch) for releases complicates rebasing with upstream, increasing the risk
+   of errors and disrupting collaboration.
+4. **Upstream Merging Difficulties**: The integration of upstream changes into
+   downstream forks is complex and prone to missing crucial updates.
+
+---
+
+# Dasharo Patchqueue Initiative
+
+### **Proposed Solution:**
+
+- **Adopt Patch Management**: A shift towards a structured patch management
+  system is proposed to address these issues, drawing inspiration from successful
+  implementations in large and small projects (e.g., Debian, Linux, Qubes OS,
+  XenServer, and TrenchBoot).
+
+### **Hypothesized Benefits:**
+
+- Enhanced systematic management of changes.
+- Reduced complexity and error in merging upstream updates as well as
+  upstreaming downstream changes.
+- Improved consistency across multiple platform configurations.
 
 ---
 
 # Dasharo/coreboot upstreaming
 
-### .center[Delta `dasharo` branch vs upstream v4.21 tag]
-
-#### .center[`473 files changed, 22692 insertions(+), 2379 deletions(-)`]
-
-### .center[Top Upstreamers]
-
-- **Sergii Dmytruk (sergiid):** +1869/-42
-  - _util: add smmstoretool for editing SMMSTORE_
-- **Michał Kopeć (mkc):** +854
-  - _mb/lenovo: Add ThinkCentre M700/M900 Tiny board (Skylake/Kaby Lake)_
-- **Michał Żygowski (miczyg):** +183/-31
-  - _device/pciexp_device.c: Fix setting Max Payload Size_
+.center.image-70[![](/img/dug_6_coreboot_upstreaming.png)]
+.center.image-80[![](/img/dug_6_dasharo_coreboot_upstraming.png)]
 
 ???
 
-```bash
-./contribution-stats list -r coreboot -s 12/03/2023 -o dug5.csv
-./contribution-stats list -r coreboot -s 09/28/2023 -e 12/03/2023 -o dug4.csv
-./contribution-stats list -r coreboot -s 07/06/2023 -e 09/28/2023 -o dug3.csv
-./contribution-stats list -r coreboot -s 03/16/2023 -e 07/06/2023 -o dug2.csv
-awk -F';' '{sum += $6} END {print sum}' dug4.csv #added lines
-awk -F';' '{sum += $7} END {print sum}' dug4.csv #removed lines
-```
+Top is total:
+./contribution-stats list -r coreboot -s 01/01/2000 -e 06/10/2024 -o dug6.csv
+
+Bottom:
+./contribution-stats list -r coreboot -s 03/11/2000 -e 06/10/2024 -o dug6.csv
+
+awk -F';' '{sum += $6} END {print sum}' dug6.csv #added lines
+awk -F';' '{sum += $7} END {print sum}' dug6.csv #removed lines
+
+---
+
+# Dasharo/coreboot upstreaming
+
+### .center[Delta `dasharo` branch vs upstream v24.02.01 tag]
+
+#### .center[`527 files changed, 25401 insertions(+), 2111 deletions(-)`]
+
+### .center[Top Upstreamers]
+
+- **Michał Kopeć (mkc):** +1045
+  - _ec/dasharo/ec: Add initial copy of ec/system76/ec_
+- **Filip Lewiński (filipleple):** +587/-2
+  - _util/inteltool: add Meteor Lake support_
+- **Sergii Dmytruk (sergiid):** +572/-549
+  - _security/vboot: extract secdata_tpm{1,2}.c_
+
+???
 
 ---
 
 # Dasharo/edk2 PRs
 
-.center.image-50[![](/img/dug_5_edk2_prs.png)]
-.center.image-80[![](/img/dug_5_dasharo_edk2.png)]
+.center.image-60[![](/img/dug_6_edk2_prs.png)]
+.center.image-80[![](/img/dug_6_dasharo_edk2.png)]
 
 ---
 
 # Dasharo star history
 
-.center.image-80[![](/img/dug_5_star-history.png)]
+.center.image-80[![](/img/dug_6_star-history.png)]
 
 ???
 
@@ -155,11 +233,11 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2
 
 ### .center[Messages and Users]
 
-.center.image-50[![](/img/dug_5_dasharo_general_matrix.png)]
+.center.image-50[![](/img/dug_6_dasharo_general_matrix.png)]
 
 ### .center[Top contributors]
 
-.center.image-50[![](/img/dug_5_dasharo_general_matrix_users.png)]
+.center.image-50[![](/img/dug_6_dasharo_general_matrix_users.png)]
 
 ???
 
@@ -173,7 +251,7 @@ awk '{sum += $1} END {print sum}'
 
 # Dasharo Matrix
 
-.center.image-90[![](/img/dug_5_dasharo_users.png)]
+.center.image-90[![](/img/dug_6_dasharo_users.png)]
 
 ---
 
@@ -187,14 +265,11 @@ awk '{sum += $1} END {print sum}'
 
 ???
 
-General: 29764
-Random: 7211
-Support: 3322
-vPub: 3050
-Supermicro: 1640
-OSFV: 825
-Announcements: 187
-Laptops: 187
+General: 31035
+Random: 7815 (+604)
+Support: 3859 (+537)
+vPub: 3556 (+506)
+OSFV: 1090 (+265)
 
 ---
 

@@ -48,7 +48,7 @@ dasharo = roadmap.add_group("Dasharo")
 zarhus = roadmap.add_group("Zarhus")
 pet = roadmap.add_group("Pace Enterprise Training")
 
-osfc = dasharo.add_task("OSFC", "2024-08-03", "2024-09-03", style="rounded", fill_colour="#38d430")
+osfc = dasharo.add_task("OSFC (not confirmed)", "2024-08-03", "2024-09-03", style="rounded", fill_colour="#808080")
 dasharo.add_task("DUG#7 & vPub 0xC", "2024-08-12", "2024-09-12", style="rounded", fill_colour="#38d430")
 lpc = dasharo.add_task("Linux Plumbers", "2024-08-18", "2024-09-18", style="rounded", fill_colour="#38d430")
 qos = dasharo.add_task("Qubes OS Summit", "2024-08-22", "2024-09-22", style="rounded", fill_colour="#38d430")
@@ -69,7 +69,7 @@ Dasharo Team Events Roadmap Q1-Q2'25
 roadmap = Roadmap(1600, 900, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Team Events Roadmap Q1-Q2'25")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.MONTHLY, start="2024-08-01", number_of_items=5)
+roadmap.set_timeline(TimelineMode.MONTHLY, start="2025-01-01", number_of_items=5)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 dasharo = roadmap.add_group("Dasharo")

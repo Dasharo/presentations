@@ -20,6 +20,8 @@ added["2023-12-03"] = 193
 removed["2023-12-03"] = 189
 added["2024-03-11"] = 2928
 removed["2024-03-11"] = 73
+added["2024-06-10"] = 3820
+removed["2024-06-10"] = 1361
 
 logging.info('Creating lists from dictionaries')
 dates = list(added.keys())
@@ -38,18 +40,29 @@ plt.title('Contribution Statistics', fontsize=18, fontweight='bold', color='#272
 plt.xlabel('Date', fontsize=16, fontweight='bold', color='#272727')
 plt.ylabel('Number of Lines', fontsize=16, fontweight='bold', color='#272727')
 
-# Function to add labels inside the bars
-def add_labels(bars, color='white', offset=0):
+def add_labels_added(bars):
     for bar in bars:
         height = bar.get_height()
+        font_s = 14
         plt.annotate(f'{height}',
-                     xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 + offset),
+                     xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 - 90),
                      xytext=(0, 3),  # 3 points vertical offset
                      textcoords="offset points",
-                     ha='center', va='bottom', color=color, fontsize=14, fontweight='bold')
+                     ha='center', va='bottom', color='white', fontsize=font_s, fontweight='bold')
 
-add_labels(bars_added)
-add_labels(bars_removed, color='black', offset=60)
+def add_labels_removed(bars):
+    for bar in bars:
+        height = bar.get_height()
+        font_s = 14
+        logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
+        plt.annotate(f'{height}',
+                     xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height - 60),
+                     xytext=(0, 3),  # 3 points vertical offset
+                     textcoords="offset points",
+                     ha='center', va='bottom', color='black', fontsize=font_s, fontweight='bold')
+
+add_labels_added(bars_added)
+add_labels_removed(bars_removed)
 
 logging.info('Adding legend')
 plt.legend(fontsize=12)
@@ -58,7 +71,7 @@ logging.info('Setting facecolor')
 plt.gca().set_facecolor('#f5f5f5')
 
 logging.info('Saving figure')
-plt.savefig('img/dug_5_dasharo_coreboot_upstraming.png', dpi=300)
+plt.savefig('img/dug_6_dasharo_coreboot_upstraming.png', dpi=300)
 
 logging.info('Closing figure')
 plt.close()

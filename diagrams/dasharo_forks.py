@@ -13,6 +13,10 @@ import matplotlib.pyplot as plt
 import requests
 from datetime import datetime
 import subprocess
+import logging
+
+logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
+
 
 def get_github_token():
     # Path to the GitHub hosts.yml file
@@ -46,7 +50,7 @@ def count_prs(repo, state, date):
     else:
         return 0
 
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11"]
+dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10"]
 repo = "Dasharo/coreboot"
 
 # Data storage
@@ -72,24 +76,46 @@ bars_closed = plt.bar(dates, data["Closed"], bottom=data["Merged"], color='#2727
 bars_open = plt.bar(dates, data["Open"], bottom=[m+c for m, c in zip(data["Merged"], data["Closed"])], color='#1E90FF', label='Open PRs')
 
 # Add titles and labels
-plt.title('PR Statistics for Dasharo/coreboot fork', fontsize=18, fontweight='bold', color='#272727')
+plt.title('PR Statistics for Dasharo/coreboot downstream', fontsize=18, fontweight='bold', color='#272727')
 plt.xlabel('Date', fontsize=16, fontweight='bold', color='#272727')
 plt.ylabel('Number of PRs', fontsize=16, fontweight='bold', color='#272727')
 
-# Function to add labels inside the bars
-def add_labels(bars, color='white'):
+def add_labels_merged(bars):
     for bar in bars:
         height = bar.get_height()
+        font_s = 14
         plt.annotate(f'{height}',
                      xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2),
                      xytext=(0, 3),  # 3 points vertical offset
                      textcoords="offset points",
-                     ha='center', va='bottom', color=color, fontsize=14, fontweight='bold')
+                     ha='center', va='bottom', color='white', fontsize=font_s, fontweight='bold')
+
+def add_labels_closed(bars, offset=0):
+    for bar in bars:
+        height = bar.get_height()
+        font_s = 14
+        logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
+        plt.annotate(f'{height}',
+                     xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 - offset),
+                     xytext=(0, 3),  # 3 points vertical offset
+                     textcoords="offset points",
+                     ha='center', va='bottom', color='white', fontsize=font_s, fontweight='bold')
+
+def add_labels_open(bars, offset=0):
+    for bar in bars:
+        height = bar.get_height()
+        font_s = 14
+        logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
+        plt.annotate(f'{height}',
+                     xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 - offset),
+                     xytext=(0, 3),  # 3 points vertical offset
+                     textcoords="offset points",
+                     ha='center', va='bottom', color='black', fontsize=font_s, fontweight='bold')
 
 # Add labels to the bars
-add_labels(bars_merged)
-add_labels(bars_closed)
-add_labels(bars_open, color='black')
+add_labels_merged(bars_merged)
+add_labels_closed(bars_closed, offset=30)
+add_labels_open(bars_open, offset=5)
 
 # Add legend
 plt.legend(fontsize=12)
@@ -98,7 +124,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('img/dug_5_dasharo_coreboot.png')
+plt.savefig('img/dug_6_dasharo_coreboot.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
@@ -133,9 +159,9 @@ plt.xlabel('Date', fontsize=16, fontweight='bold', color='#272727')
 plt.ylabel('Number of PRs', fontsize=16, fontweight='bold', color='#272727')
 
 # Add labels to the bars
-add_labels(bars_merged)
-add_labels(bars_closed)
-add_labels(bars_open, color='black')
+add_labels_merged(bars_merged)
+add_labels_closed(bars_closed, offset=7)
+add_labels_open(bars_open, offset=1)
 
 # Add legend
 plt.legend(fontsize=12)
@@ -144,7 +170,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('img/dug_5_dasharo_edk2.png')
+plt.savefig('img/dug_6_dasharo_edk2.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
