@@ -276,5 +276,3 @@ OSFV: 1090 (+265)
 class: center, middle, intro
 
 # Q&A
-
-> > > > > > > 6929b1d0898b (dug_6_dasharo_community_status: initial commit)
