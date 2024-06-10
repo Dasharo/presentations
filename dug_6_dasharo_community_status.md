@@ -1,6 +1,6 @@
 class: center, middle, intro
 
-# &#x1F44B; Dasharo User Group #5 &#x1F389;
+# &#x1F44B; Dasharo User Group #6 &#x1F389;
 
 ## Dasharo Community Status
 
@@ -14,8 +14,8 @@ SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-Date of previous data snapshot: 03/12/2023
-Date of data snapshot: 11/03/2024
+Date of previous data snapshot: 11/03/2023
+Date of data snapshot: 02/06/2024
 
 ---
 
@@ -30,76 +30,7 @@ Date of data snapshot: 11/03/2024
 
 ---
 
-# Openness and transparency paranoia
-
-### .center[Presentations as a Code:<br>https://github.com/Dasharo/presentations]
-
-.center.image-80[![](/img/dasharo_presentations_repo.png)]
-
----
-
-# Openness and transparency paranoia
-
-### .center[Presentations preparation is tracked in GitHub Milestones]
-
-.center.image-70[![](/img/dug_milestones.png)]
-
----
-
-# Openness and transparency paranoia
-
-### .center[We are now FSFE REUSE complaint]
-
-```bash
-% reuse lint
-
-# SUMMARY
-* Bad licenses: 0
-
-* Deprecated licenses: 0
-* Licenses without file extension: 0
-* Missing licenses: 0
-* Unused licenses: 0
-* Used licenses: CC0-1.0, CC-BY-SA-4.0, Apache-2.0
-* Read errors: 0
-* files with copyright information: 227 / 227
-* files with license information: 227 / 227
-```
-
----
-
-# Open Collective donations enabled
-
-.center.image-30[![](/img/oc_contrib2.png)]
-.center.image-40[![](/img/oc_contrib.png)]
-
----
-
-# Event page updates
-
-### .center[Please let us know how much you don't like it]
-
-.center.image-99[![](/img/dug_5_event_website_changes.png)]
-
----
-
-# Event page updates
-
-### .center[Pretalx widget (`cfp.3mdeb.com`) added to Attendize (`vpub.dasharo.com`)]
-
-.center.image-90[![](/img/dug_5_event_website_changes2.png)]
-
----
-
-# Event page plans
-
-- migration to `events.dasharo.com`
-  - `vpub.dasharo.com` seem to be to much focused on virtual events
-- grand unification under MkDocs
-  - `docs.dasharo.com + dasharo.com + events.dasharo.com ?`
-- Git Cliff support
-- Ideas and bug reports welcome:
-  - https://github.com/dasharo/presentations/issues
+# Dasharo Website Roadmap
 
 ---
 
@@ -115,7 +46,7 @@ Date of data snapshot: 11/03/2024
 
 ---
 
-# Dasharo Events Roadmap Q1-Q2'25
+# Dasharo Events Roadmap Q1-Q2'24
 
 .center.image-100[![](img/dasharo_team_roadmap3.png)]
 
@@ -270,3 +201,5 @@ Laptops: 187
 class: center, middle, intro
 
 # Q&A
+
+> > > > > > > 6929b1d0898b (dug_6_dasharo_community_status: initial commit)
