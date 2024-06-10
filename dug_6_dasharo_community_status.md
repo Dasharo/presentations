@@ -14,23 +14,19 @@ SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-Date of previous data snapshot: 11/03/2023
-Date of data snapshot: 02/06/2024
+Date of previous data snapshot: 11/03/2024
+Date of data snapshot: 10/06/2024
 
 ---
 
-# TBD: Agenda
+# Agenda
 
-- DUG and vPub infrastructure transparency
-- Events page updates
 - Dasharo Team Events Roadmap
 - Dasharo Issues repo stats
 - Dasharo coreboot and edk2 forks repos stats
+- Dasharo Patchqueue Initiative
+- Dasharo coreboot upstreaming
 - Dasharo Matrix stats
-
----
-
-# Dasharo Website Roadmap
 
 ---
 
