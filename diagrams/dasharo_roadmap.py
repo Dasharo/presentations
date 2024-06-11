@@ -8,8 +8,8 @@ from roadmapper.roadmap import Roadmap
 from roadmapper.timelinemode import TimelineMode
 import sys
 
-version = "v0.5"
-date = "March 2024"
+version = "v0.6"
+date = "June 2024"
 
 """"
 Dasharo Community Support Emulation Roadmap
@@ -20,12 +20,12 @@ roadmap.set_subtitle("subject to change")
 roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-10-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
-qemu_q35_v010 = roadmap.add_group("QEMU Q35 v0.1.0")
-qemu_q35_v020 = roadmap.add_group("QEMU Q35 v0.2.0")
+qemu_q35_v010 = roadmap.add_group("QEMU Q35 UEFI v0.1.0")
+qemu_q35_v020 = roadmap.add_group("coreboot+UEFI v0.2.0")
 
 qemu_q35_v010.add_task("Validation", "2023-10-01", "2023-11-15", style="rounded", fill_colour="#34A853", font_size=23)
 qemu_q35_v010.add_task("Community Release", "2023-11-16", "2023-12-31", style="rounded", fill_colour="#ADD8E6", font_size=23)
-qemu_q35_v020.add_task("Community Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#ADD8E6")
+qemu_q35_v020.add_task("Community Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#ADD8E6")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()
@@ -41,13 +41,15 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-01-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 pcengines = roadmap.add_group("PC Engines apu2/3/4/6 coreboot+UEFI v0.9.0", font_size=26)
-pcengines_24020101 = roadmap.add_group("coreboot+SeaBIOS v24.02.01.01", font_size=26)
+pcengines_091 = roadmap.add_group("coreboot+UEFI v0.9.1", font_size=26)
+pcengines_24020101 = roadmap.add_group("coreboot+SeaBIOS v24.05.00.01", font_size=26)
 pcengines_4034 = roadmap.add_group("coreboot+SeaBIOS v4.0.34", font_size=26)
 
 pcengines.add_task("Validation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#34A853", font_size=23)
 pcengines.add_task("DES Release", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#FD7E14", font_size=23)
+pcengines_091.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 pcengines_24020101.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
-pcengines_4034.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
+pcengines_4034.add_task("DES Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()
@@ -60,11 +62,11 @@ roadmap.set_subtitle("subject to change")
 roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-01-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
-protectli = roadmap.add_group("Protectli VP4670 v0.9.0")
+protectli = roadmap.add_group("Protectli VP4670\ncoreboot+SeaBIOS\nv0.9.0", font_size=30)
 protectli.add_task("Evaluation", "2024-01-01", "2024-02-14", style="rounded", fill_colour="#9B51E0", font_size=23)
 protectli.add_task("Porting", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#EA4335")
-protectli.add_task("Validation", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#34A853", font_size=23)
-protectli.add_task("DES Release", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#FD7E14")
+protectli.add_task("Validation", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#34A853")
+protectli.add_task("DES Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()
@@ -84,6 +86,21 @@ mb.add_task("DES Release", "2024-07-01", "2024-09-30", style="rounded", fill_col
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()
 roadmap.save(f"img/dcs_network_appliance_roadmap_{version}_pt3.png")
+
+roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
+roadmap.set_title("Dasharo Network Appliance Roadmap")
+roadmap.set_subtitle("subject to change")
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-07-01", number_of_items=4)
+roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
+
+mb = roadmap.add_group("Hardkernel Odroid-H4\nDasharo (coreboot+UEFI) v0.9.0")
+mb.add_task("Porting", "2024-07-01", "2024-08-15", style="rounded", fill_colour="#EA4335")
+mb.add_task("Validation", "2024-08-16", "2024-09-30", style="rounded", fill_colour="#34A853", font_size=23)
+mb.add_task("DES Release", "2024-10-01", "2024-12-31", style="rounded", fill_colour="#FD7E14")
+
+roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
+roadmap.draw()
+roadmap.save(f"img/dcs_network_appliance_roadmap_{version}_pt4.png")
 
 """"
 Dasharo Community Support Laptops Roadmap
@@ -134,8 +151,8 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-01-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 dell_optiplex = roadmap.add_group("Dell OptiPlex 7010/9010 v0.1.0")
-dell_optiplex.add_task("Validation", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#34A853", font_size=23)
-dell_optiplex.add_task("DES Release", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#FD7E14")
+dell_optiplex.add_task("Validation", "2024-07-01", "2024-08-15", style="rounded", fill_colour="#34A853", font_size=23)
+dell_optiplex.add_task("DES Release", "2024-08-16", "2024-09-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()
@@ -238,10 +255,6 @@ roadmap.set_title("Dasharo Server Roadmap")
 roadmap.set_subtitle("subject to change")
 roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-10-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
-
-smc = roadmap.add_group("Supermicro X11SSH-TF v0.1.0")
-smc.add_task("Validation", "2024-01-01", "2024-03-31", style="rounded", fill_colour="#34A853")
-smc.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()

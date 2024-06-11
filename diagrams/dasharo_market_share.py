@@ -6,7 +6,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Last checked 13/03/2024
+# Last checked 11/06/2024
 
 emulation = {}
 network_appliance = {}
@@ -25,6 +25,7 @@ emulation["Q2'23"]  = 0
 emulation["Q3'23"]  = 0
 emulation["Q4'23"]  = 1
 emulation["Q1'24"]  = 0
+emulation["Q2'24"]  = 0
 laptops["Q3'21"]  = 3
 laptops["Q4'21"]  = 3
 laptops["Q1'22"]  = 5
@@ -36,6 +37,7 @@ laptops["Q2'23"]  = 2
 laptops["Q3'23"]  = 0
 laptops["Q4'23"]  = 4
 laptops["Q1'24"]  = 5
+laptops["Q2'24"]  = 0
 network_appliance["Q3'21"]  = 0
 network_appliance["Q4'21"]  = 0
 network_appliance["Q1'22"]  = 1
@@ -46,7 +48,8 @@ network_appliance["Q1'23"]  = 1
 network_appliance["Q2'23"]  = 2
 network_appliance["Q3'23"]  = 0
 network_appliance["Q4'23"]  = 0
-network_appliance["Q1'24"]  = 0
+network_appliance["Q1'24"]  = 1
+network_appliance["Q2'24"]  = 3
 desktops["Q3'21"]  = 0
 desktops["Q4'21"]  = 0
 desktops["Q1'22"]  = 0
@@ -57,7 +60,8 @@ desktops["Q1'23"]  = 1
 desktops["Q2'23"]  = 0
 desktops["Q3'23"]  = 2
 desktops["Q4'23"]  = 0
-desktops["Q1'24"]  = 2
+desktops["Q1'24"]  = 4
+desktops["Q2'24"]  = 0
 workstation["Q3'21"]  = 0
 workstation["Q4'21"]  = 4
 workstation["Q1'22"]  = 1
@@ -69,6 +73,7 @@ workstation["Q2'23"]  = 0
 workstation["Q3'23"]  = 1
 workstation["Q4'23"]  = 0
 workstation["Q1'24"]  = 0
+workstation["Q2'24"]  = 0
 
 dates = list(laptops.keys())
 emulation_values = np.array(list(emulation.values()))
@@ -109,6 +114,6 @@ plt.legend(fontsize=12)
 
 plt.gca().set_facecolor('#f5f5f5')
 
-plt.savefig('img/dug_5_dasharo_per_segment.png', dpi=300)
+plt.savefig('img/dug_6_dasharo_per_segment.png', dpi=300)
 
 plt.close()
