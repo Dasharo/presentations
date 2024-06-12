@@ -81,7 +81,7 @@ roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 mb = roadmap.add_group("MinnowBoard Turbot\nDasharo (coreboot+UEFI) v0.9.0")
 mb.add_task("Porting", "2024-04-01", "2024-05-15", style="rounded", fill_colour="#EA4335")
 mb.add_task("Validation", "2024-05-16", "2024-06-30", style="rounded", fill_colour="#34A853", font_size=23)
-mb.add_task("DES Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#FD7E14")
+mb.add_task("DES Release", "2024-04-01", "2024-06-30", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
 roadmap.draw()

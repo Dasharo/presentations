@@ -129,7 +129,7 @@ no additional payload specified.
 
 ---
 
-# TBD:Dasharo Roadmap States
+# Dasharo Roadmap States
 
 .center.image-95[![](/img/dug_6_dasharo_roadmap_states.png)]
 
@@ -257,6 +257,7 @@ TODO: think how to improve presentation of all those combinations on roadmap
 - DUG#6
   - (CHANGE) MinnowBoard Turbot Dasharo(coreboot+UEFI) planned for Q2'24
     - release scope changed it will base on 24.02.01
+    - release date changed to: Q2'24
 - DUG#5
   - (NEW) MinnowBoard Turbot Dasharo(coreboot+UEFI) planned for Q2'24
 
