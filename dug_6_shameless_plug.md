@@ -39,7 +39,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 ---
 
-# Dasharo Business Model
+# Dasharo Cooperation Models
+
+.center[
+<img src="/img/dasharo_cooperation_models_v0.1.png" width="900px" style="margin-left:-36px;margin-top:-40px">
+]
 
 ---
 
