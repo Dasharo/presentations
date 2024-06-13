@@ -8,16 +8,32 @@ class: center, middle, intro
 
 ---
 
-# TBD: Agenda
+# Agenda
 
 * Introduction to Dasharo Open Source Firmware Validation (OSFV)
-* Exploring OSFV v0.2
+* Current state
 * Recent improvements
-* Getting started with OSFV
-* Upcoming Features: OSFV v0.3 and Beyond
+* Work in progress - current priorities
 * Q&A
 
 ???
+
+---
+
+# Introduction to Dasharo OSFV
+
+* Main purpose - validation of open-source firmware (mainly Dasharo)
+* Using Robot Framework as a base
+* Use cases
+  - testing Dasharo firmware releases
+  - test-driven bug fixing (and adding new features)
+  - regression testing
+      + after introducing new features
+      + after major changes (update base from upstream project)
+  - validation of Dasharo related tools (DTS, DCU)
+      + where possible, in QEMU
+
+.center.image-20[![](/img/Robot-framework-logo.png)]
 
 ---
 
@@ -46,8 +62,11 @@ class: center, middle, intro
 
 * "Recent" - since the last presentation (~6m)
 * Notable changes
-* New platforms
-* New tests
+  - platform-configs rework
+  - Documentation generation
+  - Switch Sonoff API
+  - New tests
+  - New platforms
 * Continuation of refactoring activities
 * Multiple fixes and minor improvements
 
@@ -104,6 +123,28 @@ class: center, middle, intro
 * Suite for DCU tool
 * Correctness of CPU / memory information in the main menu
 
+.center[.code-11px[
+```bash
+==============================================================================
+Setup-Menu-Information
+==============================================================================
+SET001.001 CPU clock speed displayed in setup menu                    | PASS |
+------------------------------------------------------------------------------
+SET002.001 RAM speed displayed in setup menu                          | PASS |
+------------------------------------------------------------------------------
+SET003.001 RAM size displayed in setup menu                           | PASS |
+------------------------------------------------------------------------------
+SET004.001 Expected CPU clock speed displayed in setup menu           | PASS |
+------------------------------------------------------------------------------
+SET005.001 Expected RAM speed displayed in setup menu                 | PASS |
+------------------------------------------------------------------------------
+SET006.001 Expected RAM size displayed in setup menu                  | PASS |
+------------------------------------------------------------------------------
+Setup-Menu-Information                                                | PASS |
+6 tests, 6 passed, 0 failed
+==============================================================================
+```]]
+
 ---
 
 # Recent improvements
@@ -121,11 +162,16 @@ class: center, middle, intro
 
 # In progress - current priorities
 
-### **DCU integration**
+### **DCU integration - alternative interface for changing fw settings**
 
-* Alternative interface for changing firmware settings
-* Instead of manual steps via PiKVM / serial, we can modify SMMSTORE variables directly
+* Instead of manual steps, we can modify SMMSTORE variables directly
+
+.center.image-50[![](/img/osfv_dcu_integration.png)]
+
+???
+
 * More details in DCU presentation
+* Enables more platforms, less HW required to run tests switching firmware settings
 
 ---
 
@@ -155,13 +201,13 @@ class: center, middle, intro
 
 ---
 
-# osfv_cli - motivation
+# osfv_cli - motivation - before
 
 .center.image-80[![](/img/osfv_cli_before.png)]
 
 ---
 
-# osfv_cli - motivation
+# osfv_cli - motivation - after
 
 .center.image-80[![](/img/osfv_cli_after.png)]
 
@@ -203,11 +249,11 @@ osfv_cli rte --rte_ip $RTE_IP pwr reset
 * Stabilize the environment for the v0.3.0 release
   - finalize current priority tasks
   - full regression on selected supported platforms
-    + NovaCustom
-    + Protectli
-    + PC Engines
-    + QEMU
-    + MSI
+      + NovaCustom
+      + Protectli
+      + PC Engines
+      + QEMU
+      + MSI
 
 ---
 
