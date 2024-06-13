@@ -33,7 +33,12 @@ class: center, middle, intro
 
 ---
 
-# Contribution stats?? TBD
+# Current state
+
+.center.image-70[![](/img/osfv_number_of_tests.png)]
+
+* 382 tests
+* 66 self-tests (like unit tests for sustaining correctness of keywords operation)
 
 ---
 
