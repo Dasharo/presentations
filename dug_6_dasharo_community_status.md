@@ -2,7 +2,7 @@ class: center, middle, intro
 
 # &#x1F44B; Dasharo User Group #6 &#x1F389;
 
-## Dasharo Community Status
+## Dasharo OSFV status
 
 .center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
