@@ -66,7 +66,7 @@ Date of data snapshot: 10/06/2024
 
 # Qubes OS Summit 2024 CfP
 
-.center.image-60[![](img/qubesos_summit_2024_cfp.png)]
+.center.image-60[![](/img/qubesos_summit_2024_cfp.png)]
 
 - Go to: https://cfp.3mdeb.com
 - Choose upcoming event CfP: `Qubes OS Summit 2024 (Sept. 20th – 22nd, 2024)`

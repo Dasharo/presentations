@@ -50,7 +50,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 - #### &#x1F9ED; 16:05 UTC Dasharo Community Status
 
-- #### &#x1F9F0; 16:15 UTC TBD
+- #### &#x1F9F0; 16:15 UTC Dasharo OSFV Status
 
 - #### &#x1F9F0; 16:35 UTC Dasharo Community Release Roadmap
 
