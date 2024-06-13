@@ -23,12 +23,13 @@ class: center, middle, intro
 
 # Current state
 
-* No release since the last presentation
+* No release since the last presentation 😞
 * Still quite intense development in the `develop` branch
   - all improvements target this branch now
   - if you want to experiment, this should be a starting point
   - we are aiming for something "stable enough" to merge into `main` and
     release v0.3.0 version
+  - hopefully before DUG#7 ☺️
 
 ---
 
