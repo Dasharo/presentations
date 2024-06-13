@@ -210,6 +210,22 @@ osfv_cli rte --rte_ip $RTE_IP pwr reset
     + MSI
 
 ---
+
+# How can you help?
+
+* Go through `Getting Started` and `QEMU workflow` sections
+  - https://github.com/Dasharo/open-source-firmware-validation/blob/develop/docs/qemu.md
+  - try to run it
+  - fail miserably
+  - report problems in GH repo or Matrix channel
+      + https://matrix.to/#/#osfv:matrix.3mdeb.com
+  - help us to improve docs/scripts through external validation
+* `good first issue` label
+  - https://github.com/Dasharo/open-source-firmware-validation/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+  - take a look at these or any other
+  - ask how to proceed if you want to help
+
+---
 class: center, middle, intro
 
 # Q&A
