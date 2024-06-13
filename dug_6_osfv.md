@@ -115,23 +115,80 @@ class: center, middle, intro
 
 # In progress - current priorities
 
-* DCU integration
-  - alternative interface for changing firmware settings
-  - instead of manual steps via PiKVM / serial, we can modify SMMSTORE variables directly
-  - more details in DCU presentation
-* Generate documentation from test code
-  - host on github pages for starters
-* osfv_cli integration
-  - integrate low-level hardware operations into Python libraries
-  - avoid doing that in RF, it is often tedious
+### **DCU integration**
+
+* Alternative interface for changing firmware settings
+* Instead of manual steps via PiKVM / serial, we can modify SMMSTORE variables directly
+* More details in DCU presentation
 
 ---
 
-# osfv_cli
+# In progress - current priorities
 
-* https://github.com/Dasharo/osfv-scripts/tree/main/osfv_cli
+### **Generate documentation from test code**
 
-.center.image-50[![](/img/osfv_cli_arch.png)]
+* PR: https://github.com/Dasharo/open-source-firmware-validation/pull/293/files
+* To be hosted on github pages for starters (not hosted yet)
+
+.center.image-80[![](/img/osfv_keywords_docuementation.png)]
+
+---
+
+# In progress - current priorities
+
+### **osfv_cli integration**
+
+* Integrate low-level hardware operations into Python libraries
+* Reuse the same libraries by test framework and CLI tool
+
+.center.image-40[![](/img/osfv_cli_arch.png)]
+
+???
+
+* Avoid doing that in RF, it is often tedious
+
+---
+
+# osfv_cli - motivation
+
+.center.image-80[![](/img/osfv_cli_before.png)]
+
+---
+
+# osfv_cli - motivation
+
+.center.image-80[![](/img/osfv_cli_after.png)]
+
+---
+
+# osfv_cli - developer usage scenario
+
+.code-13px[```bash
+
+# Reserve platform
+
+osfv_cli snipeit check_out --rte_ip $RTE_IP
+
+# Read backup firmware
+
+osfv_cli rte --rte_ip $RTE_IP flash read --rom backup.rom
+
+# Flash new firmware
+
+osfv_cli rte --rte_ip $RTE_IP flash read --rom backup.rom
+
+# Apply power to platform
+
+osfv_cli rte --rte_ip $RTE_IP rel set high
+
+# Get logs from serial
+
+osfv_cli rte --rte_ip $RTE_IP serial
+
+# Reset platform
+
+osfv_cli rte --rte_ip $RTE_IP pwr reset
+```]
 
 ---
 
