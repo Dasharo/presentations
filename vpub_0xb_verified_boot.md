@@ -28,7 +28,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 - Michał Żygowski (presenter)
   - Firmware Engineer at 3mdeb since 2017
   - Develops Dasharo
-  - open-source, HW and security features enthusiats
+  - open-source, HW and security features enthusiast
 
 ---
 
