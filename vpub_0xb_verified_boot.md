@@ -4,6 +4,8 @@ class: center, middle, intro
 
 ## How to do them securely and openly
 
+### Michał Kopeć
+
 .center[<img src="/remark-templates/dasharo-presentation-template/images/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px">]
 
 ???
@@ -18,10 +20,15 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # whoami
 
-- Michał Kopeć
-- Firmware Engineer at 3mdeb since 2021
-- Develops Dasharo for laptops, network appliances and other platforms
-- Uses Arch btw
+- Michał Kopeć (original author)
+  - Firmware Engineer at 3mdeb since 2021
+  - Develops Dasharo for laptops, network appliances and other platforms
+  - Uses Arch btw
+
+- Michał Żygowski (presenter)
+  - Firmware Engineer at 3mdeb since 2017
+  - Develops Dasharo
+  - open-source, HW and security features enthusiats
 
 ---
 
@@ -60,7 +67,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Verified Boot in Chrome devices
 
-.center.image-55[![](/img/vboot/cros.svg)]
+.center.image-55[![](/img/vboot/chrome_os.svg)]
 
 - Write protection: WP# pin on the BIOS chip
   - WP# pin is controlled by Cr50 security chip (newer devices) or physical
@@ -111,24 +118,42 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Problem
 
+.center.image-40[![](/img/problem.jpg)]
+
 - How do we improve Dasharo verified boot while staying secure and without
   taking control away from users?
   - Security: A guarantee that only firmware from a trusted vendor is run
   - Control: Ability to self-sign, to inspect and replace firmware components
 - There are other verified boot schemes
 
+.footnote[
+Image source: https://picryl.com/media/question-mark-note-man-people-55a8e2
+<br>Image license: Creative Commons CC0 1.0 Universal Public Domain Dedication
+]
+
 ---
 
 # Intel Boot Guard
 
+.left-column55[
+
+.center.image-99[![](/img/vboot/butt_guard.png)]
+
+]
+
+.right-column45[
+
 - The most widely known option
 - Verifies and measures the initial bootblock
 - Ensures FW authenticity using keys fused to the chipset
-- Supports firmware verification and measurement
 - Different profiles with different features enabled
-  - Verified, Measured and Enforced knobs
   - Verified boot is always enabled in all profiles
-- Ties a platform to a specific firmware vendor, forever
+- **Ties a platform to a specific firmware vendor, forever!**
+]
+
+.footnote[
+Source: [Amazon](https://www.amazon.com/Tbest-Guard%EF%BC%8CChildren-Protection-Snowboard-Anti%E2%80%91Drop/dp/B08GBBRGL9)
+]
 
 ???
 
@@ -139,7 +164,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 - Profile 3: Verified and Measured with infinite time for remediation
 - Profile 3 acts as root of trust for measurement, but not for verification
 - On verification failure, the PCR0 measurements are always the same. This was
-  determined experimetally.
+  determined experimentally.
 - so users can choose to use Dasharo firmware and get measured IBB, or flash
   their own and lose measured IBB.
   - might make sense for some small percentage for users
@@ -148,6 +173,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 ---
 
 # Boot Guard cons
+
+.center.image-20[![](/img/vboot/Antu_selinux.svg)]
+
+.footnote[
+.center[[Antu selinux](https://commons.wikimedia.org/wiki/File:Antu_selinux.svg) CC BY-SA 3.0]
+]
 
 - Requires more blobs in firmware
   - Boot Guard ACM
@@ -165,6 +196,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 ---
 
 # CBFS Verification
+
+.center.image-20[![](/img/coreboot.png)]
 
 - A relatively new coreboot feature
 - Cryptographically verifies components of the coreboot image
@@ -199,6 +232,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 ---
 
 # Other firmware update mechanisms
+
+.center.image-30[![](/img/vboot/flash.jpg)]
+
+.footnote[
+.center[[The Flash Wallpaper by kelso](https://www.hdwallpapers.net/tv-and-movies/the-flash-wallpaper-622.htm) CC BY-SA 3.0]
+]
 
 - Flashrom plugin in fwupd
   - Updates the BIOS region only
