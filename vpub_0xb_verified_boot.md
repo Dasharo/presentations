@@ -253,6 +253,8 @@ Source: [Amazon](https://www.amazon.com/Tbest-Guard%EF%BC%8CChildren-Protection-
 - Capsule Updates are a requirement for Windows sticker certification
 - Supported by Windows Update and fwupd
 
+---
+
 # Other firmware update mechanisms
 
 - Intel BIOS Guard
