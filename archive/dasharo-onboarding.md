@@ -82,6 +82,7 @@ further, there is need for only `make` command.
  - wait for splash with one-time boot menu
  - press key for one-time boot menu
  - choose option `iPXE Network Boot`
+ - choose option `Dasharo Tools Suite`
  - choose option 9 (Shell)
 
 ---
