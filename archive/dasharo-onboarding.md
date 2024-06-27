@@ -133,6 +133,8 @@ Solution is in the line:
 ```
 ssh-keygen -f "/home/coreboot/.ssh/known_hosts" -R "192.168.4.236"
 ```
+
+* After flsahing new firmware the `iPXE Network Boot` option may not appear in the boot menu. In that case make sure that in `Setup` the option `Dasharo System Features -> Networking Options -> Enable network boot` is checked.
 ---
 # Recovery
 
