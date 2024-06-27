@@ -101,7 +101,7 @@ scp build/coreboot.rom root@<here IP of NVC laptop>/tmp
 ```
 ssh root@<here IP of NVC laptop
 cd /tmp
-flashrom -p internal -i RW_SECTION_A --fmap -w /tmp/coreboot.rom
+flashrom -p internal --ifd -i bios -w /tmp/coreboot.rom
 ```
 * After finishing(still, under ssh):
 ```
