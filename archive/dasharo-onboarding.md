@@ -169,6 +169,37 @@ in the boot menu. In that case make sure that in the `Setup` the option
 `Dasharo System Features -> Networking Options -> Enable network boot`
 is checked.
 ---
+
+* When trying to connect via `ssh` or `scp` to the machine an error like this may appear:
+```
+ssh: connect to host 192.168.10.152 port 22: Connection refused
+```
+That means that the ssh server is not running on the machine. To start it type:
+```bash
+/usr/sbin/sshd
+```
+If there is no output then the ssh server should now be running fine. If you get:
+```
+sshd: no hostkeys available -- exiting.
+```
+Then we need to create the hostkeys. Type:
+```bash
+cd /etc/ssh; ssh-keygen -A
+```
+
+* When trying to send the `coreboot.rom` via scp an error may appear despite being able to connect via ssh:
+```
+scp: Connection closed
+```
+That may mean that the OpenSSH version installed on the machine doesnt support `sftp` protocol which is used by scp. To overcome this you can tell `scp` to use a legacy protocol by providing the option `-O` like so:
+```bash
+scp -O coreboot.rom root@<IP of the machine>/tmp/coreboot.rom
+```
+instead of:
+```bash
+scp coreboot.rom root@<IP of the machine>/tmp/coreboot.rom
+```
+
 # Recovery
 
 After bricking the device there is need to perform the same action, as with
