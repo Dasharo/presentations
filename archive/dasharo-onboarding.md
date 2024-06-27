@@ -199,7 +199,7 @@ instead of:
 ```bash
 scp coreboot.rom root@<IP of the machine>/tmp/coreboot.rom
 ```
-
+---
 # Recovery
 
 After bricking the device there is need to perform the same action, as with
