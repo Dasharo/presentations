@@ -76,6 +76,16 @@ further, there is need for only `make` command.
 # Flash Process
 * Mainly, process is described in instruction.
 * Flashing is performed on target device, itself.
+* Before attempting flashing make sure the `BIOS lock` is turned off, otherwise
+flashing will fail.
+     - make sure the laptop is powered off
+     - turn on the device
+     - wait for the splash screen
+     - press key for `Setup`
+        - Alternatively press the key for one-time boot menu and choose `Setup`
+     - Select `Dasharo System Features`
+     - Select `Dasharo Security Options`
+     - Make sure the option `Lock the BIOS boot medium` is unchecked
 * To enter flashing mode, device should be booted properly:
  - make sure laptop is powered off
  - turn on the device
