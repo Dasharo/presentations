@@ -170,7 +170,8 @@ in the boot menu. In that case make sure that in the `Setup` the option
 is checked.
 ---
 
-* When trying to connect via `ssh` or `scp` to the machine an error like this may appear:
+* When trying to connect via `ssh` or `scp` to the machine an error like
+this may appear:
 ```
 ssh: connect to host 192.168.10.152 port 22: Connection refused
 ```
@@ -187,11 +188,14 @@ Then we need to create the hostkeys. Type:
 cd /etc/ssh; ssh-keygen -A
 ```
 
-* When trying to send the `coreboot.rom` via scp an error may appear despite being able to connect via ssh:
+* When trying to send the `coreboot.rom` via scp an error may appear despite
+being able to connect via ssh:
 ```
 scp: Connection closed
 ```
-That may mean that the OpenSSH version installed on the machine doesnt support `sftp` protocol which is used by scp. To overcome this you can tell `scp` to use a legacy protocol by providing the option `-O` like so:
+That may mean that the OpenSSH version installed on the machine doesn't support
+`sftp` protocol which is used by scp. To overcome this you can tell `scp`
+to use a legacy protocol by providing the option `-O` like so:
 ```bash
 scp -O coreboot.rom root@<IP of the machine>/tmp/coreboot.rom
 ```
