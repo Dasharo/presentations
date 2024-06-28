@@ -28,10 +28,10 @@ class: center, middle, intro
   - testing Dasharo firmware releases
   - test-driven bug fixing (and adding new features)
   - regression testing
-      + after introducing new features
-      + after major changes (update base from upstream project)
+    + after introducing new features
+    + after major changes (update base from upstream project)
   - validation of Dasharo related tools (DTS, DCU)
-      + where possible, in QEMU
+    + where possible, in QEMU
 
 .center.image-20[![](/img/Robot-framework-logo.png)]
 
