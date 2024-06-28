@@ -133,6 +133,13 @@ Solution is in the line:
 ```
 ssh-keygen -f "/home/coreboot/.ssh/known_hosts" -R "192.168.4.236"
 ```
+Another solution is to manually edit the `known_hosts` file using a text
+editor and deleting the lines corresponding to the host. In this example
+the message says `/home/coreboot/.ssh/known_hosts:1` which means we
+need to delete line number `1` in the `/home/coreboot/.ssh/known_hosts` file.
+Generally we should be cautious when receiving this warning, but in this case
+it is expected for the warning to appear every time we are network booting.
+
 ---
 # Recovery
 
