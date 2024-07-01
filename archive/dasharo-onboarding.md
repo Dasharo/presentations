@@ -120,6 +120,20 @@ reboot
 * Test whether flashing correctly
 ---
 # Troubleshooting
+* If the build process described in "Build Dasharo BIOS firmware" fails,
+  try using the `build.sh` script available in the repository.
+  It is recommended to take a look inside and famliarize yourself with
+  what the script actually does. In version 1.7.2 you can notice that:
+  * The script runs `make clean` every time.
+  * The script copies the `.config` configuration file from the selected
+    devices default configuration overwriting any changes you could have
+    made. Make sure to comment out that line.
+  * The device name in variable `BOARD` may be different from the device
+    you are building for. Make sure to change it to the correct value.
+    You can find the possible values in the `configs` directory where
+    you can find files named `config.<BOARD NAME>`.
+    You can use the `<BOARD NAME>` part as the value for the `BOARD` variable.
+
 * During SSHing process the following message can occur:
 ```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
