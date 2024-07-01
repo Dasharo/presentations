@@ -150,6 +150,10 @@ need to delete line number `1` in the `/home/coreboot/.ssh/known_hosts` file.
 Generally we should be cautious when receiving this warning, but in this case
 it is expected for the warning to appear every time we are network booting.
 
+* After flashing new firmware the `iPXE Network Boot` option may not appear
+in the boot menu. In that case make sure that in the `Setup` the option
+`Dasharo System Features -> Networking Options -> Enable network boot`
+is checked.
 ---
 # Recovery
 
