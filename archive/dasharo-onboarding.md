@@ -76,6 +76,16 @@ further, there is need for only `make` command.
 # Flash Process
 * Mainly, process is described in instruction.
 * Flashing is performed on target device, itself.
+* Before attempting flashing make sure the `BIOS lock` is turned off, otherwise
+flashing will fail.
+     - make sure the laptop is powered off
+     - turn on the device
+     - wait for the splash screen
+     - press key for `Setup`
+        - Alternatively press the key for one-time boot menu and choose `Setup`
+     - Select `Dasharo System Features`
+     - Select `Dasharo Security Options`
+     - Make sure the option `Lock the BIOS boot medium` is unchecked
 * To enter flashing mode, device should be booted properly:
  - make sure laptop is powered off
  - turn on the device
@@ -101,7 +111,7 @@ scp build/coreboot.rom root@<here IP of NVC laptop>/tmp
 ```
 ssh root@<here IP of NVC laptop
 cd /tmp
-flashrom -p internal -i RW_SECTION_A --fmap -w /tmp/coreboot.rom
+flashrom -p internal --ifd -i bios -w /tmp/coreboot.rom
 ```
 * After finishing(still, under ssh):
 ```
@@ -133,6 +143,12 @@ Solution is in the line:
 ```
 ssh-keygen -f "/home/coreboot/.ssh/known_hosts" -R "192.168.4.236"
 ```
+Another solution is to manually edit the `known_hosts` file using a text
+editor and deleting the lines corresponding to the host. In this example
+the message says `/home/coreboot/.ssh/known_hosts:1` which means we
+need to delete line number `1` in the `/home/coreboot/.ssh/known_hosts` file.
+Generally we should be cautious when receiving this warning, but in this case
+it is expected for the warning to appear every time we are network booting.
 
 * After flashing new firmware the `iPXE Network Boot` option may not appear
 in the boot menu. In that case make sure that in the `Setup` the option
