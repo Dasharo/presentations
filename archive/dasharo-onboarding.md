@@ -652,3 +652,64 @@ Same as for the VP2410, edit file `coreboot/src/arch/x86/smbios.c`, function
 ![](/img/vp4630_bios_vendor_changed.png)
 
 ---
+## Flashing the firmware ROM onto protectli V1410
+
+Before V1410 got flashed, a backup rom file has been created containing 
+whatever was on this device before intervention:
+
+```bash
+./osfv_cli.py rte --rte_ip 192.168.10.198 flash read --rom dump.rom
+```
+
+Now, we follow the exact same procedure as for other devices to flash via RTE:
+
+```bash
+
+./osfv_cli.py rte --rte_ip 192.168.10.198 flash write --rom ~/coreboot/protectli_v1410_v0.9.2.rom
+```
+Expected output indicating a success:
+
+```
+Reading old flash chip contents... 
+done.
+Erasing and writing flash chip... 
+Erase/write done.
+Verifying flash... 
+VERIFIED.
+
+
+Flash written
+```
+---
+
+### Exercise 1
+
+1. Change the boot menu key
+    - Try to figure out how to change the boot menu key, similarly as for the VP2410.
+    **HINT**: find `CONFIG_EDK2_BOOT_MENU_KEY` - _slightly different than the
+    TianoCore option for VP2410!_
+    - You can use values between `0x0001` (UP) and `0x0017` (ESC)
+
+---
+
+### Excercise 1 - solution
+
+Inside config:
+`coreboot/configs/config.protectli_vault_jsl_v1410`.
+
+the part responsible for boot menu and boot setup keys with applied changes:
+![](/img/dasharo_1410_Ex1.png)
+
+---
+
+### Exercise 2
+
+Change the BIOS information - "Vendor", it can be checked using `dmidecode`.
+
+---
+
+### Exercise 2 - solution
+Access file `coreboot/src/lib/smbios.c`, and change in function
+`smbios_write_type0`, variable `t->vendor`:
+
+![](/img/dasharo_1410_Ex2.png)
