@@ -698,6 +698,7 @@ Inside config:
 `coreboot/configs/config.protectli_vault_jsl_v1410`.
 
 the part responsible for boot menu and boot setup keys with applied changes:
+
 ![](/img/dasharo_1410_Ex1.png)
 
 ---
