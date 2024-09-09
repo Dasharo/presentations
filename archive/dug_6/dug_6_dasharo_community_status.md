@@ -32,13 +32,13 @@ Date of data snapshot: 10/06/2024
 
 # Dasharo Events Roadmap Q1-Q2'24
 
-.center.image-100[![](img/dasharo_team_roadmap.png)]
+.center.image-100[![](/img/dasharo_team_roadmap.png)]
 
 ---
 
 # https://events.3mdeb.com
 
-.center.image-70[![](img/3mdeb_events.png)]
+.center.image-70[![](/img/3mdeb_events.png)]
 
 - Link to all FOSSDEM 2024 3mdeb presentations and videos
 - Link to DUG#5 and vPub 0xA (also on https://vpub.dasharo.com and YouTube)
@@ -49,7 +49,7 @@ Date of data snapshot: 10/06/2024
 
 # Dasharo Events Roadmap Q3-Q4'24
 
-.center.image-100[![](img/dasharo_team_roadmap2.png)]
+.center.image-100[![](/img/dasharo_team_roadmap2.png)]
 
 ---
 
