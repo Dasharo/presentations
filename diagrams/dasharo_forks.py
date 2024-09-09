@@ -50,19 +50,31 @@ def count_prs(repo, state, date):
     else:
         return 0
 
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10"]
+def count_closed_prs(repo, state, date):
+    # Construct the GitHub CLI command
+    command = f"gh pr list --repo {repo} --state {state} --search 'closed:<={date}' -L 10000 --json number --jq '. | length'"
+
+    # Run the command and capture the output
+    output = run_gh_command(command)
+
+    # Parse the output to get the count
+    if output is not None:
+        return int(output)
+    else:
+        return 0
+
+dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09"]
 repo = "Dasharo/coreboot"
 
 # Data storage
-data = {"Total": [], "Merged": [], "Closed": [], "Open": []}
+data = {"Merged": [], "Closed": [], "Open": []}
 
 # Gather data
 for date in dates:
     total_prs = count_prs(repo, 'all', date)
     merged_prs = count_prs(repo, 'merged', date)
-    closed_prs = count_prs(repo, 'closed', date) - merged_prs
+    closed_prs = count_closed_prs(repo, 'closed', date) - merged_prs
     open_prs = count_prs(repo, 'open', date)
-    data["Total"].append(total_prs)
     data["Merged"].append(merged_prs)
     data["Closed"].append(closed_prs)
     data["Open"].append(open_prs)
@@ -124,7 +136,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('img/dug_6_dasharo_coreboot.png')
+plt.savefig('public/dug_7/dasharo_coreboot.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
@@ -132,15 +144,13 @@ plt.close()
 repo = "Dasharo/edk2"
 
 # Data storage
-data = {"Total": [], "Merged": [], "Closed": [], "Open": []}
+data = {"Merged": [], "Closed": [], "Open": []}
 
 # Gather data
 for date in dates:
-    total_prs = count_prs(repo, 'all', date)
     merged_prs = count_prs(repo, 'merged', date)
-    closed_prs = count_prs(repo, 'closed', date) - merged_prs
+    closed_prs = count_closed_prs(repo, 'closed', date) - merged_prs
     open_prs = count_prs(repo, 'open', date)
-    data["Total"].append(total_prs)
     data["Merged"].append(merged_prs)
     data["Closed"].append(closed_prs)
     data["Open"].append(open_prs)
@@ -170,7 +180,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('img/dug_6_dasharo_edk2.png')
+plt.savefig('public/dug_7/dasharo_edk2.png')
 
 # Optionally, close the plot to free up memory
 plt.close()

@@ -63,14 +63,12 @@ repo = "Dasharo/dasharo-issues"
 dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09"]
 
 # Data storage
-data = {"Total": [], "Closed": [], "Open": []}
+data = {"Closed": [], "Open": []}
 
 # Gather data
 for date in dates:
-    total_issues = count_issues(repo, 'all', date)
     closed_issues = count_closed_issues(repo, 'closed', date)
     open_issues = count_issues(repo, 'open', date)
-    data["Total"].append(total_issues)
     data["Closed"].append(closed_issues)
     data["Open"].append(open_issues)
 

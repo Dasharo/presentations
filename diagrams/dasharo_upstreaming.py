@@ -12,16 +12,18 @@ added = {}
 removed = {}
 
 logging.info('Adding data to dictionaries')
-added["2023-07-06"] = 2230
-removed["2023-07-06"] = 288
+added["2023-07-06"] = 2240
+removed["2023-07-06"] = 298
 added["2023-09-28"] = 4203
 removed["2023-09-28"] = 244
-added["2023-12-03"] = 193
-removed["2023-12-03"] = 189
-added["2024-03-11"] = 2928
-removed["2024-03-11"] = 73
-added["2024-06-10"] = 3820
-removed["2024-06-10"] = 1361
+added["2023-12-03"] = 173
+removed["2023-12-03"] = 169
+added["2024-03-11"] = 2927
+removed["2024-03-11"] = 72
+added["2024-06-10"] = 3819
+removed["2024-06-10"] = 1360
+added["2024-09-09"] = 3447
+removed["2024-09-09"] = 272
 
 logging.info('Creating lists from dictionaries')
 dates = list(added.keys())
@@ -71,7 +73,7 @@ logging.info('Setting facecolor')
 plt.gca().set_facecolor('#f5f5f5')
 
 logging.info('Saving figure')
-plt.savefig('img/dug_6_dasharo_coreboot_upstraming.png', dpi=300)
+plt.savefig('public/dug_7/dasharo_coreboot_upstraming.png', dpi=300)
 
 logging.info('Closing figure')
 plt.close()
