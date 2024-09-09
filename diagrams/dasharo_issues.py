@@ -46,8 +46,21 @@ def count_issues(repo, state, date):
     else:
         return 0
 
+def count_closed_issues(repo, state, date):
+    # Construct the GitHub CLI command
+    command = f"gh issue list --repo {repo} --state {state} --search 'closed:<={date}' -L 10000 --json number --jq '. | length'"
+
+    # Run the command and capture the output
+    output = run_gh_command(command)
+
+    # Parse the output to get the count
+    if output is not None:
+        return int(output)
+    else:
+        return 0
+
 repo = "Dasharo/dasharo-issues"
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10"]
+dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09"]
 
 # Data storage
 data = {"Total": [], "Closed": [], "Open": []}
@@ -55,7 +68,7 @@ data = {"Total": [], "Closed": [], "Open": []}
 # Gather data
 for date in dates:
     total_issues = count_issues(repo, 'all', date)
-    closed_issues = count_issues(repo, 'closed', date)
+    closed_issues = count_closed_issues(repo, 'closed', date)
     open_issues = count_issues(repo, 'open', date)
     data["Total"].append(total_issues)
     data["Closed"].append(closed_issues)
@@ -94,7 +107,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('img/dug_6_dasharo_issues.png')
+plt.savefig('public/dug_7/dasharo_issues.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
