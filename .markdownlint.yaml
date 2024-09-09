@@ -16,10 +16,7 @@ MD002:
 
 # MD003/heading-style/header-style - Heading style
 
-MD003:
-  # Heading style
-  # # ATX style H1
-  style: "atx"
+MD003: false
 
 # MD004/ul-style - Unordered list style
 # MD004:
@@ -135,9 +132,8 @@ MD030:
   ol_multi: 1
 
 # MD033/no-inline-html - Inline HTML
-MD033:
-  # Allowed elements
-  allowed_elements: ["br", "center", "img", "script", "form", "input", "a"]
+# slidev superpowers are in inline html, so it has to be allowed
+MD033: false
 
 # MD034/no-bare-urls - Bare URL used
 MD034: false
