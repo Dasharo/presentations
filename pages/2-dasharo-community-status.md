@@ -384,6 +384,11 @@ OSFV: 1112 (+22)
 
 -->
 ---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
 
 # Questions?
 
