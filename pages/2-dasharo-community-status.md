@@ -113,6 +113,24 @@ channel](https://matrix.to/#/#system-boot-and-security-mc:lpc.events):
 <center><img src="/dug_7/lpc_sbs_sched2.png" width="850"></center>
 
 ---
+layout: two-cols
+---
+
+<center><img src="/dug_7/hwio.jpeg" width="600"></center>
+
+::right::
+
+<center><img src="/dug_7/ost2_logo2.png" width="250">
+<br>
+<img src="/dug_7/arch4221_qr.png" width="225">
+Use QR code to get news about upcoming OST2 classes:
+<br>
+Arch4221: UEFI Secure Boot
+<br>
+TC3211: Intel Boot Guard
+</center>
+
+---
 
 ## Qubes OS Summit 2024 Line Up
 
@@ -304,5 +322,73 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 <!--
 
 https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2024-03-12
+
+-->
+
+---
+
+## <center>Dasharo Matrix Community</center>
+
+### <center>Messages and Users</center>
+
+<center><img src="/dug_7/dasharo_general_matrix.png" width="500"></center>
+
+### <center>Top contributors</center>
+
+<center><img src="/dug_7/dasharo_general_matrix_users.png" width="500"></center>
+
+<!--
+
+* shall we count hanetzer, since he started cooperation with 3mdeb
+* tlaurion advanced to top5, he is kind of on par with Demi
+
+Getting number of messages for every user:
+
+```shell
+grep -E "\-.+:\s" matrix\ -\ Dasharo\ -\ General\ -\ Chat\ Export\ -\ 2024-03-12T11-16-54.063Z.txt |cut -d"-" -f2|cut -d":" -f1|grep -E "^ "|sort|uniq -c|grep -v "banned"|sort -h|grep -v import|grep -v "'"|grep -v "removed"|grep -v coreboot
+```
+
+To count messages add after pipe:
+
+```shell
+awk '{sum += $1} END {print sum}'
+```
+
+-->
+
+---
+
+<center><img src="/dug_7/dasharo_users.png" width="800"></center>
+
+---
+
+### <center>Most active Dasharo Community Matrix channels since last DUG</center>
+
+<br>
+
+#### <center>Random (`#dasharo-random:matrix.org`)</center>
+<br>
+
+#### <center>Dasharo Developers vPub (`#dasharo-osf-vpub:matrix.org`)</center>
+<br>
+
+#### <center>Support (`#dasharo-support:matrix.org`)</center>
+<!--
+
+General: 32683 (+1648)
+Random: 8416 (+601)
+vPub: 3888 (+332)
+Support: 4018 (+159)
+Supermicro: 1659
+OSFV: 1112 (+22)
+
+-->
+---
+
+# Questions?
+
+<!--
+
+Comment to satisfy pre-commit
 
 -->
