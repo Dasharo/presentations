@@ -553,3 +553,12 @@ class: text-center
   - release date changed to Q4'24 (+1)
 - (ON TRACK) MSI Z790-P v1.0.0 planned for Q4'24
 - (REMOVED) RCS Talos II v0.8.0 planned for Q3'24
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Q&A
