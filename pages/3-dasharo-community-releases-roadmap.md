@@ -198,6 +198,10 @@ TODO: show what is new and what is old
 * Initially in Qubes OS, but nothing would prevent support in regular Linux
 distro, especially when DRTM patches will be merged upstream (we are at v11
 already).
+* There are two short term goals for Dasharo (coreboot+SeaBIOS) Tech
+Preview:
+  - Dasharo TrustRoot (aka Intel Root of Trust aka Intel Boot Guard) support
+  - TrenchBoot as AEM for Qubes OS support
 
 - DUG#7
   - (CHANGED) Protectli VP4670 planned for Q3'24
@@ -259,11 +263,14 @@ already).
 
 <center><img src="/dug_7/dcs_laptop_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
-* There are two short term goals here:
+* There are two short term goals for Dasharo (coreboot+SeaBIOS) v1.7.2.x Tech
+Preview:
   - Dasharo TrustRoot (aka Intel Root of Trust aka Intel Boot Guard) support
   - TrenchBoot as AEM for Qubes OS support
 
 <!--
+
+We planning to show some demo on Qubes OS Summit.
 
 - DUG#7:
   - (RELEASED) Novacustom NV4x Dasharo (coreboot+Heads) v0.9.1 planned for Q3'24

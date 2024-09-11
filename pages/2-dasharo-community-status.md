@@ -226,10 +226,15 @@ potentially problematic binaries to small group of engaged community members.
 Based on that experience we would like to build approach which would work for
 all Dasharo market segments.
 
-Benefit of beta testers would be free and early access to Dasharo binaries at
+Benefit of Beta Testers would be free and early access to Dasharo binaries at
 the price of potentially bricking your device. We believe number of those
-benefits can grow in future, so beta testers could be proud and respected
+benefits can grow in future, so Beta Testers could be proud and respected
 members of community.
+
+**Tech Preview** - we plan to introduce some experimental releases, which would
+be available to Beta Tester and as paid option to everyone else. Those will
+cover some advanced security features like: TrenchBoot, SMI Transfer Monitor,
+Intel Boot Guard or similar.
 
 ::right::
 

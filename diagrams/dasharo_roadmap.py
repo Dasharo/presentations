@@ -119,7 +119,7 @@ novacustom.add_task("Validation", "2024-01-01", "2024-02-14", style="rounded", f
 novacustom.add_task("DES Release", "2024-02-15", "2024-03-31", style="rounded", fill_colour="#FD7E14")
 novacustom_091 = roadmap.add_group("Novacustom NV4x v0.9.1")
 novacustom_091.add_task("DES Release", "2024-07-01", "2024-09-30", style="rounded", fill_colour="#FD7E14")
-novacustom_180 = roadmap.add_group("Novacustom NV4x v2.0.0")
+novacustom_180 = roadmap.add_group("Novacustom NV4x v1.7.2.x")
 novacustom_180.add_task("DES Release", "2024-10-01", "2024-12-31", style="rounded", fill_colour="#FD7E14")
 
 roadmap.set_footer(f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0")
