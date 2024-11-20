@@ -20,8 +20,13 @@ DUG#7 we switched to [slidev](https://sli.dev/).
 * Use lts version of npm:
 
 ```bash
-nvm install --lts
-nvm use --lts
+npm install --lts
+```
+
+* Fix vulnerabilities if found during install:
+
+```bash
+npm audit fix
 ```
 
 * Host presentations:
@@ -31,6 +36,13 @@ npm run dev -- -p 8000 --remote --force
 ```
 
 - Open content in browser on http://0.0.0.0:8000
+
+* To export presentations in .pdf:
+
+```bash
+npm i -D playwright-chromium
+npx slidev export
+```
 
 ### remarkjs (< DUG#7)
 
