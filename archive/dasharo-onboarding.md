@@ -305,31 +305,42 @@ const char *smbios_system_sku(void);
 ## Setup
 Clone [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
 
-```
+```bash
 git clone https://github.com/Dasharo/osfv-scripts.git
-```
-
-Checkout to branch **osfv-cli**:
-```
-git checkout osfv-cli
-```
-
-Move to the directory with **osfv_cli** script:
 
 ```
-cd snipeit
+Create virtual environment and activate it:
+
+```bash
+virtualenv venv
 ```
 
-Install required python packages:
-
+```bash
+source venv/bin/activate
 ```
-pip install -r requirements.txt
+
+Navigate to the cloned repository:
+
+```bash
+cd osfv-scripts/osfv_cli
+```
+
+Install poetry:
+
+```bash
+pip install poetry
+```
+
+Build and install utility:
+
+```bash
+make install
 ```
 
 Test if script works (you should get the list of possible subcommands):
 
-```
-./osfv_cli.py snipeit -h
+```bash
+osfv_cli snipeit -h
 ```
 
 ---
@@ -338,7 +349,7 @@ Test if script works (you should get the list of possible subcommands):
 First of all make sure that the platform is available for checking out:
 
 ```
-./osfv_cli.py snipeit list_unused | grep VP2410 -A 8
+osfv_cli snipeit list_unused | grep VP2410 -A 8
 ```
 
 If platform is available you should get this entry in output:
@@ -359,37 +370,37 @@ PiKVM HW Base:
 Checkout the platform:
 
 ```
-./osfv_cli.py snipeit check_out --rte_ip 192.168.10.233
+osfv_cli snipeit check_out --rte_ip 192.168.10.233
 ```
 
 ---
 
 ### Connecting and basic operations - cont.
 
-Now if you run `./osfv_cli.py snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
+Now if you run `osfv_cli snipeit list_used | grep VP2410 -A 8` you should get the same entry of Protectli as above.
 
 You can get list of possible operations by running
 
 ```
-./osfv_cli.py rte --rte_ip 192.168.10.233 -h
+osfv_cli rte --rte_ip 192.168.10.233 -h
 ```
 
 For example you can check the state of the GPIO pin 0:
 
 ```
-./osfv_cli.py rte --rte_ip 192.168.10.233 gpio get 0
+osfv_cli rte --rte_ip 192.168.10.233 gpio get 0
 ```
 
 Access the platform by serial interface:
 
 ```
-./osfv_cli.py rte --rte_ip 192.168.10.233 serial
+osfv_cli rte --rte_ip 192.168.10.233 serial
 ```
 
 Fetch current ROM image:
 
 ```
-./osfv_cli.py rte --rte_ip 192.168.10.233 flash read --rom vp2410-read.rom
+osfv_cli rte --rte_ip 192.168.10.233 flash read --rom vp2410-read.rom
 ```
 
 ---
@@ -399,12 +410,12 @@ Fetch current ROM image:
 Writing new ROM image:
 
 ```
-./osfv_cli.py rte --rte_ip 192.168.10.233 flash write --rom ~/coreboot/protectli_vault_glk_v1.0.15.rom
+osfv_cli rte --rte_ip 192.168.10.233 flash write --rom ~/coreboot/protectli_vault_glk_v1.0.15.rom
 ```
 
 Switching power on relay:
 ```
-./osfv_cli.py rte --rte_ip 192.168.10.233 rel tgl
+osfv_cli rte --rte_ip 192.168.10.233 rel tgl
 ```
 
 ---
@@ -473,36 +484,45 @@ snipeit to those corresponding to our device. Also, we will use the
 ---
 
 ## Setup
-
 Identically as demonstrated for VP2410 above, clone
  [osfv-scripts](https://github.com/Dasharo/osfv-scripts) repository:
 
 ```bash
 git clone https://github.com/Dasharo/osfv-scripts.git
-```
 
-Checkout to branch **osfv-cli**:
+```
+Create virtual environment and activate it:
 
 ```bash
-git checkout osfv-cli
+virtualenv venv
 ```
 
-Move to the directory with **osfv_cli** script:
-
 ```bash
-cd snipeit
+source venv/bin/activate
 ```
 
-Install required python packages:
+Navigate to the cloned repository:
 
 ```bash
-pip install -r requirements.txt
+cd osfv-scripts/osfv_cli
+```
+
+Install poetry:
+
+```bash
+pip install poetry
+```
+
+Build and install utility:
+
+```bash
+make install
 ```
 
 Test if script works (you should get the list of possible subcommands):
 
 ```bash
-./osfv_cli.py snipeit -h
+osfv_cli snipeit -h
 ```
 
 ---
@@ -514,7 +534,7 @@ process as for VP2410, we'll just substitute our model name and receive a
 different RTE IP and Asset ID.
 
 ```bash
-./osfv_cli.py snipeit list_unused | grep VP4630 -A 8
+osfv_cli snipeit list_unused | grep VP4630 -A 8
 ```
 
 If you see the following result, it means the platform is free and available
@@ -538,14 +558,14 @@ PiKVM HW Base:
 Checkout the platform to mark it as used:
 
 ```bash
-./osfv_cli.py snipeit check_out --rte_ip 192.168.10.244
+osfv_cli snipeit check_out --rte_ip 192.168.10.244
 ```
 
 ---
 
 ### Connecting and basic operations - continued
 
-Now, if you run `./osfv_cli.py snipeit list_used | grep VP4630 -A 8`
+Now, if you run `osfv_cli snipeit list_used | grep VP4630 -A 8`
 you should get the same entry of Protectli VP4630 as above. This means we've
 successfully marked our platform as in-use.
 
@@ -553,25 +573,25 @@ We can access the VP4630 via RTE in the exact same manner as the VP2410.
 You can get a list of possible operations by running:
 
 ```bash
-./osfv_cli.py rte --rte_ip 192.168.10.244 -h
+osfv_cli rte --rte_ip 192.168.10.244 -h
 ```
 
 For example you can check the state of the GPIO pin 0:
 
 ```bash
-./osfv_cli.py rte --rte_ip 192.168.10.244 gpio get 0
+osfv_cli rte --rte_ip 192.168.10.244 gpio get 0
 ```
 
 Access the platform by serial interface:
 
 ```bash
-./osfv_cli.py rte --rte_ip 192.168.10.244 serial
+osfv_cli rte --rte_ip 192.168.10.244 serial
 ```
 
 Toggle power on relay:
 
 ```bash
-./osfv_cli.py rte --rte_ip 192.168.10.233 rel tgl
+osfv_cli rte --rte_ip 192.168.10.233 rel tgl
 ```
 
 ---
@@ -594,7 +614,7 @@ our device's RTE IP address. First, I recommend you read the currently flashed
 branch in your `osfv-scripts/snipeit` directory and fetch the current ROM image:
 
 ```bash
-./osfv_cli.py rte --rte_ip 192.168.10.244 flash read --rom vp4630-read.rom
+osfv_cli rte --rte_ip 192.168.10.244 flash read --rom vp4630-read.rom
 ```
 
 Now, we can attempt to flash our own firmware onto the device, same as for the
@@ -603,7 +623,7 @@ should be accurate, provided you followed the building manual above:
 
 ```bash
 
-./osfv_cli.py rte --rte_ip 192.168.10.244 flash write --rom ~/coreboot/protectli_vault_cml_v1.0.19_vp4630_vp4650.rom
+osfv_cli rte --rte_ip 192.168.10.244 flash write --rom ~/coreboot/protectli_vault_cml_v1.0.19_vp4630_vp4650.rom
 ```
 
 ---
@@ -654,27 +674,27 @@ Same as for the VP2410, edit file `coreboot/src/arch/x86/smbios.c`, function
 ---
 ## Flashing the firmware ROM onto protectli V1410
 
-Before V1410 got flashed, a backup rom file has been created containing 
+Before V1410 got flashed, a backup rom file has been created containing
 whatever was on this device before intervention:
 
 ```bash
-./osfv_cli.py rte --rte_ip 192.168.10.198 flash read --rom dump.rom
+osfv_cli rte --rte_ip 192.168.10.198 flash read --rom dump.rom
 ```
 
 Now, we follow the exact same procedure as for other devices to flash via RTE:
 
 ```bash
 
-./osfv_cli.py rte --rte_ip 192.168.10.198 flash write --rom ~/coreboot/protectli_v1410_v0.9.2.rom
+osfv_cli rte --rte_ip 192.168.10.198 flash write --rom ~/coreboot/protectli_v1410_v0.9.2.rom
 ```
 Expected output indicating a success:
 
 ```
-Reading old flash chip contents... 
+Reading old flash chip contents...
 done.
-Erasing and writing flash chip... 
+Erasing and writing flash chip...
 Erase/write done.
-Verifying flash... 
+Verifying flash...
 VERIFIED.
 
 
