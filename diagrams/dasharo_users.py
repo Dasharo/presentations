@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 # Data
-quarters = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09"]
+quarters = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09", "2024-12-10"]
 # Dasharo Matrix Space counter
-users = [104, 162, 201, 234, 257, 311, 358]
+users = [104, 162, 201, 234, 257, 311, 358, 401]
 
 # Create the plot
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(12, 7))
 plt.plot(quarters, users, marker='o', linestyle='-', color='#38d430', linewidth=2, markersize=10)
 
 # Add titles and labels
@@ -37,7 +37,7 @@ for i, txt in enumerate(users):
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('public/dug_7/dasharo_users.png')
+plt.savefig('public/dug_8/dasharo_users.png')
 
 # Optionally, close the plot to free up memory
 plt.close()

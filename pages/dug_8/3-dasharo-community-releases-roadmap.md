@@ -4,9 +4,9 @@ background: /intro.png
 class: text-center
 
 ---
-## &#x1F44B; Dasharo User Group #7 &#x1F389;
+## &#x1F44B; Dasharo User Group #8 &#x1F389;
 
-### Dasharo Community Status
+### Dasharo Community Release Roadmaps
 
 <center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 

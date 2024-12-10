@@ -4,7 +4,7 @@ background: /intro.png
 class: text-center
 
 ---
-## &#x1F44B; Dasharo User Group #7 &#x1F389;
+## &#x1F44B; Dasharo User Group #8 &#x1F389;
 
 ### Dasharo Community Status
 
@@ -12,8 +12,8 @@ class: text-center
 
 <!--
 
-Date of previous data snapshot: 10/06/2024
-Date of data snapshot: 09/09/2024
+Date of previous data snapshot: 09/09/2024
+Date of data snapshot: 10/12/2024
 
 -->
 
@@ -29,94 +29,78 @@ Date of data snapshot: 09/09/2024
 - Dasharo Matrix stats
 
 ---
-clicks: 7
+clicks: 6
 ---
 
-<center><img src="/dug_7/dasharo_team_roadmap.png" width="1000"></center>
+<center><img src="/dug_8/dasharo_team_roadmap.png" width="1000"></center>
 
 <!--
 
-[click] On OSFC Krystian explained challenges behind porting coreboot to POWER9 and running it on Talos II.
+[click] During Yocto Dev Day Tymek and Danil presented a talk about TEE and
+Secure Storage, which is essential for security of any modern embedded
+application.
 
-[click] DUG#7 - we are here
-
-[click] Fifth time in last six years, together with Oracle we host System Boot
-and Security Micro-conference on Linux Plumbers. This year with my own talk
-which would discuss obstacles in ecosystem to build trustworthy solutions using
-Linux.
-
-[click] During Qubes OS Summit among many interesting talk which I would dive into details on later slides, 3mdeb Dasharo Team will deliver two:
-- Miczyg's "Anti Evil Maid status and future plans"
-- my "Implementing UEFI Secure Boot in Qubes OS: Challenges and Future Steps"
-
-[click] During Yocto Dev Day Tymek will present talk about TEE and Secure
-Storage, which is essential for security of any modern embedded application.
-
-[click] During hardweare.io I will deliver first public and commercial training
-giving hands-on experience on assessment and provisioning of Intel Root of
-Trust and UEFI Chain of Trust (aka UEFI Secure Boot).
+[click] During hardweare.io in Amsterdam I delivered first public and
+commercial training giving hands-on experience on assessment and provisioning
+of Intel Root of Trust and UEFI Chain of Trust (aka UEFI Secure Boot). We plan
+to continue delivering commercial public and private training in 2025.
 
 [click] We end this years events activity with DUG#8 and vPub 0xD
 
+[click] First event of 2025 would be Xen Winter Meetup in Grenoble at the end
+of January, from that event we going directly to FOSDEM. In Grenoble I will
+present: "Enabling UEFI Secure Boot in XCP-ng: Establishing a Robust Chain of
+Trust".
+
+[click] Our FOSDEM devroom discussing Open-source firmware
+was approved. This is fifth edition of the event.
+
+[click] First quarter conference activity we end up with DUG#9 and vPub 0xE.
+
 -->
 
 ---
 
-## https://events.3mdeb.com
+## Published materials
 
-<br>
-<center><img src="/dug_7/3mdeb_events.png" width="270"></center>
-<br>
-
-- Link to DUG#6 and vPub 0xB [YouTube playlist and
-slides](https://3mdeb.com/events/#_dasharo-user-group-0x6-developers-vpub-0xb)
-added.
-- Link to Xen Summit [presentation and
-video](https://3mdeb.com/events/#_xen-project-summit): "Challenges and Status
-of Enabling TrenchBoot in Xen Hypervisor" added.
+- Link to DUG#7 and vPub 0xC [YouTube playlist](https://www.youtube.com/playlist?list=PLuISieMwVBpIJQpso6QICMUqqW5z8L1S2) and [slides](https://dl.3mdeb.com/dasharo/dug/7/).
+- Linux to Qubes OS Summit 2024 [YouTube playlist day1](https://www.youtube.com/watch?v=lJFxtdan9qY&list=PLuISieMwVBpJmIaHgyv7yKDwrHpqym9Qh) and [day2](https://www.youtube.com/watch?v=9AkBeBwxdA0&list=PLuISieMwVBpL5S7kPUHKenoFj_YJ8Y0_d).
+- Link to Yocto Summit [video](https://youtu.be/W78AKeWh57g?feature=shared) and [slides](https://pretalx.com/media/ypdd-oss-elce-2024/submissions/9VBPNF/resources/Practical_Security_for_Embedded_Systems__p7PFTGm.pdf).
 
 ---
 
-<center><img src="/dug_7/dasharo_team_roadmap2.png" width="850"></center>
+<center><img src="/dug_8/fosdem25.png" width="700"></center>
 
 <!--
 
-[click] Very rough plans for first half of 2025 start with FOSDEM 2025 and
-"Open-source firmware devroom", of course call for devrooms is not yet
-announced. We should know more on next DUG.
-
-[click] Dates of DUG/vPub are roughly set until end of 2025. Most of the time
-it is second Thursday of last month in quarter (March, June or December),
-difference is with September, where it would be third Thursday.
-
-[click] We will inform you as things will clarify.
+* Not all talks are visible, we still wait for confirmation.
+* We plan pPub party on Sunday 2nd February, so if you will be around feel free
+to join.
+* We will also join party at Delirium Cafe on Saturday.
 
 -->
 
 ---
-
-## LPC System Boot and Security MC Line Up
-
-- [Schedule](https://lpc.events/event/18/sessions/201/)
-- No more in person tickets, [virtual passes](https://cvent.me/g2ODDV) 50USD,
-50% hobbyist discount possible
-- Open [Matrix
-channel](https://matrix.to/#/#system-boot-and-security-mc:lpc.events):
-`#system-boot-and-security-mc:lpc.events`
-
-<center><img src="/dug_7/lpc_sbs_sched.png" width="850"></center>
-
+clicks: 2
 ---
 
-## LPC System Boot and Security MC Line Up
+<center><img src="/dug_8/dasharo_team_roadmap2.png" width="850"></center>
 
-<center><img src="/dug_7/lpc_sbs_sched2.png" width="850"></center>
+<!--
+
+[click] Very rough plans for second and third quarter of 2025 start with Hardwear.io USA in Santa Clara.
+
+[click] Dates of DUG/vPub are roughly set until end of 2025. June edition will
+be 12th June, precise date of September edition is not known yet because we
+still working on Qubes OS Summit organization.
+
+-->
 
 ---
 layout: two-cols
 ---
 
-<center><img src="/dug_7/hwio.jpeg" width="600"></center>
+<center><img src="/dug_8/hwio.jpg" width="600"></center>
 
 ::right::
 
@@ -132,31 +116,17 @@ TC3211: Intel Boot Guard
 
 ---
 
-## Qubes OS Summit 2024 Line Up
-
-- [Schedule](https://vpub.dasharo.com/e/16/qubes-os-summit-2024#schedule)
-- No more in person tickets, [virtual passes](https://vpub.dasharo.com/e/16/qubes-os-summit-2024#tickets) free
-- Open [Matrix
-channel](https://matrix.to/#/#qubes-summit:matrix.org):
-`#qubes-summit:matrix.org`
-
-<center><img src="/dug_7/qoss_sched.png" width="500"></center>
-
----
-
 ## <center>Dasharo Issues</center>
 
-<center><img src="/dug_7/issues.png" width="500"></center>
-<center><img src="/dug_7/dasharo_issues.png" width="650"></center>
+<center><img src="/dug_8/issues.png" width="500"></center>
+<center><img src="/dug_8/dasharo_issues.png" width="650"></center>
 
 <!--
 
-* We crossed 1k bugs reported.
-* This quarter was quite active since we fixed over 100 bugs, as always such
-big bucket like dasharo-issues need some cleanup, so big number partially means
-we did cleanup.
-* There still may be some inaccuracies related bugs in script generating the
-diagram
+* Number of reported bugs was slightly smaller, but we keep the rate of 100+
+bugs added every quarter.
+* It is important to note that number of bugs in OSS projects is not quality indicator, it is rather community and development activity indicator.
+* Number of fixed bugs can be treated as development KPI.
 
 Modify and run:
 ./diagrams/dasharo_issues.py
@@ -171,11 +141,11 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/dug_7/issues_comments.png" width="500"></center>
+<center><img src="/dug_8/issue_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/dug_7/issues_comments_users.png" width="500"></center>
+<center><img src="/dug_8/issue_comments_users.png" width="500"></center>
 
 <!--
 
@@ -205,10 +175,14 @@ PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --j
 
 ## <center>Dasharo/coreboot PRs</center>
 
-<center><img src="/dug_7/coreboot_prs.png" width="600"></center>
-<center><img src="/dug_7/dasharo_coreboot.png" width="650"></center>
+<center><img src="/dug_8/coreboot_prs.png" width="600"></center>
+<center><img src="/dug_8/dasharo_coreboot.png" width="650"></center>
 
 <!--
+
+* We keep tempo of around 30 PRs merged per quarter.
+* Number of open PRs keep growing at bigger and bigger scale, we trying to
+extend our team to support customer requirements.
 
 Modify and run:
 ./diagrams/dasharo_forks.py
@@ -221,20 +195,13 @@ layout: two-cols
 
 ## Dasharo Beta Testing Group
 
-Novacustom Beta Testing Group is in our opinion very efficient way to expose
-potentially problematic binaries to small group of engaged community members.
-Based on that experience we would like to build approach which would work for
-all Dasharo market segments.
+There is not much interest in joining Beta Testing group, so we will hold on
+with this effort for some time.
 
-Benefit of Beta Testers would be free and early access to Dasharo binaries at
-the price of potentially bricking your device. We believe number of those
-benefits can grow in future, so Beta Testers could be proud and respected
-members of community.
-
-**Tech Preview** - we plan to introduce some experimental releases, which would
-be available to Beta Tester and as paid option to everyone else. Those will
-cover some advanced security features like: TrenchBoot, SMI Transfer Monitor,
-Intel Boot Guard or similar.
+**Tech Preview** - we still plan to introduce some experimental releases, which
+would be available to Beta Tester and as paid option to everyone else. Those
+will cover some advanced security features like: TrenchBoot, SMI Transfer
+Monitor, Intel Boot Guard or similar. This more likely will happen in 2025.
 
 ::right::
 
@@ -242,24 +209,25 @@ Intel Boot Guard or similar.
 
 ---
 
-## Dasharo Beta Testing Group
+## Free (as free &#x1F37A;&#x1F37B;)
 
-Rules are not written yet, but anyone interested can reach out. During initial
-run we plan to accept maximum 3 people per market segment. Some basic
-requirements have to be met like ability to recover.
+For all those brave souls who are not afraid of bricking their systems we
+provide free untested binaries, which are artifacts of our CI/CD.
 
-<!-- markdownlint-disable-next-line MD018 -->
-Process is tracked in [issue #76](https://github.com/Dasharo/presentations/issues/76). Feel free to provide
-suggestions how things could work.
+<center><img src="/dug_8/dasharo_cicd1.png" width="900"></center>
 
-<center><img src="/dug_7/dasharo_beta_testing_group.png" width="600"></center>
+---
+
+## Free (as free &#x1F37A;&#x1F37B;)
+
+<center><img src="/dug_8/dasharo_cicd2.png" width="900"></center>
 
 ---
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/dug_7/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/dug_7/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="/dug_8/coreboot_upstreaming.png" width="600"></center>
+<center><img src="/dug_8/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
 
@@ -288,18 +256,17 @@ awk -F';' '{sum += $7} END {print sum}' dug6.csv #removed lines
 
 <br>
 
-#### <center>`589 files changed, 30504 insertions(+), 2516 deletions(-)`</center>
+#### <center>`700 files changed, 40702 insertions(+), 2653 deletions(-)`</center>
 
 <br>
 
 ### <center>Top Upstreamers</center>
 
-- **Michał Żygowski (miczyg):** +1268
-  - _mb/protectli/vault_adl_p: Add initial support for VP6630/VP6650/VP6670_
-- **Sergii  Lewiński (sergiid):** +815
-  - _drivers/efi/uefi_capsules.c: coalesce and store UEFI capsules_
-- **Krystian Hebel (khebel):** +318
-  - _mb/qemu-q35/smihandler.c: add support for SMIs on QEMU_
+- **Michał Żygowski (miczyg):** +48
+  - _soc/intel/cannonlake,skylake: Fix locking SMRAM_
+  - _util/superiotool/ite: Add extra dumps for IT8613E EC_
+- **Sergii Dmytruk (sergiid):** +2
+  - _payloads/edk2/Makefile: detect invalid commit hash on checkout_
 
 <!--
 
@@ -315,14 +282,14 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ## <center>Dasharo/edk2 PRs</center>
 
-<center><img src="/dug_7/edk2_prs.png" width="650"></center>
-<center><img src="/dug_7/dasharo_edk2.png" width="650"></center>
+<center><img src="/dug_8/edk2_prs.png" width="650"></center>
+<center><img src="/dug_8/dasharo_edk2.png" width="650"></center>
 
 ---
 
 ## <center>Dasharo star history</center>
 
-<center><img src="/dug_7/star-history.png" width="650"></center>
+<center><img src="/dug_8/star-history.png" width="650"></center>
 
 <!--
 
@@ -336,11 +303,11 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2
 
 ### <center>Messages and Users</center>
 
-<center><img src="/dug_7/dasharo_general_matrix.png" width="500"></center>
+<center><img src="/dug_8/dasharo_general_matrix.png" width="500"></center>
 
 ### <center>Top contributors</center>
 
-<center><img src="/dug_7/dasharo_general_matrix_users.png" width="500"></center>
+<center><img src="/dug_8/dasharo_general_matrix_users.png" width="500"></center>
 
 <!--
 
@@ -363,7 +330,7 @@ awk '{sum += $1} END {print sum}'
 
 ---
 
-<center><img src="/dug_7/dasharo_users.png" width="800"></center>
+<center><img src="/dug_8/dasharo_users.png" width="800"></center>
 
 ---
 
