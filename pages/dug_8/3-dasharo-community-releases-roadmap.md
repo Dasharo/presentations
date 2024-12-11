@@ -33,7 +33,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_7/community_roadmap_meme_new.png" width="450"></center>
+<center><img src="/dug_8/community_roadmap_meme.png" width="450"></center>
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -46,7 +46,8 @@ contact the Dasharo Team directly._
 
 - For those watching this presentation first time we really encourage to look
   at past videos to get better context and understanding of the format.
-  - [DUG#6](https://www.youtube.com/watch?v=Q8ILsTzoUjA&list=PLuISieMwVBpIQqHtHwYqypru50eg5nxoz),
+  - [DUG#7](https://www.youtube.com/watch?v=raxY3JfMdp0&list=PLuISieMwVBpIJQpso6QICMUqqW5z8L1S2),
+    [DUG#6](https://www.youtube.com/watch?v=Q8ILsTzoUjA&list=PLuISieMwVBpIQqHtHwYqypru50eg5nxoz),
     [DUG#5](https://www.youtube.com/watch?v=n7yv9T4VoFc&list=PLuISieMwVBpKBpfYlGZnDXOcqcQKXGXCX),
     [DUG#4](https://www.youtube.com/live/EN5rBAAOdOk?feature=shared&t=3973),
     [DUG#3](https://www.youtube.com/live/xHdlDmZVVkI?feature=shared&t=8700),
@@ -61,9 +62,9 @@ contact the Dasharo Team directly._
 
 ---
 
-Let's recap new [Dasharo Naming
-Convention](https://docs.dasharo.com/dasharo-naming-convention/) we introducing
-since last DUG.
+Note about [Dasharo Naming
+Convention](https://docs.dasharo.com/dasharo-naming-convention/) to which we
+fully switching starting from beginning of the 2025.
 
 <center><img src="/dug_7/dasharo_naming_convention.png" width="1000"></center>
 
@@ -76,29 +77,32 @@ since last DUG.
 
 ---
 
-<center><img src="/dug_7/dasharo_releases_kpis.png" width="800"></center>
+<center><img src="/dug_8/dasharo_releases_kpis.png" width="800"></center>
 
 <!--
 
-There are at least 3 community releases coming:
-- Odroid, Minnowobard and Dell OptiPlex 7010/9010
-- Average: 6.00 releases/quarter
-- 24 DCR / 44 DSPR = 0.54 DCR/DSPR
-- Q1'24 DSPR:
-- grep "^## v" docs/variants -r|grep -E "2024-0[1-3]"|grep -E "novacustom|protectli"
-- Q1'24 DCR:
-- All releases in Q1'24'`grep "^## v" docs/variants -r|grep -E "2024-0[1-3]"`
-- DCR = All - DSPR
-- Q2'24 DSPR:
-- grep "^## v" docs/variants -r|grep 2024-0[4-6]|grep -E "novacustom|protectli"|grep -v"heads"
-- Q2'24 DCR:
-- grep "^## v" docs/variants -r|grep 2024-0[4-6]
+There are still at least 3 community releases coming:
+- Odroid, PC Engines and Dell OptiPlex 7010/9010, QEMU?
+- Average: 5.78 releases/quarter for all releases, 81 releases total since Q3'21
+- 29 DCR / 52 DSPR = 0.55 DCR/DSPR (+0.01)
+- Considering year by year:
+  - 2021: 10
+  - 2022: 30
+  - 2023: 16
+  - 2024: 24
+- snippets:
+
+```
+grep "^## v" docs/variants -r|grep -E "2024-0[1-3]"
+grep "^## v" docs/variants -r|grep 2024-0[4-6]|grep -E "novacustom|protectli"|grep -v"heads"
+grep "^## v" docs/variants -r|grep 2024-0[4-6]
+```
 
 -->
 
 ---
 
-<center><img src="/dug_7/dasharo_per_segment.png" width="800"></center>
+<center><img src="/dug_8/dasharo_per_segment.png" width="800"></center>
 
 <!--
 
