@@ -49,6 +49,11 @@ changed["2024-09-09"]  = 7
 ontrack["2024-09-09"]  = 4
 removed["2024-09-09"]  = 2
 released["2024-09-09"]  = 3
+new["2024-12-12"]  = 3
+changed["2024-12-12"]  = 8
+ontrack["2024-12-12"]  = 0
+removed["2024-12-12"]  = 2
+released["2024-12-12"]  = 2
 
 dates = list(new.keys())
 new_values = np.array(list(new.values()))
@@ -98,6 +103,6 @@ plt.legend(fontsize=12)
 
 plt.gca().set_facecolor('#f5f5f5')
 
-plt.savefig('public/dug_7/dasharo_roadmap_states.png', dpi=300)
+plt.savefig('public/dug_8/dasharo_roadmap_states.png', dpi=300)
 
 plt.close()
