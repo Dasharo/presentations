@@ -4,30 +4,12 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-import yaml
-import pytz
-import os
-from github import Github
-import datetime
 import matplotlib.pyplot as plt
-import requests
-from datetime import datetime
 import subprocess
 import logging
 
 logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
 
-
-def get_github_token():
-    # Path to the GitHub hosts.yml file
-    config_path = os.path.expanduser('~/.config/gh/hosts.yml')
-
-    # Read the YAML file
-    with open(config_path, 'r') as file:
-        config = yaml.safe_load(file)
-
-    # Extract the OAuth token
-    return config['github.com']['oauth_token']
 
 def run_gh_command(command):
     try:
