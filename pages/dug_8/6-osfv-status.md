@@ -24,7 +24,7 @@ Date of data snapshot: 10/12/2024
 * Introduction to Dasharo Open Source Firmware Validation (OSFV)
 * Current state
 * Recent improvements
-* Work in progress - current priorities
+* Next steps
 * Q&A
 
 ---
