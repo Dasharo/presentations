@@ -5,17 +5,15 @@ class: text-center
 
 ---
 
-## &#x1F44B; DUG#7 Shameless Plug &#x1F44B;
+## &#x1F44B; DUG#8 Shameless Plug &#x1F44B;
 
 <center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
-## <center>What is "Shameless Plug"</center>
-
 <br>
 
-<center><img src="/dug_7/shameless_plug.png" width="500"></center>
+<center><img src="/dug_8/shameless_plug.png" width="280"></center>
 
 <br>
 
@@ -31,6 +29,7 @@ class: text-center
 
 - Hardware,
 - Services,
+- Pace Enterprise Training,
 - Dasharo Entry Subscription (aka Dasharo Pro/Enterprise Package)
 - Merchandise,
 - Everything available in 3mdeb shop: https://shop.3mdeb.com
@@ -43,25 +42,6 @@ class: text-center
 ---
 
 # Hardware
-
----
-
-# <center>Adapters</center>
-
-<center><img src="/dug_7/adapters.png" width="900"></center>
-
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/product-category/adapters/](https://shop.3mdeb.com/product-category/adapters/)
-</center>
-
-<!--
-
-We added referral link to our partner Nitrokey page  for Nitrokey 3A Mini. If you want to support or need Nitrokey 3A Mini token or both. Feel free to use our page.
-
--->
 
 ---
 
@@ -78,7 +58,9 @@ We added referral link to our partner Nitrokey page  for Nitrokey 3A Mini. If yo
 
 <!--
 
-We work on refilling stock with TPMs for MSI
+We work on refilling stock with TPMs for MSI.
+Raptor Computing TPMs are also sold out and it is unlikely we will produce new
+one.
 
 -->
 
@@ -144,6 +126,166 @@ related to UEFI Secure Boot and Intel Boot Guard.
 Very cool dual use hardware, capable as small home NAS.
 
 -->
+
+---
+
+<center><img src="/dug_8/novacustom_laptops.png" width="900"></center>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/laptops/](https://shop.3mdeb.com/product-category/laptops/)
+</center>
+
+<!--
+
+We also have referral links to Novacustom. Buying through our website you
+support us directly.
+
+Please note this is dropshipping.
+
+-->
+
+---
+
+<center><img src="/dug_8/apu2e4-1024x819-1.png" width="450"></center>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/system-boards/](https://shop.3mdeb.com/product-category/system-boards/)
+</center>
+
+<!--
+
+We also provide PC Engines refurbished units. This hardware is no longer
+officially available.
+
+Setup comes with:
+- TPM2.0
+- 3 years of Dasharo Pro Package
+
+It is unique old piece of hardware, but still serves as very stable router. If
+your goals are more on stability, firmware updates, low TDP this may be option
+for you.
+
+Number of units is very limited.
+
+-->
+
+---
+
+<center><img src="/dug_8/protectli_firewalls.png" width="500"></center>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/vaults/](https://shop.3mdeb.com/product-category/vaults/)
+</center>
+
+<!--
+
+Another dopshipping option is for Protectli. All those firewalls support
+Dasharo open-source firmware. Those are high quality and well-tested products.
+
+So if you want to buy those and leave some tiny margin for 3mdeb feel free to
+use our shop.
+
+-->
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Pace Enterprise Training
+
+---
+
+<center><img src="/dug_8/pet_ds01cbi.png" width="550"></center>
+
+<br>
+
+<center>
+
+### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
+</center>
+
+<!--
+
+Pace Enterprise Training by 3mdeb helps companies to bridge knowledge gaps and accelerate engineering team readiness, delivered by trainers with years of hands-on experience with collaborative open-source and commercial software development.
+
+We essentially provide training in all areas of our expertise:
+- Dasharo: BIOS, boot firmware, ME/PSP, advanced security features, UEFI, coreboot etc.
+- Zarhus: Embedded Linux for all major SoC vendors.
+
+We educate about every aspect of platform life cycle in context of open-source
+ecosystem. Start from input at design stage, component selection to match best
+possible support or easily develop it, through bring up, initial deployment,
+update and long term maintenance.
+
+-->
+
+---
+
+<center><img src="/dug_8/pet_ds02rta.png" width="750"></center>
+
+<br>
+
+<center>
+
+### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
+</center>
+
+---
+
+<center><img src="/dug_8/pet_ds03ssi.png" width="650"></center>
+
+<br>
+
+<center>
+
+### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
+</center>
+
+---
+
+<center><img src="/dug_8/pet_zh01eli.png" width="550"></center>
+
+<br>
+
+<center>
+
+### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
+</center>
+
+---
+
+<center><img src="/dug_8/pet_zh02ypi.png" width="650"></center>
+
+<br>
+
+<center>
+
+### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
+</center>
+
+---
+
+<center><img src="/dug_8/hwio.jpg" width="400"></center>
+
+<br>
+
+<center>
+
+### [https://hardwear.io/usa-2025/training/mastering-uefi-secure-boot.php](https://hardwear.io/usa-2025/training/mastering-uefi-secure-boot.php)
+</center>
+
 ---
 layout: cover
 background: /intro.png
@@ -155,62 +297,17 @@ class: text-center
 
 ---
 
-<center><img src="/dug_7/zarhus_logo.png" width="500"></center>
-
-<!--
-
-Recently we focus on services related to our Embedded Linux distribution. Our
-recent project focus on WebKit and Bluetooth support, especially payment at
-system level.
-
-If you know anyone interested in Embedded Linux services feel free to recommend
-us. That way you help gain margins for Dasharo development.
-
--->
-
----
-
 ## <center>Zarhus Services</center>
 
 <br>
 
-<center><img src="/dug_7/02X-diagram.png" width="450"></center>
+<center><img src="/dug_8/zarhus_services.png" width="900"></center>
 
 <br>
 
 <center>
 
-### [https://shop.3mdeb.com/shop/zarhus-services/zarhus-webkit-bluetooth/](https://shop.3mdeb.com/shop/zarhus-services/zarhus-webkit-bluetooth/)
-</center>
-
----
-
-## <center>Zarhus Services</center>
-
-<br>
-
-<center><img src="/dug_7/02Y-diagram.png" width="450"></center>
-
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/shop/zarhus-services/zarhus-webkit-bluetooth/](https://shop.3mdeb.com/shop/zarhus-services/zarhus-webkit-bluetooth/)
-</center>
-
----
-
-## <center>Zarhus Services</center>
-
-<br>
-
-<center><img src="/dug_7/02Z-diagram.png" width="450"></center>
-
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/shop/zarhus-services/zarhus-webkit-bluetooth/](https://shop.3mdeb.com/shop/zarhus-services/zarhus-webkit-bluetooth/)
+### [https://shop.3mdeb.com/shop/zarhus-services/](https://shop.3mdeb.com/shop/zarhus-services/)
 </center>
 
 ---
