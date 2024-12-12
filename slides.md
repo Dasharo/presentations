@@ -32,3 +32,7 @@ src: ./pages/dug_8/3-dasharo-community-releases-roadmap.md
 ---
 src: ./pages/dug_8/4-shameless-plug.md
 ---
+
+---
+src: ./pages/dug_8/6-osfv-status.md
+---
