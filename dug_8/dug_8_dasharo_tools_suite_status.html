@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DTS tiny Dasharo OS for hacking</title>
+    <meta charset="utf-8">
+    <script>
+        classTitle = "Dasharo User Group #8";
+        courseAuthor = "Daniil Klimuk";
+    </script>
+    <link rel="stylesheet" type="text/css" href="/../remark-templates/3mdeb-presentation-template/css/slides.css">
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <script src="/../remark-templates/dasharo-presentation-template/js/remark.js">
+    </script>
+    <script src="/../remark-templates/dasharo-presentation-template/js/jquery.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+	sourceUrl: 'dug_8_dasharo_tools_suite_status.md',
+        countIncrementalSlides: false
+      });
+
+      slideshow.on('afterShowSlide', function (slide) {
+       if ($(".bottomBar")[0]){
+        $( ".bottomBar" ).remove();
+      } else {
+        // Do something if class does not exist
+      }
+
+       $('.remark-slide-content').append(
+           "<div class='bottomBar'>"+ classTitle +
+           " <br> &copy Copyright 2023. All Rights Reserved | "
+           + courseAuthor + "</div>"
+           );
+      });
+
+    </script>
+  </body>
+</html>
