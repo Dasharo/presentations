@@ -60,7 +60,7 @@ def count_closed_issues(repo, state, date):
         return 0
 
 repo = "Dasharo/dasharo-issues"
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09"]
+dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09", "2024-12-10"]
 
 # Data storage
 data = {"Closed": [], "Open": []}
@@ -105,7 +105,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('public/dug_7/dasharo_issues.png')
+plt.savefig('public/dug_8/dasharo_issues.png')
 
 # Optionally, close the plot to free up memory
 plt.close()

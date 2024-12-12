@@ -9,7 +9,7 @@ This repository contains presentations from previous Dasharo User Group
 meetings and scripts related to the creation of content in those presentations.
 
 Historically we used [remarkjs](https://github.com/remarkjs/remark) with our
-own [remark-remplates](https://github.com/3mdeb/remark-templates), but since
+own [remark-templates](https://github.com/3mdeb/remark-templates), but since
 DUG#7 we switched to [slidev](https://sli.dev/).
 
 ## Usage

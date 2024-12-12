@@ -63,7 +63,7 @@ def count_closed_prs(repo, state, date):
     else:
         return 0
 
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09"]
+dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03", "2024-03-11", "2024-06-10", "2024-09-09", "2024-12-10"]
 repo = "Dasharo/coreboot"
 
 # Data storage
@@ -136,7 +136,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('public/dug_7/dasharo_coreboot.png')
+plt.savefig('public/dug_8/dasharo_coreboot.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
@@ -180,7 +180,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor('#f5f5f5')
 
 # Save the plot as an image file
-plt.savefig('public/dug_7/dasharo_edk2.png')
+plt.savefig('public/dug_8/dasharo_edk2.png')
 
 # Optionally, close the plot to free up memory
 plt.close()
