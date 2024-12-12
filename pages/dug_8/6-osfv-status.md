@@ -28,8 +28,17 @@ Date of data snapshot: 10/12/2024
 * Q&A
 
 ---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
 
 # Introduction to Dasharo OSFV
+
+---
+
+# <center>Introduction to Dasharo OSFV</center>
 
 * Main purpose
   - validation of (open-source) firmware
@@ -53,6 +62,7 @@ Date of data snapshot: 10/12/2024
     Configuration Utility)
     + where possible, in QEMU
 
+
 ---
 
 # Typical setup 
@@ -67,6 +77,10 @@ Date of data snapshot: 10/12/2024
     + the latest Ubuntu LTS
     + the latest Windows 11
     + QubesOS for some tests
+
+???
+
+TODO: graph with DUT/RTE graphics
 
 ---
 
@@ -105,87 +119,113 @@ Date of data snapshot: 10/12/2024
     Should Contain    ${out_flashrom}    SMM protection is enabled
 ```
 
+---
+layout: cover
+background: /intro.png
+class: text-center
 
 ---
 
-# Recent changes
-
-- merged `develop` branch into `main` branch
-  - it was confusing to see the default branch (`main`) with very little
-    updates and outdated information
-  - we cannot 
-  - perhaps we should just use `main` branch right now, and skip `develop`
+# Current state 
 
 ---
 
 # Current state
 
-* No release since the last presentation 😞
-* Still quite intense development in the `develop` branch
-  - all improvements target this branch now
-  - if you want to experiment, this should be a starting point
-  - we are aiming for something "stable enough" to merge into `main` and
-    release v0.3.0 version
-  - hopefully before DUG#7 ☺️
+* We are still failing to define (and reach) criteria for the release
+* Right now it worked more like a `rolling release` in `develop` branch
+* We wanted to merge `develop` into `main` once we are "ready" but it never happens
+* It is confusing to see the default branch (`main`) with very little updates
+  and outdated information
+* Merged `develop` branch into `main` branch
+  - we might use it as the default target branch until we figure it out
+
+<center><img src="/dug_8/osfv_branches_meme.jpg" width="400"></center>
 
 ---
 
-# Recent improvements
+# <center>Statistics - tests</center>
 
-### **Notable changes - new tests**
-
-* New tests
-  - extended CPU suite (P/E cores, HT)
-  - extended DCU tests 
-  - introduced more thorough testing of DTS in QEMU 
-  - suite for TrenchBoot development
-    + booting Linux and Xen from meta-trenchboot
-  - suite for Capsule Updates
-  - more
+<center><img src="/dug_8/osfv_tests_count.png" width="700"></center>
 
 ---
 
-# Recent improvements
+# <center>Statistics - Pull Requests</center>
 
-### **Notable changes - new platforms**
-
-* New platforms
-  - Protectli VP2430 
-  - Protectli VP3210, VP3230
-  - Odroid H4
+TBD
 
 ---
 
-# Recent improvements
+# <center>Statistics - issues</center>
 
-### **osfv_cli integration**
+TBD
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Recent improvements 
+
+---
+
+# <center>New tests</center>
+
+* extended CPU suite (P/E cores, HT)
+* extended DCU tests 
+* introduced more thorough testing of DTS in QEMU 
+* suite for TrenchBoot development
+  - booting Linux and Xen from meta-trenchboot
+* suite for Capsule Updates
+* more
+
+---
+
+# <center>New platforms</center>
+
+* Protectli VP2430 
+* Protectli VP3210, VP3230
+* Odroid H4
+* bring back Dell Optiplex - both UEFI and SeaBIOS
+
+???
+
+TBD: odroid photo?
+
+---
+
+# <center>osfv_cli integration</center>
 
 * Integrate low-level hardware operations into Python libraries
 * Reuse the same libraries by test framework and CLI tool
 
-<center><img src="/dug_8/osfv_cli_after.png" width="400"></center>
+<center><img src="/dug_8/osfv_cli_after.png" width="550"></center>
 
 ----
 
-### **DCU integration - alternative interface for changing fw settings**
+# <center>dcu integration</center>
 
+* Alternative interface for changing fw settings*
 * Instead of manual steps, we can modify SMMSTORE variables directly
 
 <center><img src="/dug_8/osfv_dcu_integration.png" width="400"></center>
 
 ---
 
-# Recent improvements
-
-### **Published keywords documentation**
-
-* https://dasharo.github.io/open-source-firmware-validation/
+# <center>Kyewords docuementation</center>
 
 <center><img src="/dug_8/osfv_keywords_docuementation.png" width="700"></center>
+
+https://dasharo.github.io/open-source-firmware-validation/
 
 ---
 
 # Next steps
+
+* Finalize SeaBIOS support
+* Focus on repeatability and reliability
 
 * Stabilize the environment for the v0.3.0 release
   - finalize current priority tasks
@@ -195,81 +235,6 @@ Date of data snapshot: 10/12/2024
       + PC Engines
       + QEMU
       + MSI
-
----
-layout: two-cols
----
-
-<center><img src="/dug_8/hwio.jpg" width="600"></center>
-
-::right::
-
-<center><img src="/dug_7/ost2_logo2.png" width="250">
-<br>
-<img src="/dug_7/arch4221_qr.png" width="225">
-Use QR code to get news about upcoming OST2 classes:
-<br>
-Arch4221: UEFI Secure Boot
-<br>
-TC3211: Intel Boot Guard
-</center>
-
----
-
-## <center>Dasharo Issues</center>
-
-<center><img src="/dug_8/issues.png" width="500"></center>
-<center><img src="/dug_8/dasharo_issues.png" width="650"></center>
-
-<!--
-
-* Number of reported bugs was slightly smaller, but we keep the rate of 100+
-bugs added every quarter.
-* It is important to note that number of bugs in OSS projects is not quality indicator, it is rather community and development activity indicator.
-* Number of fixed bugs can be treated as development KPI.
-
-Modify and run:
-./diagrams/dasharo_issues.py
-
--->
-
----
-
-## <center>Dasharo Issues</center>
-
-<br>
-
-### <center>Comments</center>
-
-<center><img src="/dug_8/issue_comments.png" width="500"></center>
-
-### <center>Top Contributors</center>
-
-<center><img src="/dug_8/issue_comments_users.png" width="500"></center>
-
-<!--
-
-Following should be run in dasharo-issues repo, gh command should be installed:
-
-- number of unique users active in Dasharo community
-
-```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l
-```
-
-- count all comments
-
-```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --json comments --jq '.[].[].[].createdAt'|wc -l
-```
-
-- count how many comments each user posted
-
-```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --json comments --jq '.[].[].[].author.login'|sort|uniq -c|sort -h
-```
-
--->
 
 ---
 
