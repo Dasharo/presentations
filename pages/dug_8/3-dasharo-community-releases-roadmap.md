@@ -267,8 +267,7 @@ left PoC phase.
 <center><img src="/dug_8/dcs_network_appliance_roadmap_v0.8_pt3.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Unfortunately we canceled this effort for now.
-* Main issue were random soft locks described in [issue
-# 1000](https://github.com/Dasharo/dasharo-issues/issues/1000)
+* Main issue were random soft locks described in [issue #1000](https://github.com/Dasharo/dasharo-issues/issues/1000)
 * `@miczyg` suspect issue with C6 state and C6 DRAM which ought to be reserved
 for it.
 * Interestingly coreboot 4.11 does not have this problem, so it may mean that
