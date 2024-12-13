@@ -58,3 +58,8 @@ repos:
         entry: ./scripts/check-remark-root.sh
         language: script
         types_or: [html, markdown]
+
+  - repo: https://github.com/psf/black
+    rev: 24.10.0
+    hooks:
+      - id: black
