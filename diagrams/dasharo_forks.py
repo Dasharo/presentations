@@ -7,11 +7,16 @@
 import matplotlib.pyplot as plt
 import subprocess
 import logging
+import shutil
 
 logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler()])
 
 
 def run_gh_command(command):
+    if not shutil.which("gh"):
+        print("Error: 'gh' command is not available on this system.")
+        exit("Please install GitHub CLI (gh) first")
+
     try:
         result = subprocess.run(
             command, shell=True, check=True, text=True, capture_output=True
