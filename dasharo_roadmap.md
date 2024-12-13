@@ -67,7 +67,7 @@ contact the Dasharo Team directly._
 
 # Dasharo Naming Convention
 
-.center.image-100[![](img/dasharo_naming_convention.png)]
+.center.image-100[![](/img/dasharo_naming_convention.png)]
 
 - [[RFC] Dasharo Entry Subscription naming scheme #762](https://github.com/Dasharo/dasharo-issues/issues/762) issue
 - [[RFC] Initial documentation of Dasharo Product Naming Convention #820](https://github.com/Dasharo/docs/pull/820) PR
