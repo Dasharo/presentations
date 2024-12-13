@@ -17,6 +17,7 @@ def run_gh_command(command):
         print("Error: 'gh' command is not available on this system.")
         exit("Please install GitHub CLI (gh) first")
 
+    print(f"Executing command: {command}")
     try:
         result = subprocess.run(
             command, shell=True, check=True, text=True, capture_output=True
