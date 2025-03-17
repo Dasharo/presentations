@@ -114,6 +114,8 @@ TC3211: Intel Boot Guard
 We are under second round of internal review. It still need a lot of work, but
 we are on right track to publish Arch4221 this half of year.
 
+In case of HWIO, please let us know if you need discount code.
+
 -->
 
 ---
@@ -143,32 +145,36 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/dug_8/issue_comments.png" width="500"></center>
+<center><img src="/dug_9/issue_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/dug_8/issue_comments_users.png" width="500"></center>
+<center><img src="/dug_9/issue_comments_users.png" width="500"></center>
 
 <!--
+
+We decide to add Firminator at sixth position since he/she was very active over
+last quarter. Other then that this is usual stead growth of comments and user
+pool.
 
 Following should be run in dasharo-issues repo, gh command should be installed:
 
 - number of unique users active in Dasharo community
 
 ```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l
+PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l
 ```
 
 - count all comments
 
 ```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --json comments --jq '.[].[].[].createdAt'|wc -l
+PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --json comments --jq '.[].[].[].createdAt'|wc -l
 ```
 
 - count how many comments each user posted
 
 ```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --json comments --jq '.[].[].[].author.login'|sort|uniq -c|sort -h
+PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --json comments --jq '.[].[].[].author.login'|sort|uniq -c|sort -h
 ```
 
 -->
@@ -177,14 +183,18 @@ PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --j
 
 ## <center>Dasharo/coreboot PRs</center>
 
-<center><img src="/dug_8/coreboot_prs.png" width="600"></center>
-<center><img src="/dug_8/dasharo_coreboot.png" width="650"></center>
+<center><img src="/dug_9/coreboot_prs.png" width="600"></center>
+<center><img src="/dug_9/dasharo_coreboot.png" width="650"></center>
 
 <!--
 
-* We keep tempo of around 30 PRs merged per quarter.
-* Number of open PRs keep growing at bigger and bigger scale, we trying to
-extend our team to support customer requirements.
+* Our average tempo of mergining changes dropped from 26PRs to less than 24PRs
+  per quarter.
+* Backlog of open PRs growing.
+* All that is result of lack of availability of the team as well as other
+  priorities not always related to develop Dasharo. We would love to dedicate
+  100% of our time to open-source firmware, but at this point it is not possible
+  and we have to provide also additional services to break even.
 
 Modify and run:
 ./diagrams/dasharo_forks.py
@@ -192,46 +202,16 @@ Modify and run:
 -->
 
 ---
-layout: two-cols
----
-
-## Dasharo Beta Testing Group
-
-There is not much interest in joining Beta Testing group, so we will hold on
-with this effort for some time.
-
-**Tech Preview** - we still plan to introduce some experimental releases, which
-would be available to Beta Tester and as paid option to everyone else. Those
-will cover some advanced security features like: TrenchBoot, SMI Transfer
-Monitor, Intel Boot Guard or similar. This more likely will happen in 2025.
-
-::right::
-
-<center><img src="/dug_7/dasharo_beta_tester.png" width="350"></center>
-
----
-
-## Free (as free &#x1F37A;&#x1F37B;)
-
-For all those brave souls who are not afraid of bricking their systems we
-provide free untested binaries, which are artifacts of our CI/CD.
-
-<center><img src="/dug_8/dasharo_cicd1.png" width="900"></center>
-
----
-
-## Free (as free &#x1F37A;&#x1F37B;)
-
-<center><img src="/dug_8/dasharo_cicd2.png" width="900"></center>
-
----
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/dug_8/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/dug_8/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="/dug_9/coreboot_upstreaming.png" width="600"></center>
+<center><img src="/dug_9/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
+
+On average we upstream ~2500SLOC every quarter. It is not a lot, but this is
+what we are comfortable with in current state of business.
 
 Top is total:
 
@@ -258,19 +238,30 @@ awk -F';' '{sum += $7} END {print sum}' dug6.csv #removed lines
 
 <br>
 
-#### <center>`700 files changed, 40702 insertions(+), 2653 deletions(-)`</center>
+#### <center>`746 files changed, 45193 insertions(+), 102129 deletions(-)`</center>
 
 <br>
 
 ### <center>Top Upstreamers</center>
 
-- **Michał Żygowski (miczyg):** +48
-  - _soc/intel/cannonlake,skylake: Fix locking SMRAM_
-  - _util/superiotool/ite: Add extra dumps for IT8613E EC_
-- **Sergii Dmytruk (sergiid):** +2
-  - _payloads/edk2/Makefile: detect invalid commit hash on checkout_
+- **Michał Kopeć (mkc):** +1540/-95
+  - _mb/novacustom: add V5x0TU board (Meteor Lake)_
+  - _mb/novacustom/mtl-h: Add iGPU variant_
+  - _mb/novacustom/mtl-h/variants/igpu/hda_verb.c: Add all HDA verbs from stock FW_
+- **Michał Żygowski (miczyg):** +35/-0
+  - _soc/intel/cannonlake: Let coreboot lock MSR_IA32_DEBUG_INTERFACE_
+  - _soc/intel/common/block/graphics: Add missing TWL GT SKUs_
+- **Sergii Dmytruk (sergiid):** +23/-5
+  - _drivers/efi/capsules: check for overflows of capsule sizes_
+  - _drivers/efi/capsules.c: fix recording capsule size_
 
 <!--
+
+I'm not sure why we hit so many deletions, but this statistics should be
+largely improved since we rebase on top of 24.12 where the diff is really
+minimalistic. Hopefully I can present more information during next DUG.
+
+Congratulations to Michał Kopeć for making most of upstreaming this quarter.
 
 Open file in LibreOffice and sort after lines added, you can limit file by:
 
@@ -284,18 +275,27 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ## <center>Dasharo/edk2 PRs</center>
 
-<center><img src="/dug_8/edk2_prs.png" width="650"></center>
-<center><img src="/dug_8/dasharo_edk2.png" width="650"></center>
+<center><img src="/dug_9/edk2_prs.png" width="650"></center>
+<center><img src="/dug_9/dasharo_edk2.png" width="650"></center>
+
+<!--
+
+On average we merge 15 PRs into our EDKII fork. We are in process of rebasing
+to edk2-202502 release.
+
+-->
 
 ---
 
 ## <center>Dasharo star history</center>
 
-<center><img src="/dug_8/star-history.png" width="650"></center>
+<center><img src="/dug_9/star-history.png" width="650"></center>
 
 <!--
 
-https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2024-03-12
+Take on 2025/03/17
+
+https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues
 
 -->
 
@@ -305,16 +305,17 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2
 
 ### <center>Messages and Users</center>
 
-<center><img src="/dug_8/dasharo_general_matrix.png" width="500"></center>
+<center><img src="/dug_9/dasharo_general_matrix.png" width="500"></center>
 
 ### <center>Top contributors</center>
 
-<center><img src="/dug_8/dasharo_general_matrix_users.png" width="500"></center>
+<center><img src="/dug_9/dasharo_general_matrix_users.png" width="500"></center>
 
 <!--
 
-* shall we count hanetzer, since he started cooperation with 3mdeb
-* tlaurion advanced to top5, he is kind of on par with Demi
+* Not much activity recently, it is definitely part of our lack of time from
+  our side to deliver new shiny stuff.
+* tlaurion advanced to top4, so huge thanks to him for engaging in Dasharo Community
 
 Getting number of messages for every user:
 
@@ -332,7 +333,7 @@ awk '{sum += $1} END {print sum}'
 
 ---
 
-<center><img src="/dug_8/dasharo_users.png" width="800"></center>
+<center><img src="/dug_9/dasharo_users.png" width="800"></center>
 
 ---
 
@@ -340,21 +341,27 @@ awk '{sum += $1} END {print sum}'
 
 <br>
 
+#### <center>Support (`#dasharo-support:matrix.org`)</center>
+
+<br>
+
 #### <center>Random (`#dasharo-random:matrix.org`)</center>
 <br>
 
-#### <center>Dasharo Developers vPub (`#dasharo-osf-vpub:matrix.org`)</center>
-<br>
+#### <center>Dasharo OSFV (`#osfv:matrix.3mdeb.com`)</center>
 
-#### <center>Support (`#dasharo-support:matrix.org`)</center>
 <!--
 
-General: 32683 (+1648)
-Random: 8416 (+601)
-vPub: 3888 (+332)
-Support: 4018 (+159)
-Supermicro: 1659
-OSFV: 1112 (+22)
+* Support: 5368 (+1191)
+* General: 32683 (+1648) 35196 (+865)
+* Random: 9504 (+487)
+* OSFV: 1741 (+607)
+* vPub: 4308 (+88)
+* TrenchBoot: 2220
+* Supermicro: 1659
+* Laptops: 1191
+* OST2: 336
+* OSF Bootstrapable Toolchain: 271
 
 -->
 ---

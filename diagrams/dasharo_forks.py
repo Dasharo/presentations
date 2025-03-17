@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
+# SPDX-FileCopyrightText: 2025 3mdeb <contact@3mdeb.com>
 #
 # SPDX-License-Identifier: Apache-2.0
 
@@ -119,6 +119,7 @@ dates = [
     "2024-06-10",
     "2024-09-09",
     "2024-12-10",
+    "2025-03-17",
 ]
 
 
@@ -199,7 +200,7 @@ plot_pr_statistics(
     dates,
     data_coreboot,
     "PR Statistics for Dasharo/coreboot downstream",
-    "public/dug_8/dasharo_coreboot.png",
+    "public/dug_9/dasharo_coreboot.png",
     label_offsets=(30, 5),
 )
 
@@ -211,7 +212,7 @@ plot_pr_statistics(
     dates,
     data_edk2,
     "PR Statistics for Dasharo/edk2 fork",
-    "public/dug_8/dasharo_edk2.png",
+    "public/dug_9/dasharo_edk2.png",
     label_offsets=(7, 1),
 )
 
@@ -223,7 +224,7 @@ plot_pr_statistics(
     dates,
     data_osfv,
     "PR Statistics for OSFV repository",
-    "public/dug_8/dasharo_prs_osfv.png",
+    "public/dug_9/dasharo_prs_osfv.png",
     label_offsets=(7, 1),
 )
 
@@ -235,7 +236,7 @@ plot_pr_statistics(
     dates,
     data_osfv_cli,
     "PR Statistics for osfv_cli repository",
-    "public/dug_8/dasharo_prs_osfv_cli.png",
+    "public/dug_9/dasharo_prs_osfv_cli.png",
     label_offsets=(7, 1),
 )
 
@@ -247,7 +248,7 @@ plot_pr_statistics(
     dates,
     data_meta_dts,
     "PR Statistics for meta-dts repository",
-    "public/dug_8/dasharo_prs_meta_dts.png",
+    "public/dug_9/dasharo_prs_meta_dts.png",
     label_offsets=(7, 1),
 )
 
@@ -259,6 +260,6 @@ plot_pr_statistics(
     dates,
     data_dts_scripts,
     "PR Statistics for dts-scripts repository",
-    "public/dug_8/dasharo_prs_dts_scripts.png",
+    "public/dug_9/dasharo_prs_dts_scripts.png",
     label_offsets=(7, 1),
 )
