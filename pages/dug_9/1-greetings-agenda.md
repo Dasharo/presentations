@@ -48,9 +48,9 @@ class: text-center
 
 - #### &#x1F9F0; 18:00 UTC Shameless Plug: New Products in 3mdeb Shop
 
-- #### &#x1F9F0; 18:15 UTC NovaCustom Roadmap Presentation
+- #### &#x1F9F0; 18:15 UTC NovaCustom: new products and plans for the near future
 
-- #### &#x1F4BB; 18:35 UTC Nitrokey NetHSM Presentation
+- #### &#x1F4BB; 18:35 UTC NetHSM - The Trustworthy, Open Hardware Security Module That Just Works
 
 - #### &#x1F44F; 18:55 UTC Closing remarks &#x27A1;&#xFE0F; &#x1F37A;&#x1F37B; vPub 0xD
 
