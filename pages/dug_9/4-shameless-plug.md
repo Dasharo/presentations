@@ -119,6 +119,20 @@ Article in a lot of details describe hardware setup for testing Apache Nuttx on
 PinePhone.
 
 -->
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+## &#128680; 3mdeb Tindie Discount Code &#128680;
+
+### 5% for maximum 3pcs until end of March
+
+#### 609D513D
+
 ---
 
 <center><img src="/dug_9/testbot2-flow.jpg" width="600"></center>
