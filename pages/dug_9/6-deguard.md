@@ -19,8 +19,9 @@ class: text-center
 
 - What is Intel Boot Guard? + demo #1
 - What does it mean for coreboot?
-- Deguard + demo #2
-- How can I contribute and use it?
+- What is deguard?
+- How can I use it?
+- Demo #2 - deguarded T480 running coreboot
 - Discussion
 
 ---
@@ -28,11 +29,12 @@ class: text-center
 ## What is Intel Boot Guard?
 
 Intel Boot Guard is a security feature that ensures only trusted firmware
-runs when a computer starts. 
+runs when a computer starts.
 
-* OEM Keys and Policy, Field Programmable Fuses 
+* OEM Public Key and Boot Guard Policy are fused into the platform
+* Field Programmable Fuses
 * The firmware (Initial Boot Block - IBB) is signed by the manufacturer.
-  Intel ME makes sure the CPU checks this signature before execution.
+* Intel ME makes sure the CPU checks this signature before execution.
 * Introduced with the 4th generation of Intel CPUs (Haswell)
 
 ---
@@ -41,7 +43,7 @@ runs when a computer starts.
 
 ### Finding out if you have Boot Guard enabled
 
-```
+```bash
 $ sudo rdmsr 0x13a
 (...)  <--- non-zero output
 ```
@@ -96,16 +98,15 @@ provided script to generate the required metadata.
 * [Thinkpad T480(s)](https://review.coreboot.org/c/coreboot/+/83274) **WIP**
 * [Dell OptiPlex 3050](https://review.coreboot.org/c/coreboot/+/82053) **Merged**
 
-
 ## How can I use it?
 
 * Read the SPI flash
 * Extract your platform-specific ME settings with `generatedelta.py`
   OR use already contributed settings if your board is supported
 * Obtain a donor ME 11.6.0 image
-* Patch the donor image with your settings and fake FPFs with `finalimage.py` 
+* Patch the donor image with your settings and fake FPFs with `finalimage.py`
 * Pack it into your flash image with `ifdtool` and flash it back onto the
-  platform
+  platform _(spoiler: that's what I'm doing with the T480 right now)_
 * Open a PR adding your platform's ME settings
 
 ---
@@ -121,29 +122,27 @@ tailored for the T480
 * [Invalid checksum assert generating delta for T460s (ME 11.8.xxx)](https://codeberg.org/libreboot/deguard/issues/1)
 * [Deguarding an Optiplex 5050](https://codeberg.org/libreboot/deguard/issues/2)
 
-
----
-
-layout: cover
-background: /intro.png
-class: text-center
-
 ---
 
 ## Demo #2 - deguarded T480, running coreboot
+
+<center><img src="/img/dug_9/coreboot_logo.png" width="400"></center>
+---
+
+# Discussion
 
 ---
 
 ## Discussion
 
-### Question 1 
+### Question 1
 
 Do you consider a deguarded platform compromised/flawed in terms of security?
 How would you rank
-  - a deguarded platform
-  - one that's never had bootguard support
-  - one whose private IBG keys had been leaked
+- a deguarded platform
+- one that's never had bootguard support
+- one whose private IBG keys had been leaked
 
-### Question 2  
+### Question 2
 
 Have you tried to do it, do you have platforms you'd really like to see ported?
