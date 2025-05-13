@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Status
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 <!--
 
@@ -34,7 +34,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_7/community_roadmap_meme_new.png" width="450"></center>
+<center><img src="/../../img/dug_7/community_roadmap_meme_new.png" width="450"></center>
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -58,7 +58,7 @@ contact the Dasharo Team directly._
   about releases.
 - All releases can be tracked as milestones in Dasharo Issues repo on Github
 
-<center><img src="/dug_7/dasharo_gh_milestones.png" width="450"></center>
+<center><img src="/../../img/dug_7/dasharo_gh_milestones.png" width="450"></center>
 
 ---
 
@@ -66,7 +66,7 @@ Let's recap new [Dasharo Naming
 Convention](https://docs.dasharo.com/dasharo-naming-convention/) we introducing
 since last DUG.
 
-<center><img src="/dug_7/dasharo_naming_convention.png" width="1000"></center>
+<center><img src="/../../img/dug_7/dasharo_naming_convention.png" width="1000"></center>
 
 * Dasharo (coreboot+UEFI) Pro Package for Desktop
 * Dasharo (coreboot+Heads) Pro Package for Laptops
@@ -77,7 +77,7 @@ since last DUG.
 
 ---
 
-<center><img src="/dug_7/dasharo_releases_kpis.png" width="800"></center>
+<center><img src="/../../img/dug_7/dasharo_releases_kpis.png" width="800"></center>
 
 <!--
 
@@ -99,7 +99,7 @@ There are at least 3 community releases coming:
 
 ---
 
-<center><img src="/dug_7/dasharo_per_segment.png" width="800"></center>
+<center><img src="/../../img/dug_7/dasharo_per_segment.png" width="800"></center>
 
 <!--
 
@@ -109,7 +109,7 @@ There are at least 3 community releases coming:
 
 ---
 
-<center><img src="/dug_7/dasharo_roadmap_states.png" width="800"></center>
+<center><img src="/../../img/dug_7/dasharo_roadmap_states.png" width="800"></center>
 
 <!--
 
@@ -118,7 +118,7 @@ There are at least 3 community releases coming:
 -->
 ---
 
-<center><img src="/dug_7/dcs_emu_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_emu_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * v0.2 was released according to plan,
   - more information on: https://docs.dasharo.com/variants/qemu_q35/releases/
@@ -148,7 +148,7 @@ There are at least 3 community releases coming:
 
 ---
 
-<center><img src="/dug_7/dcs_network_appliance_roadmap_v0.7_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_network_appliance_roadmap_v0.7_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 <!--
 
@@ -188,7 +188,7 @@ TODO: show what is new and what is old
 
 ---
 
-<center><img src="/dug_7/dcs_network_appliance_roadmap_v0.7_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_network_appliance_roadmap_v0.7_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We have to shift again, because of _external events_.
 * As you already know the benefit of this release would be Intel TXT support backed by TrenchBoot Support.
@@ -224,7 +224,7 @@ Preview:
 
 ---
 
-<center><img src="/dug_7/dcs_network_appliance_roadmap_v0.7_pt3.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_network_appliance_roadmap_v0.7_pt3.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We still find some small issues in validation.
 * It is very close to be published, but there is some change we will not fit it in Q3'24.
@@ -246,7 +246,7 @@ Preview:
 
 ---
 
-<center><img src="/dug_7/dcs_network_appliance_roadmap_v0.7_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_network_appliance_roadmap_v0.7_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * There is some possibility that release would be published earlier. Closer to beginning of Q4'24, or maybe even still in Q3'24
 * Hopefully it would be interesting enough to professionals or enterprise users, so we could quickly release support for H4 and H4 Ultra (there is also option those would be supported out of the box, but we do not plan validation).
@@ -262,7 +262,7 @@ Preview:
 
 ---
 
-<center><img src="/dug_7/dcs_laptop_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_laptop_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * There are two short term goals for Dasharo (coreboot+SeaBIOS) v1.7.2.x Tech
 Preview:
@@ -295,7 +295,7 @@ We planning to show some demo on Qubes OS Summit.
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_lenovo_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_lenovo_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * It is second quarter we see no traction for this platform. It i very unlikely we can support it.
 * For now we remove it from roadmap.
@@ -319,7 +319,7 @@ We planning to show some demo on Qubes OS Summit.
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_dell_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_dell_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * After almost two years on our roadmap it looks like Dell OptiPlex 7010/9010
 is close to be released.
@@ -361,7 +361,7 @@ is close to be released.
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_msi_z690_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_msi_z690_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Decision about merging Dasharo Pro/Enterprise Package release with Dasharo Community release was not made yet, but likelihood of that event rise.
 
@@ -401,7 +401,7 @@ is close to be released.
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_msi_z790_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_msi_z790_roadmap_v0.7.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * The same situation as with Z690-A.
 
@@ -441,7 +441,7 @@ is close to be released.
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_msi_heads_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_msi_heads_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We will stick to one release for Dasharo (coreboot+Heads) per year on MSI
 unless interest from community could justify change of that opinion.
@@ -467,7 +467,7 @@ unless interest from community could justify change of that opinion.
 
 ---
 
-<center><img src="/dug_7/dcs_workstation_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_workstation_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 * For now we have remove Talos II release from our roadmap because of lack of interest.
 

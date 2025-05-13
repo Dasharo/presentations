@@ -9,11 +9,11 @@ class: text-center
 
 ### Greetings, Agenda
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
-<center><img src="/dug_7/dug_7_banner.jpg" width="450px"></center>
+<center><img src="/../../img/dug_7/dug_7_banner.jpg" width="450px"></center>
 
 ---
 

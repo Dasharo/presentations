@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Status
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 <!--
 
@@ -33,7 +33,7 @@ Date of data snapshot: 09/09/2024
 clicks: 7
 ---
 
-<center><img src="/dug_7/dasharo_team_roadmap.png" width="1000"></center>
+<center><img src="/../../img/dug_7/dasharo_team_roadmap.png" width="1000"></center>
 
 <!--
 
@@ -66,7 +66,7 @@ Trust and UEFI Chain of Trust (aka UEFI Secure Boot).
 ## https://events.3mdeb.com
 
 <br>
-<center><img src="/dug_7/3mdeb_events.png" width="270"></center>
+<center><img src="/../../img/dug_7/3mdeb_events.png" width="270"></center>
 <br>
 
 - Link to DUG#6 and vPub 0xB [YouTube playlist and
@@ -78,7 +78,7 @@ of Enabling TrenchBoot in Xen Hypervisor" added.
 
 ---
 
-<center><img src="/dug_7/dasharo_team_roadmap2.png" width="850"></center>
+<center><img src="/../../img/dug_7/dasharo_team_roadmap2.png" width="850"></center>
 
 <!--
 
@@ -105,25 +105,25 @@ difference is with September, where it would be third Thursday.
 channel](https://matrix.to/#/#system-boot-and-security-mc:lpc.events):
 `#system-boot-and-security-mc:lpc.events`
 
-<center><img src="/dug_7/lpc_sbs_sched.png" width="850"></center>
+<center><img src="/../../img/dug_7/lpc_sbs_sched.png" width="850"></center>
 
 ---
 
 ## LPC System Boot and Security MC Line Up
 
-<center><img src="/dug_7/lpc_sbs_sched2.png" width="850"></center>
+<center><img src="/../../img/dug_7/lpc_sbs_sched2.png" width="850"></center>
 
 ---
 layout: two-cols
 ---
 
-<center><img src="/dug_7/hwio.jpeg" width="600"></center>
+<center><img src="/../../img/dug_7/hwio.jpeg" width="600"></center>
 
 ::right::
 
-<center><img src="/dug_7/ost2_logo2.png" width="250">
+<center><img src="/../../img/dug_7/ost2_logo2.png" width="250">
 <br>
-<img src="/dug_7/arch4221_qr.png" width="225">
+<img src="/../../img/dug_7/arch4221_qr.png" width="225">
 Use QR code to get news about upcoming OST2 classes:
 <br>
 Arch4221: UEFI Secure Boot
@@ -141,14 +141,14 @@ TC3211: Intel Boot Guard
 channel](https://matrix.to/#/#qubes-summit:matrix.org):
 `#qubes-summit:matrix.org`
 
-<center><img src="/dug_7/qoss_sched.png" width="500"></center>
+<center><img src="/../../img/dug_7/qoss_sched.png" width="500"></center>
 
 ---
 
 ## <center>Dasharo Issues</center>
 
-<center><img src="/dug_7/issues.png" width="500"></center>
-<center><img src="/dug_7/dasharo_issues.png" width="650"></center>
+<center><img src="/../../img/dug_7/issues.png" width="500"></center>
+<center><img src="/../../img/dug_7/dasharo_issues.png" width="650"></center>
 
 <!--
 
@@ -172,11 +172,11 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/dug_7/issues_comments.png" width="500"></center>
+<center><img src="/../../img/dug_7/issues_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/dug_7/issues_comments_users.png" width="500"></center>
+<center><img src="/../../img/dug_7/issues_comments_users.png" width="500"></center>
 
 <!--
 
@@ -206,8 +206,8 @@ PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 5000 --j
 
 ## <center>Dasharo/coreboot PRs</center>
 
-<center><img src="/dug_7/coreboot_prs.png" width="600"></center>
-<center><img src="/dug_7/dasharo_coreboot.png" width="650"></center>
+<center><img src="/../../img/dug_7/coreboot_prs.png" width="600"></center>
+<center><img src="/../../img/dug_7/dasharo_coreboot.png" width="650"></center>
 
 <!--
 
@@ -239,7 +239,7 @@ Intel Boot Guard or similar.
 
 ::right::
 
-<center><img src="/dug_7/dasharo_beta_tester.png" width="350"></center>
+<center><img src="/../../img/dug_7/dasharo_beta_tester.png" width="350"></center>
 
 ---
 
@@ -253,14 +253,14 @@ requirements have to be met like ability to recover.
 Process is tracked in [issue #76](https://github.com/Dasharo/presentations/issues/76). Feel free to provide
 suggestions how things could work.
 
-<center><img src="/dug_7/dasharo_beta_testing_group.png" width="600"></center>
+<center><img src="/../../img/dug_7/dasharo_beta_testing_group.png" width="600"></center>
 
 ---
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/dug_7/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/dug_7/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="/../../img/dug_7/coreboot_upstreaming.png" width="600"></center>
+<center><img src="/../../img/dug_7/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
 
@@ -316,14 +316,14 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ## <center>Dasharo/edk2 PRs</center>
 
-<center><img src="/dug_7/edk2_prs.png" width="650"></center>
-<center><img src="/dug_7/dasharo_edk2.png" width="650"></center>
+<center><img src="/../../img/dug_7/edk2_prs.png" width="650"></center>
+<center><img src="/../../img/dug_7/dasharo_edk2.png" width="650"></center>
 
 ---
 
 ## <center>Dasharo star history</center>
 
-<center><img src="/dug_7/star-history.png" width="650"></center>
+<center><img src="/../../img/dug_7/star-history.png" width="650"></center>
 
 <!--
 
@@ -337,11 +337,11 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues&2
 
 ### <center>Messages and Users</center>
 
-<center><img src="/dug_7/dasharo_general_matrix.png" width="500"></center>
+<center><img src="/../../img/dug_7/dasharo_general_matrix.png" width="500"></center>
 
 ### <center>Top contributors</center>
 
-<center><img src="/dug_7/dasharo_general_matrix_users.png" width="500"></center>
+<center><img src="/../../img/dug_7/dasharo_general_matrix_users.png" width="500"></center>
 
 <!--
 
@@ -364,7 +364,7 @@ awk '{sum += $1} END {print sum}'
 
 ---
 
-<center><img src="/dug_7/dasharo_users.png" width="800"></center>
+<center><img src="/../../img/dug_7/dasharo_users.png" width="800"></center>
 
 ---
 

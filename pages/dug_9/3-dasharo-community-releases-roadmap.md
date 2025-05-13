@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Release Roadmaps
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 <!--
 
@@ -31,7 +31,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_9/community_roadmap_meme.png" width="450"></center>
+<center><img src="/../../img/dug_9/community_roadmap_meme.png" width="450"></center>
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -59,11 +59,11 @@ We consider to be more conservative in adding new platforms to the roadmap.
     [DUG#2](https://www.youtube.com/live/ZyctrnJNTPc?feature=shared&t=3395),
     [DUG#1](https://www.youtube.com/live/fUfjWyljKNs?feature=shared&t=795)
 
-<center><img src="/dug_7/dasharo_gh_milestones.png" width="450"></center>
+<center><img src="/../../img/dug_7/dasharo_gh_milestones.png" width="450"></center>
 
 ---
 
-<center><img src="/dug_7/dasharo_naming_convention.png" width="1000"></center>
+<center><img src="/../../img/dug_7/dasharo_naming_convention.png" width="1000"></center>
 
 * In short Dasharo Pro Package (DPP)
 * Dasharo (coreboot+UEFI) Pro Package for Desktop
@@ -75,7 +75,7 @@ We consider to be more conservative in adding new platforms to the roadmap.
 
 ---
 
-<center><img src="/dug_8/dcs_sample_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_sample_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 <!--
 
@@ -91,7 +91,7 @@ releases:
 
 ---
 
-<center><img src="/dug_9/dasharo_releases_kpis.png" width="800"></center>
+<center><img src="/../../img/dug_9/dasharo_releases_kpis.png" width="800"></center>
 
 <!--
 
@@ -116,7 +116,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 
 ---
 
-<center><img src="/dug_9/dasharo_per_segment.png" width="800"></center>
+<center><img src="/../../img/dug_9/dasharo_per_segment.png" width="800"></center>
 
 <!--
 
@@ -126,7 +126,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 
 ---
 
-<center><img src="/dug_9/dasharo_roadmap_states.png" width="800"></center>
+<center><img src="/../../img/dug_9/dasharo_roadmap_states.png" width="800"></center>
 
 <!--
 
@@ -136,7 +136,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 -->
 ---
 
-<center><img src="/dug_9/dcs_emu_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_emu_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 - This is still the same unreleased milestone based on our experience with Dasharo (coreboot+SeaBIOS) for PC Engines, we plan to release the same code for QEMU Q35.
 - This will improve CI/CD and automatic validation of coreboot+SeaBIOS and [sortbootorder](https://github.com/pcengines/sortbootorder) payload.
@@ -173,7 +173,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 
 ---
 
-<center><img src="/dug_9/dcs_network_appliance_roadmap_v0.9_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_network_appliance_roadmap_v0.9_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * According to information on mailing list next release will happen in lat
 March and it will be `v25.03`.
@@ -221,7 +221,7 @@ March and it will be `v25.03`.
 
 ---
 
-<center><img src="/dug_9/dcs_network_appliance_roadmap_v0.9_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_network_appliance_roadmap_v0.9_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Now this release is under risk and most likely will be replaced by release Dasharo (coreboot+UEFI) with TrenchBoot support for that platform.
 * Although we still discussing it because we see at least two issues with it:
@@ -257,7 +257,7 @@ March and it will be `v25.03`.
 
 ---
 
-<center><img src="/dug_9/dcs_network_appliance_roadmap_v0.9_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_network_appliance_roadmap_v0.9_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We finally released support for Odroid-H4+.
 * It is simple and minimalistic release. We aim to extend support in upcoming quarter.
@@ -347,7 +347,7 @@ Hopefully during next roadmap presentation we will add the milestone on github.
 -->
 ---
 
-<center><img src="/dug_9/dcs_laptop_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_laptop_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Dasharo (coreboot+Heads) for V56TU v0.9.0 new Intel Meteor
   Lake laptops was released.
@@ -410,7 +410,7 @@ Not that heads version has any meaning. Heads is rolling release.
 
 ---
 
-<center><img src="/dug_9/dcs_desktop_dell_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_desktop_dell_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We released v0.1.1 on time, but we decide to change it to Dasharo (coreboot+UEFI) instead of SeaBIOS.
 * We plan version that will support DRTM, but it is to early to announce it.
@@ -481,7 +481,7 @@ Not that heads version has any meaning. Heads is rolling release.
 
 ---
 
-<center><img src="/dug_9/dcs_desktop_msi_z690_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_desktop_msi_z690_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * This year we plan just one release, which would be Dasharo Community Release.
 * It will include all recent fixes and modifications most likely rebased on top of  recent version of coreboot and EDKII.
@@ -531,7 +531,7 @@ Release.
 
 ---
 
-<center><img src="/dug_9/dcs_desktop_msi_z790_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_9/dcs_desktop_msi_z790_roadmap_v0.9.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * The same situation as with Z690-A.
 
@@ -578,7 +578,7 @@ Release.
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_msi_heads_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_msi_heads_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Unfortunately, we have no new plans.
 

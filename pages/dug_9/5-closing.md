@@ -8,11 +8,11 @@ class: text-center
 
 ## &#x1F44B; DUG#9 Closing Remarks &#x1F44B;
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
-<center><img src="/dug_9/qubes2025.jpg" width="600"></center>
+<center><img src="/../../img/dug_9/qubes2025.jpg" width="600"></center>
 
 <center>
 
@@ -30,27 +30,27 @@ other details.
 -->
 ---
 
-<center><img src="/dug_9/qubesos_summit_2025_cfp.png" width="650"></center>
+<center><img src="/../../img/dug_9/qubesos_summit_2025_cfp.png" width="650"></center>
 
 ---
 
-<center><img src="/dug_9/vpub_agenda_01.png" width="900"></center>
+<center><img src="/../../img/dug_9/vpub_agenda_01.png" width="900"></center>
 
 ---
 
-<center><img src="/dug_9/vpub_agenda_02.png" width="900"></center>
+<center><img src="/../../img/dug_9/vpub_agenda_02.png" width="900"></center>
 
 ---
 
-<center><img src="/dug_9/vpub_agenda_03.png" width="900"></center>
+<center><img src="/../../img/dug_9/vpub_agenda_03.png" width="900"></center>
 
 ---
 
-<center><img src="/dug_9/vpub_agenda_04.png" width="900"></center>
+<center><img src="/../../img/dug_9/vpub_agenda_04.png" width="900"></center>
 
 ---
 
-<center><img src="/dug_9/dasharo_slogan.png" width="400"></center>
+<center><img src="/../../img/dug_9/dasharo_slogan.png" width="400"></center>
 
 - **Test**: Dive into our latest releases, test them out, and share your
   feedback. Your experiences refine our roadmap. 🧪
@@ -74,7 +74,7 @@ other details.
 - **Engage**: Join our discussions, forums, and DUG meetings. Every
   interaction enriches our community. 🤝
 
-<center><img src="/dug_9/dug_3_meme.png" width="500"></center>
+<center><img src="/../../img/dug_9/dug_3_meme.png" width="500"></center>
 
 ---
 layout: cover

@@ -62,7 +62,7 @@ Step 2 is more tricky :)
     that specific vendor, or even only in that device model
   - Kills used CPU market, so it's seldom used in enthusiast / DIY boards
 
-<center><img src="/dug_8/sth-psb.png" width="600">Source: ServeTheHome</center>
+<center><img src="/../../img/dug_8/sth-psb.png" width="600">Source: ServeTheHome</center>
 
 ---
 
@@ -76,7 +76,7 @@ Step 2 is more tricky :)
   - Checks for FUSE_PLATFORM_SECURE_BOOT_EN bit in PSB_STATUS_OFFSET register
   - I also compile a list of user reports, so feel free to contribute :)
 
-<center><img src="/dug_8/psb-mobile.png" width="400" align="left"><img src="/dug_8/psb-pr.png" width="400" align="right"></center>
+<center><img src="/../../img/dug_8/psb-mobile.png" width="400" align="left"><img src="/../../img/dug_8/psb-pr.png" width="400" align="right"></center>
 
 ---
 layout: cover

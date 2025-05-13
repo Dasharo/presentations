@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Status
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
@@ -25,7 +25,7 @@ class: text-center
 clicks: 6
 ---
 
-<center><img src="/dug_9/dasharo_team_roadmap.png" width="800px"></center>
+<center><img src="/../../img/dug_9/dasharo_team_roadmap.png" width="800px"></center>
 
 <!--
 
@@ -56,7 +56,7 @@ Modify and run:
 
 ---
 
-<center><img src="/dug_9/fosdem25.png" width="700"></center>
+<center><img src="/../../img/dug_9/fosdem25.png" width="700"></center>
 
 <!--
 
@@ -77,7 +77,7 @@ Modify and run:
 clicks: 4
 ---
 
-<center><img src="/dug_9/dasharo_team_roadmap2.png" width="850"></center>
+<center><img src="/../../img/dug_9/dasharo_team_roadmap2.png" width="850"></center>
 
 <!--
 
@@ -96,13 +96,13 @@ Hardwear.io USA in Santa Clara.
 layout: two-cols
 ---
 
-<center><img src="/dug_8/hwio.jpg" width="600"></center>
+<center><img src="/../../img/dug_8/hwio.jpg" width="600"></center>
 
 ::right::
 
-<center><img src="/dug_7/ost2_logo2.png" width="250">
+<center><img src="/../../img/dug_7/ost2_logo2.png" width="250">
 <br>
-<img src="/dug_7/arch4221_qr.png" width="225">
+<img src="/../../img/dug_7/arch4221_qr.png" width="225">
 Use QR code to get news about upcoming OST2 classes:
 <br>
 Arch4221: UEFI Secure Boot
@@ -123,8 +123,8 @@ In case of HWIO, please let us know if you need discount code.
 
 ## <center>Dasharo Issues</center>
 
-<center><img src="/dug_9/issues.png" width="500"></center>
-<center><img src="/dug_9/dasharo_issues.png" width="650"></center>
+<center><img src="/../../img/dug_9/issues.png" width="500"></center>
+<center><img src="/../../img/dug_9/dasharo_issues.png" width="650"></center>
 
 <!--
 
@@ -146,11 +146,11 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/dug_9/issue_comments.png" width="500"></center>
+<center><img src="/../../img/dug_9/issue_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/dug_9/issue_comments_users.png" width="500"></center>
+<center><img src="/../../img/dug_9/issue_comments_users.png" width="500"></center>
 
 <!--
 
@@ -184,8 +184,8 @@ PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --
 
 ## <center>Dasharo/coreboot PRs</center>
 
-<center><img src="/dug_9/coreboot_prs.png" width="600"></center>
-<center><img src="/dug_9/dasharo_coreboot.png" width="650"></center>
+<center><img src="/../../img/dug_9/coreboot_prs.png" width="600"></center>
+<center><img src="/../../img/dug_9/dasharo_coreboot.png" width="650"></center>
 
 <!--
 
@@ -206,8 +206,8 @@ Modify and run:
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/dug_9/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/dug_9/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="/../../img/dug_9/coreboot_upstreaming.png" width="600"></center>
+<center><img src="/../../img/dug_9/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
 
@@ -276,8 +276,8 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ## <center>Dasharo/edk2 PRs</center>
 
-<center><img src="/dug_9/edk2_prs.png" width="650"></center>
-<center><img src="/dug_9/dasharo_edk2.png" width="650"></center>
+<center><img src="/../../img/dug_9/edk2_prs.png" width="650"></center>
+<center><img src="/../../img/dug_9/dasharo_edk2.png" width="650"></center>
 
 <!--
 
@@ -290,7 +290,7 @@ to edk2-202502 release.
 
 ## <center>Dasharo star history</center>
 
-<center><img src="/dug_9/star-history.png" width="650"></center>
+<center><img src="/../../img/dug_9/star-history.png" width="650"></center>
 
 <!--
 
@@ -306,11 +306,11 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues
 
 ### <center>Messages and Users</center>
 
-<center><img src="/dug_9/dasharo_general_matrix.png" width="500"></center>
+<center><img src="/../../img/dug_9/dasharo_general_matrix.png" width="500"></center>
 
 ### <center>Top contributors</center>
 
-<center><img src="/dug_9/dasharo_general_matrix_users.png" width="500"></center>
+<center><img src="/../../img/dug_9/dasharo_general_matrix_users.png" width="500"></center>
 
 <!--
 
@@ -334,7 +334,7 @@ awk '{sum += $1} END {print sum}'
 
 ---
 
-<center><img src="/dug_9/dasharo_users.png" width="800"></center>
+<center><img src="/../../img/dug_9/dasharo_users.png" width="800"></center>
 
 ---
 

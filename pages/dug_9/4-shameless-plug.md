@@ -8,13 +8,13 @@ class: text-center
 
 ## &#x1F44B; DUG#8 Shameless Plug &#x1F44B;
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
 <br>
 
-<center><img src="/dug_9/shameless_plug.png" width="480"></center>
+<center><img src="/../../img/dug_9/shameless_plug.png" width="480"></center>
 
 <br>
 
@@ -46,7 +46,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_9/shop_sdwire.png" width="700"></center>
+<center><img src="/../../img/dug_9/shop_sdwire.png" width="700"></center>
 
 <br>
 
@@ -90,7 +90,7 @@ Apache NuttX validation from Lup Yuen.
 
 <br>
 
-<center><img src="/dug_9/sdwire_tindie_review.png" width="700"></center>
+<center><img src="/../../img/dug_9/sdwire_tindie_review.png" width="700"></center>
 
 <center>
 
@@ -136,7 +136,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_9/testbot2-flow.jpg" width="600"></center>
+<center><img src="/../../img/dug_9/testbot2-flow.jpg" width="600"></center>
 
 <center>
 
@@ -146,7 +146,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_9/avaota-title.jpg" width="450"></center>
+<center><img src="/../../img/dug_9/avaota-title.jpg" width="450"></center>
 
 <center>
 
@@ -156,7 +156,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_9/shop_twonkie.png" width="600"></center>
+<center><img src="/../../img/dug_9/shop_twonkie.png" width="600"></center>
 
 <br>
 
@@ -173,7 +173,7 @@ Also community around this project has very interesting use cases.
 
 ---
 
-<center><img src="/dug_9/twonkie_hn.png" width="900"></center>
+<center><img src="/../../img/dug_9/twonkie_hn.png" width="900"></center>
 
 !!! quote
     (...) they make sniffing the USB-PD messages considerably easier than using an
@@ -196,7 +196,7 @@ Day.
 
 ## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/dug_9/dell_optiplex.png" width="400"></center>
+<center><img src="/../../img/dug_9/dell_optiplex.png" width="400"></center>
 
 <br>
 
@@ -225,7 +225,7 @@ What is important there are multiple interesting functions available like:
 
 ## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/dug_9/odroid.png" width="230"></center>
+<center><img src="/../../img/dug_9/odroid.png" width="230"></center>
 
 <br>
 
@@ -249,7 +249,7 @@ UEFI Secure Boot course.
 
 ---
 
-<center><img src="/dug_9/novacustom_laptops.png" width="900"></center>
+<center><img src="/../../img/dug_9/novacustom_laptops.png" width="900"></center>
 
 <br>
 
@@ -269,7 +269,7 @@ Please note this is dropshipping.
 
 ---
 
-<center><img src="/dug_9/pcengines.png" width="250"></center>
+<center><img src="/../../img/dug_9/pcengines.png" width="250"></center>
 
 <br>
 
@@ -299,7 +299,7 @@ Number of units is very limited.
 
 ---
 
-<center><img src="/dug_8/protectli_firewalls.png" width="500"></center>
+<center><img src="/../../img/dug_8/protectli_firewalls.png" width="500"></center>
 
 <br>
 
@@ -331,7 +331,7 @@ class: text-center
 clicks: 6
 ---
 
-<center><img src="/dug_9/pet_cooperation_models.png" width="900"></center>
+<center><img src="/../../img/dug_9/pet_cooperation_models.png" width="900"></center>
 
 <!--
 
@@ -392,7 +392,7 @@ following areas.
 -->
 ---
 
-<center><img src="/dug_8/pet_ds01cbi.png" width="550"></center>
+<center><img src="/../../img/dug_8/pet_ds01cbi.png" width="550"></center>
 
 <br>
 
@@ -418,7 +418,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_ds02rta.png" width="750"></center>
+<center><img src="/../../img/dug_8/pet_ds02rta.png" width="750"></center>
 
 <br>
 
@@ -429,7 +429,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_ds03ssi.png" width="650"></center>
+<center><img src="/../../img/dug_8/pet_ds03ssi.png" width="650"></center>
 
 <br>
 
@@ -440,7 +440,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_zh01eli.png" width="550"></center>
+<center><img src="/../../img/dug_8/pet_zh01eli.png" width="550"></center>
 
 <br>
 
@@ -451,7 +451,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_zh02ypi.png" width="650"></center>
+<center><img src="/../../img/dug_8/pet_zh02ypi.png" width="650"></center>
 
 <br>
 
@@ -462,7 +462,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/hwio.jpg" width="400"></center>
+<center><img src="/../../img/dug_8/hwio.jpg" width="400"></center>
 
 <br>
 
@@ -515,7 +515,7 @@ class: text-center
 
 <br>
 
-<center><img src="/dug_8/zarhus_services.png" width="900"></center>
+<center><img src="/../../img/dug_8/zarhus_services.png" width="900"></center>
 
 <br>
 
@@ -541,9 +541,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/dug_7/des.png" width="220"/>
-  <img src="/dug_7/des2.png" width="220" style="margin-left: 50px"/>
-  <img src="/dug_7/des3.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des.png" width="220"/>
+  <img src="/../../img/dug_7/des2.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des3.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -560,9 +560,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/dug_7/des5.png" width="220"/>
-  <img src="/dug_7/des4.png" width="220" style="margin-left: 50px"/>
-  <img src="/dug_7/des6.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des5.png" width="220"/>
+  <img src="/../../img/dug_7/des4.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des6.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>

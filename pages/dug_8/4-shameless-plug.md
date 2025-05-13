@@ -8,13 +8,13 @@ class: text-center
 
 ## &#x1F44B; DUG#8 Shameless Plug &#x1F44B;
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
 <br>
 
-<center><img src="/dug_8/shameless_plug.png" width="280"></center>
+<center><img src="/../../img/dug_8/shameless_plug.png" width="280"></center>
 
 <br>
 
@@ -48,7 +48,7 @@ class: text-center
 
 # <center>TPMs</center>
 
-<center><img src="/dug_7/tpm.png" width="900"></center>
+<center><img src="/../../img/dug_7/tpm.png" width="900"></center>
 
 <br>
 
@@ -69,7 +69,7 @@ one.
 
 # <center>TPMs</center>
 
-<center><img src="/dug_7/dug_6_tpm2.png" width="400"></center>
+<center><img src="/../../img/dug_7/dug_6_tpm2.png" width="400"></center>
 
 <br>
 
@@ -82,7 +82,7 @@ one.
 
 ## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/dug_7/dell_optiplex.png" width="400"></center>
+<center><img src="/../../img/dug_7/dell_optiplex.png" width="400"></center>
 
 <br>
 
@@ -109,7 +109,7 @@ What is important there are multiple interesting functions available like:
 
 ## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/dug_7/odroid.png" width="200"></center>
+<center><img src="/../../img/dug_7/odroid.png" width="200"></center>
 
 <br>
 
@@ -130,7 +130,7 @@ Very cool dual use hardware, capable as small home NAS.
 
 ---
 
-<center><img src="/dug_8/novacustom_laptops.png" width="900"></center>
+<center><img src="/../../img/dug_8/novacustom_laptops.png" width="900"></center>
 
 <br>
 
@@ -150,7 +150,7 @@ Please note this is dropshipping.
 
 ---
 
-<center><img src="/dug_8/apu2e4-1024x819-1.png" width="450"></center>
+<center><img src="/../../img/dug_8/apu2e4-1024x819-1.png" width="450"></center>
 
 <br>
 
@@ -178,7 +178,7 @@ Number of units is very limited.
 
 ---
 
-<center><img src="/dug_8/protectli_firewalls.png" width="500"></center>
+<center><img src="/../../img/dug_8/protectli_firewalls.png" width="500"></center>
 
 <br>
 
@@ -208,7 +208,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_8/pet_ds01cbi.png" width="550"></center>
+<center><img src="/../../img/dug_8/pet_ds01cbi.png" width="550"></center>
 
 <br>
 
@@ -234,7 +234,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_ds02rta.png" width="750"></center>
+<center><img src="/../../img/dug_8/pet_ds02rta.png" width="750"></center>
 
 <br>
 
@@ -245,7 +245,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_ds03ssi.png" width="650"></center>
+<center><img src="/../../img/dug_8/pet_ds03ssi.png" width="650"></center>
 
 <br>
 
@@ -256,7 +256,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_zh01eli.png" width="550"></center>
+<center><img src="/../../img/dug_8/pet_zh01eli.png" width="550"></center>
 
 <br>
 
@@ -267,7 +267,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/pet_zh02ypi.png" width="650"></center>
+<center><img src="/../../img/dug_8/pet_zh02ypi.png" width="650"></center>
 
 <br>
 
@@ -278,7 +278,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/dug_8/hwio.jpg" width="400"></center>
+<center><img src="/../../img/dug_8/hwio.jpg" width="400"></center>
 
 <br>
 
@@ -302,7 +302,7 @@ class: text-center
 
 <br>
 
-<center><img src="/dug_8/zarhus_services.png" width="900"></center>
+<center><img src="/../../img/dug_8/zarhus_services.png" width="900"></center>
 
 <br>
 
@@ -328,9 +328,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/dug_7/des.png" width="220"/>
-  <img src="/dug_7/des2.png" width="220" style="margin-left: 50px"/>
-  <img src="/dug_7/des3.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des.png" width="220"/>
+  <img src="/../../img/dug_7/des2.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des3.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -347,9 +347,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/dug_7/des5.png" width="220"/>
-  <img src="/dug_7/des4.png" width="220" style="margin-left: 50px"/>
-  <img src="/dug_7/des6.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des5.png" width="220"/>
+  <img src="/../../img/dug_7/des4.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des6.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>

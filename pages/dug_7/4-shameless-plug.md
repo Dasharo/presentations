@@ -8,7 +8,7 @@ class: text-center
 
 ## &#x1F44B; DUG#7 Shameless Plug &#x1F44B;
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
@@ -16,7 +16,7 @@ class: text-center
 
 <br>
 
-<center><img src="/dug_7/shameless_plug.png" width="500"></center>
+<center><img src="/../../img/dug_7/shameless_plug.png" width="500"></center>
 
 <br>
 
@@ -49,7 +49,7 @@ class: text-center
 
 # <center>Adapters</center>
 
-<center><img src="/dug_7/adapters.png" width="900"></center>
+<center><img src="/../../img/dug_7/adapters.png" width="900"></center>
 
 <br>
 
@@ -68,7 +68,7 @@ We added referral link to our partner Nitrokey page  for Nitrokey 3A Mini. If yo
 
 # <center>TPMs</center>
 
-<center><img src="/dug_7/tpm.png" width="900"></center>
+<center><img src="/../../img/dug_7/tpm.png" width="900"></center>
 
 <br>
 
@@ -87,7 +87,7 @@ We work on refilling stock with TPMs for MSI
 
 # <center>TPMs</center>
 
-<center><img src="/dug_7/dug_6_tpm2.png" width="400"></center>
+<center><img src="/../../img/dug_7/dug_6_tpm2.png" width="400"></center>
 
 <br>
 
@@ -100,7 +100,7 @@ We work on refilling stock with TPMs for MSI
 
 ## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/dug_7/dell_optiplex.png" width="400"></center>
+<center><img src="/../../img/dug_7/dell_optiplex.png" width="400"></center>
 
 <br>
 
@@ -127,7 +127,7 @@ What is important there are multiple interesting functions available like:
 
 ## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/dug_7/odroid.png" width="200"></center>
+<center><img src="/../../img/dug_7/odroid.png" width="200"></center>
 
 <br>
 
@@ -156,7 +156,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_7/zarhus_logo.png" width="500"></center>
+<center><img src="/../../img/dug_7/zarhus_logo.png" width="500"></center>
 
 <!--
 
@@ -175,7 +175,7 @@ us. That way you help gain margins for Dasharo development.
 
 <br>
 
-<center><img src="/dug_7/02X-diagram.png" width="450"></center>
+<center><img src="/../../img/dug_7/02X-diagram.png" width="450"></center>
 
 <br>
 
@@ -190,7 +190,7 @@ us. That way you help gain margins for Dasharo development.
 
 <br>
 
-<center><img src="/dug_7/02Y-diagram.png" width="450"></center>
+<center><img src="/../../img/dug_7/02Y-diagram.png" width="450"></center>
 
 <br>
 
@@ -205,7 +205,7 @@ us. That way you help gain margins for Dasharo development.
 
 <br>
 
-<center><img src="/dug_7/02Z-diagram.png" width="450"></center>
+<center><img src="/../../img/dug_7/02Z-diagram.png" width="450"></center>
 
 <br>
 
@@ -231,9 +231,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/dug_7/des.png" width="220"/>
-  <img src="/dug_7/des2.png" width="220" style="margin-left: 50px"/>
-  <img src="/dug_7/des3.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des.png" width="220"/>
+  <img src="/../../img/dug_7/des2.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des3.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -250,9 +250,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/dug_7/des5.png" width="220"/>
-  <img src="/dug_7/des4.png" width="220" style="margin-left: 50px"/>
-  <img src="/dug_7/des6.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des5.png" width="220"/>
+  <img src="/../../img/dug_7/des4.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_7/des6.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>

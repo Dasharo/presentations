@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Open Source Firmware Validation Status
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 <!--
 
@@ -47,7 +47,7 @@ class: text-center
   - mainly Dasharo with UEFI payload right now
 * Using Robot Framework as a base
 
-<center><img src="/common/Robot-framework-logo.png" width="200"></center>
+<center><img src="/../../img/common/Robot-framework-logo.png" width="200"></center>
 
 ---
 
@@ -82,19 +82,19 @@ class: text-center
 
 # <center>One test - step by step</center>
 
-<center><img src="/dug_8/dasharo_main_page.jpeg" width="500"></center>
+<center><img src="/../../img/dug_8/dasharo_main_page.jpeg" width="500"></center>
 
 ---
 
 # <center>One test - step by step</center>
 
-<center><img src="/dug_8/dasharo_features.jpeg" width="500"></center>
+<center><img src="/../../img/dug_8/dasharo_features.jpeg" width="500"></center>
 
 ---
 
 # <center>One test - step by step</center>
 
-<center><img src="/dug_8/dasharo_sec_opts.jpeg" width="500"></center>
+<center><img src="/../../img/dug_8/dasharo_sec_opts.jpeg" width="500"></center>
 
 ---
 
@@ -137,25 +137,25 @@ class: text-center
 * Merged `develop` branch into `main` branch yesterday
   - we might use it as the default target branch until we figure it out
 
-<center><img src="/dug_8/osfv_branches_meme.jpg" width="400"></center>
+<center><img src="/../../img/dug_8/osfv_branches_meme.jpg" width="400"></center>
 
 ---
 
 # <center>Statistics - Pull Requests</center>
 
-<center><img src="/dug_8/dasharo_prs_osfv.png" width="700"></center>
+<center><img src="/../../img/dug_8/dasharo_prs_osfv.png" width="700"></center>
 
 ---
 
 # <center>Statistics - Pull Requests</center>
 
-<center><img src="/dug_8/dasharo_prs_osfv_cli.png" width="700"></center>
+<center><img src="/../../img/dug_8/dasharo_prs_osfv_cli.png" width="700"></center>
 
 ---
 
 # <center>Statistics - tests</center>
 
-<center><img src="/dug_8/osfv_tests_count.png" width="700"></center>
+<center><img src="/../../img/dug_8/osfv_tests_count.png" width="700"></center>
 
 ---
 layout: cover
@@ -187,7 +187,7 @@ class: text-center
 * Odroid H4
 * Bring back Dell Optiplex - both UEFI and SeaBIOS
 
-<center><img src="/dug_8/odroid_h4.jpg" width="350"></center>
+<center><img src="/../../img/dug_8/odroid_h4.jpg" width="350"></center>
 
 ---
 
@@ -196,7 +196,7 @@ class: text-center
 * Integrate low-level hardware operations into Python libraries
 * Reuse the same libraries by test framework and CLI tool
 
-<center><img src="/dug_8/osfv_cli_after.png" width="550"></center>
+<center><img src="/../../img/dug_8/osfv_cli_after.png" width="550"></center>
 
 ---
 
@@ -205,13 +205,13 @@ class: text-center
 * Alternative interface for changing fw settings*
 * Instead of manual steps, we can modify SMMSTORE variables directly
 
-<center><img src="/dug_8/osfv_dcu_integration.png" width="400"></center>
+<center><img src="/../../img/dug_8/osfv_dcu_integration.png" width="400"></center>
 
 ---
 
 # <center>Keywords documentation</center>
 
-<center><img src="/dug_8/osfv_keywords_docuementation.png" width="700"></center>
+<center><img src="/../../img/dug_8/osfv_keywords_docuementation.png" width="700"></center>
 
 https://dasharo.github.io/open-source-firmware-validation/
 

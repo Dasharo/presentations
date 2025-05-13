@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Release Roadmaps
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 <!--
 
@@ -34,7 +34,7 @@ class: text-center
 
 ---
 
-<center><img src="/dug_8/community_roadmap_meme.png" width="450"></center>
+<center><img src="/../../img/dug_8/community_roadmap_meme.png" width="450"></center>
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -65,7 +65,7 @@ We consider to be more conservative in adding new platforms to the roadmap.
   about releases.
 - All releases can be tracked as milestones in Dasharo Issues repo on Github
 
-<center><img src="/dug_7/dasharo_gh_milestones.png" width="450"></center>
+<center><img src="/../../img/dug_7/dasharo_gh_milestones.png" width="450"></center>
 
 ---
 
@@ -73,7 +73,7 @@ Note about [Dasharo Naming
 Convention](https://docs.dasharo.com/dasharo-naming-convention/) to which we
 fully switching starting from beginning of the 2025.
 
-<center><img src="/dug_7/dasharo_naming_convention.png" width="1000"></center>
+<center><img src="/../../img/dug_7/dasharo_naming_convention.png" width="1000"></center>
 
 * Dasharo (coreboot+UEFI) Pro Package for Desktop
 * Dasharo (coreboot+Heads) Pro Package for Laptops
@@ -84,7 +84,7 @@ fully switching starting from beginning of the 2025.
 
 ---
 
-<center><img src="/dug_8/dcs_sample_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_sample_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 <!--
 
@@ -100,7 +100,7 @@ releases:
 
 ---
 
-<center><img src="/dug_8/dasharo_releases_kpis.png" width="800"></center>
+<center><img src="/../../img/dug_8/dasharo_releases_kpis.png" width="800"></center>
 
 <!--
 
@@ -125,7 +125,7 @@ grep "^## v" docs/variants -r|grep 2024-0[4-6]
 
 ---
 
-<center><img src="/dug_8/dasharo_per_segment.png" width="800"></center>
+<center><img src="/../../img/dug_8/dasharo_per_segment.png" width="800"></center>
 
 <!--
 
@@ -135,7 +135,7 @@ grep "^## v" docs/variants -r|grep 2024-0[4-6]
 
 ---
 
-<center><img src="/dug_8/dasharo_roadmap_states.png" width="800"></center>
+<center><img src="/../../img/dug_8/dasharo_roadmap_states.png" width="800"></center>
 
 <!--
 
@@ -145,7 +145,7 @@ grep "^## v" docs/variants -r|grep 2024-0[4-6]
 -->
 ---
 
-<center><img src="/dug_8/dcs_emu_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_emu_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 - Based on our experience with Dasharo (coreboot+SeaBIOS) for PC Engines, we plan to release the same code for QEMU Q35.
 - This will improve CI/CD and automatic validation of coreboot+SeaBIOS.
@@ -177,11 +177,11 @@ grep "^## v" docs/variants -r|grep 2024-0[4-6]
 
 ---
 
-<center><img src="/dug_8/dce_emu_release.png" width="700" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dce_emu_release.png" width="700" style="margin-left:-36px; margin-top:-40px"></center>
 
 ---
 
-<center><img src="/dug_8/pce_dasharo.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/pce_dasharo.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 <!--
 
@@ -191,7 +191,7 @@ Some binary artifacts can be downloaded from Dasharo Patchqueue Initiative repo.
 
 ---
 
-<center><img src="/dug_8/dcs_network_appliance_roadmap_v0.8_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_network_appliance_roadmap_v0.8_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * According to information on mailing list next release will happen in lat
 December and it will be `v24.12`.
@@ -233,7 +233,7 @@ TODO: show what is new and what is old
 
 ---
 
-<center><img src="/dug_8/dcs_network_appliance_roadmap_v0.8_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_network_appliance_roadmap_v0.8_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Shifted again. We are kept busy with other projects and implementation didn't
 left PoC phase.
@@ -265,7 +265,7 @@ left PoC phase.
 
 ---
 
-<center><img src="/dug_8/dcs_network_appliance_roadmap_v0.8_pt3.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_network_appliance_roadmap_v0.8_pt3.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Unfortunately we canceled this effort for now.
 * Main issue were random soft locks described in [issue #1000](https://github.com/Dasharo/dasharo-issues/issues/1000)
@@ -293,7 +293,7 @@ it is because of using MRC binary for memory initialization.
 
 ---
 
-<center><img src="/dug_8/dcs_network_appliance_roadmap_v0.8_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_network_appliance_roadmap_v0.8_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Unfortunately, we still didn't released binary despite we should be quite
 close.
@@ -316,7 +316,7 @@ close.
 
 ---
 
-<center><img src="/dug_8/dcs_laptop_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_laptop_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 <!--
 
@@ -358,7 +358,7 @@ it has low priority to fact that NV4x may be our of stock when we will get to th
 
 ---
 
-<center><img src="/dug_8/dcs_desktop_dell_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_desktop_dell_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Release is very close to be published. All code related tasks are completed.
 * We are now validating the platform. We face some struggles because of OSFV lack support for SeaBIOS (hence QEMU Q35 coreboot+SeaBIOS release). More about that in OSFV status presentation.
@@ -402,7 +402,7 @@ it has low priority to fact that NV4x may be our of stock when we will get to th
 
 ---
 
-<center><img src="/dug_8/dcs_desktop_msi_z690_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_desktop_msi_z690_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * `v1.1.4` was released according to schedule. Release notes can be found [here](https://docs.dasharo.com/variants/msi_z690/releases/#v114-2024-12-10).
 * Since releases for MSI PRO Z690-A and Z790-P are identical we will discuss
@@ -451,7 +451,7 @@ Release.
 
 ---
 
-<center><img src="/dug_8/dcs_desktop_msi_z790_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_8/dcs_desktop_msi_z790_roadmap_v0.8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * `v0.9.2` was released according to schedule. Release notes can be found [here](https://docs.dasharo.com/variants/msi_z790/releases/#v092-2024-12-10).
 
@@ -495,7 +495,7 @@ Release.
 
 ---
 
-<center><img src="/dug_8/uefi-capsule-update.png" width="450"></center>
+<center><img src="/../../img/dug_8/uefi-capsule-update.png" width="450"></center>
 
 - [UEFI Update Capsules for Open Source firmware](https://blog.3mdeb.com/2024/2024-12-10-uefi-capsule-updates/)
 - [UEFI Capsule Update in Dasharo Universe](https://docs.dasharo.com/kb/capsule-updates-overview/)
@@ -533,7 +533,7 @@ UEFI Capsule Update will be supported by DTS.
 
 ---
 
-<center><img src="/dug_8/cpu_config1.jpg" width="450"></center>
+<center><img src="/../../img/dug_8/cpu_config1.jpg" width="450"></center>
 
 - [CPU Configuration in Dasharo Universe](https://docs.dasharo.com/dasharo-menu-docs/dasharo-system-features/#cpu-configuration)
 * Now you can change:
@@ -569,11 +569,11 @@ workloads. It also can mitigate some speculative attacks.
 
 ---
 
-<center><img src="/dug_8/cpu_config3.jpg" width="650"></center>
+<center><img src="/../../img/dug_8/cpu_config3.jpg" width="650"></center>
 
 ---
 
-<center><img src="/dug_8/cpu_config2.jpg" width="650"></center>
+<center><img src="/../../img/dug_8/cpu_config2.jpg" width="650"></center>
 
 ---
 
@@ -608,11 +608,11 @@ previously we used version which was four years older edk2-stable202002, so it i
 
 <br>
 
-<center><img src="/dug_8/tpm_unification.png" width="650"></center>
+<center><img src="/../../img/dug_8/tpm_unification.png" width="650"></center>
 
 ---
 
-<center><img src="/dug_7/dcs_desktop_msi_heads_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="/../../img/dug_7/dcs_desktop_msi_heads_roadmap_v0.7.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Dasharo (coreboot+Heads) for MSI plans will be announced during next DUG, it is very likely releases will have in first half of 2025.
 

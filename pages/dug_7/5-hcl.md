@@ -8,7 +8,7 @@ class: text-center
 
 ## &#x1F44B; Enhancing Hardware Compatibility: Best Practices and Tools for Dasharo HCL Maintainers &#x1F44B;
 
-<center><img src="/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
@@ -54,7 +54,7 @@ system posture from security,performance,compliance, (.etc) perspective.
 
 ---
 
-<center><img src="/dug_7/dasharo_hcl.png" width="550"></center>
+<center><img src="/../../img/dug_7/dasharo_hcl.png" width="550"></center>
 
 <!--
 
@@ -64,7 +64,7 @@ Problem statement: Dasharo HCL is update way to rarely
 
 ---
 
-<center><img src="/dug_7/dasharo_hcl_page.png" width="750"></center>
+<center><img src="/../../img/dug_7/dasharo_hcl_page.png" width="750"></center>
 
 <!--
 
@@ -353,7 +353,7 @@ HCLs.
 
 ::right::
 
-<center><img src="/dug_7/dasharo_gpu_hcl.png" width="750"></center>
+<center><img src="/../../img/dug_7/dasharo_gpu_hcl.png" width="750"></center>
 
 ---
 
@@ -443,7 +443,7 @@ differently.
 If you run Dasharo on your hardware and you didn't sent HCL yet please
 consider doing so.
 
-<center><img src="/dug_7/dts-hcl-run.png" width="700"></center>
+<center><img src="/../../img/dug_7/dts-hcl-run.png" width="700"></center>
 
 ---
 layout: cover
