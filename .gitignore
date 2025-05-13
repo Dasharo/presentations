@@ -7,3 +7,4 @@ dist
 components.d.ts
 venv
 *.pdf
+.vite

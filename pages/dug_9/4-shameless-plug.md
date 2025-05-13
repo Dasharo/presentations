@@ -1,4 +1,5 @@
 ---
+theme: ../../slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
