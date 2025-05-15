@@ -16,33 +16,27 @@ DUG#7 we switched to [slidev](https://sli.dev/).
 
 ### slidev (>= DUG#7)
 
-* Install npm manager e.g. [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
-* Use lts version of npm:
+#### Installation
 
-```bash
-npm install --lts
-```
+1. Install the `slidev-template` submodule:
+    `git submodule update --init --remote slidev-template`
 
-* Fix vulnerabilities if found during install:
+2. Go to the submodule directory:
+    `cd slidev-template`
 
-```bash
-npm audit fix
-```
+#### Usage
 
-* Host presentations:
+##### Start presentation
 
-```bash
-npm run dev -- -p 8000 --remote --force
-```
+1. Start the desired presentation:
+    `./scripts/local-preview.sh pages/dug_7/1-greetings-agenda.md`
 
-- Open content in browser on http://0.0.0.0:8000
+2. Open content in browser on <http://127.0.0.1:8000>
 
-* To export presentations in .pdf:
+##### Export presentation
 
-```bash
-npm i -D playwright-chromium
-npx slidev export
-```
+1. Start the desired presentation:
+    `./scripts/generate-pdf.sh ../pages/ram-wipe.md`
 
 ### remarkjs (< DUG#7)
 
