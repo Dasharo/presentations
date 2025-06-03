@@ -30,41 +30,163 @@ class: text-center
 
 ---
 
-## Microcode
+## Key Security Components & Trust
 
-- Microcode is loaded before the CPU begins executing any BIOS code
-- It is signed, encrypted and obfuscated and is the root of the overall security
-  of your platform
-- Modern CPUs will not do anything unless you provide a microcode update
-- coreboot's resposibility is to provide microcode updates in the Firmware
-  Interface Table (Intel specific)
-- For Intel: binaries available in a GitHub repository
-
----
-
-## DBX
-
-- DBX is the UEFI Secure Boot Revocation database
-- Contains hashes of revoked binaries, keys and certificates
-- Provides a mechanism to revoke trust in previously trusted entitiess
-  - e.g. vulnerable bootloaders
-- Updating it is crucial for firmware security
-- Provided by the UEFI Forum on a website, and by Microsoft in a GitHub repo
-- Microcode sits at the very beginning of the firmware trust chain, and UEFI
-  DBX sits at the very end
+* **Microcode Updates:**
+    * Processor-level fixes/mitigations (e.g., Spectre, Meltdown).
+    * Applied very early by coreboot.
+* **UEFI DBX (Revocation Database):**
+    * Part of UEFI Secure Boot.
+    * Revokes compromised binaries (e.g., BootHole exploit) and signing certificates.
+* **Firmware Chain of Trust:**
+    * Microcode -> coreboot -> UEFI -> Bootloader -> OS.
+    * Each stage verifies the next.
 
 ---
 
-## Updates
+## Our Goal: Consistent & Timely Security
 
-- Keeping up to date with each dependency can grow tedious
-- We implemented an automation to make the process of updating DBX and ucode
-  seamless
-- Leverage GitHub Actions to make automations quickly and easily in YAML
-
----
-
-## Demo
+* Ensure critical components (Microcode, DBX) are **always** up-to-date.
+* Reduce risk of oversight.
+* Free up developer resources.
+* **Solution:** Automation!
 
 ---
 
+## Component Deep Dive: Intel Microcode
+
+* **Source:** [Intel's GitHub](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files)
+* **Purpose:** Fix security advisories, functional issues, and errata.
+    * Often essential for basic CPU operation.
+* **Loading:**
+    * By coreboot via Firmware Interface Table (FIT) – *before coreboot itself runs!*
+    * OS can load updates, but firmware-level is earlier & more comprehensive.
+* **Example Vulnerability Patched:**
+    * **INTEL-SA-01139:** Privilege escalation via UEFI module input validation.
+
+---
+
+## Component Deep Dive: UEFI DBX
+
+* **Source:** [UEFI Forum](https://uefi.org/revocationlistfile) / [Microsoft GitHub](https://github.com/microsoft/secureboot_objects)
+    * We use Microsoft's Git repo for easier automation & prompt updates.
+    * Discrepancy highlights need for reliable, scriptable sources.
+* **Purpose:** Revokes signatures of previously approved firmware/software.
+    * Critical for mitigating bootkits (e.g., BlackLotus) and compromised bootloaders.
+    * Revoking certificates is powerful: invalidates many binaries with one update.
+* **Example Vulnerability Mitigated:**
+    * **CVE-2022-21894 (BlackLotus):** Persistent UEFI bootkit bypassing Secure Boot.
+
+---
+
+## The Automation: GitHub Actions
+
+* **Why GitHub Actions?**
+    * Tight integration with our GitHub codebase.
+    * Declarative YAML syntax.
+    * Wide range of community-supported actions (e.g., for creating PRs).
+* Daily checks for updates to Microcode and DBX.
+
+---
+
+## Automation: Microcode Update Workflow
+
+1.  **Check Daily:**
+    * Checkout Dasharo code & `intel-microcode` submodule.
+    * Compare current submodule commit (`current`) with latest `main` branch of `intel-microcode` (`new`).
+    * If `current != new`, submodule is outdated -> `exit 1`.
+
+```yaml
+# Microcode Check Snippet
+- name: Check if µcode submodule is up to date
+  run: |
+    git submodule update --init --checkout 3rdparty/intel-microcode
+    pushd 3rdparty/intel-microcode
+    current=<span class="math-inline">\(git log \-1 \-\-pretty\=format\:"%H"\)
+git checkout main \# Switch to main to get the latest
+new\=</span>(git log -1 --pretty=format:"%H")
+    if [[ $current == $new ]]; then
+      echo "Intel µcode submodule is up-to-date."
+    else
+      echo "Intel µcode submodule is out of date!"
+      exit 1
+    fi
+    popd
+```
+
+---
+
+## Automation: Microcode Update Workflow (Cont.)
+
+2. Update & Create PR (if check failed):
+    * Checkout Dasharo code.
+    * Update intel-microcode submodule to its main branch.
+    * Use peter-evans/create-pull-request action to submit a PR.
+    * Design Rationale: Git submodule pins specific versions & tracks changes transparently.
+
+---
+
+## Automation: UEFI DBX Update Workflow
+
+1. Check Daily:
+    * Checkout Dasharo edk2 code.
+    * Checkout microsoft/secureboot_objects repository.
+    * Calculate SHA256 of current DBXUpdate.bin in Dasharo.
+    * Calculate SHA256 of latest DBXUpdate.bin from Microsoft.
+    * If checksums differ -> exit 1.
+
+```yaml
+# DBX Check Snippet
+- name: Check if DBX is out-of-date
+  run: |
+    old=$(sha256sum edk2/DasharoPayloadPkg/SecureBootDefaultKeys/DBXUpdate.bin | awk '{ print <span class="math-inline">1 \}'\)
+new\=</span>(sha256sum secureboot_objects/PostSignedObjects/DBX/amd64/DBXUpdate.bin | awk '{ print $1 }')
+    if [ "$old" = "$new" ]; then
+      echo 'UEFI DBX is up-to-date.'
+    else
+      echo 'UEFI DBX is out of date.'
+      exit 1
+    fi
+```
+
+---
+
+## Automation: UEFI DBX Update Workflow (Cont.)
+
+2. Update & Create PR (if check failed):
+    * Copy the new DBXUpdate.bin from secureboot_objects into Dasharo edk2 tree.
+    * Use peter-evans/create-pull-request action to submit a PR.
+    * Design Rationale: Checksum comparison is straightforward for single-file artifacts.
+
+---
+
+## Human Oversight: The PR Review Process
+
+* Automated PRs are not automatically merged!
+* Standard Dasharo Review Process:
+    * Developers review changes.
+    * Ensure correct integration.
+    * Test on relevant hardware platforms.
+* Result: Balances timeliness with stability.
+
+---
+
+## Benefits: Security & Transparency
+
+* Enhanced Security:
+    * Regular, automated updates minimize vulnerability windows.
+* Increased Transparency:
+    * Open repositories and CI workflows.
+    * Users can see update status and history.
+    * Community can audit processes and adapt methods.
+* Contrast: Many proprietary firmware solutions are opaque about update contents and schedules.
+
+---
+
+## Closing Thoughts
+
+* Automated checks for microcode and DBX make Dasharo firmware:
+    * More Secure: By ensuring timely updates.
+    * More Transparent: Through open processes.
+* Builds user trust and empowers them with knowledge.
+* We hope this makes Dasharo safer and more worthy of our users' trust.
