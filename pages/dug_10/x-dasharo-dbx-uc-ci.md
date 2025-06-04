@@ -42,6 +42,8 @@ class: text-center
     * Microcode -> coreboot -> UEFI -> Bootloader -> OS.
     * Each stage verifies the next.
 
+<center><img src="/../../img/dug_10/dasharo_boot_diagram.png" width="900"></center>
+
 ---
 
 ## Our Goal: Consistent & Timely Security
@@ -86,6 +88,8 @@ class: text-center
     * Declarative YAML syntax.
     * Wide range of community-supported actions (e.g., for creating PRs).
 * Daily checks for updates to Microcode and DBX.
+
+<center><img src="/../../img/dug_10/gha_logo.png" width="150"></center>
 
 ---
 
