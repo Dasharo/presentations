@@ -1,5 +1,5 @@
 ---
-theme: ../../slidev-template/theme
+theme: slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -42,7 +42,7 @@ class: text-center
   - Microcode -> coreboot -> UEFI -> Bootloader -> OS.
   - Each stage verifies the next.
 
-<center><img src="/../../img/dug_10/dasharo_boot_diagram.png" width="900"></center>
+<center><img src="/img/dug_10/dasharo_boot_diagram.png" width="900"></center>
 
 ---
 
@@ -89,7 +89,7 @@ class: text-center
   - Wide range of community-supported actions (e.g., for creating PRs).
 * Daily checks for updates to Microcode and DBX.
 
-<center><img src="/../../img/dug_10/gha_logo.png" width="150"></center>
+<center><img src="/img/dug_10/gha_logo.png" width="150"></center>
 
 ---
 
