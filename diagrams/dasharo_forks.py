@@ -124,7 +124,7 @@ dates = [
 ]
 
 
-def gather_data(repo, dates):
+def gather_data(repo, dates, differences=False):
     """
     Gathers PR data for a given repository and dates.
     """
@@ -136,6 +136,14 @@ def gather_data(repo, dates):
         data["Merged"].append(merged_prs)
         data["Closed"].append(closed_prs)
         data["Open"].append(open_prs)
+
+    if differences:
+        # Calculate differences if required
+        for key in data:
+            data[key] = [
+                data[key][i] - data[key][i - 1] for i in range(1, len(data[key]))
+            ]
+            data[key].insert(0, 0)
     return data
 
 
@@ -219,25 +227,43 @@ plot_pr_statistics(
 
 # Plot for Dasharo/open-source-firmware-validation
 repo_osfv = "Dasharo/open-source-firmware-validation"
-data_osfv = gather_data(repo_osfv, dates)
+data_osfv = gather_data(repo_osfv, dates, differences=False)
 plot_pr_statistics(
     repo_osfv,
     dates,
     data_osfv,
     "PR Statistics for OSFV repository",
-    "img/dug_10/dasharo_prs_osfv.png",
+    "img/dug_10/dasharo_prs_osfv_total.png",
+    label_offsets=(7, 1),
+)
+data_osfv = gather_data(repo_osfv, dates, differences=True)
+plot_pr_statistics(
+    repo_osfv,
+    dates,
+    data_osfv,
+    "PR Statistics for OSFV repository - increments",
+    "img/dug_10/dasharo_prs_osfv_diff.png",
     label_offsets=(7, 1),
 )
 
 # Plot for Dasharo/osfv-scripts
 repo_osfv_cli = "Dasharo/osfv-scripts"
-data_osfv_cli = gather_data(repo_osfv_cli, dates)
+data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=False)
 plot_pr_statistics(
     repo_osfv_cli,
     dates,
     data_osfv_cli,
     "PR Statistics for osfv_cli repository",
-    "img/dug_10/dasharo_prs_osfv_cli.png",
+    "img/dug_10/dasharo_prs_osfv_cli_total.png",
+    label_offsets=(7, 1),
+)
+data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=True)
+plot_pr_statistics(
+    repo_osfv_cli,
+    dates,
+    data_osfv_cli,
+    "PR Statistics for osfv_cli repository - increments",
+    "img/dug_10/dasharo_prs_osfv_cli_diff.png",
     label_offsets=(7, 1),
 )
 
