@@ -120,10 +120,11 @@ dates = [
     "2024-09-09",
     "2024-12-10",
     "2025-03-17",
+    "2025-06-12",
 ]
 
 
-def gather_data(repo, dates):
+def gather_data(repo, dates, differences=False):
     """
     Gathers PR data for a given repository and dates.
     """
@@ -135,6 +136,14 @@ def gather_data(repo, dates):
         data["Merged"].append(merged_prs)
         data["Closed"].append(closed_prs)
         data["Open"].append(open_prs)
+
+    if differences:
+        # Calculate differences if required
+        for key in data:
+            data[key] = [
+                data[key][i] - data[key][i - 1] for i in range(1, len(data[key]))
+            ]
+            data[key].insert(0, 0)
     return data
 
 
@@ -200,7 +209,7 @@ plot_pr_statistics(
     dates,
     data_coreboot,
     "PR Statistics for Dasharo/coreboot downstream",
-    "public/dug_9/dasharo_coreboot.png",
+    "pages/dug_10/dasharo_coreboot.png",
     label_offsets=(30, 5),
 )
 
@@ -212,31 +221,49 @@ plot_pr_statistics(
     dates,
     data_edk2,
     "PR Statistics for Dasharo/edk2 fork",
-    "public/dug_9/dasharo_edk2.png",
+    "pages/dug_10/dasharo_edk2.png",
     label_offsets=(7, 1),
 )
 
 # Plot for Dasharo/open-source-firmware-validation
 repo_osfv = "Dasharo/open-source-firmware-validation"
-data_osfv = gather_data(repo_osfv, dates)
+data_osfv = gather_data(repo_osfv, dates, differences=False)
 plot_pr_statistics(
     repo_osfv,
     dates,
     data_osfv,
     "PR Statistics for OSFV repository",
-    "public/dug_9/dasharo_prs_osfv.png",
+    "pages/dug_10/dasharo_prs_osfv_total.png",
+    label_offsets=(7, 1),
+)
+data_osfv = gather_data(repo_osfv, dates, differences=True)
+plot_pr_statistics(
+    repo_osfv,
+    dates,
+    data_osfv,
+    "PR Statistics for OSFV repository",
+    "pages/dug_10/dasharo_prs_osfv_diff.png",
     label_offsets=(7, 1),
 )
 
 # Plot for Dasharo/osfv-scripts
 repo_osfv_cli = "Dasharo/osfv-scripts"
-data_osfv_cli = gather_data(repo_osfv_cli, dates)
+data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=False)
 plot_pr_statistics(
     repo_osfv_cli,
     dates,
     data_osfv_cli,
     "PR Statistics for osfv_cli repository",
-    "public/dug_9/dasharo_prs_osfv_cli.png",
+    "pages/dug_10/dasharo_prs_osfv_cli_total.png",
+    label_offsets=(7, 1),
+)
+data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=True)
+plot_pr_statistics(
+    repo_osfv_cli,
+    dates,
+    data_osfv_cli,
+    "PR Statistics for osfv_cli repository",
+    "pages/dug_10/dasharo_prs_osfv_cli_diff.png",
     label_offsets=(7, 1),
 )
 
@@ -248,7 +275,7 @@ plot_pr_statistics(
     dates,
     data_meta_dts,
     "PR Statistics for meta-dts repository",
-    "public/dug_9/dasharo_prs_meta_dts.png",
+    "pages/dug_10/dasharo_prs_meta_dts.png",
     label_offsets=(7, 1),
 )
 
@@ -260,6 +287,6 @@ plot_pr_statistics(
     dates,
     data_dts_scripts,
     "PR Statistics for dts-scripts repository",
-    "public/dug_9/dasharo_prs_dts_scripts.png",
+    "pages/dug_10/dasharo_prs_dts_scripts.png",
     label_offsets=(7, 1),
 )

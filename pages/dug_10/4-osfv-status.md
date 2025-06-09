@@ -1,15 +1,13 @@
 ---
-theme: ../../slidev-template/theme
+theme: /slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
 
 ---
-## Dasharo User Group #10
+## Dasharo Open Source Firmware Validation Status
 
-### Dasharo Open Source Firmware Validation Status
-
-<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
@@ -39,10 +37,10 @@ class: text-center
   to ensure the quality of Dasharo
 
 For more details check the previous OSFV Status presentations at
-DUG #08 and DUG #06 at [vpub.dasharo.com](https://vpub.dasharo.com).
+DUG #08 and DUG #06 at [vpub.dasharo.com](https:/vpub.dasharo.com).
 
-![DUG #8 event listing at vpub.3mdeb.com](/../../img/dug_10/osfv-status/dug8.png)
-![DUG #6 event listing at vpub.3mdeb.com](/../../img/dug_10/osfv-status/dug6.png)
+<img src="/img/dug_10/osfv-status/dug8.png"/>
+<img src="/img/dug_10/osfv-status/dug6.png"/>
 
 <!--
 
@@ -61,7 +59,7 @@ class: text-center
 
 We have decided on switching to a rolling release for now
 
-<center><img src="/../../img/dug_10/osfv-status/main-branch.png"/></center>
+<center><img src="/img/dug_10/osfv-status/main-branch.png" width=250/></center>
 
 ---
 
@@ -70,7 +68,7 @@ We have decided on switching to a rolling release for now
 #### <center> Total </center>
 
 <center>
-<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_total.png" width=600/>
+<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_total.png" width=600/>
 </center>
 
 ---
@@ -80,7 +78,7 @@ We have decided on switching to a rolling release for now
 #### <center> Difference </center>
 
 <center>
-<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_diff.png" width=600/>
+<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_diff.png" width=600/>
 </center>
 
 ---
@@ -90,7 +88,7 @@ We have decided on switching to a rolling release for now
 #### <center> Total </center>
 
 <center>
-<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_cli_total.png" width=600/>
+<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_cli_total.png" width=600/>
 </center>
 
 ---
@@ -100,7 +98,7 @@ We have decided on switching to a rolling release for now
 #### <center> Difference </center>
 
 <center>
-<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_cli_diff.png" width=600/>
+<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_cli_diff.png" width=600/>
 </center>
 
 ---
@@ -109,7 +107,7 @@ We have decided on switching to a rolling release for now
 #### <center> Total </center>
 
 <center>
-<img src="/../../img/dug_10/osfv-status/test_counts.png" width=600/>
+<img src="/img/dug_10/osfv-status/test_counts.png" width=600/>
 </center>
 
 ---
@@ -118,7 +116,7 @@ We have decided on switching to a rolling release for now
 #### <center> Difference </center>
 
 <center>
-<img src="/../../img/dug_10/osfv-status/test_counts_difference.png" width=600/>
+<img src="/img/dug_10/osfv-status/test_counts_difference.png" width=600/>
 </center>
 
 Total count increased by **415**
@@ -204,6 +202,8 @@ Will allow for better documentation and repeatability of the testing process
 - maybe live presentation on localhost of the viewer?
 -->
 
+---
+
 # <center> Adding HW tests to CI </center>
 
 </br>
@@ -216,8 +216,8 @@ Performing CI tests on real hardware will greatly improve the reliability of OSF
     <td>MSI Z690 DDR4 i5 14600k</td><td>PC Engines APU3C AMD GX-412TC</td>
     </tr>
     <tr>
-    <td><img src="/../../img/dug_10/osfv-status/z690.jpeg" width=300/></td>
-    <td><img src="/../../img/dug_10/osfv-status/apu3c.png" width=300/></td>
+    <td><img src="/img/dug_10/osfv-status/z690.jpeg" width=300/></td>
+    <td><img src="/img/dug_10/osfv-status/apu3c.png" width=300/></td>
     </tr>
     </table></center>
 
@@ -239,6 +239,7 @@ Todo?
 -->
 
 ---
+
 # <center> Questions </center>
 <!--
 Current state
