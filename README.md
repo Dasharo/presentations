@@ -1,6 +1,6 @@
 # Dasharo User Group Presentations
 <!--
-SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
+SPDX-FileCopyrightText: 2025 3mdeb <contact@3mdeb.com>
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
