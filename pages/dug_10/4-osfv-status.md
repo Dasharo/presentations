@@ -1,0 +1,258 @@
+---
+theme: ../../slidev-template/theme
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+## Dasharo User Group #10
+
+### Dasharo Open Source Firmware Validation Status
+
+<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+
+---
+
+# <center> Agenda </center>
+
+* Short introduction to OSFV
+* Stats
+* Improvements
+* Work in progress & future plans
+* Q&A
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+# <center> Introduction to Open Source Firmware Validation </center>
+
+---
+
+# <center> Introduction to Open Source Firmware Validation </center>
+
+- Open Source Validation of Open Source Firmware
+- Based on Robot Framework
+- Allows us to perform hundreds of automated tests
+  to ensure the quality of Dasharo
+
+For more details check the previous OSFV Status presentations at
+DUG #08 and DUG #06 at [vpub.dasharo.com](https://vpub.dasharo.com).
+
+![DUG #8 event listing at vpub.3mdeb.com](/../../img/dug_10/osfv-status/dug8.png)
+![DUG #6 event listing at vpub.3mdeb.com](/../../img/dug_10/osfv-status/dug6.png)
+
+<!--
+
+-->
+---
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+# OSFV Stats
+
+---
+
+# <center> Releases? </center>
+
+We have decided on switching to a rolling release for now
+
+<center><img src="/../../img/dug_10/osfv-status/main-branch.png"/></center>
+
+---
+
+# <center> PR stats </center>
+### <center> open-source-firmware-validation </center>
+#### <center> Total </center>
+
+<center>
+<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_total.png" width=600/>
+</center>
+
+---
+
+# <center> PR stats </center>
+### <center> open-source-firmware-validation </center>
+#### <center> Difference </center>
+
+<center>
+<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_diff.png" width=600/>
+</center>
+
+---
+
+# <center> PR stats </center>
+### <center> osfv-scripts </center>
+#### <center> Total </center>
+
+<center>
+<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_cli_total.png" width=600/>
+</center>
+
+---
+
+# <center> PR stats </center>
+### <center> osfv-scripts </center>
+#### <center> Difference </center>
+
+<center>
+<img src="/../../img/dug_10/osfv-status/dasharo_prs_osfv_cli_diff.png" width=600/>
+</center>
+
+---
+
+# <center> Test modules stats </center>
+#### <center> Total </center>
+
+<center>
+<img src="/../../img/dug_10/osfv-status/test_counts.png" width=600/>
+</center>
+
+---
+
+# <center> Test modules stats </center>
+#### <center> Difference </center>
+
+<center>
+<img src="/../../img/dug_10/osfv-status/test_counts_difference.png" width=600/>
+</center>
+
+Total count increased by **415**
+
+---
+
+# <center> New test cases </center>
+
+<!--
+Graph showing differences since the last status presentation.
+List which suites were updated and short description, like
+"new suite" or "4 new cases"
+-->
+
+---
+
+# <center> New platforms </center>
+
+<!--
+Graphs probably won't be necessary.
+List new supported platforms if any
+-->
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+# Key changes
+
+---
+
+# <center> TL;DR </center>
+
+* Most test cases are also possible run on Fedora
+* Dasharo Test & Feature Matrix at Google Docs deprecated
+* OSFV Dashboard being developed to document release testing
+*
+
+---
+
+# <center> Fedora support </center>
+
+<!--
+many test cases can also be performed on Fedora
+every test case *Will* be possible to be performed on Fedora
+
+graphs? stats? % per module?
+
+-->
+
+---
+
+# <center> DeGoogle </center>
+
+<!--
+Dasharo Test & Feature matrix going deprecated and is no longer used.
+Test results published at osfv-results
+-->
+
+---
+
+# <center> DeGoogle </center>
+## <center> OSFV results </center>
+
+<!--
+- show how to find results on osfv-results
+- how to find a device, a test case, a feature
+- preferably live, not on slides, but maybe lets prepare some for a backup
+    if something goes wrong
+-->
+
+---
+
+# <center> DeGoogle </center>
+## <center> OSFV Dashboard </center>
+
+<!--
+A new tool is WiP
+Will allow for better documentation and repeatability of the testing process
+- show some screenshots as a teaser?
+- maybe live presentation on localhost of the viewer?
+-->
+
+# <center> Adding HW tests to CI </center>
+
+</br>
+Performing CI tests on real hardware will greatly improve the reliability of OSFV
+
+- The work is in progress
+- Two representatives prepared as a start
+    <center><table>
+    <tr>
+    <td>MSI Z690 DDR4 i5 14600k</td><td>PC Engines APU3C AMD GX-412TC</td>
+    </tr>
+    <tr>
+    <td><img src="/../../img/dug_10/osfv-status/z690.jpeg" width=300/></td>
+    <td><img src="/../../img/dug_10/osfv-status/apu3c.png" width=300/></td>
+    </tr>
+    </table></center>
+
+# <center> Adding HW test to CI </center>
+## <center> Test scope determining </center>
+
+<!--
+diagram for choosing the test scope
+depending on the changes
+-->
+---
+
+# <center> Priorities for the future </center>
+
+<!--
+seabios still on the roadmap
+
+Todo?
+-->
+
+---
+# <center> Questions </center>
+<!--
+Current state
+Changes:
+- Enforcing the test naming convention
+  - the bulk amount of tests we perform
+  - how to look for the results, how to find the features you are
+    interested in
+- A summary of improvements and additions regarding the test cases and supported platforms
+- Deprecation of Dasharo Test Specification at docs.dasharo.com
+- FTDI converters for laptops
+
+Future plans:
+- Development of a new tool for managing Dasharo releases and the testing process
+  - still in progress, but can do a little highlight
+
+-->
