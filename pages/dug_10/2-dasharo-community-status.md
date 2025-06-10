@@ -25,7 +25,7 @@ class: text-center
 clicks: 6
 ---
 
-<center><img src="/img/dug_10/dasharo_team_roadmap.png" width="800px"></center>
+<center><img src="/img/dug_10/dasharo_team_roadmap.png" width="900"></center>
 
 <!--
 
@@ -54,56 +54,62 @@ Modify and run:
 -->
 
 ---
-
-## Published materials
-
-- Link to DUG#9 and vPub 0xE [YouTube playlist]() and [slides]().
-- Link to ZDM#1 [YouTube playlist](https://www.youtube.com/live/RHuwtdhKxrc?feature=shared&t=1934) and [slides](https://cfp.3mdeb.com/zarhus-developers-meetup-0x1-2025/schedule/).
-
----
 layout: two-cols
 ---
 
-<center><img src="/img/dug_8/hwio.jpg" width="600"></center>
+<center><img src="/img/dug_10/dug09.png" width="300"></center>
+
+Link to DUG#9 and vPub 0xE [YouTube
+playlist](https://www.youtube.com/watch?v=ZVgjzvRcnqU&list=PLuISieMwVBpKNjDQBK2MU78tbU1XWkiPD)
+and [slides](https://cfp.3mdeb.com/developers-vpub-0xe-2025/schedule/).
 
 ::right::
 
-<center><img src="/img/dug_7/ost2_logo2.png" width="250">
+<center><img src="/img/dug_10/zdm01.png" width="337"></center>
+
+Link to ZDM#1 [YouTube playlist](https://www.youtube.com/live/RHuwtdhKxrc?feature=shared&t=1934) and [slides](https://cfp.3mdeb.com/zarhus-developers-meetup-0x1-2025/schedule/).
+
+---
+
+<center><img src="/img/dug_10/qoss25_poster.jpg" width="650"></center>
+
+<!--
+
+Call for Sponsors
+
+-->
+
+---
+
+<center><img src="/img/dug_10/qoss25_tickets.png" width="900">
+
 <br>
-<img src="/img/dug_7/arch4221_qr.png" width="225">
-Use QR code to get news about upcoming OST2 classes:
-<br>
-Arch4221: UEFI Secure Boot
-<br>
-TC3211: Intel Boot Guard
+
+## https://events.dasharo.com/event/2/qubes-os-summit-2025
+
 </center>
 
 ---
 clicks: 4
 ---
 
-<center><img src="/img/dug_10/dasharo_team_roadmap2.png" width="850"></center>
+<center><img src="/img/dug_10/dasharo_team_roadmap2.png" width="900"></center>
 
 <!--
 
-[click] Very rough plans for third and fourth quarter of 2025 start with
-Hardwear.io USA in Santa Clara.
+[click] Q4 we will start with Zarhus Developers Meetup.
 
-[click] Dates of DUG/vPub are roughly set until end of 2025.
+[click] Right after it we plan to do HWIO NL training, we will see if we can
+generate similar interest as last year.
 
-[click] There is also a chance we will appear at Xen Summit in Silicon Valley.
+[click] DUG#12 would be on second Thursday of December, it seem to be standard for DUG/vPub, 2nd Thu of last month of the quarter.
 
-[click] We consider going to Tokyo for Linux Plumbers Conference.
+[click] We consider going to Tokyo for Linux Plumbers Conference as well as
+applying for FOSDEM'26.
 
 -->
 
 ---
-layout: two-cols
----
-
-<center><img src="/img/dug_8/hwio.jpg" width="600"></center>
-
-::right::
 
 <center><img src="/img/dug_7/ost2_logo2.png" width="250">
 <br>
@@ -128,15 +134,18 @@ In case of HWIO, please let us know if you need discount code.
 
 ## <center>Dasharo Issues</center>
 
-<center><img src="/img/dug_9/issues.png" width="500"></center>
-<center><img src="/img/dug_9/dasharo_issues.png" width="650"></center>
+<center><img src="/img/dug_10/issues.png" width="500"></center>
+<center><img src="/img/dug_10/dasharo_issues.png" width="650"></center>
 
 <!--
 
-* Number of reported bugs was almost the same as in last quarter. So we keep
-  steady pace with rate around 110.
-* We fixed 14 more bugs then in last quarter, what indicate some small
-  progress, but we still have more bugs opened each quarter than we close.
+* Number of reported bugs was 20 smaller than last quarter. So we definitely
+see some slowdown. Hopefully this is silent before storm and during vacation
+period when we should have little bit more time to tinker we will get back on
+track.
+* We fixed 16 bugs less than in last quarter. Slowdown in adding bugs is bigger
+than in fixing, at least in absolute terms. Percentage-wise things does not
+look so shiny.
 
 Modify and run:
 ./diagrams/dasharo_issues.py
@@ -151,17 +160,16 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/img/dug_9/issue_comments.png" width="500"></center>
+<center><img src="/img/dug_10/issue_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/img/dug_9/issue_comments_users.png" width="500"></center>
+<center><img src="/img/dug_10/issue_comments_users.png" width="550"></center>
 
 <!--
 
-We decide to add Firminator at sixth position since he/she was very active over
-last quarter. Other then that this is usual stead growth of comments and user
-pool.
+Not much growth here. It is definitely one of the calmest quarters in Dasharo
+history. We have to change that.
 
 Following should be run in dasharo-issues repo, gh command should be installed:
 
@@ -189,18 +197,19 @@ PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --
 
 ## <center>Dasharo/coreboot PRs</center>
 
-<center><img src="/img/dug_9/coreboot_prs.png" width="600"></center>
-<center><img src="/img/dug_9/dasharo_coreboot.png" width="650"></center>
+<center><img src="/img/dug_10/coreboot_prs.png" width="600"></center>
+<center><img src="/img/dug_10/dasharo_coreboot.png" width="650"></center>
 
 <!--
 
-* Our average tempo of mergining changes dropped from 26PRs to less than 24PRs
-  per quarter.
-* Backlog of open PRs growing.
-* All that is result of lack of availability of the team as well as other
-  priorities not always related to develop Dasharo. We would love to dedicate
-  100% of our time to open-source firmware, but at this point it is not possible
-  and we have to provide also additional services to break even.
+* Our average tempo of margining changes is 29.3PR/quarter, we are slightly above with 31PRs merged.
+* Backlog of open PRs classically growing faster and faster. So if you want to help with review and validation feel free to join.
+* We definitely hit record high in opening new PRs, where our average is 41.9PRs and we high 62PRs this quarter. And it is not yet end.
+
+* Average margining tempo per quarter:
+  - 26+39+31+21+37+29+29+21+31=264/9=29.3
+* Average PRs creation:
+  - 40+46+40+26+46+38+43+34+62=375/9=41.9
 
 Modify and run:
 ./diagrams/dasharo_forks.py
@@ -211,24 +220,21 @@ Modify and run:
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/img/dug_9/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/img/dug_9/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="/img/dug_10/coreboot_upstreaming.png" width="600"></center>
+<center><img src="/img/dug_10/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
 
-On average we upstream ~2500SLOC every quarter. It is not a lot, but this is
-what we are comfortable with in current state of business.
+On average we upstream ~2500SLOC every quarter. This quarter we are so far
+already above the average. So maybe we don't work on issues much, but we definitely opened more PRs and upstreamed more code than average.
+
+Average added:
+- 2240+4203+173+2927+3819+3447+50+2751+3241=22851/9=2539
 
 Top is total:
 
 ```shell
 ./contribution-stats list -r coreboot -s 01/01/2000 -e 06/10/2024 -o dug6.csv
-```
-
-Bottom:
-
-```shell
-./contribution-stats list -r coreboot -s 03/11/2000 -e 06/10/2024 -o dug6.csv
 ```
 
 ```shell
@@ -240,39 +246,45 @@ awk -F';' '{sum += $7} END {print sum}' dug6.csv #removed lines
 
 ---
 
-### <center>Delta `dasharo` branch vs upstream v24.08 tag</center>
+### <center>Delta `dasharo` branch vs upstream v24.12 tag</center>
 
 <br>
 
-#### <center>`746 files changed, 45193 insertions(+), 102129 deletions(-)`</center>
+#### <center>`673 files changed, 2237 insertions(+), 40101 deletions(-)`</center>
 
 <br>
 
 ### <center>Top Upstreamers</center>
 
-- **Michał Kopeć (mkc):** +1540/-95
-  - _mb/novacustom: add V5x0TU board (Meteor Lake)_
-  - _mb/novacustom/mtl-h: Add iGPU variant_
-  - _mb/novacustom/mtl-h/variants/igpu/hda_verb.c: Add all HDA verbs from stock FW_
-- **Michał Żygowski (miczyg):** +35/-0
-  - _soc/intel/cannonlake: Let coreboot lock MSR_IA32_DEBUG_INTERFACE_
-  - _soc/intel/common/block/graphics: Add missing TWL GT SKUs_
-- **Sergii Dmytruk (sergiid):** +23/-5
-  - _drivers/efi/capsules: check for overflows of capsule sizes_
-  - _drivers/efi/capsules.c: fix recording capsule size_
+- **Michał Kopeć (mkc):** +3121/-6
+  - _mb/novacustom/mtl-h: Add discrete graphics variant_
+  - _Documentation/mainboard/lenovo: Add ThinkCentre M700/M900 Tiny_
+  - _ec/dasharo/ec: Add DTT power and battery participants_
+- **Krystian Hebel (khebel):** +104/-1
+  - _drivers/smmstore: allow full flash access for capsule updates_
+- **Michał Żygowski (miczyg):** +16/-16
+  - _soc/intel/elkhartlake/pmc,gpio: Fix PMC GPE GPIO routes_
+  - _mainboard/protectli/vault_ehl/Kconfig: Configure TPM PIRQ_
+  - _mb/protectli/vault_ehl/devicetree.cb: Fix assertion in soc/pmutil_
 
 <!--
 
-I'm not sure why we hit so many deletions, but this statistics should be
-largely improved since we rebase on top of 24.12 where the diff is really
-minimalistic. Hopefully I can present more information during next DUG.
+As said last time our statistics improved thanks to rebasing some platforms to
+24.12 coreboot release. Still not all platforms received releases, but we
+already working on 25.03 rebase. So it would be harder and harder to track
+things.
 
-Congratulations to Michał Kopeć for making most of upstreaming this quarter.
+Some platforms stay on older base and we will not change that unless there will
+be new release coming.
+
+We see that Michał Kopeć is definitely the leader of upstreaming with his work
+around laptops being top contribution. We also would like to thank Krystian and
+Michał Żygowski for their effort to upstream code.
 
 Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ```shell
-./contribution-stats list -r coreboot -s 06/11/2024 -e 09/09/2024 -o dug6-7.csv
+./contribution-stats list -r coreboot -s 03/20/2025 -e 06/10/2025 -o dug10.csv
 ```
 
 -->
@@ -281,13 +293,19 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ## <center>Dasharo/edk2 PRs</center>
 
-<center><img src="/img/dug_9/edk2_prs.png" width="650"></center>
-<center><img src="/img/dug_9/dasharo_edk2.png" width="650"></center>
+<center><img src="/img/dug_10/edk2_prs.png" width="650"></center>
+<center><img src="/img/dug_10/dasharo_edk2.png" width="650"></center>
 
 <!--
 
-On average we merge 15 PRs into our EDKII fork. We are in process of rebasing
-to edk2-202502 release.
+* Our average tempo of margining changes is 14.4PR/quarter, we are slightly below with 11PRs merged.
+* Backlog of open PRs classically growing faster and faster. So if you want to help with review and validation feel free to join.
+* This quarter was quite calm in edk2 Dasharo downstream, with roughly 18PRs open, where average is 21.6PRs.
+
+* Average margining tempo per quarter:
+  - 9+22+19+8+18+20+10+13+11=130/9=14.4
+* Average PRs creation:
+  - 11+24+24+10+20+22+32+34+18=195/9=21.6
 
 -->
 
@@ -295,11 +313,11 @@ to edk2-202502 release.
 
 ## <center>Dasharo star history</center>
 
-<center><img src="/img/dug_9/star-history.png" width="650"></center>
+<center><img src="/img/dug_10/star-history.png" width="650"></center>
 
 <!--
 
-Take on 2025/03/17
+Take on 2025/06/10
 
 https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues
 
@@ -311,11 +329,11 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues
 
 ### <center>Messages and Users</center>
 
-<center><img src="/img/dug_9/dasharo_general_matrix.png" width="500"></center>
+<center><img src="/img/dug_10/dasharo_general_matrix.png" width="500"></center>
 
 ### <center>Top contributors</center>
 
-<center><img src="/img/dug_9/dasharo_general_matrix_users.png" width="500"></center>
+<center><img src="/img/dug_10/dasharo_general_matrix_users.png" width="500"></center>
 
 <!--
 
@@ -339,7 +357,22 @@ awk '{sum += $1} END {print sum}'
 
 ---
 
-<center><img src="/img/dug_9/dasharo_users.png" width="800"></center>
+# Top Contributors Benefits
+
+* Unlimited access to Dasharo Pro Package
+* Up to 15% discount on hardware sold by 3mdeb (excluding dropshipping)
+* How to claim?
+  - Just write an email to: contact@dasharo.com
+
+<!--
+
+Dasharo Matrix Community and Dasharo Issues Contributors benefits.
+
+-->
+
+---
+
+<center><img src="/img/dug_10/dasharo_users.png" width="800"></center>
 
 ---
 
@@ -347,27 +380,46 @@ awk '{sum += $1} END {print sum}'
 
 <br>
 
+#### <center>Random (`#dasharo-random:matrix.org`)</center>
+<br>
+
 #### <center>Support (`#dasharo-support:matrix.org`)</center>
 
 <br>
 
-#### <center>Random (`#dasharo-random:matrix.org`)</center>
-<br>
-
-#### <center>Dasharo OSFV (`#osfv:matrix.3mdeb.com`)</center>
+#### <center>Laptops (`#dasharo-laptops:matrix.org`)</center>
 
 <!--
 
-* Support: 5368 (+1191)
-* General: 32683 (+1648) 35196 (+865)
-* Random: 9504 (+487)
-* OSFV: 1741 (+607)
-* vPub: 4308 (+88)
-* TrenchBoot: 2220
-* Supermicro: 1659
-* Laptops: 1191
+* Random:
+  - 11006 (+1502)
+* General:
+  - 36607 (+1411)
+* Support:
+  - 6027 (+659)
+* Laptops:
+  - 1408 (+217)
+* OSFV:
+  - 1860 (+119)
+* vPub:
+  - 4420 (+112)
+* TrenchBoot:
+  - 2281 (+61)
 * OST2: 336
+  - 348 (+12)
+* Supermicro:
+  - 1667 (+8)
 * OSF Bootstrapable Toolchain: 271
+
+-->
+
+---
+
+<center><img src="/img/dug_10/bug_bounty.png" width="800"></center>
+
+<!--
+
+TODO: add more information
 
 -->
 ---

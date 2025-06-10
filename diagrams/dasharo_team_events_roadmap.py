@@ -29,7 +29,11 @@ zdm01 = zarhus.add_task(
 )
 
 hwio = pet.add_task(
-    "HWIO US\n(cancelled)", "2025-04-27", "2025-05-27", style="rounded", fill_colour="#9370db"
+    "HWIO US\n(cancelled)",
+    "2025-04-27",
+    "2025-05-27",
+    style="rounded",
+    fill_colour="#9370db",
 )
 hwio.add_milestone(
     "Mastering\nUEFI Secure Boot\nand Intel Root of\nTrust Technologies",
@@ -83,6 +87,7 @@ roadmap2.set_timeline(TimelineMode.MONTHLY, start="2025-10-01", number_of_items=
 roadmap2.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 dasharo = roadmap2.add_group("Dasharo")
+pet = roadmap2.add_group("Pace Enterprise Training")
 zarhus = roadmap2.add_group("Zarhus")
 
 zdm03 = zarhus.add_task(
@@ -101,12 +106,32 @@ dasharo.add_task(
     fill_colour="#38d430",
 )
 
+hwio = pet.add_task(
+    "HWIO NL", "2025-10-17", "2025-11-21", style="rounded", fill_colour="#9370db"
+)
+hwio.add_milestone(
+    "Mastering\nUEFI Secure Boot\nand Intel Root of\nTrust Technologies",
+    "2025-11-21",
+    font_size=30,
+    text_alignment="right:35%",
+)
+
 dasharo.add_task(
     "Linux Plumbers Conference",
     "2025-11-12",
     "2025-12-12",
     style="rounded",
     fill_colour="#38d430",
+)
+
+fosdem = dasharo.add_task(
+    "FOSDEM 2026", "2026-01-04", "2026-02-04", style="rounded", fill_colour="#38d430"
+)
+fosdem.add_milestone(
+    "Open-source firmware\ndevroom",
+    "2026-02-04",
+    font_size=30,
+    text_alignment="right:35%",
 )
 
 roadmap2.set_footer("Dasharo Team Events Roadmap | June 2025 | CC-BY-SA-4.0")
