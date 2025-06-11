@@ -62,8 +62,9 @@ Example:
 
 ##### Export presentation
 
-1. Start the desired presentation:
-    `./scripts/generate-pdf.sh ../pages/ram-wipe.md`
+```sh
+./slidev-template/scripts/ci/gen_slides.sh pages/dug_10/dug10.metadata
+```
 
 ### remarkjs (< DUG#7)
 

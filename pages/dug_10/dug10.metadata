@@ -1,0 +1,4 @@
+slides:
+  - input_file: "pages/dug_10/x-dasharo-dbx-uc-ci.md"
+    range: "1-16"
+    output_file: "x-dasharo-dbx-uc-ci.pdf"
