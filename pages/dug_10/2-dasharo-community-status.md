@@ -296,7 +296,7 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ---
 
-<center><img src="/img/dug_10/dasharo_version.png" width="550">
+<center><img src="/img/dug_10/dasharo_version.png" width="730">
 
 <br>
 
@@ -319,9 +319,12 @@ You can find information about what branch which supported platform lives.
 
 <!--
 
-* Our average tempo of margining changes is 14.4PR/quarter, we are slightly below with 11PRs merged.
-* Backlog of open PRs classically growing faster and faster. So if you want to help with review and validation feel free to join.
-* This quarter was quite calm in edk2 Dasharo downstream, with roughly 18PRs open, where average is 21.6PRs.
+* Our average tempo of margining changes is 14.4PR/quarter, we are slightly
+below with 11PRs merged.
+* Backlog of open PRs classically growing faster and faster. So if you want to
+help with review and validation feel free to join.
+* This quarter was quite calm in edk2 Dasharo downstream, with roughly 18PRs
+open, where average is 21.6PRs.
 
 * Average margining tempo per quarter:
   - 9+22+19+8+18+20+10+13+11=130/9=14.4
@@ -380,15 +383,13 @@ awk '{sum += $1} END {print sum}'
 
 # Top Contributors Benefits
 
-* Unlimited access to Dasharo Pro Package
+* Unlimited access to the Dasharo Pro Package
 * Up to 15% discount on hardware sold by 3mdeb (excluding dropshipping)
 * How to claim?
-  - Just write an email to: contact@dasharo.com
+  - Write an email to: contact@dasharo.com
 
 <!--
-
 Dasharo Matrix Community and Dasharo Issues Contributors benefits.
-
 -->
 
 ---
@@ -412,31 +413,22 @@ Dasharo Matrix Community and Dasharo Issues Contributors benefits.
 
 <!--
 
-* Random:
-  - 11006 (+1502)
-* General:
-  - 36607 (+1411)
-* Support:
-  - 6027 (+659)
-* Laptops:
-  - 1408 (+217)
-* OSFV:
-  - 1860 (+119)
-* vPub:
-  - 4420 (+112)
-* TrenchBoot:
-  - 2281 (+61)
-* OST2: 336
-  - 348 (+12)
-* Supermicro:
-  - 1667 (+8)
+* Random: 11006 (+1502)
+* General: 36607 (+1411)
+* Support: 6027 (+659)
+* Laptops: 1408 (+217)
+* OSFV: 1860 (+119)
+* vPub: 4420 (+112)
+* TrenchBoot: 2281 (+61)
+* OST2: 348 (+12)
+* Supermicro: 1667 (+8)
 * OSF Bootstrapable Toolchain: 271
 
 -->
 
 ---
 
-<center><img src="/img/dug_10/bug_bounty.png" width="800"></center>
+<center><img src="/img/dug_10/bug_bounty.png" width="700"></center>
 
 <!--
 
@@ -455,7 +447,7 @@ We would also like to introduce you to some changes on our blog:
 * Some time ago we've dropped the Disqus comments plugin, because of the ads.
 * Recently, we've introduced open source project named Comentario, that seems to
   satisfy our needs
-* The historical comments were succesfully migrated, so you can now share your
+* The historical comments were successfully migrated, so you can now share your
   thoughts about recent and past articles
 * Simple account creation is needed, but we will also enable login via popular
   external providers like GitHub, LinkedIn or Twitter/X
