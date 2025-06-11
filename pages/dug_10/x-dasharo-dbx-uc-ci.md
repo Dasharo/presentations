@@ -236,3 +236,4 @@ new\=</span>(sha256sum secureboot_objects/PostSignedObjects/DBX/amd64/DBXUpdate.
   - More Transparent: Through open processes.
 * Builds user trust and empowers them with knowledge.
 * We hope this makes Dasharo safer and more worthy of our users' trust.
+* The code is open, feel free to check it out and post your improvements!
