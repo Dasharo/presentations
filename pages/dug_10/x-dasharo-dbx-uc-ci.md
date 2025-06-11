@@ -171,7 +171,6 @@ layout: two-cols-header
 
 ::left::
 
-### 2. Update & Create PR (if check failed)
 * Checkout Dasharo code.
 * Update intel-microcode submodule to its main branch.
 * Use peter-evans/create-pull-request action to submit a PR.
@@ -182,22 +181,21 @@ layout: two-cols-header
 <center><img src="/../../img/dug_10/ucode-update-diagram-b.png" width="200"></center>
 
 ---
+layout: two-cols-header
+---
 
 ## Automation: UEFI DBX Update Workflow
 
-### 1. Check Daily
-* Checkout Dasharo edk2 code.
-* Checkout microsoft/secureboot_objects repository.
-* Calculate SHA256 of current DBXUpdate.bin in Dasharo.
-* Calculate SHA256 of latest DBXUpdate.bin from Microsoft.
-* If checksums differ -> exit 1.
+::left::
 
 ```yaml
 # DBX Check Snippet
 - name: Check if DBX is out-of-date
   run: |
-    old=$(sha256sum edk2/DasharoPayloadPkg/SecureBootDefaultKeys/DBXUpdate.bin | awk '{ print <span class="math-inline">1 \}'\)
-new\=</span>(sha256sum secureboot_objects/PostSignedObjects/DBX/amd64/DBXUpdate.bin | awk '{ print $1 }')
+    old=$(sha256sum edk2/DasharoPayloadPkg/SecureBootDefaultKeys/DBXUpdate.bin
+    | awk '{ print <span class="math-inline">1 \}'\)
+    new=(sha256sum secureboot_objects/PostSignedObjects/DBX/amd64/DBXUpdate.bin
+    | awk '{ print $1 }')
     if [ "$old" = "$new" ]; then
       echo 'UEFI DBX is up-to-date.'
     else
@@ -206,15 +204,25 @@ new\=</span>(sha256sum secureboot_objects/PostSignedObjects/DBX/amd64/DBXUpdate.
     fi
 ```
 
+::right::
+
+<center><img src="/../../img/dug_10/dbx-update-diagram-a.png" width="200"></center>
+
+---
+layout: two-cols-header
 ---
 
 ## Automation: UEFI DBX Update Workflow (Cont.)
 
-### 2. Update & Create PR (if check failed)
+::left::
+
 * Copy the new DBXUpdate.bin from secureboot_objects into Dasharo edk2 tree.
 * Use peter-evans/create-pull-request action to submit a PR.
 * Design Rationale: Checksum comparison is straightforward for single-file artifacts.
 
+::right::
+
+<center><img src="/../../img/dug_10/dbx-update-diagram-b.png" width="200"></center>
 ---
 
 ## Human Oversight: The PR Review Process
