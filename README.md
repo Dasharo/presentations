@@ -38,7 +38,7 @@ Example:
 
 ##### Export presentation
 
-1. Start the desired presentation:
+1. Export the desired presentation:
     `./scripts/generate-pdf.sh ../pages/ram-wipe.md`
 
 ### slidev (>= DUG#7)
