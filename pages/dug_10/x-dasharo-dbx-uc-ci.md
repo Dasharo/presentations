@@ -21,7 +21,23 @@ class: text-center
 
 ## Introduction
 
-- Michał Kopeć
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+  <img src="/../../img/mkopec.jpg" style="width: 100px; border-radius: 50%;" alt="Profile Picture">
+  <div>
+    <b style="font-size: 1.5em;">Michał Kopeć</b><br>
+    <i style="font-size: 1.2em;">Firmware Engineer</i>
+  </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 1.2em;">
+  <div>
+    🔑 <code>869E 9AE8 AFDB 5FAE 6068  338B 99BD 2EEE E2D0 CE31</code><br>
+    ✉️ <a href="mailto:michal.kopec@3mdeb.com">michal.kopec@3mdeb.com</a><br>
+    🔗 <a href="https://www.linkedin.com/in/michał-kopeć-a8b216200/">LinkedIn</a><br>
+    💻 <a href="https://github.com/mkopec">GitHub</a><br>
+  </div>
+</div>
+
 - Firmware Engineer working primarily with coreboot and EDK2 but also Heads and
   Linux
 - Have been at 3mdeb for 4 years now
@@ -52,6 +68,32 @@ class: text-center
 * Reduce risk of oversight.
 * Free up developer resources.
 * **Solution:** Automation!
+
+---
+
+## The Intel boot process
+
+<center><img src="/../../img/dug_10/intel-boot-diagram.png" width="600"></center>
+
+- PMC starts executing -> CSME loads code from ROM -> CSME executes boot
+  extensions and begins bringup -> Releases CPU from reset
+- CPU loads ucode and ACMs (optional) from FIT table -> BtG ACM verifies BIOS ->
+  BIOS is allowed to execute
+
+<!--
+- CSME has a MinuteIA processor core that behaves much like a regular 486
+- CSME ROM is protected by fuse that is burned by Intel during production
+- CSME ROM acts like a 486 BIOS
+- CSME maps the ROM Boot Extensions partition from SPI flash
+- RBE verifies and loads the CSME OS, performs antirollback check, initializes
+  secure components
+- RBE initiates the Bring-up phase
+- BUT initializes services
+- CPU is finally released from reset
+- CPU starts with loading ucode from the FIT table
+- CPU loads BtG ACM from FIT if present, which enforces BIOS verification
+- BIOS is allowed to run
+-->
 
 ---
 
