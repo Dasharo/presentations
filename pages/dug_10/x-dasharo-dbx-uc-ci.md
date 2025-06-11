@@ -134,13 +134,12 @@ class: text-center
 <center><img src="/../../img/dug_10/gha_logo.png" width="150"></center>
 
 ---
+layout: two-cols-header
+---
 
 ## Automation: Microcode Update Workflow
 
-### 1. **Check Daily:**
-* Checkout Dasharo code & `intel-microcode` submodule.
-* Compare current submodule commit (`current`) with latest `main` branch of `intel-microcode` (`new`).
-* If `current != new`, submodule is outdated -> `exit 1`.
+::left::
 
 ```yaml
 # Microcode Check Snippet
@@ -160,15 +159,27 @@ new\=</span>(git log -1 --pretty=format:"%H")
     popd
 ```
 
+::right::
+
+<center><img src="/../../img/dug_10/ucode-update-diagram-a.png" width="200"></center>
+
+---
+layout: two-cols-header
 ---
 
 ## Automation: Microcode Update Workflow (Cont.)
+
+::left::
 
 ### 2. Update & Create PR (if check failed)
 * Checkout Dasharo code.
 * Update intel-microcode submodule to its main branch.
 * Use peter-evans/create-pull-request action to submit a PR.
 * Design Rationale: Git submodule pins specific versions & tracks changes transparently.
+
+::right::
+
+<center><img src="/../../img/dug_10/ucode-update-diagram-b.png" width="200"></center>
 
 ---
 
