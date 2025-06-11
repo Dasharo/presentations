@@ -74,11 +74,15 @@ Link to ZDM#1 [YouTube playlist](https://www.youtube.com/live/RHuwtdhKxrc?featur
 
 <center><img src="/img/dug_10/qoss25_poster.jpg" width="650"></center>
 
-<!--
+---
 
-Call for Sponsors
+<center><img src="/img/dug_10/qoss25_cfs.png" width="550">
 
--->
+<br>
+
+#### https://dl.3mdeb.com/dasharo/qoss/2025/qubes_os_summit_2025_prospectus.pdf
+
+</center>
 
 ---
 
@@ -287,6 +291,22 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 ```shell
 ./contribution-stats list -r coreboot -s 03/20/2025 -e 06/10/2025 -o dug10.csv
 ```
+
+-->
+
+---
+
+<center><img src="/img/dug_10/dasharo_version.png" width="550">
+
+<br>
+
+### https://docs.dasharo.com/variants/versions/
+
+</center>
+
+<!--
+
+You can find information about what branch which supported platform lives.
 
 -->
 
