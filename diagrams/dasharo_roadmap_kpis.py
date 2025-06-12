@@ -24,7 +24,7 @@ dcr["Q2'24"] = 4
 dcr["Q3'24"] = 0
 dcr["Q4'24"] = 3
 dcr["Q1'25"] = 3
-dcr["Q2'25"] = 2
+dcr["Q2'25"] = 3
 # Dasharo Supporter Package Releases (DSPR)
 dspr["Q3'21"] = 3
 dspr["Q4'21"] = 3

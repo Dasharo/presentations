@@ -68,7 +68,7 @@ Dasharo Community Support Emulation Roadmap
 roadmap = Roadmap(1600, 660, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Emulation QEMU Q35 Roadmap ")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-10-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-01-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 qemu_q35_v090 = roadmap.add_group("coreboot+SeaBIOS\nv0.9.0", font_size=31)
@@ -122,22 +122,18 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-01-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 pcengines_24080001 = roadmap.add_group("coreboot+SeaBIOS\nv24.08.00.01", font_size=28)
-pcengines_24120001 = roadmap.add_group("coreboot+SeaBIOS\nv24.12.00.01", font_size=28)
-pcengines_25030001 = roadmap.add_group("coreboot+SeaBIOS\nv25.03.00.01", font_size=28)
+pcengines_25060001 = roadmap.add_group("coreboot+SeaBIOS\nv25.06.00.01", font_size=28)
 pcengines_091 = roadmap.add_group("coreboot+UEFI\nv0.9.1", font_size=28)
 
 pcengines_091.add_task(
-    "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
+    "DPP\nRelease", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
 )
 pcengines_24080001.add_task(
     "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
 )
-pcengines_24120001.add_task(
-    "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
-)
 
-pcengines_25030001.add_task(
-    "DPP\nRelease", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
+pcengines_25060001.add_task(
+    "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
 )
 
 roadmap.set_footer(
@@ -155,7 +151,7 @@ roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 protectli = roadmap.add_group("coreboot+SeaBIOS\nv0.9.0", font_size=30)
 protectli.add_task(
-    "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
+    "DPP\nRelease", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
 )
 
 roadmap.set_footer(
@@ -189,7 +185,7 @@ odroid_090.add_task(
 )
 
 odroid_091.add_task(
-    "DPP Release", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
+    "DPP Release", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
 )
 
 
@@ -256,17 +252,33 @@ roadmap.save(f"img/{dug_id}/dcs_desktop_dell_roadmap_{version}.png")
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Desktop MSI PRO Z690-A Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-01-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
+msi_z690_115 = roadmap.add_group("coreboot+UEFI\nv1.1.5")
 msi_z690_dcr = roadmap.add_group("coreboot+UEFI\nv1.2.0")
-msi_z690_dcr.add_task(
-    "Validation", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#34A853"
-)
+msi_z690_130 = roadmap.add_group("coreboot+UEFI\nv1.3.0")
+
 msi_z690_dcr.add_task(
     "Community Release",
-    "2025-04-01",
-    "2025-06-30",
+    "2025-10-01",
+    "2025-12-31",
+    style="rounded",
+    fill_colour="#ADD8E6",
+)
+
+msi_z690_115.add_task(
+    "DPP Release",
+    "2025-07-01",
+    "2025-09-30",
+    style="rounded",
+    fill_colour="#FD7E14",
+)
+
+msi_z690_130.add_task(
+    "Community Release",
+    "2026-04-01",
+    "2026-06-30",
     style="rounded",
     fill_colour="#ADD8E6",
 )
@@ -281,17 +293,33 @@ roadmap.save(f"img/{dug_id}/dcs_desktop_msi_z690_roadmap_{version}.png")
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Desktop MSI PRO Z790-P Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-10-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
+msi_z790_093 = roadmap.add_group("coreboot+UEFI\nv0.9.3")
 msi_z790_dcr = roadmap.add_group("coreboot+UEFI\nv1.0.0")
-msi_z790_dcr.add_task(
-    "Validation", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#34A853"
-)
+msi_z790_110 = roadmap.add_group("coreboot+UEFI\nv1.1.0")
+
 msi_z790_dcr.add_task(
     "Community Release",
-    "2025-04-01",
-    "2025-06-30",
+    "2025-10-01",
+    "2025-12-31",
+    style="rounded",
+    fill_colour="#ADD8E6",
+)
+
+msi_z790_093.add_task(
+    "DPP Release",
+    "2025-07-01",
+    "2025-09-30",
+    style="rounded",
+    fill_colour="#FD7E14",
+)
+
+msi_z790_110.add_task(
+    "Community Release",
+    "2026-04-01",
+    "2026-06-30",
     style="rounded",
     fill_colour="#ADD8E6",
 )
