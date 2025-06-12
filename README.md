@@ -39,7 +39,10 @@ Example:
 ##### Export presentation
 
 1. Export the desired presentation:
-    `./scripts/generate-pdf.sh ../pages/ram-wipe.md`
+
+```sh
+./slidev-template/scripts/ci/gen_slides.sh pages/dug_10/dug10.metadata
+```
 
 ### slidev (>= DUG#7)
 
@@ -62,9 +65,8 @@ Example:
 
 ##### Export presentation
 
-```sh
-./slidev-template/scripts/ci/gen_slides.sh pages/dug_10/dug10.metadata
-```
+1. Export the desired presentation:
+    `./scripts/generate-pdf.sh ../pages/ram-wipe.md`
 
 ### remarkjs (< DUG#7)
 
