@@ -1,56 +1,64 @@
 ---
-theme: ../../slidev-template/theme
+theme: slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
 
 ---
 
-## &#x1F44B; DUG#9 Closing Remarks &#x1F44B;
+## &#x1F44B; DUG#10 Closing Remarks &#x1F44B;
 
-<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
-<center><img src="/../../img/dug_9/qubes2025.jpg" width="600"></center>
+<center><img src="/img/dug_10/qoss25_poster.jpg" width="650"></center>
 
-<center>
+---
 
-### [https://vpub.dasharo.com/e/21/qubes-os-summit-2025](https://vpub.dasharo.com/e/21/qubes-os-summit-2025)
+<center><img src="/img/dug_10/qoss25_cfs.png" width="550">
+
+<br>
+
+#### https://dl.3mdeb.com/dasharo/qoss/2025/qubes_os_summit_2025_prospectus.pdf
+
 </center>
 
-<!--
-
-On-site event would not be free. We will have some early, regular and late
-access tickets.
-
-Date is set in stone, location is 99% set in stone. We working on announcing
-other details.
-
--->
 ---
 
-<center><img src="/../../img/dug_9/qubesos_summit_2025_cfp.png" width="650"></center>
+<center><img src="/img/dug_10/qoss25_tickets.png" width="900">
+
+<br>
+
+## https://events.dasharo.com/event/2/qubes-os-summit-2025
+
+</center>
 
 ---
 
-<center><img src="/../../img/dug_9/vpub_agenda_01.png" width="900"></center>
+<center><img src="/img/dug_10/qoss25_cfp.png" width="600">
+
+<br>
+
+## https://cfp.3mdeb.com/qubes-os-summit-2025
+
+</center>
 
 ---
 
-<center><img src="/../../img/dug_9/vpub_agenda_02.png" width="900"></center>
+<center><img src="/img/dug_10/lvfs.png" width="900"></center>
 
 ---
 
-<center><img src="/../../img/dug_9/vpub_agenda_03.png" width="900"></center>
+<center><img src="/img/dug_10/opensil.png" width="900"></center>
 
 ---
 
-<center><img src="/../../img/dug_9/vpub_agenda_04.png" width="900"></center>
+<center><img src="/img/dug_10/stateless.png" width="900"></center>
 
 ---
 
-<center><img src="/../../img/dug_9/dasharo_slogan.png" width="400"></center>
+<center><img src="/img/dug_9/dasharo_slogan.png" width="400"></center>
 
 - **Test**: Dive into our latest releases, test them out, and share your
   feedback. Your experiences refine our roadmap. 🧪
@@ -74,7 +82,7 @@ other details.
 - **Engage**: Join our discussions, forums, and DUG meetings. Every
   interaction enriches our community. 🤝
 
-<center><img src="/../../img/dug_9/dug_3_meme.png" width="500"></center>
+<center><img src="/img/dug_9/dug_3_meme.png" width="500"></center>
 
 ---
 layout: cover
