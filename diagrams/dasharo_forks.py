@@ -60,6 +60,8 @@ def count_closed_prs(repo, state, date):
 def add_labels_merged(bars):
     for bar in bars:
         height = bar.get_height()
+        if height <= 0:
+            continue
         font_s = 14
         plt.annotate(
             f"{height}",
@@ -77,8 +79,10 @@ def add_labels_merged(bars):
 def add_labels_closed(bars, offset=0):
     for bar in bars:
         height = bar.get_height()
-        font_s = 14
         logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
+        if height <= 0:
+            continue
+        font_s = 14
         plt.annotate(
             f"{height}",
             xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 - offset),
@@ -95,6 +99,8 @@ def add_labels_closed(bars, offset=0):
 def add_labels_open(bars, offset=0):
     for bar in bars:
         height = bar.get_height()
+        if height <= 0:
+            continue
         font_s = 14
         logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
         plt.annotate(
@@ -147,7 +153,9 @@ def gather_data(repo, dates, differences=False):
     return data
 
 
-def plot_pr_statistics(repo, dates, data, title, filename, label_offsets):
+def plot_pr_statistics(
+    repo, dates, data, title, filename, label_offsets, cap_to_zero=False
+):
     """
     Plots PR statistics for a given repository.
 
@@ -160,6 +168,14 @@ def plot_pr_statistics(repo, dates, data, title, filename, label_offsets):
         label_offsets (tuple): Offsets for merged, closed, and open PR labels.
     """
     plt.figure(figsize=(10, 6))
+
+    # Negative bar values are broken and the differences can be negative
+    if cap_to_zero:
+        data = {
+            "Merged": [max(d, 0) for d in data["Merged"]],
+            "Closed": [max(d, 0) for d in data["Closed"]],
+            "Open": [max(d, 0) for d in data["Open"]],
+        }
 
     # Stacked bar chart
     bars_merged = plt.bar(dates, data["Merged"], color="#38d430", label="Merged PRs")
@@ -241,7 +257,7 @@ plot_pr_statistics(
     repo_osfv,
     dates,
     data_osfv,
-    "PR Statistics for OSFV repository",
+    "PR Statistics for OSFV repository - increments",
     "pages/dug_10/dasharo_prs_osfv_diff.png",
     label_offsets=(7, 1),
 )
@@ -255,16 +271,18 @@ plot_pr_statistics(
     data_osfv_cli,
     "PR Statistics for osfv_cli repository",
     "pages/dug_10/dasharo_prs_osfv_cli_total.png",
-    label_offsets=(7, 1),
+    label_offsets=(5, 1),
+    cap_to_zero=True,
 )
 data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=True)
 plot_pr_statistics(
     repo_osfv_cli,
     dates,
     data_osfv_cli,
-    "PR Statistics for osfv_cli repository",
+    "PR Statistics for osfv_cli repository - increments",
     "pages/dug_10/dasharo_prs_osfv_cli_diff.png",
-    label_offsets=(7, 1),
+    label_offsets=(0.7, 0.5),
+    cap_to_zero=True,
 )
 
 # Plot for Dasharo/meta-dts
