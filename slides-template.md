@@ -1,8 +1,8 @@
 ---
-theme: ./theme
+theme: slidev-template/theme
 background: /intro.png
 # some information about your slides (markdown enabled)
-title: "Dasharo User Group #8 and Developers vPub 0xD"
+title: "Dasharo User Group #10 and Developers vPub 0xF"
 info: false
 # apply unocss classes to the current slide
 class: text-center
@@ -16,7 +16,7 @@ mdc: true
 
 ---
 
-## &#x1F44B; Dasharo User Group #9 &#x1F389; and Developers vPub 0xE 🍻
+## &#x1F44B; Dasharo User Group #10 &#x1F389; and Developers vPub 0xF 🍻
 
 ---
 src: <SRC>
