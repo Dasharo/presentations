@@ -29,6 +29,7 @@ emulation["Q2'24"] = 1
 emulation["Q3'24"] = 0
 emulation["Q4'24"] = 0
 emulation["Q1'25"] = 0
+emulation["Q2'25"] = 1
 laptops["Q3'21"] = 3
 laptops["Q4'21"] = 3
 laptops["Q1'22"] = 5
@@ -43,7 +44,8 @@ laptops["Q1'24"] = 5
 laptops["Q2'24"] = 1
 laptops["Q3'24"] = 2
 laptops["Q4'24"] = 2
-laptops["Q1'25"] = 1
+laptops["Q1'25"] = 2
+laptops["Q2'25"] = 0
 network_appliance["Q3'21"] = 0
 network_appliance["Q4'21"] = 0
 network_appliance["Q1'22"] = 1
@@ -59,6 +61,7 @@ network_appliance["Q2'24"] = 4
 network_appliance["Q3'24"] = 2
 network_appliance["Q4'24"] = 2
 network_appliance["Q1'25"] = 4
+network_appliance["Q2'25"] = 2
 desktops["Q3'21"] = 0
 desktops["Q4'21"] = 0
 desktops["Q1'22"] = 0
@@ -74,6 +77,7 @@ desktops["Q2'24"] = 0
 desktops["Q3'24"] = 0
 desktops["Q4'24"] = 3
 desktops["Q1'25"] = 0
+desktops["Q2'25"] = 0
 workstation["Q3'21"] = 0
 workstation["Q4'21"] = 4
 workstation["Q1'22"] = 1
@@ -89,6 +93,7 @@ workstation["Q2'24"] = 0
 workstation["Q3'24"] = 0
 workstation["Q4'24"] = 0
 workstation["Q1'25"] = 0
+workstation["Q2'25"] = 0
 
 dates = list(laptops.keys())
 emulation_values = np.array(list(emulation.values()))
@@ -179,6 +184,6 @@ plt.legend(fontsize=12)
 
 plt.gca().set_facecolor("#f5f5f5")
 
-plt.savefig("public/dug_9/dasharo_per_segment.png", dpi=300)
+plt.savefig("img/dug_10/dasharo_per_segment.png", dpi=300)
 
 plt.close()
