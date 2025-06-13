@@ -428,13 +428,14 @@ Dasharo Matrix Community and Dasharo Issues Contributors benefits.
 
 ---
 
-<center><img src="/img/dug_10/bug_bounty.png" width="700"></center>
+<center><img src="/img/dug_10/bug_bounty.png" width="700">
 
-<!--
+<br>
 
-TODO: add more information
+### https://3mdeb.com/bug-bounty/
 
--->
+</center>
+
 ---
 
 # <center>Blog recent changes: comments</center>

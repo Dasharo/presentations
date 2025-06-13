@@ -51,7 +51,7 @@ class: text-center
 
 - #### &#x1F9F0; 18:15 UTC Enhancements in Dasharo CI: Automatic DBX and microcode refresh
 
-- #### &#x1F4BB; 18:35 UTC NetHSM - The Trustworthy, Open Hardware Security Module That Just Works
+- #### &#x1F4BB; 18:35 UTC NovaCustom: firmware updates, Intel Boot Guard e-fusing and marketing strategies
 
 - #### &#x1F44F; 18:55 UTC Closing remarks &#x27A1;&#xFE0F; &#x1F37A;&#x1F37B; vPub 0xD
 
