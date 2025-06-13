@@ -18,9 +18,10 @@ quarters = [
     "2024-09",
     "2024-12",
     "2025-03",
+    "2025-06",
 ]
 # Dasharo Matrix Space counter
-users = [104, 162, 201, 234, 257, 311, 358, 401, 430]
+users = [104, 162, 201, 234, 257, 311, 358, 401, 430, 458]
 
 # Create the plot
 plt.figure(figsize=(12, 7))
@@ -66,7 +67,7 @@ for i, txt in enumerate(users):
 plt.gca().set_facecolor("#f5f5f5")
 
 # Save the plot as an image file
-plt.savefig("public/dug_9/dasharo_users.png")
+plt.savefig("img/dug_10/dasharo_users.png")
 
 # Optionally, close the plot to free up memory
 plt.close()
