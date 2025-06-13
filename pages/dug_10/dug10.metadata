@@ -1,0 +1,7 @@
+slides:
+  - input_file: "pages/dug_10/x-dasharo-dbx-uc-ci.md"
+    range: "1-16"
+    output_file: "x-dasharo-dbx-uc-ci.pdf"
+  - input_file: "pages/dug_10/2-dasharo-community-status.md"
+    range: "1-26"
+    output_file: "2-dasharo-community-status.pdf"

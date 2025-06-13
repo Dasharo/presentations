@@ -23,7 +23,8 @@ dcr["Q1'24"] = 4
 dcr["Q2'24"] = 4
 dcr["Q3'24"] = 0
 dcr["Q4'24"] = 3
-dcr["Q1'25"] = 2
+dcr["Q1'25"] = 3
+dcr["Q2'25"] = 3
 # Dasharo Supporter Package Releases (DSPR)
 dspr["Q3'21"] = 3
 dspr["Q4'21"] = 3
@@ -40,6 +41,7 @@ dspr["Q2'24"] = 2
 dspr["Q3'24"] = 4
 dspr["Q4'24"] = 4
 dspr["Q1'25"] = 3
+dspr["Q2'25"] = 1
 
 dates = list(dcr.keys())
 dcr_values = list(dcr.values())
@@ -112,6 +114,6 @@ plt.legend(fontsize=12)
 
 plt.gca().set_facecolor("#f5f5f5")
 
-plt.savefig("public/dug_9/dasharo_releases_kpis.png", dpi=300)
+plt.savefig("img/dug_10/dasharo_releases_kpis.png", dpi=300)
 
 plt.close()

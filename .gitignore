@@ -9,3 +9,4 @@ venv
 *.pdf
 .vite
 package-lock.json
+slides.md

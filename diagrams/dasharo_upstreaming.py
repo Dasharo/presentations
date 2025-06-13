@@ -12,22 +12,24 @@ added = {}
 removed = {}
 
 logging.info("Adding data to dictionaries")
-added["2023-07-06"] = 2240
-removed["2023-07-06"] = 298
-added["2023-09-28"] = 4203
-removed["2023-09-28"] = 244
-added["2023-12-03"] = 173
-removed["2023-12-03"] = 169
-added["2024-03-11"] = 2927
-removed["2024-03-11"] = 72
-added["2024-06-10"] = 3819
-removed["2024-06-10"] = 1360
-added["2024-09-09"] = 3447
-removed["2024-09-09"] = 272
-added["2024-12-10"] = 50
-removed["2024-12-10"] = 10
-added["2025-03-17"] = 2751
-removed["2024-03-17"] = 460
+added["2023-07"] = 2240
+removed["2023-07"] = 298
+added["2023-09"] = 4203
+removed["2023-09"] = 244
+added["2023-12"] = 173
+removed["2023-12"] = 169
+added["2024-03"] = 2927
+removed["2024-03"] = 72
+added["2024-06"] = 3819
+removed["2024-06"] = 1360
+added["2024-09"] = 3447
+removed["2024-09"] = 272
+added["2024-12"] = 50
+removed["2024-12"] = 10
+added["2025-03"] = 2751
+removed["2025-03"] = 460
+added["2025-06"] = 3241
+removed["2025-06"] = 23
 
 logging.info("Creating lists from dictionaries")
 dates = list(added.keys())
@@ -94,7 +96,7 @@ logging.info("Setting facecolor")
 plt.gca().set_facecolor("#f5f5f5")
 
 logging.info("Saving figure")
-plt.savefig("public/dug_9/dasharo_coreboot_upstraming.png", dpi=300)
+plt.savefig("img/dug_10/dasharo_coreboot_upstraming.png", dpi=300)
 
 logging.info("Closing figure")
 plt.close()

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# SPDX-FileCopyrightText: 2024 3mdeb <contact@3mdeb.com>
+# SPDX-FileCopyrightText: 2025 3mdeb <contact@3mdeb.com>
 #
 # SPDX-License-Identifier: Apache-2.0
 
@@ -68,15 +68,16 @@ def count_closed_issues(repo, state, date):
 
 repo = "Dasharo/dasharo-issues"
 dates = [
-    "2023-03-16",
-    "2023-07-06",
-    "2023-09-28",
-    "2023-12-03",
-    "2024-03-11",
-    "2024-06-10",
-    "2024-09-09",
-    "2024-12-10",
-    "2025-03-17",
+    "2023-03",
+    "2023-07",
+    "2023-09",
+    "2023-12",
+    "2024-03",
+    "2024-06",
+    "2024-09",
+    "2024-12",
+    "2025-03",
+    "2025-06",
 ]
 
 # Data storage
@@ -132,7 +133,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor("#f5f5f5")
 
 # Save the plot as an image file
-plt.savefig("public/dug_9/dasharo_issues.png")
+plt.savefig("img/dug_10/dasharo_issues.png")
 
 # Optionally, close the plot to free up memory
 plt.close()
