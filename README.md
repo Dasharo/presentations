@@ -44,6 +44,8 @@ Example:
 ./slidev-template/scripts/ci/gen_slides.sh pages/dug_10/dug10.metadata
 ```
 
+PDFs will be in `slidev-template/output`.
+
 ### slidev (>= DUG#7)
 
 #### Installation
