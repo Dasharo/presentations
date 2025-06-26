@@ -22,7 +22,7 @@ class: text-center
 ## Introduction
 
 <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-  <img src="/../../img/mkopec.jpg" style="width: 100px; border-radius: 50%;" alt="Profile Picture">
+  <img src="/img/mkopec.jpg" style="width: 100px; border-radius: 50%;" alt="Profile Picture">
   <div>
     <b style="font-size: 1.5em;">Michał Kopeć</b><br>
     <i style="font-size: 1.2em;">Firmware Engineer</i>
@@ -73,7 +73,7 @@ class: text-center
 
 ## The Intel boot process
 
-<center><img src="/../../img/dug_10/intel-boot-diagram.png" width="600"></center>
+<center><img src="/img/dug_10/intel-boot-diagram.png" width="600"></center>
 
 - PMC starts executing -> CSME loads code from ROM -> CSME executes boot
   extensions and begins bringup -> Releases CPU from reset
@@ -161,7 +161,7 @@ new\=</span>(git log -1 --pretty=format:"%H")
 
 ::right::
 
-<center><img src="/../../img/dug_10/ucode-update-diagram-a.png" width="200"></center>
+<center><img src="/img/dug_10/ucode-update-diagram-a.png" width="200"></center>
 
 ---
 layout: two-cols-header
@@ -178,7 +178,7 @@ layout: two-cols-header
 
 ::right::
 
-<center><img src="/../../img/dug_10/ucode-update-diagram-b.png" width="200"></center>
+<center><img src="/img/dug_10/ucode-update-diagram-b.png" width="200"></center>
 
 ---
 layout: two-cols-header
@@ -206,7 +206,7 @@ layout: two-cols-header
 
 ::right::
 
-<center><img src="/../../img/dug_10/dbx-update-diagram-a.png" width="200"></center>
+<center><img src="/img/dug_10/dbx-update-diagram-a.png" width="200"></center>
 
 ---
 layout: two-cols-header
@@ -222,7 +222,7 @@ layout: two-cols-header
 
 ::right::
 
-<center><img src="/../../img/dug_10/dbx-update-diagram-b.png" width="200"></center>
+<center><img src="/img/dug_10/dbx-update-diagram-b.png" width="200"></center>
 ---
 
 ## Human Oversight: The PR Review Process
