@@ -1,4 +1,4 @@
 slides:
-  - input_file: "pages/vpub_xf/x-amd-opensil.md"
+  - input_file: "pages/vpub_0xf/x-amd-opensil.md"
     range: "1-11"
     output_file: "9-x-amd-opensil.pdf"
