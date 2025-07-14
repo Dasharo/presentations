@@ -52,7 +52,7 @@ Historical data for coreboot x86 silicon support has been extracted with git.
 
 ## AMD and Intel silicon support in coreboot historically
 
-<center><img src="/img/dug_10/x86_coreboot_timeline.png" width="800"></center>
+<center><img src="../../img/dug_10/x86_coreboot_timeline.png" width="800"></center>
 
 <!--
 
@@ -74,7 +74,7 @@ Intel:
 ## AMD OpenSIL introduction
 
 <br><br>
-<center><img src="/img/dug_10/opensil_arch.png" width="800"></center>
+<center><img src="../../img/dug_10/opensil_arch.png" width="800"></center>
 
 > https://www.amd.com/en/blogs/2023/empowering-the-industry-with-open-system-firmware-.html
 
@@ -82,7 +82,7 @@ Intel:
 
 ## AMD OpenSIL - "Empowering The Industry"
 
-<center><img src="/img/dug_10/amd_opensil.png" width="500"></center>
+<center><img src="../../img/dug_10/amd_opensil.png" width="500"></center>
 
 > https://www.amd.com/en/blogs/2023/empowering-the-industry-with-open-system-firmware-.html
 
@@ -100,7 +100,7 @@ But what possibilities does this give us?
 
 # Bonus
 
-<center><img src="/img/dug_10/dts_epyc.png" width="500"></center>
+<center><img src="../../img/dug_10/dts_epyc.png" width="500"></center>
 
 ---
 

@@ -7,7 +7,7 @@ class: text-center
 ---
 ## Dasharo Open Source Firmware Validation Status
 
-<center><img src="/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
@@ -39,8 +39,8 @@ class: text-center
 For more details check the previous OSFV Status presentations at
 [DUG #08](https://cfp.3mdeb.com/developers-vpub-0xd-2024/schedule/) and [DUG #06](https://cfp.3mdeb.com/developers-vpub-0xb-2024/schedule/).
 
-<img src="/img/dug_10/osfv-status/dug8.png" width=450/>
-<img src="/img/dug_10/osfv-status/dug6.png" width=450/>
+<img src="../../img/dug_10/osfv-status/dug8.png" width=450/>
+<img src="../../img/dug_10/osfv-status/dug6.png" width=450/>
 
 ---
 layout: cover
@@ -56,7 +56,7 @@ class: text-center
 
 We have decided on switching to a rolling release for now
 
-<center><img src="/img/dug_10/osfv-status/main-branch.png" width=250/></center>
+<center><img src="../../img/dug_10/osfv-status/main-branch.png" width=250/></center>
 
 <!--
 - releases happened rarely
@@ -72,7 +72,7 @@ We have decided on switching to a rolling release for now
 #### <center> Total </center>
 
 <center>
-<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_total.png" width=600/>
+<img src="../../img/dug_10/osfv-status/dasharo_prs_osfv_total.png" width=600/>
 </center>
 
 <!--
@@ -86,7 +86,7 @@ We have decided on switching to a rolling release for now
 #### <center> Difference </center>
 
 <center>
-<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_diff.png" width=600/>
+<img src="../../img/dug_10/osfv-status/dasharo_prs_osfv_diff.png" width=600/>
 </center>
 
 <!--
@@ -99,7 +99,7 @@ steady pace of development
 #### <center> Total test cases </center>
 
 <center>
-<img src="/img/dug_10/osfv-status/test_counts.png" width=600/>
+<img src="../../img/dug_10/osfv-status/test_counts.png" width=600/>
 </center>
 
 ### <center><b>990</b> total test cases!</center>
@@ -110,7 +110,7 @@ steady pace of development
 #### <center> Difference </center>
 
 <center>
-<img src="/img/dug_10/osfv-status/test_counts_difference.png" width=600/>
+<img src="../../img/dug_10/osfv-status/test_counts_difference.png" width=600/>
 </center>
 
 ### <center>Total count increased by **415** since DUG #09</center>
@@ -148,7 +148,7 @@ steady pace of development
 * Protectli VP2440
   + 2x10 GBps Ethernet
   + available next quarter
-<center><img src="/img/dug_10/osfv-status/vp2440.jpg" width=400/></center>
+<center><img src="../../img/dug_10/osfv-status/vp2440.jpg" width=400/></center>
 <!--
 2x10Gbps Ethernet ports over 4x2.5 i 2430
 -->
@@ -186,7 +186,7 @@ We are ready to support much more OSes in the future
 
 # <center> Fedora support </center>
 
-<center><img src="/img/dug_10/osfv-status/fedora_percent.png" width=700></center>
+<center><img src="../../img/dug_10/osfv-status/fedora_percent.png" width=700></center>
 
 <!--
 many test cases can also be performed on Fedora
@@ -203,7 +203,7 @@ perfect score is ~33-50% (we also test Ubuntu and Windows)
 
 Dasharo Test & Feature Matrix at Google Docs is now deprecated
 
-<center><img src="/img/dug_10/osfv-status/dtfm.png" width=650/></center>
+<center><img src="../../img/dug_10/osfv-status/dtfm.png" width=650/></center>
 
 <!--
 
@@ -219,7 +219,7 @@ Test results published at osfv-results
 
 The test results are now being published on the [OSFV Results repo](https://github.com/Dasharo/osfv-results/)
 
-<center><img src="/img/dug_10/osfv-status/osfv-results-readme.png" width=700/></center>
+<center><img src="../../img/dug_10/osfv-status/osfv-results-readme.png" width=700/></center>
 <!--
 Model families listed in README
 Lets pick the VP66xx series
@@ -229,7 +229,7 @@ Lets pick the VP66xx series
 
 # <center> OSFV results </center>
 
-<center><img src="/img/dug_10/osfv-status/osfv-results-vp66xx.png" width=700/></center>
+<center><img src="../../img/dug_10/osfv-status/osfv-results-vp66xx.png" width=700/></center>
 
 <!--
 A new release candidate last week
@@ -239,7 +239,7 @@ lets check the VP6650 v0.9.2-rc1
 
 # <center> OSFV results </center>
 
-<center><img src="/img/dug_10/osfv-status/osfv-results-result.png" width=700/></center>
+<center><img src="../../img/dug_10/osfv-status/osfv-results-result.png" width=700/></center>
 
 <!--
 All the results shown with
@@ -253,13 +253,13 @@ simply ctrl+f "wifi"
 
 # <center> OSFV results </center>
 
-<center><img src="/img/dug_10/osfv-status/osfv-results-results2.png" width=900/></center>
+<center><img src="../../img/dug_10/osfv-status/osfv-results-results2.png" width=900/></center>
 
 ---
 
 # <center> OSFV results </center>
 
-<center><img src="/img/dug_10/osfv-status/result-issue.png" width=700/></center>
+<center><img src="../../img/dug_10/osfv-status/result-issue.png" width=700/></center>
 
 ---
 
@@ -269,8 +269,8 @@ simply ctrl+f "wifi"
 
 Manual tests will be slowly transferred to OSFV to reduce redundancy and improve coherence
 
-<center><img src="/img/dug_10/osfv-status/manual-test-1.png" width=500/></center>
-<center><img src="/img/dug_10/osfv-status/manual-test-2.png" width=500/></center>
+<center><img src="../../img/dug_10/osfv-status/manual-test-1.png" width=500/></center>
+<center><img src="../../img/dug_10/osfv-status/manual-test-2.png" width=500/></center>
 
 <!--
 - Keeping it in sync with OSFV turned out impractical
@@ -291,8 +291,8 @@ Performing CI tests on real hardware will greatly improve the reliability of OSF
     <td>MSI Z690 DDR4 i5 14600k</td><td>PC Engines APU3C AMD GX-412TC</td>
     </tr>
     <tr>
-    <td><img src="/img/dug_10/osfv-status/z690.jpeg" width=300/></td>
-    <td><img src="/img/dug_10/osfv-status/apu3c.png" width=300/></td>
+    <td><img src="../../img/dug_10/osfv-status/z690.jpeg" width=300/></td>
+    <td><img src="../../img/dug_10/osfv-status/apu3c.png" width=300/></td>
     </tr>
     </table></center>
 
@@ -305,7 +305,7 @@ Performing CI tests on real hardware will greatly improve the reliability of OSF
 # <center> Adding HW test to CI </center>
 ## <center> Automatic test scope determining </center>
 
-<center><img src="/img/dug_10/osfv-status/auto-ci-scope.png" width=470/></center>
+<center><img src="../../img/dug_10/osfv-status/auto-ci-scope.png" width=470/></center>
 <!--
 https://excalidraw.com/#json=qmgEKuh9t2q5LzVA6gHZ7,DBQpMBlSFCkvUrsJ3lDkoQ
 -->
@@ -368,7 +368,7 @@ class: text-center
 # <center> OSFV Dashboard </center>
 
 Working on our own tool for documenting and publishing test results
-<center><img src="/img/dug_10/osfv-status/dashboard-viewer.png" width=700/></center>
+<center><img src="../../img/dug_10/osfv-status/dashboard-viewer.png" width=700/></center>
 
 ---
 
@@ -379,7 +379,7 @@ logs from the tests.
 
 A large step towards the best documentation and repeatibility of the testing process
 
-<center><img src="/img/dug_10/osfv-status/dashboard-comment.png" width=700/></center>
+<center><img src="../../img/dug_10/osfv-status/dashboard-comment.png" width=700/></center>
 
 ---
 
@@ -388,7 +388,7 @@ A large step towards the best documentation and repeatibility of the testing pro
 #### <center> Total </center>
 
 <center>
-<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_cli_total.png" width=600/>
+<img src="../../img/dug_10/osfv-status/dasharo_prs_osfv_cli_total.png" width=600/>
 </center>
 
 ---
@@ -398,7 +398,7 @@ A large step towards the best documentation and repeatibility of the testing pro
 #### <center> Difference </center>
 
 <center>
-<img src="/img/dug_10/osfv-status/dasharo_prs_osfv_cli_diff.png" width=600/>
+<img src="../../img/dug_10/osfv-status/dasharo_prs_osfv_cli_diff.png" width=600/>
 </center>
 
 ---

@@ -1,5 +1,5 @@
 ---
-theme: slidev-template/theme
+theme: ./theme
 background: /intro.png
 # some information about your slides (markdown enabled)
 title: "Dasharo User Group #10 and Developers vPub 0xF"
