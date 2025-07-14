@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Status
 
-<center><img src="/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
@@ -26,7 +26,7 @@ class: text-center
 clicks: 6
 ---
 
-<center><img src="/img/dug_10/dasharo_team_roadmap.png" width="900"></center>
+<center><img src="../../img/dug_10/dasharo_team_roadmap.png" width="900"></center>
 
 <!--
 
@@ -58,7 +58,7 @@ Modify and run:
 layout: two-cols
 ---
 
-<center><img src="/img/dug_10/dug09.png" width="300"></center>
+<center><img src="../../img/dug_10/dug09.png" width="300"></center>
 
 Link to DUG#9 and vPub 0xE [YouTube
 playlist](https://www.youtube.com/watch?v=ZVgjzvRcnqU&list=PLuISieMwVBpKNjDQBK2MU78tbU1XWkiPD)
@@ -66,17 +66,17 @@ and [slides](https://cfp.3mdeb.com/developers-vpub-0xe-2025/schedule/).
 
 ::right::
 
-<center><img src="/img/dug_10/zdm01.png" width="337"></center>
+<center><img src="../../img/dug_10/zdm01.png" width="337"></center>
 
 Link to ZDM#1 [YouTube playlist](https://www.youtube.com/live/RHuwtdhKxrc?feature=shared&t=1934) and [slides](https://cfp.3mdeb.com/zarhus-developers-meetup-0x1-2025/schedule/).
 
 ---
 
-<center><img src="/img/dug_10/qoss25_poster.jpg" width="650"></center>
+<center><img src="../../img/dug_10/qoss25_poster.jpg" width="650"></center>
 
 ---
 
-<center><img src="/img/dug_10/qoss25_cfs.png" width="550">
+<center><img src="../../img/dug_10/qoss25_cfs.png" width="550">
 
 <br>
 
@@ -86,7 +86,7 @@ Link to ZDM#1 [YouTube playlist](https://www.youtube.com/live/RHuwtdhKxrc?featur
 
 ---
 
-<center><img src="/img/dug_10/qoss25_tickets.png" width="900">
+<center><img src="../../img/dug_10/qoss25_tickets.png" width="900">
 
 <br>
 
@@ -98,7 +98,7 @@ Link to ZDM#1 [YouTube playlist](https://www.youtube.com/live/RHuwtdhKxrc?featur
 clicks: 4
 ---
 
-<center><img src="/img/dug_10/dasharo_team_roadmap2.png" width="900"></center>
+<center><img src="../../img/dug_10/dasharo_team_roadmap2.png" width="900"></center>
 
 <!--
 
@@ -116,9 +116,9 @@ applying for FOSDEM'26.
 
 ---
 
-<center><img src="/img/dug_7/ost2_logo2.png" width="250">
+<center><img src="../../img/dug_7/ost2_logo2.png" width="250">
 <br>
-<img src="/img/dug_7/arch4221_qr.png" width="225">
+<img src="../../img/dug_7/arch4221_qr.png" width="225">
 Use QR code to get news about upcoming OST2 classes:
 <br>
 Arch4221: UEFI Secure Boot
@@ -139,8 +139,8 @@ In case of HWIO, please let us know if you need discount code.
 
 ## <center>Dasharo Issues</center>
 
-<center><img src="/img/dug_10/issues.png" width="500"></center>
-<center><img src="/img/dug_10/dasharo_issues.png" width="650"></center>
+<center><img src="../../img/dug_10/issues.png" width="500"></center>
+<center><img src="../../img/dug_10/dasharo_issues.png" width="650"></center>
 
 <!--
 
@@ -165,11 +165,11 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/img/dug_10/issue_comments.png" width="500"></center>
+<center><img src="../../img/dug_10/issue_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/img/dug_10/issue_comments_users.png" width="550"></center>
+<center><img src="../../img/dug_10/issue_comments_users.png" width="550"></center>
 
 <!--
 
@@ -202,8 +202,8 @@ PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --
 
 ## <center>Dasharo/coreboot PRs</center>
 
-<center><img src="/img/dug_10/coreboot_prs.png" width="600"></center>
-<center><img src="/img/dug_10/dasharo_coreboot.png" width="650"></center>
+<center><img src="../../img/dug_10/coreboot_prs.png" width="600"></center>
+<center><img src="../../img/dug_10/dasharo_coreboot.png" width="650"></center>
 
 <!--
 
@@ -225,8 +225,8 @@ Modify and run:
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/img/dug_10/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/img/dug_10/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="../../img/dug_10/coreboot_upstreaming.png" width="600"></center>
+<center><img src="../../img/dug_10/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
 
@@ -296,7 +296,7 @@ Open file in LibreOffice and sort after lines added, you can limit file by:
 
 ---
 
-<center><img src="/img/dug_10/dasharo_version.png" width="730">
+<center><img src="../../img/dug_10/dasharo_version.png" width="730">
 
 <br>
 
@@ -314,8 +314,8 @@ You can find information about what branch which supported platform lives.
 
 ## <center>Dasharo/edk2 PRs</center>
 
-<center><img src="/img/dug_10/edk2_prs.png" width="650"></center>
-<center><img src="/img/dug_10/dasharo_edk2.png" width="650"></center>
+<center><img src="../../img/dug_10/edk2_prs.png" width="650"></center>
+<center><img src="../../img/dug_10/dasharo_edk2.png" width="650"></center>
 
 <!--
 
@@ -337,7 +337,7 @@ open, where average is 21.6PRs.
 
 ## <center>Dasharo star history</center>
 
-<center><img src="/img/dug_10/star-history.png" width="650"></center>
+<center><img src="../../img/dug_10/star-history.png" width="650"></center>
 
 <!--
 
@@ -353,11 +353,11 @@ https://star-history.com/#Dasharo/coreboot&Dasharo/docs&Dasharo/dasharo-issues
 
 ### <center>Messages and Users</center>
 
-<center><img src="/img/dug_10/dasharo_general_matrix.png" width="500"></center>
+<center><img src="../../img/dug_10/dasharo_general_matrix.png" width="500"></center>
 
 ### <center>Top contributors</center>
 
-<center><img src="/img/dug_10/dasharo_general_matrix_users.png" width="500"></center>
+<center><img src="../../img/dug_10/dasharo_general_matrix_users.png" width="500"></center>
 
 <!--
 
@@ -394,7 +394,7 @@ Dasharo Matrix Community and Dasharo Issues Contributors benefits.
 
 ---
 
-<center><img src="/img/dug_10/dasharo_users.png" width="800"></center>
+<center><img src="../../img/dug_10/dasharo_users.png" width="800"></center>
 
 ---
 
@@ -428,7 +428,7 @@ Dasharo Matrix Community and Dasharo Issues Contributors benefits.
 
 ---
 
-<center><img src="/img/dug_10/bug_bounty.png" width="700">
+<center><img src="../../img/dug_10/bug_bounty.png" width="700">
 
 <br>
 
@@ -441,7 +441,7 @@ Dasharo Matrix Community and Dasharo Issues Contributors benefits.
 # <center>Blog recent changes: comments</center>
 #### <center><https://blog.3mdeb.com></center>
 
-<center><img src="/img/dug_10/comentario-example.png" width="700"></center>
+<center><img src="../../img/dug_10/comentario-example.png" width="700"></center>
 
 <!--
 We would also like to introduce you to some changes on our blog:
@@ -456,7 +456,7 @@ We would also like to introduce you to some changes on our blog:
 
 ---
 
-<center><img src="/img/dug_10/blog-statistics-2025-06-11.png" width="750"></center>
+<center><img src="../../img/dug_10/blog-statistics-2025-06-11.png" width="750"></center>
 
 <!--
 * Additionally, Statistics page caught our attention:

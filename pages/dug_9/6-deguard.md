@@ -126,7 +126,7 @@ tailored for the T480
 
 ## Demo #2 - deguarded T480, running coreboot
 
-<center><img src="/img/dug_9/coreboot_logo.png" width="400"></center>
+<center><img src="../../img/dug_9/coreboot_logo.png" width="400"></center>
 ---
 
 # Discussion

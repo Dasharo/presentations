@@ -9,7 +9,7 @@ class: text-center
 
 ### Dasharo Community Release Roadmaps
 
-<center><img src="/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 <!--
 
@@ -31,7 +31,7 @@ class: text-center
 
 ---
 
-<center><img src="/img/dug_10/community_roadmap_meme.png" width="450"></center>
+<center><img src="../../img/dug_10/community_roadmap_meme.png" width="450"></center>
 
 _Please note that the roadmap for the Dasharo Community Support Program is
 subject to change and may not represent final release candidates or end of
@@ -60,11 +60,11 @@ We consider to be more conservative in adding new platforms to the roadmap.
     [DUG#2](https://www.youtube.com/live/ZyctrnJNTPc?feature=shared&t=3395),
     [DUG#1](https://www.youtube.com/live/fUfjWyljKNs?feature=shared&t=795)
 
-<center><img src="/img/dug_7/dasharo_gh_milestones.png" width="650"></center>
+<center><img src="../../img/dug_7/dasharo_gh_milestones.png" width="650"></center>
 
 ---
 
-<center><img src="/img/dug_7/dasharo_naming_convention.png" width="1000"></center>
+<center><img src="../../img/dug_7/dasharo_naming_convention.png" width="1000"></center>
 
 * In short Dasharo Pro Package (DPP)
 * Dasharo (coreboot+UEFI) Pro Package for Desktop
@@ -75,7 +75,7 @@ More details about it can be found in previous editions of the talk e.g. [DUG #9
 
 ---
 
-<center><img src="/img/dug_10/dasharo_releases_kpis.png" width="800"></center>
+<center><img src="../../img/dug_10/dasharo_releases_kpis.png" width="800"></center>
 
 <!--
 
@@ -99,7 +99,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 
 ---
 
-<center><img src="/img/dug_10/dasharo_per_segment.png" width="800"></center>
+<center><img src="../../img/dug_10/dasharo_per_segment.png" width="800"></center>
 
 <!--
 
@@ -109,7 +109,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 
 ---
 
-<center><img src="/img/dug_10/dasharo_roadmap_states.png" width="800"></center>
+<center><img src="../../img/dug_10/dasharo_roadmap_states.png" width="800"></center>
 
 <!--
 
@@ -120,7 +120,7 @@ grep "^## v" docs/variants -r | grep -E "2024-(09|1[0-2])"|grep -E "novacustom|p
 -->
 ---
 
-<center><img src="/img/dug_10/dcs_emu_roadmap_v0.10.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_emu_roadmap_v0.10.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 - coreboot+SeaBIOS still waiting for its prime time, it is connected with
 transition to OSFV, which we are very hesitant to do because it is quite a lot
@@ -191,7 +191,7 @@ of work and we have other projects
 
 ---
 
-<center><img src="/img/dug_10/dcs_network_appliance_roadmap_v0.10_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_network_appliance_roadmap_v0.10_pt1.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We successfully released v24.08.00.01. More details later.
 * `v24.12` and `v25.03` were replaced with `v25.06` release.
@@ -281,7 +281,7 @@ of work and we have other projects
 
 ---
 
-<center><img src="/img/dug_10/dcs_network_appliance_roadmap_v0.10_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_network_appliance_roadmap_v0.10_pt2.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * [TrenchBoot Support was released](https://blog.3mdeb.com/2025/2025-06-10-aem-uefi/)
 * Unfortunately Dasharo release requires quite a lot of resources to be invested in validation, because of that we keep delaying this.
@@ -321,7 +321,7 @@ of work and we have other projects
 
 ---
 
-<center><img src="/img/dug_10/dcs_network_appliance_roadmap_v0.10_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_network_appliance_roadmap_v0.10_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * We already started work on `v0.9.1`
 * It would cover some interesting features we will look into on next slide.
@@ -347,7 +347,7 @@ of work and we have other projects
 
 ---
 
-<center><img src="/img/dug_10/odroid_v0.9.1.png" width="850"></center>
+<center><img src="../../img/dug_10/odroid_v0.9.1.png" width="850"></center>
 
 <!--
 
@@ -362,7 +362,7 @@ of work and we have other projects
 
 # Boot time performance improvements
 
-<center><img src="/img/dug_10/odroid_v0.9.1_boot_time.png" width="750"></center>
+<center><img src="../../img/dug_10/odroid_v0.9.1_boot_time.png" width="750"></center>
 
 <!--
 
@@ -373,7 +373,7 @@ otherwise.
 
 ---
 
-<center><img src="/img/dug_10/dcs_laptop_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_laptop_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Dasharo (coreboot+Heads) for NV4x v0.9.2 was released according to plan.
 * This year we have no other plans for releasing Dasharo (coreboot+Heads). Next release will be planned for 2026 when time will come.
@@ -482,7 +482,7 @@ otherwise.
 
 ---
 
-<center><img src="/img/dug_10/dcs_desktop_dell_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_desktop_dell_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * [TrenchBoot Support was released](https://blog.3mdeb.com/2025/2025-06-10-aem-uefi/)
 * Exactly the same situation as with Protectli VP4670.
@@ -532,7 +532,7 @@ otherwise.
 
 ---
 
-<center><img src="/img/dug_10/dcs_desktop_msi_z690_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_desktop_msi_z690_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * EOL for Dasharo support for MSI PRO Z690-A is 2026 EOY.
 * This year there are two upcoming releases: DPP and DCR.
@@ -586,7 +586,7 @@ it would not be the case.
 
 ---
 
-<center><img src="/img/dug_10/dcs_desktop_msi_z790_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_desktop_msi_z790_roadmap_v0.10.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
 
 * The same situation as with Z690-A.
 
@@ -638,7 +638,7 @@ it would not be the case.
 
 ---
 
-<center><img src="/img/dug_10/dcs_desktop_msi_heads_roadmap_v0.10.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
+<center><img src="../../img/dug_10/dcs_desktop_msi_heads_roadmap_v0.10.png" width="800" style="margin-left:-36px; margin-top:-40px"></center>
 
 * Unfortunately, we have no new plans.
 
