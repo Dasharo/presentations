@@ -270,6 +270,20 @@ def plot_pr_statistics(repo, dates, data, title, filename, cap_to_zero=False):
     plt.close()
 
 
+dates = [
+    "2023-03",
+    "2023-07",
+    "2023-09",
+    "2023-12",
+    "2024-03",
+    "2024-06",
+    "2024-09",
+    "2024-12",
+    "2025-03",
+    "2025-06",
+    "2025-08",
+]
+
 # Plot for Dasharo/coreboot
 repo_coreboot = "Dasharo/coreboot"
 data_coreboot = gather_data(repo_coreboot, dates)
@@ -279,7 +293,6 @@ plot_pr_statistics(
     data_coreboot,
     "PR Statistics for Dasharo/coreboot downstream",
     "img/dug_10/dasharo_coreboot.png",
-    label_offsets=(30, 5),
 )
 
 # Plot for Dasharo/edk2
@@ -291,7 +304,6 @@ plot_pr_statistics(
     data_edk2,
     "PR Statistics for Dasharo/edk2 fork",
     "img/dug_10/dasharo_edk2.png",
-    label_offsets=(7, 1),
 )
 
 # Plot for Dasharo/open-source-firmware-validation
@@ -303,7 +315,6 @@ plot_pr_statistics(
     data_osfv,
     "PR Statistics for OSFV repository",
     "img/dug_10/dasharo_prs_osfv_total.png",
-    label_offsets=(7, 1),
 )
 data_osfv = gather_data(repo_osfv, dates, differences=True)
 plot_pr_statistics(
@@ -312,7 +323,6 @@ plot_pr_statistics(
     data_osfv,
     "PR Statistics for OSFV repository - increments",
     "img/dug_10/dasharo_prs_osfv_diff.png",
-    label_offsets=(7, 1),
 )
 
 # Plot for Dasharo/osfv-scripts
@@ -324,7 +334,6 @@ plot_pr_statistics(
     data_osfv_cli,
     "PR Statistics for osfv_cli repository",
     "img/dug_10/dasharo_prs_osfv_cli_total.png",
-    label_offsets=(5, 1),
     cap_to_zero=True,
 )
 data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=True)
@@ -334,7 +343,6 @@ plot_pr_statistics(
     data_osfv_cli,
     "PR Statistics for osfv_cli repository - increments",
     "img/dug_10/dasharo_prs_osfv_cli_diff.png",
-    label_offsets=(0.7, 0.5),
     cap_to_zero=True,
 )
 
