@@ -1,0 +1,59 @@
+---
+theme: slidev-template/theme
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+## &#x1F44B; Dasharo User Group #{{ dug_num }} &#x1F389;
+
+### Greetings, Agenda
+
+<center><img src="../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+
+---
+
+<center><img src="../../img/dug_{{ dug_num }}/dug_{{ dug_num }}_banner.jpg" width="{{ banner_width|default('650px') }}"></center>
+
+---
+
+## Dasharo User Group
+
+- Forum where Dasharo Team and Partners share knowledge and inform about
+  Dasharo-related development
+- Happen quarterly since beginning of 2023, vPubs started in 2021.
+- Tight schedule, little time for questions, recordings published on YouTube
+
+## Dasharo Developers vPub
+
+- Virtual meetup which gather developers and technology enthusiasts for open
+  discussion on open-source firmware related topics
+- Informal mini-conference
+- Focus on practical aspects of security and firmware: demos > short talks >
+  discussion panels/interviews
+- Casual and relaxed atmosphere
+- Video from demos/short talks/discussion warm-up are posted on YouTube
+- We do not record Q&A and Open Discussion
+
+---
+
+## <center>&#x1F680; Dasharo User Group #{{ dug_num }} Meeting Agenda &#x1F680;</center>
+
+<br>
+{% for ev in events %}
+- #### {{ ev.emoji|default('&#x1F4CB;') }} {{ ev.start }} UTC {{ ev.title }}
+{% endfor %}
+---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Questions?
+
+<!--
+
+Comment to satisfy pre-commit
+
+-->
