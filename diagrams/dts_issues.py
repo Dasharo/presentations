@@ -53,7 +53,19 @@ def count_issues(repo, state, date):
 
 
 repo = "Dasharo/dasharo-issues"
-dates = ["2023-03-16", "2023-07-06", "2023-09-28", "2023-12-03"]
+dates = [
+    "2023-03",
+    "2023-07",
+    "2023-09",
+    "2023-12",
+    "2024-03",
+    "2024-06",
+    "2024-09",
+    "2024-12",
+    "2025-03",
+    "2025-06",
+    "2025-08",
+]
 
 # Data storage
 data = {"Total": [], "Closed": [], "Open": []}
@@ -77,26 +89,42 @@ bars_open = plt.bar(
 )
 
 # Add titles and labels
-plt.title("Dasharo Issues Statistics", fontsize=18, fontweight="bold", color="#272727")
+plt.title(
+    "Dasharo Tools Suite Issues Statistics",
+    fontsize=18,
+    fontweight="bold",
+    color="#272727",
+)
 plt.xlabel("Date", fontsize=16, fontweight="bold", color="#272727")
 plt.ylabel("Number of Issues", fontsize=16, fontweight="bold", color="#272727")
 
 
 # Function to add labels inside the bars
-def add_labels(bars, color="white"):
+def add_labels(bars, default_color="white"):
     for bar in bars:
         height = bar.get_height()
-        plt.annotate(
-            f"{height}",
-            xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2),
-            xytext=(0, 3),  # 3 points vertical offset
-            textcoords="offset points",
-            ha="center",
-            va="bottom",
-            color=color,
-            fontsize=14,
-            fontweight="bold",
-        )
+        if height > 0:
+            # Adjust position and color based on bar height
+            if height < 5:  # For very small bars, place label above with dark color
+                y_offset = 3
+                va_setting = "bottom"
+                text_color = "#272727"  # Dark color for visibility on light background
+            else:  # For normal bars, center the label with default color
+                y_offset = 0
+                va_setting = "center"
+                text_color = default_color
+
+            plt.annotate(
+                f"{height}",
+                xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2),
+                xytext=(0, y_offset),
+                textcoords="offset points",
+                ha="center",
+                va=va_setting,
+                color=text_color,
+                fontsize=14,
+                fontweight="bold",
+            )
 
 
 # Add labels to the bars
@@ -110,7 +138,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor("#f5f5f5")
 
 # Save the plot as an image file
-plt.savefig("dts_issues_2023q4.png")
+plt.savefig("dts_issues_2025q3.png")
 
 # Optionally, close the plot to free up memory
 plt.close()
