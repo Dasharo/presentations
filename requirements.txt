@@ -4,3 +4,5 @@ reuse
 git+https://github.com/Dasharo/roadmapper.git@dasharo#egg=roadmapper
 PyGithub
 matplotlib
+Jinja2
+pytest
