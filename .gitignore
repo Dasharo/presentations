@@ -10,3 +10,9 @@ venv
 .vite
 package-lock.json
 slides.md
+.env
+/fixtures/*.xml
+.venv/
+*.pyc
+__pycache__
+artifacts
