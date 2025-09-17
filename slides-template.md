@@ -13,7 +13,7 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-
+copyright: <COPYRIGHT>
 ---
 
 ## &#x1F44B; Dasharo User Group #11 &#x1F389; and Developers vPub 0x10 🍻
