@@ -502,7 +502,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_1/hwio.jpg" width="400"></center>
+<center><img src="/../../img/dug_11/hwio.jpg" width="400"></center>
 
 <br>
 
@@ -581,9 +581,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/../../img/dug_7/des.png" width="220"/>
-  <img src="/../../img/dug_7/des2.png" width="220" style="margin-left: 50px"/>
-  <img src="/../../img/dug_7/des3.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_11/dpp.png" width="220"/>
+  <img src="/../../img/dug_11/dpp2.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_11/dpp3.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -600,9 +600,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/../../img/dug_7/des5.png" width="220"/>
-  <img src="/../../img/dug_7/des4.png" width="220" style="margin-left: 50px"/>
-  <img src="/../../img/dug_7/des6.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_11/dpp4.png" width="220"/>
+  <img src="/../../img/dug_11/dpp5.png" width="220" style="margin-left: 50px"/>
+  <img src="/../../img/dug_11/dpp6.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -611,3 +611,24 @@ class: text-center
 
 ### [https://shop.3mdeb.com/product-category/dasharo-pro-package](https://shop.3mdeb.com/product-category/dasharo-pro-package)
 </center>
+
+---
+
+# Accessories
+
+---
+
+## <center>Accessories</center>
+
+<br>
+
+<center><img src="/../../img/dug_11/privacy-screen.png" width="900"></center>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/accessories/](https://shop.3mdeb.com/product-category/accessories/)
+</center>
+
+---
