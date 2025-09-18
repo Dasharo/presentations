@@ -117,6 +117,27 @@ Benefits:
 - test ID overhaul that affected many tests
 
 ---
+
+# <center> New platforms </center>
+
+  <center><table>
+  <tr>
+  <td>
+  <ul>
+  <li>Odroid ULTRA</li>
+  <li>ASRock SPC741D8-2L2T/BCM</li>
+  <li>Novacustom NUC Box</li>
+  </ul>
+  </td>
+  <td><img src="../../img/dug_11/osfv_status/odoid.png" width=300/></td>
+  </tr>
+  <tr>
+  <td><img src="../../img/dug_11/osfv_status/NUC-Box.png" width=300/></td>
+  <td><img src="../../img/dug_11/osfv_status/asrox.png" width=300/></td>
+  </tr>
+  </table></center>
+
+---
 layout: cover
 background: /intro.png
 class: text-center
