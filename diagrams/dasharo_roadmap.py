@@ -8,9 +8,9 @@ from roadmapper.roadmap import Roadmap
 from roadmapper.timelinemode import TimelineMode
 import sys
 
-version = "v0.10"
-date = "June 2025"
-dug_id = "dug_10"
+version = "v0.11"
+date = "September 2025"
+dug_id = "dug_11"
 
 """"
 Dasharo Sample Roadmap v0.8
@@ -60,7 +60,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-# roadmap.save(f"img/{dug_id}/dcs_sample_roadmap_{version}.png")
+# roadmap.save(f"img/{dug_id}/dcs_sample_roadmap.png")
 
 """"
 Dasharo Community Support Emulation Roadmap
@@ -68,32 +68,16 @@ Dasharo Community Support Emulation Roadmap
 roadmap = Roadmap(1600, 660, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Emulation QEMU Q35 Roadmap ")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-01-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-04-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 qemu_q35_v090 = roadmap.add_group("coreboot+SeaBIOS\nv0.9.0", font_size=31)
-qemu_q35_v021 = roadmap.add_group("coreboot+UEFI\nv0.2.1", font_size=31)
 qemu_q35_v030 = roadmap.add_group("coreboot+UEFI\nv0.3.0", font_size=31)
 
 qemu_q35_v090.add_task(
-    "Release Candidate",
-    "2024-10-01",
-    "2024-12-31",
-    style="rounded",
-    fill_colour="#7E14FD",
-)
-qemu_q35_v090.add_task(
     "Community Release",
-    "2025-07-01",
-    "2025-09-30",
-    style="rounded",
-    fill_colour="#ADD8E6",
-)
-
-qemu_q35_v021.add_task(
-    "Community Release",
-    "2025-04-01",
-    "2025-06-30",
+    "2025-10-01",
+    "2025-12-31",
     style="rounded",
     fill_colour="#ADD8E6",
 )
@@ -110,7 +94,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_emu_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_emu_roadmap.png")
 
 """"
 Dasharo Community Support Network Appliance Roadmap
@@ -118,82 +102,72 @@ Dasharo Community Support Network Appliance Roadmap
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Network Appliance PC Engines apu2/3/4/6 Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-01-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-04-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
-pcengines_24080001 = roadmap.add_group("coreboot+SeaBIOS\nv24.08.00.01", font_size=28)
-pcengines_25060001 = roadmap.add_group("coreboot+SeaBIOS\nv25.06.00.01", font_size=28)
+pcengines_25090001 = roadmap.add_group("coreboot+SeaBIOS\nv25.09.00.01", font_size=28)
 pcengines_091 = roadmap.add_group("coreboot+UEFI\nv0.9.1", font_size=28)
 
 pcengines_091.add_task(
-    "DPP\nRelease", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
-)
-pcengines_24080001.add_task(
-    "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
+    "DPP\nRelease", "2025-10-01", "2025-12-31", style="rounded", fill_colour="#FD7E14"
 )
 
-pcengines_25060001.add_task(
-    "DPP\nRelease", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#FD7E14"
+pcengines_25090001.add_task(
+    "DPP\nRelease", "2025-10-01", "2025-12-31", style="rounded", fill_colour="#FD7E14"
 )
 
 roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_network_appliance_roadmap_{version}_pt1.png")
+roadmap.save(f"img/{dug_id}/dcs_network_appliance_roadmap_pt1.png")
 
 
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Network Appliance Protectli VP4670 Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-01-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-04-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 protectli = roadmap.add_group("coreboot+SeaBIOS\nv0.9.0", font_size=30)
 protectli.add_task(
-    "DPP\nRelease", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
+    "DPP\nRelease", "2025-10-01", "2025-12-31", style="rounded", fill_colour="#FD7E14"
 )
 
 roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_network_appliance_roadmap_{version}_pt2.png")
+roadmap.save(f"img/{dug_id}/dcs_network_appliance_roadmap_pt2.png")
 
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Network Appliance Hardkernel Odroid-H4+ Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-07-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
-odroid_090 = roadmap.add_group("coreboot+UEFI\nv0.9.0")
 odroid_091 = roadmap.add_group("coreboot+UEFI\nv0.9.1")
+odroid_092 = roadmap.add_group("coreboot+UEFI\nv0.9.2")
+odroid_sb_090 = roadmap.add_group("Slim Bootloader+UEFI\nv0.9.0", font_size=25)
 
-odroid_090.add_task(
-    "Porting", "2024-07-01", "2024-08-15", style="rounded", fill_colour="#EA4335"
-)
-odroid_090.add_task(
-    "Validation",
-    "2024-08-16",
-    "2024-09-30",
-    style="rounded",
-    fill_colour="#34A853",
-    font_size=23,
-)
-odroid_090.add_task(
-    "DPP Release", "2024-10-01", "2025-01-31", style="rounded", fill_colour="#FD7E14"
+odroid_sb_090.add_task(
+    "DPP Release", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
 )
 
 odroid_091.add_task(
     "DPP Release", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
 )
 
+odroid_092.add_task(
+    "DPP Release", "2025-10-01", "2025-12-31", style="rounded", fill_colour="#FD7E14"
+)
+
 
 roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_network_appliance_roadmap_{version}_pt4.png")
+roadmap.save(f"img/{dug_id}/dcs_network_appliance_roadmap_pt4.png")
 
 """"
 Dasharo Community Support Laptops Roadmap
@@ -201,16 +175,9 @@ Dasharo Community Support Laptops Roadmap
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Laptop Novacustom Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2024-10-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-04-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
-novacustom_v56tu = roadmap.add_group("V56TU\ncoreboot+Heads\nv0.9.0")
-novacustom_v56tu.add_task(
-    "Validation", "2024-10-01", "2024-12-31", style="rounded", fill_colour="#34A853"
-)
-novacustom_v56tu.add_task(
-    "DPP Release", "2024-10-01", "2024-12-31", style="rounded", fill_colour="#FD7E14"
-)
 novacustom_nv4x = roadmap.add_group("NV4x\ncoreboot+Heads\nv0.9.2")
 novacustom_nv4x.add_task(
     "Validation", "2025-04-01", "2025-06-30", style="rounded", fill_colour="#34A853"
@@ -222,7 +189,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_laptop_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_laptop_roadmap.png")
 
 
 """"
@@ -246,7 +213,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_desktop_dell_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_desktop_dell_roadmap.png")
 
 
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
@@ -256,10 +223,10 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 msi_z690_115 = roadmap.add_group("coreboot+UEFI\nv1.1.5")
-msi_z690_dcr = roadmap.add_group("coreboot+UEFI\nv1.2.0")
-msi_z690_130 = roadmap.add_group("coreboot+UEFI\nv1.3.0")
+msi_z690_dcr_120 = roadmap.add_group("coreboot+UEFI\nv1.2.0")
+msi_z690_dcr_130 = roadmap.add_group("coreboot+UEFI\nv1.3.0")
 
-msi_z690_dcr.add_task(
+msi_z690_dcr_120.add_task(
     "Community Release",
     "2025-10-01",
     "2025-12-31",
@@ -275,7 +242,7 @@ msi_z690_115.add_task(
     fill_colour="#FD7E14",
 )
 
-msi_z690_130.add_task(
+msi_z690_dcr_130.add_task(
     "Community Release",
     "2026-04-01",
     "2026-06-30",
@@ -287,7 +254,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_desktop_msi_z690_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_desktop_msi_z690_roadmap.png")
 
 
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
@@ -297,10 +264,10 @@ roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
 
 msi_z790_093 = roadmap.add_group("coreboot+UEFI\nv0.9.3")
-msi_z790_dcr = roadmap.add_group("coreboot+UEFI\nv1.0.0")
-msi_z790_110 = roadmap.add_group("coreboot+UEFI\nv1.1.0")
+msi_z790_dcr_100 = roadmap.add_group("coreboot+UEFI\nv1.0.0")
+msi_z790_dcr_110 = roadmap.add_group("coreboot+UEFI\nv1.1.0")
 
-msi_z790_dcr.add_task(
+msi_z790_dcr_100.add_task(
     "Community Release",
     "2025-10-01",
     "2025-12-31",
@@ -316,7 +283,7 @@ msi_z790_093.add_task(
     fill_colour="#FD7E14",
 )
 
-msi_z790_110.add_task(
+msi_z790_dcr_110.add_task(
     "Community Release",
     "2026-04-01",
     "2026-06-30",
@@ -328,7 +295,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_desktop_msi_z790_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_desktop_msi_z790_roadmap.png")
 
 
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
@@ -373,7 +340,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_desktop_msi_heads_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_desktop_msi_heads_roadmap.png")
 
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Desktop Roadmap")
@@ -401,7 +368,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_desktop_asrock_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_desktop_asrock_roadmap.png")
 
 """"
 Dasharo Community Support Workstation Roadmap
@@ -416,7 +383,7 @@ roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_workstation_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_workstation_roadmap.png")
 
 """"
 Dasharo Community Support Server Roadmap
@@ -424,13 +391,34 @@ Dasharo Community Support Server Roadmap
 roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
 roadmap.set_title("Dasharo Server Roadmap")
 roadmap.set_subtitle("subject to change")
-roadmap.set_timeline(TimelineMode.QUARTERLY, start="2023-10-01", number_of_items=4)
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items=4)
 roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
+
+asrock = roadmap.add_group("ASRock Rack SPC741D8-2L2T/BCM")
+asrock.add_task(
+    "DPP Release", "2025-07-01", "2025-09-30", style="rounded", fill_colour="#FD7E14"
+)
 
 roadmap.set_footer(
     f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
 )
 roadmap.draw()
-roadmap.save(f"img/{dug_id}/dcs_server_roadmap_{version}.png")
+roadmap.save(f"img/{dug_id}/dcs_server_asrock_roadmap.png")
 
+roadmap = Roadmap(1600, 1000, colour_theme="diagrams/dasharo.json", show_marker=False)
+roadmap.set_title("Dasharo Server Roadmap")
+roadmap.set_subtitle("subject to change")
+roadmap.set_timeline(TimelineMode.QUARTERLY, start="2025-07-01", number_of_items=4)
+roadmap.add_logo("img/dasharo_logo_white.png", "top-right", 140, 140)
+
+asrock = roadmap.add_group("Gigabyte MZ33-AR1")
+asrock.add_task(
+    "DPP Release", "2025-10-01", "2025-12-31", style="rounded", fill_colour="#FD7E14"
+)
+
+roadmap.set_footer(
+    f"Dasharo Community Support Roadmap | {date} ({version}) | CC-BY-SA-4.0"
+)
+roadmap.draw()
+roadmap.save(f"img/{dug_id}/dcs_server_gigabyte_roadmap.png")
 sys.exit()
