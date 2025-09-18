@@ -127,6 +127,7 @@ dates = [
     "2024-12",
     "2025-03",
     "2025-06",
+    "2025-09",
 ]
 
 
@@ -225,7 +226,7 @@ plot_pr_statistics(
     dates,
     data_coreboot,
     "PR Statistics for Dasharo/coreboot downstream",
-    "img/dug_10/dasharo_coreboot.png",
+    "img/dug_11/dasharo_coreboot.png",
     label_offsets=(30, 5),
 )
 
@@ -237,7 +238,7 @@ plot_pr_statistics(
     dates,
     data_edk2,
     "PR Statistics for Dasharo/edk2 fork",
-    "img/dug_10/dasharo_edk2.png",
+    "img/dug_11/dasharo_edk2.png",
     label_offsets=(7, 1),
 )
 
@@ -249,7 +250,7 @@ plot_pr_statistics(
     dates,
     data_osfv,
     "PR Statistics for OSFV repository",
-    "img/dug_10/dasharo_prs_osfv_total.png",
+    "img/dug_11/dasharo_prs_osfv_total.png",
     label_offsets=(7, 1),
 )
 data_osfv = gather_data(repo_osfv, dates, differences=True)
@@ -258,7 +259,7 @@ plot_pr_statistics(
     dates,
     data_osfv,
     "PR Statistics for OSFV repository - increments",
-    "img/dug_10/dasharo_prs_osfv_diff.png",
+    "img/dug_11/dasharo_prs_osfv_diff.png",
     label_offsets=(7, 1),
 )
 
@@ -270,7 +271,7 @@ plot_pr_statistics(
     dates,
     data_osfv_cli,
     "PR Statistics for osfv_cli repository",
-    "img/dug_10/dasharo_prs_osfv_cli_total.png",
+    "img/dug_11/dasharo_prs_osfv_cli_total.png",
     label_offsets=(5, 1),
     cap_to_zero=True,
 )
@@ -280,7 +281,7 @@ plot_pr_statistics(
     dates,
     data_osfv_cli,
     "PR Statistics for osfv_cli repository - increments",
-    "img/dug_10/dasharo_prs_osfv_cli_diff.png",
+    "img/dug_11/dasharo_prs_osfv_cli_diff.png",
     label_offsets=(0.7, 0.5),
     cap_to_zero=True,
 )
@@ -293,7 +294,7 @@ plot_pr_statistics(
     dates,
     data_meta_dts,
     "PR Statistics for meta-dts repository",
-    "img/dug_10/dasharo_prs_meta_dts.png",
+    "img/dug_11/dasharo_prs_meta_dts.png",
     label_offsets=(7, 1),
 )
 
@@ -305,6 +306,6 @@ plot_pr_statistics(
     dates,
     data_dts_scripts,
     "PR Statistics for dts-scripts repository",
-    "img/dug_10/dasharo_prs_dts_scripts.png",
+    "img/dug_11/dasharo_prs_dts_scripts.png",
     label_offsets=(7, 1),
 )

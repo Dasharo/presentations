@@ -1,17 +1,15 @@
 ## <center>Dasharo Issues</center>
 
-<center><img src="/@fs/repo/img/dug_10/issues.png" width="500"></center>
-<center><img src="/@fs/repo/img/dug_10/dasharo_issues.png" width="650"></center>
+<center><img src="/@fs/repo/img/dug_11/issues.png" width="500"></center>
+<center><img src="/@fs/repo/img/dug_11/dasharo_issues.png" width="650"></center>
 
 <!--
 
-* Number of reported bugs was 20 smaller than last quarter. So we definitely
-see some slowdown. Hopefully this is silent before storm and during vacation
-period when we should have little bit more time to tinker we will get back on
-track.
-* We fixed 16 bugs less than in last quarter. Slowdown in adding bugs is bigger
-than in fixing, at least in absolute terms. Percentage-wise things does not
-look so shiny.
+* As I told you Q2'25 was just silence before storm. We essentially trippled
+number of open bugs and more than double closed one. Of course part of that is
+cleanup of dasharo-issues, but cleanup is part of keeping project healthy. But
+quite a lot is related to new development about which I will tell you more in
+roadmap section.
 
 Modify and run:
 ./diagrams/dasharo_issues.py
@@ -26,35 +24,21 @@ Modify and run:
 
 ### <center>Comments</center>
 
-<center><img src="/@fs/repo/img/dug_10/issue_comments.png" width="500"></center>
+<center><img src="/@fs/repo/img/dug_11/issue_comments.png" width="500"></center>
 
 ### <center>Top Contributors</center>
 
-<center><img src="/@fs/repo/img/dug_10/issue_comments_users.png" width="550"></center>
+<center><img src="/@fs/repo/img/dug_11/issue_comments_users.png" width="550"></center>
 
 <!--
 
-Not much growth here. It is definitely one of the calmest quarters in Dasharo
-history. We have to change that.
+We doubled the activity in comparison to previous quarter. List of commenter
+didn't change at all. Most of communication was from 3mdeb employees.
 
 Following should be run in dasharo-issues repo, gh command should be installed:
 
-- number of unique users active in Dasharo community
-
 ```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --json author,comments --jq '.[].author.login'|sort|uniq|wc -l
-```
-
-- count all comments
-
-```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --json comments --jq '.[].[].[].createdAt'|wc -l
-```
-
-- count how many comments each user posted
-
-```shell
-PAGER="less -R" gh issue list --repo "Dasharo/dasharo-issues" -s all -L 10000 --json comments --jq '.[].[].[].author.login'|sort|uniq -c|sort -h
+./diagrams/dasharo-issues-comments.sh
 ```
 
 -->

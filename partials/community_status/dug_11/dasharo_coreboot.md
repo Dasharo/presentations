@@ -1,18 +1,25 @@
 ## <center>Dasharo/coreboot PRs</center>
 
 <center><img src="/@fs/repo/img/dug_10/coreboot_prs.png" width="600"></center>
-<center><img src="/@fs/repo/img/dug_10/dasharo_coreboot.png" width="650"></center>
+<center><img src="/@fs/repo/img/dug_11/dasharo_coreboot.png" width="650"></center>
 
 <!--
 
-* Our average tempo of margining changes is 29.3PR/quarter, we are slightly above with 31PRs merged.
-* Backlog of open PRs classically growing faster and faster. So if you want to help with review and validation feel free to join.
-* We definitely hit record high in opening new PRs, where our average is 41.9PRs and we high 62PRs this quarter. And it is not yet end.
+* Average tempo of margining changes dramatically increased thanks to final
+results of Q2 and Q3 so far from 29.3PR/quarter to 33.7PR/quarter, it is over 4
+more PRs/quarter on average in whole history of Dasharo, obviously we are a lot
+over average with 53 PRs merged.
+* Backlog of open PRs classically growing faster and faster. So if you want to
+help with review and validation feel free to join bug bounty program.
+* We definitely hit record high second quarter in row in opening new PRs, where
+our average increased to 46.6PRs/quarter from 41.9PRs and we high 88PRs this
+quarter so far.
+* This proves how Dasharo accelerates.
 
-* Average margining tempo per quarter:
-  - 26+39+31+21+37+29+29+21+31=264/9=29.3
+* Average mergining tempo per quarter:
+  - 26+39+31+21+37+29+29+22+50+53=337/10=33.7
 * Average PRs creation:
-  - 40+46+40+26+46+38+43+34+62=375/9=41.9
+  - 40+46+40+26+46+38+43+32+67+88=466/10=46.6
 
 Modify and run:
 ./diagrams/dasharo_forks.py
@@ -23,26 +30,26 @@ Modify and run:
 
 ## <center>Dasharo/coreboot upstreaming</center>
 
-<center><img src="/@fs/repo/img/dug_10/coreboot_upstreaming.png" width="600"></center>
-<center><img src="/@fs/repo/img/dug_10/dasharo_coreboot_upstraming.png" width="600"></center>
+<center><img src="/@fs/repo/img/dug_11/coreboot_upstreaming.png" width="600"></center>
+<center><img src="/@fs/repo/img/dug_11/dasharo_coreboot_upstraming.png" width="600"></center>
 
 <!--
 
-On average we upstream ~2500SLOC every quarter. This quarter we are so far
-already above the average. So maybe we don't work on issues much, but we definitely opened more PRs and upstreamed more code than average.
+On average we upstream ~2770SLOC every quarter, what is increase by 10% from
+previous quarter, but considering how much code sitting on our branches
+downstream it would take us years to deliver everything even if we would stop
+doing development. Despite this was record high quarter.
+
+Luckily we see interesting activity that some people pick code from Dasharo and
+start upstreaming. We are very grateful for that.
 
 Average added:
-- 2240+4203+173+2927+3819+3447+50+2751+3241=22851/9=2539
+- 2240+4203+173+2927+3819+3447+50+2751+3241+4923=22851/10=2770
 
 Top is total:
 
 ```shell
-./contribution-stats list -r coreboot -s 01/01/2000 -e 06/10/2024 -o dug6.csv
-```
-
-```shell
-awk -F';' '{sum += $6} END {print sum}' dug6.csv #added lines
-awk -F';' '{sum += $7} END {print sum}' dug6.csv #removed lines
+~/src/3mdeb/dasharo/presentations/diagrams/coreboot-upstreaming.sh
 ```
 
 -->
@@ -59,30 +66,33 @@ awk -F';' '{sum += $7} END {print sum}' dug6.csv #removed lines
 
 ### <center>Top Upstreamers</center>
 
-- **Michał Kopeć (mkc):** +3121/-6
-  - _mb/novacustom/mtl-h: Add discrete graphics variant_
-  - _Documentation/mainboard/lenovo: Add ThinkCentre M700/M900 Tiny_
-  - _ec/dasharo/ec: Add DTT power and battery participants_
-- **Krystian Hebel (khebel):** +104/-1
-  - _drivers/smmstore: allow full flash access for capsule updates_
-- **Michał Żygowski (miczyg):** +16/-16
-  - _soc/intel/elkhartlake/pmc,gpio: Fix PMC GPE GPIO routes_
-  - _mainboard/protectli/vault_ehl/Kconfig: Configure TPM PIRQ_
-  - _mb/protectli/vault_ehl/devicetree.cb: Fix assertion in soc/pmutil_
+- **Michał Żygowski (miczyg):** +2511/-48
+  - _src/superio/nuvoton: Add HWM initialization code_
+  - _mb/msi/\{ms7d25,ms7e06}/devicetree.cb: Add fan control config_
+  - _util/amdfwtool: Handle address mode properly for Turin_
+- **Michał Kopeć (mkc):** +1071/-4
+  - _mb/novacustom/mtl-h/var/dgpu: Add NVIDIA dGPU ASL code_
+  - _mb/lenovo/m900_tiny: Put options in CFR cbtable_
+- **Krystian Hebel:** +793/-58
+  - _soc/power9/rom_media.c: find CBFS in PNOR_
+  - _ppc64: Kconfig switch for bootblock in SEEPROM, zero HRMOR_
 
 <!--
 
-As said last time our statistics improved thanks to rebasing some platforms to
-24.12 coreboot release. Still not all platforms received releases, but we
-already working on 25.03 rebase. So it would be harder and harder to track
-things.
+We see quite a lot of interesting contribution. Firs of all massive nuvoton
+superio driver landed upstream thanks to Miczyg work. Congratulations. Miczyg
+also improve MSI as well as starting to upstream code for Turin. There is also
+not visible here statistics which we may consider in future which is OpenSIL
+public repository.
 
-Some platforms stay on older base and we will not change that unless there will
-be new release coming.
+Michał Kopeć did great job bringing dGPU code for Novacusom laptops as well as
+some improvements for Lenovo M900.
 
-We see that Michał Kopeć is definitely the leader of upstreaming with his work
-around laptops being top contribution. We also would like to thank Krystian and
-Michał Żygowski for their effort to upstream code.
+Krystian Hebel finished cooperation with 3mdeb at the end of July, but his
+patches with 3mdeb email keeps landing to coreboot. Especially those related to
+our POWER9 port.
+
+We are grateful for all effort big and small.
 
 Open file in LibreOffice and sort after lines added, you can limit file by:
 
