@@ -1,5 +1,5 @@
 ---
-theme: ../../slidev-template/theme
+theme: @fs/repo/slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -8,13 +8,13 @@ class: text-center
 
 ## &#x1F44B; DUG#11 Shameless Plug &#x1F44B;
 
-<center><img src="/../../img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/@fs/repo/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
 <br>
 
-<center><img src="/../../img/dug_9/shameless_plug.png" width="480"></center>
+<center><img src="/@fs/repo/img/dug_11/shameless_plug.png" width="340"></center>
 
 <br>
 
@@ -39,14 +39,13 @@ class: text-center
 layout: cover
 background: /intro.png
 class: text-center
-
 ---
 
 # Hardware
 
 ---
 
-<center><img src="/../../img/dug_9/shop_sdwire.png" width="700"></center>
+<center><img src="/@fs/repo/img/dug_9/shop_sdwire.png" width="700"></center>
 
 <br>
 
@@ -57,98 +56,13 @@ class: text-center
 
 <!--
 
-SDWire is our one of best selling products. There are very many interesting use
-cases in which it can be used.
-
-Let's talk about couple of those.
+We have much more in stock over 70. No shortage.
 
 -->
 
 ---
 
-!!! quote
-    Developing firmware for an embedded device requires a lot of testing. (...)
-    Some tests can be done on the host machine, but in most cases (especially
-    related to specific peripherals), it is best to run tests on actual hardware.
-
-!!! quote
-    Physical swap SD card / USB disk is the safest and easiest way for initial flash transfer from the development computer to the device being tested. (...)
-    Initially, I contemplated a robot carrying a physical SD card like in the movie Hackers, but there should be an easier way… and it turns out there is! (...)
-    They designed SD wrapper with no moving parts and called it SDWire.
-
-<center>
-
-### [https://www.kurokesu.com/main/2022/08/02/ethernet-camera-module-build-log-5-automated-flashing/](https://www.kurokesu.com/main/2022/08/02/ethernet-camera-module-build-log-5-automated-flashing/)
-
-</center>
-
----
-
-* SDWire as well as other products for DYI can be bought on Tindie.
-* We appreciate very nice review and a blog post about usage of SDWire in
-Apache NuttX validation from Lup Yuen.
-
-<br>
-
-<center><img src="/../../img/dug_9/sdwire_tindie_review.png" width="700"></center>
-
-<center>
-
-### [https://www.tindie.com/products/3mdeb/sd-wire-sd-card-reader-sd-card-mux/](https://www.tindie.com/products/3mdeb/sd-wire-sd-card-reader-sd-card-mux/)
-
-</center>
-
----
-
-!!! quote
-    *We used Special Hardware: SDWire MicroSD Multiplexer (pic above)
-    * Controlled by a Single-Board Computer: Yuzuki Avaota-A1 (Open Hardware)
-    *PinePhone Test Bot kinda works!
-    * Though PinePhone Battery complicates Hardware Testing
-    *We might pivot to another Arm64 Single-Board Computer
-    * Maybe we’ll port NuttX to Allwinner A527 SoC
-
-<center>
-
-### [https://lupyuen.org/articles/testbot3.html](https://lupyuen.org/articles/testbot3.html)
-
-</center>
-
-<!--
-
-Article in a lot of details describe hardware setup for testing Apache Nuttx on
-PinePhone.
-
--->
-
----
-layout: cover
-background: /intro.png
-class: text-center
-
----
-
-<center><img src="/../../img/dug_9/testbot2-flow.jpg" width="600"></center>
-
-<center>
-
-### [https://lupyuen.org/articles/testbot3.html](https://lupyuen.org/articles/testbot3.html)
-
-</center>
-
----
-
-<center><img src="/../../img/dug_9/avaota-title.jpg" width="450"></center>
-
-<center>
-
-### [https://lupyuen.org/articles/testbot3.html](https://lupyuen.org/articles/testbot3.html)
-
-</center>
-
----
-
-<center><img src="/../../img/dug_9/shop_twonkie.png" width="600"></center>
+<center><img src="/@fs/repo/img/dug_9/shop_twonkie.png" width="600"></center>
 
 <br>
 
@@ -159,36 +73,22 @@ class: text-center
 
 <!--
 
-Also community around this project has very interesting use cases.
+Around 10 remain in stock.
 
 -->
 
 ---
+layout: cover
+background: /intro.png
+class: text-center
+---
 
-<center><img src="/../../img/dug_9/twonkie_hn.png" width="900"></center>
-
-!!! quote
-    (...) they make sniffing the USB-PD messages considerably easier than using an
-    amplifier and logic analyzer like I did here. If you’re only interested in the
-    protocol layer and above, these seem like excellent choices.
-
-<center>
-
-### [https://www.rbaron.net/blog/2024/06/02/usb-power-delivery-for-makers.html](https://www.rbaron.net/blog/2024/06/02/usb-power-delivery-for-makers.html)
-</center>
-
-<!--
-
-Of course there were many more publications about Twonkie like those on Hack A
-Day.
-
--->
+# Dasharo Supported Hardware
 
 ---
 
-## <center>Dasharo Supported Hardware</center>
 
-<center><img src="/../../img/dug_11/asrock.png" width="230"></center>
+<center><img src="/@fs/repo/img/dug_11/asrock.png" width="500"></center>
 
 <br>
 
@@ -199,9 +99,7 @@ Day.
 
 ---
 
-## <center>Dasharo Supported Hardware</center>
-
-<center><img src="/../../img/dug_11/gigabyte-mz33.png" width="230"></center>
+<center><img src="/@fs/repo/img/dug_11/gigabyte-mz33.png" width="500"></center>
 
 <br>
 
@@ -212,9 +110,7 @@ Day.
 
 ---
 
-## <center>Dasharo Supported Hardware</center>
-
-<center><img src="/../../img/dug_9/dell_optiplex.png" width="400"></center>
+<center><img src="/@fs/repo/img/dug_9/dell_optiplex.png" width="450"></center>
 
 <br>
 
@@ -225,7 +121,7 @@ Day.
 
 <!--
 
-No longer under pre-order. Also Dasharo (coreboot+UEFI) v0.1.1 is available.
+Dasharo (coreboot+UEFI) v0.1.1 is available.
 
 This is old Ivy Bridge hardware, but still capable and cheap.
 What is important there are multiple interesting functions available like:
@@ -241,9 +137,7 @@ What is important there are multiple interesting functions available like:
 
 ---
 
-## <center>Dasharo Supported Hardware</center>
-
-<center><img src="/../../img/dug_11/odroid.png" width="230"></center>
+<center><img src="/@fs/repo/img/dug_11/odroid.png" width="700"></center>
 
 <br>
 
@@ -267,7 +161,7 @@ UEFI Secure Boot course.
 
 ---
 
-<center><img src="/../../img/dug_9/novacustom_laptops.png" width="900"></center>
+<center><img src="/@fs/repo/img/dug_9/novacustom_laptops.png" width="900"></center>
 
 <br>
 
@@ -287,7 +181,7 @@ Please note this is dropshipping.
 
 ---
 
-<center><img src="/../../img/dug_9/pcengines.png" width="250"></center>
+<center><img src="/@fs/repo/img/dug_9/pcengines.png" width="250"></center>
 
 <br>
 
@@ -317,7 +211,7 @@ Number of units is very limited.
 
 ---
 
-<center><img src="/../../img/dug_8/protectli_firewalls.png" width="500"></center>
+<center><img src="/@fs/repo/img/dug_8/protectli_firewalls.png" width="500"></center>
 
 <br>
 
@@ -349,7 +243,7 @@ class: text-center
 clicks: 6
 ---
 
-<center><img src="/../../img/dug_9/pet_cooperation_models.png" width="900"></center>
+<center><img src="/@fs/repo/img/dug_9/pet_cooperation_models.png" width="900"></center>
 
 <!--
 
@@ -410,7 +304,7 @@ following areas.
 -->
 ---
 
-<center><img src="/../../img/dug_8/pet_ds01cbi.png" width="550"></center>
+<center><img src="/@fs/repo/img/dug_8/pet_ds01cbi.png" width="550"></center>
 
 <br>
 
@@ -436,7 +330,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_8/pet_ds02rta.png" width="750"></center>
+<center><img src="/@fs/repo/img/dug_8/pet_ds02rta.png" width="750"></center>
 
 <br>
 
@@ -447,7 +341,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_8/pet_ds03ssi.png" width="650"></center>
+<center><img src="/@fs/repo/img/dug_8/pet_ds03ssi.png" width="650"></center>
 
 <br>
 
@@ -458,7 +352,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_8/pet_zh01eli.png" width="550"></center>
+<center><img src="/@fs/repo/img/dug_8/pet_zh01eli.png" width="550"></center>
 
 <br>
 
@@ -469,7 +363,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_8/pet_zh02ypi.png" width="650"></center>
+<center><img src="/@fs/repo/img/dug_8/pet_zh02ypi.png" width="650"></center>
 
 <br>
 
@@ -480,7 +374,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_11/pet_ds08msa.png" width="650"></center>
+<center><img src="/@fs/repo/img/dug_11/pet_ds08msa.png" width="800"></center>
 
 <br>
 
@@ -491,7 +385,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_11/pet_ds09sbl.png" width="650"></center>
+<center><img src="/@fs/repo/img/dug_11/pet_ds09sbl.png" width="800"></center>
 
 <br>
 
@@ -502,7 +396,7 @@ update and long term maintenance.
 
 ---
 
-<center><img src="/../../img/dug_11/hwio.jpg" width="400"></center>
+<center><img src="/@fs/repo/img/dug_11/hwio.jpg" width="390"></center>
 
 <br>
 
@@ -520,6 +414,67 @@ Feel free to contact us if you need discount code.
 layout: cover
 background: /intro.png
 class: text-center
+---
+
+# Dasharo Pro/Enterprise Package
+
+---
+
+<br>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="/@fs/repo/img/dug_11/dpp.png" width="220"/>
+  <img src="/@fs/repo/img/dug_11/dpp2.png" width="220" style="margin-left: 50px"/>
+  <img src="/@fs/repo/img/dug_11/dpp3.png" width="220" style="margin-left: 50px"/>
+</div>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/dasharo-pro-package](https://shop.3mdeb.com/product-category/dasharo-pro-package)
+</center>
+
+---
+
+<br>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="/@fs/repo/img/dug_11/dpp4.png" width="220"/>
+  <img src="/@fs/repo/img/dug_11/dpp5.png" width="220" style="margin-left: 50px"/>
+  <img src="/@fs/repo/img/dug_11/dpp6.png" width="220" style="margin-left: 50px"/>
+</div>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/dasharo-pro-package](https://shop.3mdeb.com/product-category/dasharo-pro-package)
+</center>
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+---
+
+# Accessories
+
+---
+
+<center><img src="/@fs/repo/img/dug_11/privacy-screen.png" width="280"></center>
+
+<br>
+
+<center>
+
+### [https://shop.3mdeb.com/product-category/accessories/](https://shop.3mdeb.com/product-category/accessories/)
+</center>
+
+---
+layout: cover
+background: /intro.png
+class: text-center
 
 ---
 
@@ -530,7 +485,6 @@ class: text-center
 Everything else you will buy on 3mdeb.com
 
 -->
-
 ---
 layout: cover
 background: /intro.png
@@ -555,7 +509,7 @@ class: text-center
 
 <br>
 
-<center><img src="/../../img/dug_8/zarhus_services.png" width="900"></center>
+<center><img src="/@fs/repo/img/dug_8/zarhus_services.png" width="900"></center>
 
 <br>
 
@@ -564,71 +518,3 @@ class: text-center
 ### [https://shop.3mdeb.com/shop/zarhus-services/](https://shop.3mdeb.com/shop/zarhus-services/)
 </center>
 
----
-layout: cover
-background: /intro.png
-class: text-center
-
----
-
-# Dasharo Pro/Enterprise Package
-## (formerly Dasharo Entry Subscription)
-
----
-
-## <center>Dasharo Pro/Enterprise Package</center>
-
-<br>
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/../../img/dug_11/dpp.png" width="220"/>
-  <img src="/../../img/dug_11/dpp2.png" width="220" style="margin-left: 50px"/>
-  <img src="/../../img/dug_11/dpp3.png" width="220" style="margin-left: 50px"/>
-</div>
-
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/product-category/dasharo-pro-package](https://shop.3mdeb.com/product-category/dasharo-pro-package)
-</center>
-
----
-
-## <center>Dasharo Pro/Enterprise Package</center>
-
-<br>
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/../../img/dug_11/dpp4.png" width="220"/>
-  <img src="/../../img/dug_11/dpp5.png" width="220" style="margin-left: 50px"/>
-  <img src="/../../img/dug_11/dpp6.png" width="220" style="margin-left: 50px"/>
-</div>
-
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/product-category/dasharo-pro-package](https://shop.3mdeb.com/product-category/dasharo-pro-package)
-</center>
-
----
-
-# Accessories
-
----
-
-## <center>Accessories</center>
-
-<br>
-
-<center><img src="/../../img/dug_11/privacy-screen.png" width="900"></center>
-
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/product-category/accessories/](https://shop.3mdeb.com/product-category/accessories/)
-</center>
-
----
