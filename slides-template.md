@@ -2,7 +2,7 @@
 theme: ./theme
 background: /intro.png
 # some information about your slides (markdown enabled)
-title: "Dasharo User Group #10 and Developers vPub 0xF"
+title: "Dasharo User Group #11 and Developers vPub 0x10"
 info: false
 # apply unocss classes to the current slide
 class: text-center
@@ -13,10 +13,10 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-
+copyright: <COPYRIGHT>
 ---
 
-## &#x1F44B; Dasharo User Group #10 &#x1F389; and Developers vPub 0xF 🍻
+## &#x1F44B; Dasharo User Group #11 &#x1F389; and Developers vPub 0x10 🍻
 
 ---
 src: <SRC>

@@ -30,6 +30,8 @@ added["2025-03"] = 2751
 removed["2025-03"] = 460
 added["2025-06"] = 3241
 removed["2025-06"] = 23
+added["2025-09"] = 4923
+removed["2025-09"] = 195
 
 logging.info("Creating lists from dictionaries")
 dates = list(added.keys())
@@ -96,7 +98,7 @@ logging.info("Setting facecolor")
 plt.gca().set_facecolor("#f5f5f5")
 
 logging.info("Saving figure")
-plt.savefig("img/dug_10/dasharo_coreboot_upstraming.png", dpi=300)
+plt.savefig("img/dug_11/dasharo_coreboot_upstraming.png", dpi=300)
 
 logging.info("Closing figure")
 plt.close()

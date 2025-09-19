@@ -78,6 +78,7 @@ dates = [
     "2024-12",
     "2025-03",
     "2025-06",
+    "2025-09",
 ]
 
 # Data storage
@@ -133,7 +134,7 @@ plt.legend(fontsize=12)
 plt.gca().set_facecolor("#f5f5f5")
 
 # Save the plot as an image file
-plt.savefig("img/dug_10/dasharo_issues.png")
+plt.savefig("img/dug_11/dasharo_issues.png")
 
 # Optionally, close the plot to free up memory
 plt.close()
