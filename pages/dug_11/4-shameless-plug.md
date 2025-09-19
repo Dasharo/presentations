@@ -87,7 +87,6 @@ class: text-center
 
 ---
 
-
 <center><img src="/@fs/repo/img/dug_11/asrock.png" width="500"></center>
 
 <br>
@@ -517,4 +516,3 @@ class: text-center
 
 ### [https://shop.3mdeb.com/shop/zarhus-services/](https://shop.3mdeb.com/shop/zarhus-services/)
 </center>
-

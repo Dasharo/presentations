@@ -20,4 +20,3 @@
 #### https://hardwear.io/netherlands-2025/training/mastering-uefi-secure-boot-and-intel-root-of-trust-technologies.php
 
 </center>
-
