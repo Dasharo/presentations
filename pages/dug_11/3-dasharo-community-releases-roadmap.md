@@ -290,7 +290,7 @@ move this release forward and next time we will remove it.
 <center><img src="../../img/dug_11/dcs_network_appliance_roadmap_pt4.png" width="850" style="margin-left:-36px; margin-top:-40px"></center>
 
 * `v0.9.1` was released on time.
-* First release form Dasharo (Slim Bootloader+UEFI) with [Slim Bootlaoder](https://slimbootloader.github.io/) as
+* First release form Dasharo (Slim Bootloader+UEFI) with [Slim Bootloader](https://slimbootloader.github.io/) as
 firmware framework was added. The main goal of supporting new framework are new
 courses in Pace Enterprise Training family.
 * As Odroid-H4 is our platform of choice for PET we plan to continue development and new releases. On the roadmap is `v0.9.2`
@@ -819,7 +819,6 @@ know.
 ---
 
 <center><img src="../../img/dug_11/dasharo_coreboot_uefi_v0.9.0_asrock_spc711d8.png" width="900" style="margin-left:-36px; margin-top:-40px"></center>
-
 
 ---
 

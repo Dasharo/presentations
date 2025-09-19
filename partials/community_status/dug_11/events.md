@@ -29,7 +29,6 @@ will not complicate things more.
 
 <center><img src="/@fs/repo/img/dug_11/3mdeb_events.png" width="600">
 
-
 ### https://events.3mdeb.com
 
 </center>
@@ -157,7 +156,6 @@ Dasharo.
 * Kamil will discuss state of UEFI Secure Boot for Qubes OS and surrounding ecosystem from volnteer shim-reviewr and 3mdeb Junior Embedded Systems Developer at 3mdeb.
 * Maciej will present status of TrenchBoot and Qubes AEM feature.
 
-
 -->
 
 ---
@@ -194,7 +192,7 @@ QubesOS, which is critical to get regular high quality releases
 
 * We will have classical talk from m and Tobias about documentation, Qubes OS
 recently switched to ReadTheDocs, so I guess there would be a lot to learn from
-this talk. Please note this talk will be availble only locally it would not be
+this talk. Please note this talk will be available only locally it would not be
 recorded nor transmitted.
 * Frederic will dive into Ansible as an alternative to Salt management stack in Qubes.
 * Then Marta will explore upcoming Qubes OS 4.3 GUI Tools.
