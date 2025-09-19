@@ -79,7 +79,7 @@ Top is total:
 
 <!--
 
-We see quite a lot of interesting contribution. Firs of all massive nuvoton
+We see quite a lot of interesting contribution. First of all massive nuvoton
 superio driver landed upstream thanks to Miczyg work. Congratulations. Miczyg
 also improve MSI as well as starting to upstream code for Turin. There is also
 not visible here statistics which we may consider in future which is OpenSIL
