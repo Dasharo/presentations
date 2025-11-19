@@ -83,3 +83,37 @@ class: text-center
 </center>
 
 ---
+
+# <center> Biggest changes </center>
+
+---
+
+# <center> Implemented: </center>
+- a possibility to run tests simultaneously
+- an QubesOS automatic installer
+- an OpenWrt automation: installation & basic tests
+- Microcode revision testing
+---
+
+# <center> In progress/planned: </center>
+- QubesOS test cases in OSFV
+
+---
+
+# <center>a possibility to run tests simultaneously</center>
+- dasharo-performance module
+- CPT, CPF, STB suites
+- grouped & executed per ENV_ID
+
+---
+
+# <center>>an QubesOS automatic installer</center>
+
+---
+
+# <center> Priorities for the future </center>
+
+---
+
+
+# <center> Thank you! </center>
