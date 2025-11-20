@@ -590,3 +590,30 @@ class: text-center
 
 ### [https://shop.3mdeb.com/product-category/services/](https://shop.3mdeb.com/product-category/services/)
 </center>
+
+---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Highlighting HCL Reports
+
+---
+
+<center><img src="/@fs/repo/img/dug_12/hcl_highlights.png" width="500"></center>
+
+<br>
+
+<center>
+
+### [https://docs.dasharo.com/unified/msi/hcl/](https://docs.dasharo.com/unified/msi/hcl/)
+</center>
+
+<!--
+
+Add: Here are the configurations confirmed compatible, the newly verified ones, and those you can already purchase from us (listed on each product’s page).
+
+-->
+---
