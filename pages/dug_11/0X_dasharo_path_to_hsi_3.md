@@ -5,7 +5,7 @@ background: /intro.png
 class: text-center
 ---
 
-# DUG 11 Dasharo vs HSI
+# DUG #11: Dasharo vs HSI
 
 ---
 
@@ -37,8 +37,8 @@ This is a fifteen minute overview, not a deep technical training. If you want th
 ## Why a metric like HSI matters
 
 * Platform security is a mess of low level knobs and vendor features
-* HSI compresses that into a single comparable level
-* Passing HSI-3 gives a concrete evidence backed claim for NovaCustom with Dasharo
+* HSI compresses that into a single comparable integer that represents a security level
+* Passing HSI-3 gives a concrete evidence-backed claim for NovaCustom with Dasharo
 
 <!-- SPEAKER NOTES
 When people ask how secure a given machine is, the answer usually turns into a laundry list. Secure Boot, TPM, some vendor specific root of trust feature, IOMMU settings, debug straps, firmware update methods. It is very easy to get lost in those details.
@@ -80,7 +80,7 @@ The levels are cumulative. If you say HSI-3 you are also saying all the HSI-1 an
 
 ## Measured boot and Dasharo Trustroot
 
-* Each boot stage measures what it runs into the TPM before handing over control
+* Each boot stage measures what it's about to execute into the TPM before handing over control
 * Dasharo Trustroot makes that chain coherent from BootGuard through coreboot and UEFI to the OS
 
 <figure>
@@ -108,7 +108,7 @@ From the point of view of fwupd and other tools, this becomes a clear line from 
 ## Dragon I: PCR0 reconstruction and TPM locality
 
 * At first hardware, firmware and tools disagreed on what BootGuard put into PCR0
-* A policy register bit and a non default TPM locality changed how the hash should be computed and interpreted
+* A policy register bit and a non-default TPM locality changed how the hash was computed and interpreted
 * After fixing reconstruction and logging, HSI now reports valid PCR0 reconstruction
 
 <figure style="float:left; width:400px; text-align:center">
@@ -138,8 +138,8 @@ We fixed the ACM policy handling in firmware, we made sure coreboot and EDK2 log
 ## Dragon II: fused BootGuard, Intel ME and updates
 
 * Fused platforms permanently lock BootGuard policy, flash layout and ME related settings
-* Classic one shot capsule updates assume a warm reset with the capsule kept in RAM, while safe ME updates need ME disabled and a cold reset
-* Dasharo moved fused systems to a staged update path that keeps ME updatable without weakening the fused security model
+* Classic one shot capsule updates assume a warm reset with the capsule kept in RAM, while safe ME updates need ME disabled, which requires a cold reset
+* Dasharo may employ systems to a staged update for the first fused systems in order to make ME updatable without weakening the fused security model
 
 <figure>
   <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/dragon_alt.png" width="200px">
@@ -166,7 +166,7 @@ The conclusion is that fused platforms need a different update model. In Dasharo
 
 ## Hardware limits and path to HSI-4
 
-* HSI-4 needs SMAP plus full RAM encryption via Total Memory Encryption
+* HSI-4 needs SMAP plus full RAM encryption via Total Memory Encryption {TME}
 * Current NovaCustom Meteor Lake CPUs lack usable TME, so they are capped at HSI-3
 * Dasharo can reach HSI-4 as soon as it runs on hardware that actually exposes TME
 
@@ -196,7 +196,7 @@ So HSI makes the boundary clear. Firmware cannot invent features the CPU does no
 
 * From the OS, cbmem and tpm2 tools show BootGuard status and PCR0 details
 * Dasharo Setup UI exposes BootGuard state without parsing logs
-* fwupdmgr security or fwupdtool security give a high level HSI score backed by the same evidence
+* `fwupdmgr security` or `fwupdtool security` give a high-level HSI score backed by the same evidence
 
 <figure>
   <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/check_yourself.png" width="400px">
@@ -236,7 +236,7 @@ Because Dasharo is built on coreboot and EDK2, and because we work in the open, 
 
 Dasharo Trustroot is the concrete implementation that comes out of this work. On supported platforms it gives you a hardware based root of trust that passes HSI checks and a toolbox you can use to verify it yourself.
 
-If you want similar properties on your own hardware, we can help. That includes designing and deploying hardware roots of trust, bringing up new platforms with BootGuard and measured boot and tailoring firmware behavior to your use case. To discuss a project you can email contact@3mdeb.com or reach out through the Dasharo newsletter and we can continue the conversation from there.
+If you want similar properties on your own hardware, we can help. That includes designing and deploying hardware roots of trust, bringing up new platforms with BootGuard and measured boot and tailoring firmware behavior to your use case. To discuss a project you can email contact@3mdeb.com.
 -->
 
 ---
