@@ -192,11 +192,12 @@ BootGuard had extended. In others the hash was actually correct, but tpm2 tools
 and fwupd misinterpreted the log because they assumed locality 0 and printed
 a mismatch.
 
-We fixed the ACM policy handling in firmware, we made sure coreboot and EDK2
-log the correct locality and we updated the event log layout so BootGuard and
-Dasharo measurements line up. Once all three layers agreed, the HSI line for
-PCR0 reconstruction turned green and reflected what BootGuard actually did in
-hardware.
+We fixed the ACM policy handling in firmware, ensuring coreboot logs the correct
+locality, while EDK2 imports coreboot's entries into its event log for the OS to
+see. We aligned the event log structure between coreboot and EDK2 to ensure that
+BootGuard and Dasharo measurements are consistent. Once all three layers agreed,
+the HSI line for PCR0 reconstruction turned green and reflected what BootGuard
+actually did in hardware.
 -->
 
 ---
