@@ -14,7 +14,6 @@ class: text-center
 * Dasharo on NovaCustom V540TU and V560TU passed HSI-3 as of September 18th
 * Current scope: only iGPU models, dGPU models coming soon
 
-
 <figure>
   <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/hsi3_theme.png" width="300px">
   <figcaption>
@@ -174,7 +173,6 @@ reconstruction
   </figcaption>
 </figure>
 
-
 <!-- SPEAKER NOTES
 The first dragon we had to fight was PCR0 reconstruction. PCR0 is special in HSI
 because it anchors the hardware based trust chain. If firmware cannot reproduce
@@ -264,7 +262,6 @@ TME
   </figcaption>
 </figure>
 
-
 <!-- SPEAKER NOTES
 HSI levels are not only about firmware configuration. At the higher levels they
 depend directly on CPU and memory controller features.
@@ -343,7 +340,6 @@ newsletter
   <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/trustroot.png" width="300px">
 </figure>
 
-
 <!-- SPEAKER NOTES
 Getting to HSI-3 on NovaCustom was not a matter of flipping a configuration bit
 and printing a new logo. It meant getting the CPU, the firmware stack and user
@@ -368,7 +364,7 @@ discuss a project you can email contact@3mdeb.com.
 
 ## DEMO
 
-We're going to SSH into two laptops, 
+We're going to SSH into two laptops,
 
 * NovaCustom V560TU, newest Dasharo, set up to reach HSI 3
 * Lenovo Thinkpad T460s, WiP coreboot port
@@ -390,4 +386,3 @@ on 6th-8th gen Intels, this is an update - I've confirmed deguard works on
 the T460s, and I've got a base port of coreboot in progress.
 
 -->
-
