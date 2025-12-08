@@ -17,7 +17,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-added-large-files
       - id: check-merge-conflict
@@ -41,13 +41,13 @@ repos:
         args: ['--config', '.codespellrc']
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.44.0
+    rev: v0.46.0
     hooks:
       - id: markdownlint
       - id: markdownlint-fix
 
   - repo: https://github.com/koalaman/shellcheck-precommit
-    rev: v0.10.0
+    rev: v0.11.0
     hooks:
     -   id: shellcheck
         args: ["--severity=warning"]
@@ -60,7 +60,7 @@ repos:
         language: script
         types_or: [html, markdown]
 
-  - repo: https://github.com/psf/black
-    rev: 25.1.0
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 25.12.0
     hooks:
       - id: black
