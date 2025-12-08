@@ -335,8 +335,6 @@ verifiable story
 path auditable
 * Dasharo Trustroot is a ready implementation of a hardware root of trust that
 passes HSI checks on supported platforms
-* We help with hardware root of trust deployments, platform bring up and custom
-firmware projects
 * To talk about your platform, contact
 [contact@3mdeb.com](mailto:contact@3mdeb.com) or subscribe to the Dasharo
 newsletter
@@ -362,9 +360,7 @@ Dasharo Trustroot is the concrete implementation that comes out of this work. On
 supported platforms it gives you a hardware based root of trust that passes HSI
 checks and a toolbox you can use to verify it yourself.
 
-If you want similar properties on your own hardware, we can help. That includes
-designing and deploying hardware roots of trust, bringing up new platforms with
-BootGuard and measured boot and tailoring firmware behavior to your use case. To
+If you want similar properties on your own hardware, we can help. To
 discuss a project you can email contact@3mdeb.com.
 -->
 
