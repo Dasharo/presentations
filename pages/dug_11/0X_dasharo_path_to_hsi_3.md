@@ -206,8 +206,8 @@ actually did in hardware.
 settings
 * Classic one shot capsule updates assume a warm reset with the capsule kept in
 RAM, while safe ME updates need ME disabled, which requires a cold reset
-* Dasharo may employ systems to a staged update for the first fused systems in
-order to make ME updatable without weakening the fused security model
+* Dasharo may employ a staged update for the first fused systems in order to
+make ME updatable without weakening the fused security model
 
 <figure>
   <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/dragon_alt.png" width="200px">
