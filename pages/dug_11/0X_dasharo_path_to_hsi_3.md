@@ -249,7 +249,7 @@ security properties that HSI expects.
 
 ## Hardware limits and path to HSI-4
 
-* HSI-4 needs SMAP plus full RAM encryption via Total Memory Encryption {TME}
+* HSI-4 needs SMAP plus full RAM encryption via Total Memory Encryption (TME)
 * Current NovaCustom Meteor Lake CPUs lack usable TME, so they are capped at
 HSI-3
 * Dasharo can reach HSI-4 as soon as it runs on hardware that actually exposes
