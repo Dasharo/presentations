@@ -29,16 +29,13 @@ Right now Dasharo on NovaCustom V540TU and V560TU with integrated graphics
 passes HSI-3. Discrete GPU variants are next in line, but today I will focus on
 the iGPU models that already hit that level.
 
-The focus of this talk is not just the fact that we reached HSI-3. The
-interesting part is the journey. We had to line up the CPU, firmware and tools
-so they all agree on what the machine is actually doing. That meant fighting a
-couple of dragons in BootGuard and Intel ME land.
+We had to line up the CPU, firmware and tools so they all agree on what the
+machine is actually doing. That meant fighting a couple of dragons in the land
+of BootGuard and Intel ME.
 
 This is a fifteen minute overview, not a deep technical training. If you want
 the full low level details, there is a long technical blogpost that goes through
-all of this step by step. Here I want to give you the big picture, show you the
-main obstacles we had to remove and explain why this matters if you care about
-verifiable platform security.
+all of this step by step. 
 -->
 
 ---
@@ -57,10 +54,6 @@ a laundry list. Secure Boot, TPM, some vendor specific root of trust feature,
 IOMMU settings, debug straps, firmware update methods. It is very easy to get
 lost in those details.
 
-Users and even many administrators have a hard time comparing two platforms when
-each has a different mix of marketing names and proprietary mechanisms. It is
-also hard to explain what is more fundamental and what is just a nice extra.
-
 Host Security ID, or HSI, is an attempt to compress that complexity into a
 single metric. Instead of saying this system has feature X, Y and Z, you can
 say this system is HSI level 3 and that one is HSI level 1. Higher levels imply
@@ -69,9 +62,6 @@ stricter and more complete security properties.
 There are very few open, vendor neutral benchmarks in this space. HSI is not
 perfect or finished, but it is documented, it can be implemented in open source
 and it is evolving in public.
-
-For NovaCustom machines with Dasharo, reaching HSI-3 means we now have a
-concrete, open and checkable way to talk about their platform security level.
 -->
 
 ---
@@ -94,12 +84,10 @@ implementation inside fwupd, the standard Linux firmware update stack.
 
 The spec is maintained in public by people who work very close to firmware and
 platform security. That includes fwupd maintainers, CPU vendor engineers and
-independent security researchers. You can go and read the document, discuss it
-and point out problems.
+independent security researchers.
 
 The code side lives in fwupd. Many Linux distributions already ship fwupd for
-firmware updates. The same tool can now also score a host. There is no special
-proprietary scanner. You just run a standard command on a standard system.
+firmware updates. The same tool can now also be ran for security assessment.
 
 fwupd collects information from several places. It reads what the firmware
 publishes, it checks TPM capabilities and measurements, it inspects parts of
@@ -145,10 +133,6 @@ Dasharo Trustroot is the set of conventions and code that make this chain
 coherent. We make sure that BootGuard measurements are reconstructed correctly,
 that coreboot and UEFI agree on which TPM bank and which event log to use and
 that the operating system sees a single consistent story.
-
-From the point of view of fwupd and other tools, this becomes a clear line from
-BootGuard through Dasharo firmware to the operating system, backed by concrete
-measurements instead of promises.
 -->
 
 ---
@@ -280,10 +264,6 @@ The good news is that the firmware side is ready. Dasharo Trustroot is designed
 to take advantage of SMAP and TME when they exist. Once Dasharo runs on hardware
 that properly implements and exposes TME, the same approach can drive those
 platforms to HSI-4.
-
-So HSI makes the boundary clear. Firmware cannot invent features the CPU does
-not have, but it can fully use and expose whatever the hardware provides, and
-you can see that reflected in the level.
 -->
 
 ---
@@ -300,9 +280,6 @@ by the same evidence
 </figure>
 
 <!-- SPEAKER NOTES
-One important part of this story is that you do not have to take anyone’s word
-for it. You can see the evidence yourself.
-
 From the operating system side, cbmem shows coreboot’s view of CBnT and
 BootGuard. You see whether the BIOS is trusted, which TPM locality was used for
 startup and what PCR0 digest was calculated for the measured S CRTM.
@@ -317,9 +294,7 @@ shows BootGuard state graphically. You can confirm at a glance that BootGuard is
 active and how it is configured, without running any tools.
 
 On top of that you have fwupdmgr security or fwupdtool security. These commands
-combine all of this information into a single HSI report. You get the overall
-level at the top and a list of checks per level, so you can see both the summary
-and the underlying conditions on a real machine.
+combine all of this information into a single HSI report.
 -->
 
 ---
@@ -351,10 +326,6 @@ Because Dasharo is built on coreboot and EDK2, and because we work in the open,
 every part of this is visible. The code, the event formats and the logs are all
 available for review and for independent testing. That is a different model from
 closed firmware that only tells you to trust it.
-
-Dasharo Trustroot is the concrete implementation that comes out of this work. On
-supported platforms it gives you a hardware based root of trust that passes HSI
-checks and a toolbox you can use to verify it yourself.
 
 If you want similar properties on your own hardware, we can help. To
 discuss a project you can email contact@3mdeb.com.
