@@ -110,8 +110,6 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 Warning: it can lead to more files being observed resulting in more system
 resources (RAM&CPU) being used.
 
-
-
 ## Contribution
 
 - Please feel free to create issues for improvement ideas and bugs, as well as
