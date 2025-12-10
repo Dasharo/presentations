@@ -117,6 +117,7 @@ Q1 2026
 
 ### PCI USB controller that enables device certification for Qubes OS
 </center>
+
 <!--
 
 Q1 2026 ?
