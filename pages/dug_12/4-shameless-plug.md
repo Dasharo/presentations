@@ -89,12 +89,6 @@ Around 30 remain in stock.
 ### [https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/](https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/)
 </center>
 
-<!--
-
-Awaiting final production offer.
-
--->
-
 ---
 
 <center><img src="/@fs/repo/img/dug_12/shop_usbarmory.png" width="600"></center>
