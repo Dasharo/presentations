@@ -56,7 +56,8 @@ class: text-center
 
 <!--
 
-We are in the middle of restock, new batch available half of December 2025.
+After being unavailable for two weeks, SDWire is again available in our shop.
+At the beginning of December 2025, we restocked this product. We are shipping orders on an ongoing basis.
 
 -->
 
