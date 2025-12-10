@@ -87,6 +87,31 @@ PDFs will be in `slidev-template/output`.
 
 - Open content in browser on http://0.0.0.0:8000
 
+## Common issues
+
+### Error: ENOSPC: System limit for number of file watchers reached
+
+There is a hard limit for the number of files observed by processes
+using inotify in linux. Slidev uses it to monitor for changes and update
+the render. If the amount of files in this repository becomes too big, or
+if there are other programs that tend to monitor file changes, (like IDEs)
+opened, the limit might get reached and slidev will crash.
+
+Read the current limit:
+```shell
+cat /proc/sys/fs/inotify/max_user_watches
+```
+
+Set a new limit:
+```shell
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+Warning: it can lead to more files being observed resulting in more system
+resources (RAM&CPU) being used.
+
+
+
 ## Contribution
 
 - Please feel free to create issues for improvement ideas and bugs, as well as
