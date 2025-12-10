@@ -1,0 +1,4 @@
+slides:
+  - input_file: "pages/vpub_0xf/x-asrock-spc741d8.md"
+    range: "1-17"
+    output_file: "x-asrock-spc741d8.pdf"
