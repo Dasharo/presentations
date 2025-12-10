@@ -5,7 +5,7 @@ background: /intro.png
 class: text-center
 ---
 
-# DUG #11: Dasharo vs HSI
+# vPub 0x11: Dasharo vs HSI
 
 ---
 
@@ -15,7 +15,7 @@ class: text-center
 * Current scope: only iGPU models, dGPU models coming soon
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/hsi3_theme.png" width="300px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/hsi3_theme.png" width="300px">
   <figcaption>
     HSI3 for NovaCustom laptops with Dasharo firmware
   </figcaption>
@@ -35,7 +35,7 @@ of BootGuard and Intel ME.
 
 This is a fifteen minute overview, not a deep technical training. If you want
 the full low level details, there is a long technical blogpost that goes through
-all of this step by step. 
+all of this step by step.
 -->
 
 ---
@@ -75,7 +75,7 @@ teams
 attestation
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/how_hsi_works.png" width="450px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/how_hsi_works.png" width="450px">
 </figure>
 
 <!-- SPEAKER NOTES
@@ -111,7 +111,7 @@ handing over control
 and UEFI to the OS
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/measured_boot_trustroot.png" width="450px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/measured_boot_trustroot.png" width="450px">
   <figcaption>
     Measured boot chain of trust
   </figcaption>
@@ -147,11 +147,11 @@ computed and interpreted
 reconstruction
 
 <figure style="float:left; width:400px; text-align:center">
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/dragon_one.png">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/dragon_one.png">
 </figure>
 
 <figure style="float:right; width:400px; text-align:center">
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/dragon_alt.png" width="200px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/dragon_alt.png" width="200px">
   <figcaption>
     Dragon I
   </figcaption>
@@ -194,7 +194,7 @@ RAM, while safe ME updates need ME disabled, which requires a cold reset
 make ME updatable without weakening the fused security model
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/dragon_alt.png" width="200px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/dragon_alt.png" width="200px">
   <figcaption>
     Dragon II
   </figcaption>
@@ -240,7 +240,7 @@ HSI-3
 TME
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/hw_limit.png" width="400px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/hw_limit.png" width="400px">
   <figcaption>
     Hardware limit: no Total Memory Encryption
   </figcaption>
@@ -276,7 +276,7 @@ platforms to HSI-4.
 by the same evidence
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/check_yourself.png" width="400px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/check_yourself.png" width="400px">
 </figure>
 
 <!-- SPEAKER NOTES
@@ -312,7 +312,7 @@ passes HSI checks on supported platforms
 newsletter
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/trustroot.png" width="300px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/trustroot.png" width="300px">
 </figure>
 
 <!-- SPEAKER NOTES
@@ -343,7 +343,7 @@ We're going to SSH into two laptops,
 ...and we're going to compare HSI reports in real time.
 
 <figure>
-  <img src="/@fs/repo/img/dug_11/dasharo_hsi_3/demo.png" width="400px">
+  <img src="/@fs/repo/img/vpub_0x11/dasharo_hsi_3/demo.png" width="400px">
   <figcaption>
     ThinkPad T460s vs NovaCustom V56
   </figcaption>
