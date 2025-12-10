@@ -152,6 +152,14 @@ class: text-center
 
 <center><img src="/@fs/repo/img/dug_12/shop_gigabyte-mz33.png" width="500"></center>
 
+<!--
+
+1. The product will be released to the shop in Q1'26
+2. Initially, it will be a version with one set of components – exactly the ones we tested, because we take responsibility for their compatibility.
+3. Over time, the product will be developed, as discussed with ASRock.
+
+-->
+
 <br>
 
 <center>
