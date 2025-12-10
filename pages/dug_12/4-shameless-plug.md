@@ -102,7 +102,8 @@ Around 30 remain in stock.
 
 <!--
 
-Q1 2026
+1st half of 2026.
+The redesign of this OSHW is ongoing and we will only commission production once it is complete. We will write a blog post about our adventures with this OSHW, which only appeared to be suitable for production.
 
 -->
 
