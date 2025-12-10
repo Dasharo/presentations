@@ -116,7 +116,7 @@ The redesign of this OSHW is ongoing and we will only commission production once
 
 <!--
 
-Q1 2026 ?
+A custom PCB featuring a PCI-to-USB converter designed to expose an external USB port in a NucBox enclosure. The project involves selecting an appropriate conversion chip and creating a PCB layout that fits the NucBox’s dimensional requirements. The design should not be limited to a single device; ensuring compatibility with a wide range of systems would increase the product’s potential reach. Comparable multi-device adapter boards already exist, such as those shown in example listings.
 
 -->
 
