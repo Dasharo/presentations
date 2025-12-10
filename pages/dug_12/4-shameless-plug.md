@@ -132,6 +132,15 @@ class: text-center
 
 <center><img src="/@fs/repo/img/dug_12/shop_asrock.png" width="600"></center>
 
+<!--
+
+1 - this is currently the only configuration we have tested
+2 - we plan to expand the list of components with those suggested by contributors from the Dasharo community. We will purchase and test such components beforehand.
+3 - we are considering selling the motherboard itself, in case someone already has compatible components or wants to purchase them separately.
+4 - we are also considering selling the DPP package on its own.
+
+-->
+
 <br>
 
 <center>
