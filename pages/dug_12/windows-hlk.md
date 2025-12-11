@@ -93,9 +93,9 @@ layout: two-cols
 ---
 
 ## HLK Overview #2
-![Windows HLK Architecture](../../img/dug_12/windows-hlk/2025-12-11-hlk.png)
+<img style="width: 100%" src="../../img/dug_12/windows-hlk/2025-12-11-hlk.png"/>
 ::right::
-![DHC Lab Architecture](../../img/dug_12/windows-hlk/2025-12-11-hlk-osfv.png)
+<img style="width: 90%" src="../../img/dug_12/windows-hlk/2025-12-11-hlk-osfv.png"/>
 
 <style>
 .two-columns {
@@ -163,42 +163,36 @@ For more details check the blog post at https://blog.3mdeb.com/2025/2025-12-11-w
 ---
 
 ## Creating a device group
-![Creating a device group](../../img/dug_12/windows-hlk/windows-hlk-configuration-pool.png)
-
+<img style="width: 70%;" src="../../img/dug_12/windows-hlk/windows-hlk-configuration-pool.png"/>
 ---
 
 ## Creating a project
-![Creating a project](../../img/dug_12/windows-hlk/windows-hlk-create-project.png)
+<img style="width: 70%" src="../../img/dug_12/windows-hlk/windows-hlk-create-project.png"/>
 
 ---
 
 ## Device selection
-![Device selection](../../img/dug_12/windows-hlk/windows-hlk-device-selection.png)
+<img style="width: 70%" src="../../img/dug_12/windows-hlk/windows-hlk-device-selection.png"/>
 
 ---
 
 ## Tests selection
-![Tests selection](../../img/dug_12/windows-hlk/windows-hlk-tests-tab.png)
+<img style="width: 70%" src="../../img/dug_12/windows-hlk/windows-hlk-tests-tab.png"/>
 
 ---
 
 ## Viewing results
-![Viewing results](../../img/dug_12/windows-hlk/windows-hlk-results-tab.png)
+<img style="width: 60%" src="../../img/dug_12/windows-hlk/windows-hlk-results-tab.png"/>
 
 ---
 
 ## Test logs
-![Test logs](../../img/dug_12/windows-hlk/failed-test2.png)
+<img style="width: 100%" src="../../img/dug_12/windows-hlk/failed-test2.png"/>
 
 ---
 
 ## OSFV Viewing results
-![OSFV Viewing results](../../img/dug_12/windows-hlk/osfv_results.png)
-<style>
-img {
-  width: 70%;
-}
-</style>
+<img style="width: 70%" src="../../img/dug_12/windows-hlk/osfv_results.png"/>
 
 ---
 
