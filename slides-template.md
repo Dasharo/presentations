@@ -2,7 +2,7 @@
 theme: ./theme
 background: /intro.png
 # some information about your slides (markdown enabled)
-title: "Dasharo User Group #11 and Developers vPub 0x10"
+title: "Dasharo User Group #12 and Developers vPub 0x11"
 info: false
 # apply unocss classes to the current slide
 class: text-center
