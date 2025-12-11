@@ -622,5 +622,9 @@ class: text-center
 
 Add: Here are the configurations confirmed compatible, the newly verified ones, and those you can already purchase from us (listed on each product’s page).
 
+We are working on resolving the issue with updating the hcl memory list:
+https://github.com/Dasharo/docs/pull/1191
+https://github.com/Dasharo/dts-hw-conf-gen/pull/10
+
 -->
 ---
