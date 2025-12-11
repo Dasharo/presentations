@@ -1,5 +1,5 @@
 ---
-theme: @fs/repo/slidev-template/theme
+theme: slides/slidev-template/theme
 layout: cover
 background: /intro.png
 class: text-center
@@ -8,19 +8,20 @@ class: text-center
 
 ## &#x1F44B; DUG#12 Shameless Plug &#x1F44B;
 
-<center><img src="/@fs/repo/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
+<center><img src="/slides/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
 
-<br>
+<center><img src="/slides/img/dug_12/shameless_plug.png" width="430"></center>
 
-<center><img src="/@fs/repo/img/dug_11/shameless_plug.png" width="340"></center>
-
-<br>
+<!--
 
 - 🌱 **Growth & Transparency:** Showcasing our evolution and commitment to open-source.
 - 📚 **Historical Record:** A resource for 3mdeb, future customers, and the privacy/security community.
 - 📈 **Explore Business Model:** Learn from our open-source firmware journey, including potential pitfalls.
+
+
+-->
 
 ---
 
@@ -45,7 +46,7 @@ class: text-center
 
 ---
 
-<center><img src="/@fs/repo/img/dug_9/shop_sdwire.png" width="700"></center>
+<center><img src="/slides/img/dug_9/shop_sdwire.png" width="700"></center>
 
 <br>
 
@@ -63,7 +64,7 @@ At the beginning of December 2025, we restocked this product. We are shipping or
 
 ---
 
-<center><img src="/@fs/repo/img/dug_9/shop_twonkie.png" width="600"></center>
+<center><img src="/slides/img/dug_9/shop_twonkie.png" width="600"></center>
 
 <br>
 
@@ -80,18 +81,18 @@ Around 30 remain in stock.
 
 ---
 
-<center><img src="/@fs/repo/img/dug_12/shop_usbsniffer.png" width="600"></center>
+<center><img src="/slides/img/dug_12/shop_usbsniffer.png" width="900"></center>
 
 <br>
 
 <center>
 
-### [https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/](https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/)
+### [https://shop.3mdeb.com/product/usb-sniffer-ls-fs-hs-with-wireshark-interface/](https://shop.3mdeb.com/product/usb-sniffer-ls-fs-hs-with-wireshark-interface/)
 </center>
 
 ---
 
-<center><img src="/@fs/repo/img/dug_12/shop_usbarmory.png" width="600"></center>
+<center><img src="/slides/img/dug_12/shop_usbarmory.png" width="900"></center>
 
 <br>
 
@@ -112,11 +113,21 @@ The redesign of this OSHW is ongoing and we will only commission production once
 <center>
 
 ### PCI USB controller that enables device certification for Qubes OS
+
+  <center><img src="/slides/img/dug_12/pci_to_usb_converter.excalidraw.png"
+    width="400"></center>
+
 </center>
 
 <!--
 
-A custom PCB featuring a PCI-to-USB converter designed to expose an external USB port in a NucBox enclosure. The project involves selecting an appropriate conversion chip and creating a PCB layout that fits the NucBox’s dimensional requirements. The design should not be limited to a single device; ensuring compatibility with a wide range of systems would increase the product’s potential reach. Comparable multi-device adapter boards already exist, such as those shown in example listings.
+A custom PCB featuring a PCI-to-USB converter designed to expose an external
+USB port in a NucBox enclosure. The project involves selecting an appropriate
+conversion chip and creating a PCB layout that fits the NucBox’s dimensional
+requirements. The design should not be limited to a single device; ensuring
+compatibility with a wide range of systems would increase the product’s
+potential reach. Comparable multi-device adapter boards already exist, such as
+those shown in example listings.
 
 -->
 
@@ -130,14 +141,17 @@ class: text-center
 
 ---
 
-<center><img src="/@fs/repo/img/dug_12/shop_asrock.png" width="600"></center>
+<center><img src="/slides/img/dug_12/shop_asrock.png" width="820"></center>
 
 <!--
 
-1 - this is currently the only configuration we have tested
-2 - we plan to expand the list of components with those suggested by contributors from the Dasharo community. We will purchase and test such components beforehand.
-3 - we are considering selling the motherboard itself, in case someone already has compatible components or wants to purchase them separately.
-4 - we are also considering selling the DPP package on its own.
+* 1 - this is currently the only configuration we have tested
+* 2 - we plan to expand the list of components with those suggested by
+contributors from the Dasharo community. We will purchase and test such
+components beforehand.
+* 3 - we are considering selling the motherboard itself, in case someone
+already has compatible components or wants to purchase them separately.
+* 4 - we are also considering selling the DPP package on its own.
 
 -->
 
@@ -145,37 +159,32 @@ class: text-center
 
 <center>
 
-### [https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/](https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/)
+#### [https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/](https://shop.3mdeb.com/product/asrock-spc741d8-2l2t-bcm-dasharo-pro-full-build/)
 </center>
 
 ---
 
-<center><img src="/@fs/repo/img/dug_12/shop_gigabyte-mz33.png" width="500"></center>
+<center><img src="/slides/img/dug_12/shop_gigabyte-mz33.png" width="820"></center>
+
+<br>
+
+<center>
+
+#### [https://shop.3mdeb.com/product/full-build-gigabyte-mz33-ar1-with-dasharo-corebootuefi-pro-package-for-servers/](https://shop.3mdeb.com/product/full-build-gigabyte-mz33-ar1-with-dasharo-corebootuefi-pro-package-for-servers/)
+</center>
 
 <!--
 
 1. The product will be released to the shop in Q1'26
-2. Initially, it will be a version with one set of components – exactly the ones we tested, because we take responsibility for their compatibility.
+2. Initially, it will be a version with one set of components – exactly the
+   ones we tested, because we take responsibility for their compatibility.
 3. Over time, the product will be developed, as discussed with ASRock.
 
 -->
 
-<br>
-
-<center>
-
-### [https://shop.3mdeb.com/product/full-build-gigabyte-mz33-ar1-with-dasharo-corebootuefi-pro-package-for-servers/](https://shop.3mdeb.com/product/full-build-gigabyte-mz33-ar1-with-dasharo-corebootuefi-pro-package-for-servers/)
-</center>
-
 ---
 
-<center><img src="/@fs/repo/img/dug_12/shop_msi.png" width="500"></center>
-
-<!--
-
-We are working on a new platform - MSI PRO B850. It will be available in the shop in Q1 or Q2 (1H'26).
-
--->
+<center><img src="/slides/img/dug_12/shop_msi.png" width="600"></center>
 
 <br>
 
@@ -185,9 +194,16 @@ We are working on a new platform - MSI PRO B850. It will be available in the sho
 
 </center>
 
+<!--
+
+We are working on a new platform - MSI PRO B850. It will be available in the
+shop in Q1 or Q2 (1H'26).
+
+-->
+
 ---
 
-<center><img src="/@fs/repo/img/dug_9/dell_optiplex.png" width="450"></center>
+<center><img src="/slides/img/dug_9/dell_optiplex.png" width="450"></center>
 
 <br>
 
@@ -216,7 +232,7 @@ What is important there are multiple interesting functions available like:
 
 ---
 
-<center><img src="/@fs/repo/img/dug_11/odroid.png" width="700"></center>
+<center><img src="/slides/img/dug_11/odroid.png" width="700"></center>
 
 <br>
 
@@ -239,7 +255,7 @@ Changed
 
 ---
 
-<center><img src="/@fs/repo/img/dug_9/novacustom_laptops.png" width="900"></center>
+<center><img src="/slides/img/dug_9/novacustom_laptops.png" width="900"></center>
 
 <br>
 
@@ -259,7 +275,7 @@ Please note this is dropshipping.
 
 ---
 
-<center><img src="/@fs/repo/img/dug_9/pcengines.png" width="250"></center>
+<center><img src="/slides/img/dug_9/pcengines.png" width="250"></center>
 
 <br>
 
@@ -289,7 +305,7 @@ Number of units is very limited.
 
 ---
 
-<center><img src="/@fs/repo/img/dug_8/protectli_firewalls.png" width="500"></center>
+<center><img src="/slides/img/dug_8/protectli_firewalls.png" width="500"></center>
 
 <br>
 
@@ -312,170 +328,6 @@ use our shop.
 layout: cover
 background: /intro.png
 class: text-center
-
----
-
-# Pace Enterprise Training
-
----
-clicks: 6
----
-
-<center><img src="/@fs/repo/img/dug_9/pet_cooperation_models.png" width="900"></center>
-
-<!--
-
-[click]
-It’s essential to explicitly mention that we provide both **On-Site
-Instructor-Led for Individuals** and **Remote Instructor-Led Group** options.
-These are significant formats that provide structured guidance and should be
-highlighted for clarity.
-
-[click]
-Within segments we don't want to create **Business** categories, although from
-our experience it is closely related to annual training budget of organization.
-Obviously bigger organization typically have bigger budget.
-
-[click]
-We can always discuss custom training but those solutions are typically with
-higher price tag. Over 10 years of activity in platform security we gathered
-information and hand-on experience from many areas of low level security,
-because of that we can tackle almost any topic. If in doubt contact us.
-
-[click]
-"Extended Direct Support from Instructor" means Instructor is not only
-available during training event, but also would respond to questions before and
-after training. Of course unless it turns into consulting endeavour, but please
-note we are not a lawyers we don't count for every hour.
-
-[click]
-Potential discounts for bulk training purchases or long-term contracts, which would be appealing to corporate clients are possible
-
-[click]
-Regarding additional features there can be availability of recordings for
-Remote sessions or The PET Blueprint and Pace Training Reference Guide
-containing extensive editorial version of speaker notes.
-
--->
-
----
-
-- x86, Arm and POWER9/10
-- All open-source firmware topics for each available framework (coreboot, EDKII, U-Boot, TrustedFirmware, OpenBMC, Yocto etc.)
-- Closed source firmware components: ME/CSME/TXE/SPS, PSP/ASP, microcode, Intel ACMs
-  - based on publicly available materials
-- Low-level security mechanisms with example CVE exploitation (UEFI Secure Boot, Intel Boot Guard, closed source firmware etc.)
-  - vulnerability class analysis
-* Trusted Computing Technologies
-  - BitLocker/LUKS/Heads
-  - Measured Boot
-  - SRTM/DRTM and other Root of Trust for Measurement
-* Firmware development life-cycle from considerations at hardware design stage
-  to long term maintenance.
-* Your topic not on the list? Feel free to contact us: `contact<at>dasharo<dot>com`
-
-<!--
-
-Our curriculum is fully featured, but we essentially can cover everything in
-following areas.
-
--->
----
-
-<center><img src="/@fs/repo/img/dug_8/pet_ds01cbi.png" width="550"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
-<!--
-
-Pace Enterprise Training by 3mdeb helps companies to bridge knowledge gaps and accelerate engineering team readiness, delivered by trainers with years of hands-on experience with collaborative open-source and commercial software development.
-
-We essentially provide training in all areas of our expertise:
-- Dasharo: BIOS, boot firmware, ME/PSP, advanced security features, UEFI, coreboot etc.
-- Zarhus: Embedded Linux for all major SoC vendors.
-
-We educate about every aspect of platform life cycle in context of open-source
-ecosystem. Start from input at design stage, component selection to match best
-possible support or easily develop it, through bring up, initial deployment,
-update and long term maintenance.
-
--->
-
----
-
-<center><img src="/@fs/repo/img/dug_8/pet_ds02rta.png" width="750"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
----
-
-<center><img src="/@fs/repo/img/dug_8/pet_ds03ssi.png" width="650"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
----
-
-<center><img src="/@fs/repo/img/dug_8/pet_zh01eli.png" width="550"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
----
-
-<center><img src="/@fs/repo/img/dug_8/pet_zh02ypi.png" width="650"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
----
-
-<center><img src="/@fs/repo/img/dug_11/pet_ds08msa.png" width="800"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
----
-
-<center><img src="/@fs/repo/img/dug_11/pet_ds09sbl.png" width="800"></center>
-
-<br>
-
-<center>
-
-### [https://paceenterprisetraining.com/](https://paceenterprisetraining.com/)
-</center>
-
----
-layout: cover
-background: /intro.png
-class: text-center
 ---
 
 # Dasharo Pro/Enterprise Package
@@ -485,9 +337,9 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/@fs/repo/img/dug_11/dpp.png" width="220"/>
-  <img src="/@fs/repo/img/dug_11/dpp2.png" width="220" style="margin-left: 50px"/>
-  <img src="/@fs/repo/img/dug_11/dpp3.png" width="220" style="margin-left: 50px"/>
+  <img src="/slides/img/dug_11/dpp.png" width="220"/>
+  <img src="/slides/img/dug_11/dpp2.png" width="220" style="margin-left: 50px"/>
+  <img src="/slides/img/dug_11/dpp3.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -502,8 +354,8 @@ class: text-center
 <br>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/@fs/repo/img/dug_11/dpp4.png" width="220"/>
-  <img src="/@fs/repo/img/dug_11/dpp5.png" width="220" style="margin-left: 50px"/>
+  <img src="/slides/img/dug_11/dpp4.png" width="220"/>
+  <img src="/slides/img/dug_11/dpp5.png" width="220" style="margin-left: 50px"/>
 </div>
 
 <br>
@@ -523,7 +375,7 @@ class: text-center
 
 ---
 
-<center><img src="/@fs/repo/img/dug_11/privacy-screen.png" width="280"></center>
+<center><img src="/slides/img/dug_11/privacy-screen.png" width="280"></center>
 
 <br>
 
@@ -562,7 +414,7 @@ class: text-center
 
 <br>
 
-<center><img src="/@fs/repo/img/dug_12/dasharo_services.png" width="900"></center>
+<center><img src="/slides/img/dug_12/dasharo_services.png" width="900"></center>
 
 <br>
 
@@ -577,7 +429,7 @@ class: text-center
 
 <br>
 
-<center><img src="/@fs/repo/img/dug_8/zarhus_services.png" width="900"></center>
+<center><img src="/slides/img/dug_8/zarhus_services.png" width="900"></center>
 
 <br>
 
@@ -592,7 +444,7 @@ class: text-center
 
 <br>
 
-<center><img src="/@fs/repo/img/dug_12/services1.png" width="900"></center>
+<center><img src="/slides/img/dug_12/services1.png" width="900"></center>
 
 <br>
 
@@ -607,7 +459,7 @@ class: text-center
 
 <br>
 
-<center><img src="/@fs/repo/img/dug_12/services2.png" width="900"></center>
+<center><img src="/slides/img/dug_12/services2.png" width="800"></center>
 
 <br>
 
@@ -627,9 +479,11 @@ class: text-center
 
 ---
 
-<center><img src="/@fs/repo/img/dug_12/hcl_highlights.png" width="500"></center>
+<center><img src="/slides/img/dug_12/hcl_highlights_01.png" width="600"></center>
 
 <br>
+
+<center><img src="/slides/img/dug_12/hcl_highlights_02.png" width="600"></center>
 
 <center>
 
@@ -638,11 +492,21 @@ class: text-center
 
 <!--
 
-Add: Here are the configurations confirmed compatible, the newly verified ones, and those you can already purchase from us (listed on each product’s page).
-
-We are working on resolving the issue with updating the hcl memory list:
-https://github.com/Dasharo/docs/pull/1191
-https://github.com/Dasharo/dts-hw-conf-gen/pull/10
+Add: Here are the configurations confirmed compatible, the newly verified ones,
+and those you can already purchase from us (listed on each product’s page).
 
 -->
 ---
+layout: cover
+background: /intro.png
+class: text-center
+
+---
+
+# Questions?
+
+<!--
+
+Comment to satisfy pre-commit
+
+-->
