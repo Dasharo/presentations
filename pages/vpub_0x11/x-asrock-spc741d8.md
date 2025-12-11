@@ -25,17 +25,18 @@ class: text-center
 Today I'm going to walk you through the engineering challenges we faced porting
 Dasharo to the ASRock Rack SPC741D8.
 
-This wasn't just a copy-paste job; it required deep-diving into hardware
-analysis, bus topologies, and ACPI tables. We took a port initiated by the KIT
-Operating Systems Group and hardened it into a production-grade product ready
-for enterprise deployment.
+This task required deep-diving into hardware analysis, bus topologies, and ACPI
+tables. We took a port initiated by the KIT Operating Systems Group and hardened
+it into a production-grade product ready for enterprise deployment.
 -->
 
 ---
-layout: two-cols
+layout: two-cols-header
 ---
 
 ### The Hardware Overview
+
+::left::
 
 **ASRock Rack SPC741D8-2L2T/BCM**
 
@@ -202,6 +203,7 @@ layout: two-cols
   * **Serial:** Captures logs via UART.
 * **Benefit:** Developers can "brick" the board and automatically "unbrick" it
   remotely.
+* **Check it out:**: Available on our shop: https://shop.3mdeb.com/product/rte/
 
 ::right::
 
@@ -219,10 +221,12 @@ development.
 -->
 
 ---
-layout: two-cols
+layout: two-cols-header
 ---
 
 ### Challenge \#2 - The Silent Serial Port
+
+::left::
 
 **The Mystery of the Dead Console**
 
@@ -391,7 +395,7 @@ departments.
   * Continued maintenance (Dasharo v0.9.1 release).
 * **Long Term:**
   * OpenBMC integration for the AST2600.
-* **Call to Action:** Check out the shop, subscribe to the newsletter, and try
+* **Check it out:** Check out the shop, subscribe to the newsletter, and try
   Dasharo.
 
 <!--
