@@ -133,12 +133,18 @@ class: text-center
   - dasharo-performance module
   - CPT, CPF, STB suites
   - grouped & executed per ENV_ID
+
+---
+
+# <center> Implemented: </center>
+
 - an OpenWrt automation: installation & basic tests
   - Protectli platforms
   - OS installation via DTS network boot
-  - For now, no image preseed, automated configuratio after OS boot
+  - For now, no image preseed, automated configuration after OS boot
 - Microcode revision testing
   - based on cbmem output
+
 ---
 
 # <center> In progress/planned: </center>
