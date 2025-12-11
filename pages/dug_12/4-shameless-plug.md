@@ -20,7 +20,6 @@ class: text-center
 - 📚 **Historical Record:** A resource for 3mdeb, future customers, and the privacy/security community.
 - 📈 **Explore Business Model:** Learn from our open-source firmware journey, including potential pitfalls.
 
-
 -->
 
 ---
