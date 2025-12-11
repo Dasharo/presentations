@@ -182,6 +182,8 @@ class: text-center
 
 Dasharo (coreboot+UEFI) v0.1.1 is available.
 
+Release date: 2024-12-17
+
 This is old Ivy Bridge hardware, but still capable and cheap.
 What is important there are multiple interesting functions available like:
 - ME Neutering - means essesntially cutting off "unneeded" pieces of ME
