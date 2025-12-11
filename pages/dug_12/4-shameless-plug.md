@@ -175,7 +175,7 @@ class: text-center
 
 <center>
 
-### [Link to Optiplex platforms in our shop](https://shop.3mdeb.com/?s=Optiplex&post_type=product&dgwt_wcas=1)
+### [Link to Optiplex products in our shop](https://shop.3mdeb.com/?s=Optiplex&post_type=product&dgwt_wcas=1)
 </center>
 
 <!--
@@ -204,19 +204,18 @@ What is important there are multiple interesting functions available like:
 
 <center>
 
-### [https://shop.3mdeb.com/product-category/dasharo-supported-hardware/](https://shop.3mdeb.com/product-category/dasharo-supported-hardware/)
+### [Link to Odroid products in our shop](https://shop.3mdeb.com/?s=Odroid&post_type=product&dgwt_wcas=1)
 </center>
 
 <!--
 
-No longer under pre-order. Dasharo (coreboot+UEFI) v0.9.0 was released.
+Dasharo (coreboot+UEFI) v0.9.1 was released on 2025-09-03.
 
-Current release is minimalistic but we already planning new version which will be closer in functionality to closed source firmware.
-
-The goal of this platform is to serve as base line for hardware training which
-we provide as part of various conferences, as well as directly to customers. It
-will be also very useful for students who want to get through upcoming OST2
-UEFI Secure Boot course.
+Changed
+  - VBT file to fix graphical output in firmware
+  - Flash descriptor updated to v1.1 (see SBOM)
+  - Owner GUID of Secure Boot DB and KEK to Microsoft recommended values
+  - Updated DBX to 2025-06-13
 
 -->
 
