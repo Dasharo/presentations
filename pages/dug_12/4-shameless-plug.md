@@ -175,7 +175,7 @@ class: text-center
 
 <center>
 
-### [https://shop.3mdeb.com/product-category/dasharo-supported-hardware/](https://shop.3mdeb.com/product-category/dasharo-supported-hardware/)
+### [Link to Optiplex platforms in our shop](https://shop.3mdeb.com/?s=Optiplex&post_type=product&dgwt_wcas=1)
 </center>
 
 <!--
