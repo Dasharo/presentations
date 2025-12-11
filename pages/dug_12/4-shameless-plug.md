@@ -169,6 +169,24 @@ class: text-center
 
 ---
 
+<center><img src="/@fs/repo/img/dug_12/shop_msi.png" width="500"></center>
+
+<!--
+
+We are working on a new platform - MSI PRO B850. It will be available in the shop in Q1 or Q2 (1H'26).
+
+-->
+
+<br>
+
+<center>
+
+### [Link to MSI products in our shop](https://shop.3mdeb.com/?s=MSI&post_type=product&dgwt_wcas=1)
+
+</center>
+
+---
+
 <center><img src="/@fs/repo/img/dug_9/dell_optiplex.png" width="450"></center>
 
 <br>
