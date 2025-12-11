@@ -12,6 +12,7 @@ class: text-center
 ---
 layout: two-cols-header
 ---
+
 ## What's Windows Hardware Lab Kit
 
 ::left::
@@ -31,12 +32,13 @@ Testing framework that has evolved since 2000s
 </style>
 
 <!--
-
+multiple certification programs by MS along the years
 -->
 
 ---
 layout: two-cols-header
 ---
+
 ## Why it's interesting to us
 ::left::
 - **4659** unique test cases according to the test lists at https://aka.ms/HLKPlaylist
@@ -64,6 +66,7 @@ Coverage:
 ---
 layout: two-cols-header
 ---
+
 ## HLK Overview #1
 ::left::
 Three basic components:
@@ -88,6 +91,7 @@ Three basic components:
 ---
 layout: two-cols
 ---
+
 ## HLK Overview #2
 ![Windows HLK Architecture](../../img/dug_12/windows-hlk/2025-12-11-hlk.png)
 ::right::
@@ -108,6 +112,7 @@ layout: two-cols
 ---
 layout: two-cols
 ---
+
 ## HLK VM Setup
 Windows HLK Controller & Studio can only run on Windows Server:
 - on a dedicated machine
@@ -141,10 +146,10 @@ Disk: recommended 32GB would be just barely enough and just a few test results w
 ---
 layout: cover
 ---
+
 # Live Demo
 For more details check the blog post at https://blog.3mdeb.com/2025/2025-12-11-windows-hlk
 
-<!-- live demo -->
 <!--
   1. connect via remmina
   2. create device group, add a HLK client to the new group
@@ -156,8 +161,58 @@ For more details check the blog post at https://blog.3mdeb.com/2025/2025-12-11-w
  -->
 
 ---
+
+## Creating a device group
+![Creating a device group](../../img/dug_12/windows-hlk/windows-hlk-configuration-pool.png)
+
+---
+
+## Creating a project
+![Creating a project](../../img/dug_12/windows-hlk/windows-hlk-create-project.png)
+
+---
+
+## Device selection
+![Device selection](../../img/dug_12/windows-hlk/windows-hlk-device-selection.png)
+
+---
+
+## Tests selection
+![Tests selection](../../img/dug_12/windows-hlk/windows-hlk-tests-tab.png)
+
+---
+
+## Viewing results
+![Viewing results](../../img/dug_12/windows-hlk/windows-hlk-results-tab.png)
+
+---
+
+## Test logs
+![Test logs](../../img/dug_12/windows-hlk/failed-test2.png)
+
+---
+
+## OSFV Viewing results
+![OSFV Viewing results](../../img/dug_12/windows-hlk/osfv_results.png)
+<style>
+img {
+  width: 70%;
+}
+</style>
+
+---
+
+![OSFV Test logs](../../img/dug_12/windows-hlk/osfv-test-logs.png)
+<style>
+img {
+  width: 70%;
+}
+</style>
+
+---
 layout: two-cols-header
 ---
+
 ## PoC on Novacustom NV41PZ v1.7.2
 
 ::left::
@@ -190,6 +245,7 @@ Some Interesting Fails:
 ---
 layout: default
 ---
+
 ## Summary & next steps
 
 Windows HLK will provide a lot of value to Dasharo Hardware Certification Lab
@@ -213,9 +269,5 @@ Some work is still ahead:
 ---
 layout: cover
 ---
-# Questions
 
----
-layout: cover
----
 # Thank You
