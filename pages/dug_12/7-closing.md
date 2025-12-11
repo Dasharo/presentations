@@ -11,10 +11,6 @@ class: text-center
 <center><img src="/slides/img/dasharo-sygnet-white.svg" width="150px" style="margin-left:-20px"></center>
 
 ---
-src: /slides/partials/closing/dug_12/events.md
----
-
----
 
 <center><img src="/slides/img/dug_12/vpub_talk_01.png" width="850"></center>
 
@@ -30,6 +26,9 @@ src: /slides/partials/closing/dug_12/events.md
 
 <center><img src="/slides/img/dug_12/vpub_talk_04.png" width="900"></center>
 
+---
+src: /slides/partials/closing/dug_12/events.md
+---
 ---
 
 <center><img src="../../img/dug_9/dasharo_slogan.png" width="400"></center>
