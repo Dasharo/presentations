@@ -528,14 +528,6 @@ class: text-center
 Everything else you will buy on 3mdeb.com
 
 -->
----
-layout: cover
-background: /intro.png
-class: text-center
-
----
-
-# Backlog
 
 ---
 layout: cover
