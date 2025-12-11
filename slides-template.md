@@ -16,7 +16,7 @@ mdc: true
 copyright: <COPYRIGHT>
 ---
 
-## &#x1F44B; Dasharo User Group #11 &#x1F389; and Developers vPub 0x10 🍻
+## &#x1F44B; Dasharo User Group #12 &#x1F389; and Developers vPub 0x11 🍻
 
 ---
 src: <SRC>
