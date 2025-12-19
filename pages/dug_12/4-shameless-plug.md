@@ -17,8 +17,10 @@ class: text-center
 <!--
 
 - 🌱 **Growth & Transparency:** Showcasing our evolution and commitment to open-source.
-- 📚 **Historical Record:** A resource for 3mdeb, future customers, and the privacy/security community.
-- 📈 **Explore Business Model:** Learn from our open-source firmware journey, including potential pitfalls.
+- 📚 **Historical Record:** A resource for 3mdeb, future customers, and the
+  privacy/security community.
+- 📈 **Explore Business Model:** Learn from our open-source firmware journey,
+  including potential pitfalls.
 
 -->
 
@@ -57,7 +59,8 @@ class: text-center
 <!--
 
 After being unavailable for two weeks, SDWire is again available in our shop.
-At the beginning of December 2025, we restocked this product. We are shipping orders on an ongoing basis.
+At the beginning of December 2025, we restocked this product. We are shipping
+orders on an ongoing basis.
 
 -->
 
@@ -103,7 +106,9 @@ Around 30 remain in stock.
 <!--
 
 1st half of 2026.
-The redesign of this OSHW is ongoing and we will only commission production once it is complete. We will write a blog post about our adventures with this OSHW, which only appeared to be suitable for production.
+The redesign of this OSHW is ongoing and we will only commission production once
+it is complete. We will write a blog post about our adventures with this OSHW,
+which only appeared to be suitable for production.
 
 -->
 
@@ -225,7 +230,9 @@ What is important there are multiple interesting functions available like:
 - UEFI Capsule Update integration
 - New Dasharo Measured Boot which cover correctly coreboot and EDKII/UEFI payload.
 - NVMe disks support through adapter.
-- Qubes OS Certification - Unfortunately not possible due to end of life on Intel side, Intel do not provide microcode fixes, biggest value for that hardware is potential of TrenchBoot.
+- Qubes OS Certification - Unfortunately not possible due to end of life on
+  Intel side, Intel do not provide microcode fixes, biggest value for that
+  hardware is potential of TrenchBoot.
 
 -->
 
