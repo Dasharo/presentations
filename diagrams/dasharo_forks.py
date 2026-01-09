@@ -57,15 +57,15 @@ def count_closed_prs(repo, state, date):
         return 0
 
 
-def add_labels_merged(bars):
+def add_labels_merged(bars, offset=0):
     for bar in bars:
         height = bar.get_height()
         if height <= 0:
             continue
-        font_s = 14
+        font_s = 12
         plt.annotate(
             f"{height}",
-            xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2),
+            xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 - offset),
             xytext=(0, 3),  # 3 points vertical offset
             textcoords="offset points",
             ha="center",
@@ -82,7 +82,7 @@ def add_labels_closed(bars, offset=0):
         logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
         if height <= 0:
             continue
-        font_s = 14
+        font_s = 12
         plt.annotate(
             f"{height}",
             xy=(bar.get_x() + bar.get_width() / 2, bar.get_y() + height / 2 - offset),
@@ -101,7 +101,7 @@ def add_labels_open(bars, offset=0):
         height = bar.get_height()
         if height <= 0:
             continue
-        font_s = 14
+        font_s = 12
         logging.info("height:{}, x:{}, y:{}".format(height, bar.get_x(), bar.get_y()))
         plt.annotate(
             f"{height}",
@@ -117,17 +117,12 @@ def add_labels_open(bars, offset=0):
 
 
 dates = [
-    "2023-03",
-    "2023-07",
-    "2023-09",
-    "2023-12",
-    "2024-03",
-    "2024-06",
-    "2024-09",
-    "2024-12",
-    "2025-03",
-    "2025-06",
+    "2025-07",
+    "2025-08",
     "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
 ]
 
 
@@ -150,7 +145,7 @@ def gather_data(repo, dates, differences=False):
             data[key] = [
                 data[key][i] - data[key][i - 1] for i in range(1, len(data[key]))
             ]
-            data[key].insert(0, 0)
+#            data[key].insert(0, 0)
     return data
 
 
@@ -201,9 +196,9 @@ def plot_pr_statistics(
     plt.ylabel("Number of PRs", fontsize=16, fontweight="bold", color="#272727")
 
     # Add labels to the bars
-    add_labels_merged(bars_merged)
-    add_labels_closed(bars_closed, offset=label_offsets[0])
-    add_labels_open(bars_open, offset=label_offsets[1])
+    add_labels_merged(bars_merged, offset=label_offsets[0])
+    add_labels_closed(bars_closed, offset=label_offsets[1])
+    add_labels_open(bars_open, offset=label_offsets[2])
 
     # Add legend
     plt.legend(fontsize=12)
@@ -219,28 +214,28 @@ def plot_pr_statistics(
 
 
 # Plot for Dasharo/coreboot
-repo_coreboot = "Dasharo/coreboot"
-data_coreboot = gather_data(repo_coreboot, dates)
-plot_pr_statistics(
-    repo_coreboot,
-    dates,
-    data_coreboot,
-    "PR Statistics for Dasharo/coreboot downstream",
-    "img/dug_11/dasharo_coreboot.png",
-    label_offsets=(30, 5),
-)
+#repo_coreboot = "Dasharo/coreboot"
+#data_coreboot = gather_data(repo_coreboot, dates)
+#plot_pr_statistics(
+#    repo_coreboot,
+#    dates,
+#    data_coreboot,
+#    "PR Statistics for Dasharo/coreboot downstream",
+#    "img/dug_11/dasharo_coreboot.png",
+#    label_offsets=(30, 5),
+#)
 
 # Plot for Dasharo/edk2
-repo_edk2 = "Dasharo/edk2"
-data_edk2 = gather_data(repo_edk2, dates)
-plot_pr_statistics(
-    repo_edk2,
-    dates,
-    data_edk2,
-    "PR Statistics for Dasharo/edk2 fork",
-    "img/dug_11/dasharo_edk2.png",
-    label_offsets=(7, 1),
-)
+#repo_edk2 = "Dasharo/edk2"
+#data_edk2 = gather_data(repo_edk2, dates)
+#plot_pr_statistics(
+#    repo_edk2,
+#    dates,
+#    data_edk2,
+#    "PR Statistics for Dasharo/edk2 fork",
+#    "img/dug_11/dasharo_edk2.png",
+#    label_offsets=(7, 1),
+#)
 
 # Plot for Dasharo/open-source-firmware-validation
 repo_osfv = "Dasharo/open-source-firmware-validation"
@@ -250,62 +245,62 @@ plot_pr_statistics(
     dates,
     data_osfv,
     "PR Statistics for OSFV repository",
-    "img/dug_11/dasharo_prs_osfv_total.png",
-    label_offsets=(7, 1),
+    "img/dug_12/osfv_status/dasharo_prs_osfv_total.png",
+    label_offsets=(3, 2, 5),
 )
 data_osfv = gather_data(repo_osfv, dates, differences=True)
 plot_pr_statistics(
     repo_osfv,
-    dates,
+    dates[1:],
     data_osfv,
     "PR Statistics for OSFV repository - increments",
-    "img/dug_11/dasharo_prs_osfv_diff.png",
-    label_offsets=(7, 1),
+    "img/dug_12/osfv_status/dasharo_prs_osfv_diff.png",
+    label_offsets=(1, 1, 1),
 )
 
 # Plot for Dasharo/osfv-scripts
-repo_osfv_cli = "Dasharo/osfv-scripts"
-data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=False)
-plot_pr_statistics(
-    repo_osfv_cli,
-    dates,
-    data_osfv_cli,
-    "PR Statistics for osfv_cli repository",
-    "img/dug_11/dasharo_prs_osfv_cli_total.png",
-    label_offsets=(5, 1),
-    cap_to_zero=True,
-)
-data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=True)
-plot_pr_statistics(
-    repo_osfv_cli,
-    dates,
-    data_osfv_cli,
-    "PR Statistics for osfv_cli repository - increments",
-    "img/dug_11/dasharo_prs_osfv_cli_diff.png",
-    label_offsets=(0.7, 0.5),
-    cap_to_zero=True,
-)
+#repo_osfv_cli = "Dasharo/osfv-scripts"
+#data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=False)
+#plot_pr_statistics(
+#    repo_osfv_cli,
+#    dates,
+#    data_osfv_cli,
+#    "PR Statistics for osfv_cli repository",
+#    "img/dug_11/dasharo_prs_osfv_cli_total.png",
+#    label_offsets=(5, 1),
+#    cap_to_zero=True,
+#)
+#data_osfv_cli = gather_data(repo_osfv_cli, dates, differences=True)
+#plot_pr_statistics(
+#    repo_osfv_cli,
+#    dates,
+#    data_osfv_cli,
+#    "PR Statistics for osfv_cli repository - increments",
+#    "img/dug_12/osfv_status/dasharo_prs_osfv_cli_diff.png",
+#    label_offsets=(0.7, 0.5),
+#    cap_to_zero=True,
+#)
 
 # Plot for Dasharo/meta-dts
-repo_meta_dts = "Dasharo/meta-dts"
-data_meta_dts = gather_data(repo_meta_dts, dates)
-plot_pr_statistics(
-    repo_meta_dts,
-    dates,
-    data_meta_dts,
-    "PR Statistics for meta-dts repository",
-    "img/dug_11/dasharo_prs_meta_dts.png",
-    label_offsets=(7, 1),
-)
+#repo_meta_dts = "Dasharo/meta-dts"
+#data_meta_dts = gather_data(repo_meta_dts, dates)
+#plot_pr_statistics(
+#    repo_meta_dts,
+#    dates,
+#    data_meta_dts,
+#    "PR Statistics for meta-dts repository",
+#    "img/dug_11/dasharo_prs_meta_dts.png",
+#    label_offsets=(7, 1),
+#)
 
 # Plot for Dasharo/meta-dts
-repo_dts_scripts = "Dasharo/dts-scripts"
-data_dts_scripts = gather_data(repo_dts_scripts, dates)
-plot_pr_statistics(
-    repo_dts_scripts,
-    dates,
-    data_dts_scripts,
-    "PR Statistics for dts-scripts repository",
-    "img/dug_11/dasharo_prs_dts_scripts.png",
-    label_offsets=(7, 1),
-)
+#repo_dts_scripts = "Dasharo/dts-scripts"
+#data_dts_scripts = gather_data(repo_dts_scripts, dates)
+#plot_pr_statistics(
+#    repo_dts_scripts,
+#    dates,
+#    data_dts_scripts,
+#    "PR Statistics for dts-scripts repository",
+#    "img/dug_11/dasharo_prs_dts_scripts.png",
+#    label_offsets=(7, 1),
+#)
