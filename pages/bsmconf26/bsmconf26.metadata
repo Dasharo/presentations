@@ -1,0 +1,4 @@
+slides:
+  - input_file: "pages/bsmconf26/fwupd-hsi-amd.md"
+    range: "1-15"
+    output_file: "fwupd-hsi-amd.pdf"
